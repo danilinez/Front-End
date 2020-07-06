@@ -1,0 +1,146 @@
+.footer
+{
+  .contact_form
+  {
+    padding: 15px 0px 12px;
+    position: relative;
+    .panel-default a
+    {
+      text-decoration: none;
+    }
+    .panel-default
+    {
+      .panel-title
+      {
+        color: $text;
+        font-size: 20px;
+        margin: 0px;
+        i
+        {
+          margin-left: 10px;
+          font-size: 16px;
+          transition: .3s ease;
+        }
+      }
+      .panel-body
+      {
+        h2
+        {
+          font-weight: 700 !important;
+          font-size: 32px;
+          margin: 50px 0px;
+        }
+        form
+        {
+          // form css is on TOP for reuseability
+          margin-bottom: 50px;
+          .form-control
+          {
+            font-weight: 400;
+          }
+          .form-control::placeholder
+          {
+            color: #ccc;
+          }
+          .submit
+          {
+            background: $text;
+            color:#fff;
+            text-shadow: none !important;
+            padding: 10px 40px 8.5px;
+            font-weight: 500;
+            text-transform: uppercase;
+            border:none;
+            border-radius: 8px;
+            font-size: 14px;
+            position: relative;
+            left: 15px;
+            &:hover
+            {
+              background: #fff;
+              color: $text;
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer_detailz
+  {
+    padding: 70px 0px 150px;
+    .left-text
+    {
+      .footer-logo
+      {
+        height: 50px;
+        float: left;
+      }
+      span
+      {
+        font-size: 12px;
+        position: relative;
+        top: 12px;
+        left: 20px;
+        color:#ffffffa8;
+      }
+    }
+    .social_links
+    {
+      .list-inline
+      {
+        position: relative;
+        top: 8px;
+        .list-inline-item:hover
+        {
+          transform: scale(1.1);
+        }
+      }
+      a
+      {
+        border-radius: 100%;
+        font-size: 18px;
+        &.fb
+        {
+          padding: 7px 16px 6px;
+        }
+        &.twtr
+        {
+          padding: 7px 11px 6px;
+        }
+        &.lin
+        {
+          padding: 7px 13px 6px;
+        }
+      }
+      .blue-bg:hover
+      {
+        color: #fff !important;
+        box-shadow: 0px 0px 20px 1px #00000061;
+      }
+      .yellow-bg:hover
+      {
+        color: $text !important;
+        box-shadow: 0px 0px 20px 1px #0000003c;
+      }
+    }
+    .text-right
+    {
+      p
+      {
+        position: relative;
+        top: 12px;
+        font-size: 12px;
+        color: #ffffffa8;
+        strong
+        {
+          font-weight: 700;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+.text-dark
+{
+  color: $text !important;
+}

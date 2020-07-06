@@ -1,0 +1,107 @@
+footer {
+  background-color: #111;
+  padding: 60px 0px 40px;
+  .logo_descript{
+    img
+    {
+      max-width: 150px;
+    }
+    ul {
+      margin-top: 30px;
+      li {
+        margin: 8px 0px;
+        a {
+          i
+          {
+            margin-right: 10px
+          }
+          transition:.2s ease;
+          color: #eee;
+          font-family: rlight;
+          font-size: 14px;
+          &:hover
+          {
+            color:$yellow;
+          }
+        }
+      }
+    }
+    .social_icons
+    {
+      margin-top:10px;
+      @media (max-width:991px) {
+        margin-bottom:20px;
+      }
+      li
+      {
+        display: inline-block !important;
+        a
+        {
+          position: relative;
+          display:inline-block;
+          width:40px;
+          height:40px;
+          border-radius: 100%;
+          text-align: center;
+          background-color:transparent;
+          border:2px solid #eee;
+          margin-right: 5px;
+          text-shadow: 1px 1px 2px #111;
+          &:hover
+          {
+            background-color:$yellow;
+            border-color:$yellow;
+            color:#fff;
+          }
+          i
+          {
+            text-align: center;
+            font-size: 20px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+          }
+        }
+      }
+    }
+  }
+  .footer_links {
+    @media (max-width:991px) {
+      margin-bottom:20px;
+    }
+    h3 {
+      font-family: crete;
+      font-size: 24px;
+      color: $yellow;
+      margin: 0px 0px 20px;
+    }
+    ul {
+      li {
+        margin: 8px 0px;
+        a {
+          color: #eee;
+          font-family: rlight;
+          font-size: 14px;
+          position: relative;
+          &::after {
+            transition: width 0.2s ease-out;
+            content: "";
+            height: 1px;
+            width: 0px;
+            background: $yellow;
+            position: absolute;
+            bottom: -5px;
+            left: 0px;
+          }
+          &:hover {
+            color: $yellow;
+          }
+          &:hover::after {
+            width: 25px !important;
+          }
+        }
+      }
+    }
+  }
+}

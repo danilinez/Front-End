@@ -1,0 +1,128 @@
+/*freehomedevilery Start*/
+#freehomedevilery {
+ 
+text-shadow: 1px 1px 1px rgba(250,250,250,0.1);
+ font-size: 20px;
+ display: block;
+ position: relative;
+ text-decoration: none;
+    box-shadow: 0px 3px 0px 0px rgb(100,100,100),
+       0px 7px 10px 0px rgb(17,17,17),
+       inset 0px 1px 1px 0px rgba(250, 250, 250, .2), 
+       inset 0px -12px 35px 0px rgba(0, 0, 0, .5);
+ width: 200px;
+ height: 100px;
+ border: 0;
+ color: rgb(37,37,37);
+ border-radius: 5px;
+ text-align: center;
+ line-height: 50px;
+ background-color: #FF0;
+
+ transition: color 350ms ease, text-shadow 350ms;
+  -o-transition: color 350ms ease, text-shadow 350ms;
+  -moz-transition: color 350ms ease, text-shadow 350ms;
+  -webkit-transition: color 350ms ease, text-shadow 350ms;
+}
+
+#freehomedevilery:active {
+    box-shadow: 0px 0px 0px 0px rgb(100,100,100),
+       0px 3px 100px 0px rgb(300, 300, 300),
+       inset 0px 1px 1px 0px rgba(250, 250, 250, .2), 
+       inset 0px -10px 35px 5px rgba(0, 0, 0, .5);
+    background-color: rgb(#03F);
+   top: auto;
+ width: 195px;
+ height: 90px;
+}
+
+/*freehomedevilery End*/
+
+
+/*ourcaompany  Start*/
+#ourcaompany{
+ 
+text-shadow: 1px 1px 1px rgba(250,250,250,0.1);
+ font-size: 20px;
+ display: block;
+ position: relative;
+ text-decoration: none;
+    box-shadow: 0px 3px 0px 0px rgb(100,100,100),
+       0px 7px 10px 0px rgb(17,17,17),
+       inset 0px 1px 1px 0px rgba(250, 250, 250, .2), 
+       inset 0px -12px 35px 0px rgba(0, 0, 0, .5);
+ width: 200px;
+ height: 100px;
+ border: 0;
+ color: rgb(37,37,37);
+ border-radius: 5px;
+ text-align: center;
+ line-height: 50px;
+ background-color: #F00;
+
+ transition: color 350ms ease, text-shadow 350ms;
+  -o-transition: color 350ms ease, text-shadow 350ms;
+  -moz-transition: color 350ms ease, text-shadow 350ms;
+  -webkit-transition: color 350ms ease, text-shadow 350ms;
+}
+
+#ourcaompany:active {
+ box-shadow: 0px 5px 0px 0px rgb(100,100,100),
+    							0px 7px 10px 0px rgb(17,17,17),
+    			inset 0px 1px 1px 0px rgba(250, 250, 250, .2), 
+    			inset 0px -10px 35px 5px rgba(0, 0, 0, .5);
+    background-color: rgb(#03F);
+  	top: auto;
+	width: 210px;
+	height: 110px;
+	border: 0;
+	color: rgb(37,37,37);
+	border-radius: 0px;
+	text-align: center;
+	line-height: 30px;
+	background-color: #F00;
+
+	transition: color 350ms ease, text-shadow 350ms;
+		-o-transition: color 350ms ease, text-shadow 350ms;
+		-moz-transition: color 350ms ease, text-shadow 350ms;
+		-webkit-transition: color 350ms ease, text-shadow 350ms;
+   
+}
+/*ourcaompany End*/
+
+/*promotionalproduct Start*/
+#promotionalproduct{
+ 
+text-shadow: 1px 1px 1px rgba(250,250,250,0.1);
+ font-size: 20px;
+ display: block;
+ position: relative;
+ text-decoration: none;
+    box-shadow: 0px 3px 0px 0px rgb(100,100,100),
+       0px 7px 10px 0px rgb(17,17,17),
+       inset 0px 1px 1px 0px rgba(250, 250, 250, .2), 
+       inset 0px -12px 35px 0px rgba(0, 0, 0, .5);
+ width: 200px;
+ height: 100px;
+ border: 0;
+ color: rgb(37,37,37);
+ border-radius: 0px;
+ text-align: center;
+ line-height: 50px;
+ background-color: #096;
+
+ transition: color 350ms ease, text-shadow 350ms;
+  -o-transition: color 350ms ease, text-shadow 350ms;
+  -moz-transition: color 350ms ease, text-shadow 350ms;
+  -webkit-transition: color 350ms ease, text-shadow 350ms;
+}
+
+#promotionalproduct:active {
+    box-shadow: 5px 5px 5px 5px #096,
+       0px 3px 5px 5px rgb(300, 300, 300),
+       inset 0px 1px 1px 0px rgba(250, 250, 250, .2), 
+       inset 0px -10px 35px 5px rgba(0, 0, 0, .5);
+    background-color:  #096;
+   top: auto;
+}
+/*promotionalproduct End*/

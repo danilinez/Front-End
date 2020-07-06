@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home | Market</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="fontawesome/css/all.css" />
+    <link rel="stylesheet" href="css/datatables.css" />
+    <link rel="stylesheet" href="css/master.css" />
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.png" alt="logo">
+        </a>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="products" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Products <i class="far fa-angle-down"></i></a>
+            <div class="dropdown-menu" aria-labelledby="products">
+              <a class="dropdown-item" href="add product.html">Add Products</a>
+              <a class="dropdown-item" href="product manage.html">Manage Products</a>
+              <a class="dropdown-item" href="#">Media Center</a>
+              <a class="dropdown-item" href="#">Manage Image</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="orders" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Orders <i class="far fa-angle-down"></i></a>
+            <div class="dropdown-menu" aria-labelledby="orders">
+              <a class="dropdown-item" href="#">Manage Orders</a>
+              <a class="dropdown-item" href="#">Manage Reviews</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="proms" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Promotions <i class="far fa-angle-down"></i></a>
+            <div class="dropdown-menu" aria-labelledby="proms">
+              <a class="dropdown-item" href="#">Seller Voucher</a>
+              <a class="dropdown-item" href="#">Free Shipping</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="store.html" class="nav-link">Store</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="profile-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user-circle"></i> Mr. Shop Name <i class="far fa-angle-down"></i></a>
+            <div class="dropdown-menu porfile-menu" aria-labelledby="profile-menu">
+              <h5>My Account</h5>
+              <a class="dropdown-item" href="#">Profile</a>
+              <a class="dropdown-item" href="#">User Management</a>
+              <a class="dropdown-item" href="#">Account Settings</a>
+              <hr>
+              <h5>Seller Support</h5>
+              <a class="dropdown-item" href="#">Conenct with Market</a>
+              <a class="dropdown-item" href="#">Market University</a>
+              <a class="dropdown-item" href="#">Help Center</a>
+              <hr>
+              <a class="dropdown-item" href="#">Logout</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="manage">
+      <div class="container-fluid">
+          <table id="manage-prods" class="table table-striped table-bordered" style="width:100%">
+              <thead>
+                  <tr>
+                      <th>Action</th>
+                      <th>Name</th>
+                      <th>Position</th>
+                      <th>Office</th>
+                      <th>Age</th>
+                      <th>Start date</th>
+                      <th>Salary</th>
+                  </tr>
+              </thead>
+              <tbody>
+                <tr>
+                    <td class="actions">
+                        <button class="btn btn-danger btn-sm" title="Delete"><i class="fal fa-trash-alt"></i></button>
+                        <button class="btn btn-info btn-sm" title="Edit"><i class="fal fa-pencil-alt"></i></button>
+                    </td>
+                    <td>Donna Snider</td>
+                    <td>Customer Support</td>
+                    <td>New York</td>
+                    <td>2</td>
+                    <td>2011/01/25</td>
+                    <td>$112,000</td>
+                </tr>
+                <tr>
+                    <td class="actions">
+                        <button class="btn btn-danger btn-sm" title="Delete"><i class="fal fa-trash-alt"></i></button>
+                        <button class="btn btn-info btn-sm" title="Edit"><i class="fal fa-pencil-alt"></i></button>
+                    </td>
+                    <td>Donna Snider</td>
+                    <td>Customer Support</td>
+                    <td>New York</td>
+                    <td>27</td>
+                    <td>2011/01/25</td>
+                    <td>$112,000</td>
+                </tr>
+                <tr>
+                    <td class="actions">
+                        <button class="btn btn-danger btn-sm" title="Delete"><i class="fal fa-trash-alt"></i></button>
+                        <button class="btn btn-info btn-sm" title="Edit"><i class="fal fa-pencil-alt"></i></button>
+                    </td>
+                    <td>Donna Snider</td>
+                    <td>Cusmer Support</td>
+                    <td>New York</td>
+                    <td>7</td>
+                    <td>2011/01/25</td>
+                    <td>$142,000</td>
+                </tr>
+                <tr>
+                    <td class="actions">
+                        <button class="btn btn-danger btn-sm" title="Delete"><i class="fal fa-trash-alt"></i></button>
+                        <button class="btn btn-info btn-sm" title="Edit"><i class="fal fa-pencil-alt"></i></button>
+                    </td>
+                    <td>Donna Snider</td>
+                    <td>Customer Support</td>
+                    <td>New York</td>
+                    <td>2</td>
+                    <td>2011/01/25</td>
+                    <td>$112,000</td>
+                </tr>
+                <tr>
+                    <td class="actions">
+                        <button class="btn btn-danger btn-sm" title="Delete"><i class="fal fa-trash-alt"></i></button>
+                        <button class="btn btn-info btn-sm" title="Edit"><i class="fal fa-pencil-alt"></i></button>
+                    </td>
+                    <td>Donna Snider</td>
+                    <td>Customer Support</td>
+                    <td>New York</td>
+                    <td>27</td>
+                    <td>2011/01/25</td>
+                    <td>$112,000</td>
+                </tr>
+                <tr>
+                    <td class="actions">
+                        <button class="btn btn-danger btn-sm" title="Delete"><i class="fal fa-trash-alt"></i></button>
+                        <button class="btn btn-info btn-sm" title="Edit"><i class="fal fa-pencil-alt"></i></button>
+                    </td>
+                    <td>Donna Snider</td>
+                    <td>Cusmer Support</td>
+                    <td>New York</td>
+                    <td>7</td>
+                    <td>2011/01/25</td>
+                    <td>$142,000</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                  <tr>
+                      <th>Action</th>
+                      <th>Name</th>
+                      <th>Position</th>
+                      <th>Office</th>
+                      <th>Age</th>
+                      <th>Start date</th>
+                      <th>Salary</th>
+                  </tr>
+              </tfoot>
+          </table>
+      </div>
+    </section>
+
+    
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrapbundle.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/datatables.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html> 

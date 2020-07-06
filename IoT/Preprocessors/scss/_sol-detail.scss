@@ -1,0 +1,142 @@
+.sol-detail {
+  margin: 0px;
+  padding: 0px;
+  .container-fluid {
+    padding: 0px;
+  }
+  .banner
+  {
+    background-image: url('images/iotsol6.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0px 50px;
+    text-align: center;
+    > h1
+    {
+      color: #fff;
+      font-size: 54px;
+      font-family: 'tbold';
+      margin: 70px 0px 0px;
+    }
+  }
+  h1
+  {
+    color:$blue;
+    font-size: 30px;
+    font-family: 'tbold';
+    margin: 60px 0px 20px;
+  }
+  h3
+  {
+    color:$pinkfaded;
+    font-size: 26px;
+    font-family: 'tbold';
+    margin: 20px 0px 20px;
+  }
+  h4
+  {
+    color:$text;
+    font-family: 'tlight' !important;
+    font-size: 18px;
+    margin: 30px 0px;
+    a
+    {
+      color:$pinkfaded;
+      text-decoration: none !important;
+      &:hover{
+        color:$pink;
+        text-decoration: underline !important;
+      }
+    }
+  }
+  .solution_slips
+  {
+    margin: 50px 0px;
+    h1
+    {
+      margin: 0px 0px 40px;
+      font-size: 28px;
+    }
+    .slip
+    {
+      margin-bottom:30px;
+      h3{
+        font-size: 18px !important;
+          margin: 0px;
+          @media (max-width: 991px){
+            font-size: 20px !important;
+          }
+          @media (max-width: 767px){
+            font-size: 18px !important;
+          }
+      }
+      img
+      {
+        border:1px solid $pink;
+        height: 180px !important;
+        width: 100%;
+        @media (max-width: 767px){
+          margin: 15px 0px;
+        }
+      }
+    }
+  }
+}
+
+.iotsolz {
+  padding: 100px 0px;
+  background-color:#faf8f5;
+  .title
+  {
+    margin: 10px 0px;
+  }
+  .p
+  {
+    font-size: 18px;
+    color:$text;
+    margin: 0px 0px 30px;
+  }
+  .pannel
+  {
+    margin-bottom: 25px;
+    background: #fff;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    &:nth-child(1) .content,
+    &:nth-child(3) .content,
+    &:nth-child(5) .content
+    {
+      padding:20px 35px;
+    }
+  }
+  .content
+  {
+    padding:30px 45px;
+    @media(max-width:1199px){
+      padding:20px 35px;
+    }
+  }
+  .btn-info {
+  @media(max-width:1199px)
+  {
+    margin: 0px;
+  }}
+  .common-h a
+  {
+    font-family: tbold !important;
+    color:$pink;
+    &:hover
+    {
+      color:$pink;
+    }
+  }
+  .card {
+    border: none;
+    margin-bottom: 20px;
+    min-height: 600px;
+  }
+  .px-2 {
+    padding: 0px 10px !important;
+  }
+}

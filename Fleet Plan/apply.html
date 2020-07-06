@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Fleet Plans</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/jqueryui.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/jqueryui.js"></script>
+  <script type="text/javascript">
+  $( function() {
+    $( "#dobpicker" ).datepicker();
+  } );
+  </script>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="index.html"><img src="images/FleetPlan-Logo.png" alt="logo"></a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <div class="nav-holder">
+                         <ul class="nav navbar-nav">
+                            <li><a href="brands.html">BRANDS</a></li>
+                            <li><a href="machmakers.html">MATCHMAKERS</a></li>
+                            <li><a href="specialoffers.html" class="redit">Current OFFERS</a></li>
+                            <li><a href="truck&equipments.html">TRUCKS & EQUIPMENT</a></li>
+                        </ul>
+                    </div>
+                    <form class="navbar-form">
+                      <div class="input-group">
+                        <span class="input-group-addon"><i class="fas fa-search"></i></span>
+                        <input id="email" type="text" class="form-control" name="email" placeholder="Search your Favourite Car" autocomplete="off">
+                        <a href="#" class="cross hidden-xs"> <i class="fas fa-times"></i></a>
+                      </div>
+                    </form>
+                    <ul class="social_head">
+                        <li class="social pull-right"><a href="#" class="heart"><i class="far fa-heart"></i></a></li>
+                        <li class="social pull-right"><a type="button" data-toggle="modal" data-target="#login-modal"><i class="far fa-user"></i></a></li>
+                        <li class="social pull-right hidden-xs"><a href="#" class="magnifier"><i class="fas fa-search"></i></a></li>
+                    </ul>
+                </div>
+              </div>
+            </nav>
+            <div class="modal login-modal" id="login-modal" role="dialog">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <h1>Sign up now and <br> enjoy these benefits</h1>
+                        <ul>
+                            <li><img src="images/check.png" />Request competitive quotes on the car you want to buy</li>
+                            <li><img src="images/check.png" />Access your favourites on all devices</li>
+                        </ul>
+                        <button class="btn btn-default"><i class="fab fa-facebook-square"></i> Sign up with Facebook</button>
+                        <p>Creating an account means you're OK with Fleet Plans</p>
+                        <a href="javascript:void(0)">Terms of Service and Privacy Policy</a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </header>
+        <main>
+
+            <section class="apply sec-pad">
+                <div class="container">
+                    <h2>Apply Now</h2>
+                    <p>If you would like to apply for <strong>Finance</strong>, please fill out the form below.</p>
+
+                    <form action="/" style="text-align: left">
+                <div class="form-group col-md-6 col-sm-12 col-xs-12 fluid-l">
+                    <label for="loanpurpose">Loan Purpose:</label>
+                    <select class="form-control" id="loanpurpose">
+                        <option selected disabled>Please Select</option>
+                        <option value="vehicle">Vehicle</option>
+                        <option value="truck">Truck</option>
+                        <option value="excavator">Excavator</option>
+                        <option value="bulldozer">Bulldozer</option>
+                        <option value="skidsteer">Skid Steer</option>
+                        <option value="tractor">Tractor</option>
+                        <option value="crane">Crane</option>
+                        <option value="roller">Roller</option>
+                        <option value="conveyer">Conveyer</option>
+                        <option value="crusher">Crusher</option>
+                        <option value="cashflow">Cash Flow</option>
+                        <option value="businessloan">Business Loan</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-6 col-sm-12 col-xs-12 fluid-r">
+                    <label for="name">Full Name:</label>
+                    <input class="form-control" type="text" name="name" value="" />
+                </div>
+                <div class="form-group col-md-6 col-sm-12 col-xs-12 fluid-l">
+                    <label for="lamount">Loan Amount:</label>
+                    <select class="form-control" id="lamount">
+                        <option selected disabled>Please Select</option>
+                        <option value="20000">$10,000-$20,000</option>
+                        <option value="50000">$20,000-$50,000</option>
+                        <option value="100000">$50,000-$100,000</option>
+                        <option value="200000">$100,000-$200,000</option>
+                        <option value="500000">$200,000-$500,000</option>
+                        <option value="1000000">$500,000+</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-6 col-sm-12 col-xs-12 fluid-r">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="text" class="form-control" id="dobpicker">
+                </div>
+                <div class="form-group col-md-6 col-sm-12 col-xs-12 fluid-l">
+                    <label for="owt">Over What Term?</label>
+                    <select class="form-control" id="owt">
+                        <option selected disabled>Please Select</option>
+                        <option value="12">1 YEAR</option>
+                        <option value="24">2 YEARS</option>
+                        <option value="36">3 YEARS</option>
+                        <option value="48">4 YEARS</option>
+                        <option value="60">5 YEARS</option>
+                        <option value="72">6 YEARS</option>
+                        <option value="84">7 YEARS</option>
+                        <option value="240">Over 7 YEARS</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-6 col-sm-12 col-xs-12 fluid-r">
+                    <label for="pstatus">Property Status*</label>
+                    <select class="form-control" id="pstatus">
+                        <option selected disabled>Please Select</option>
+                        <option value="owned">Owned</option>
+                        <option value="mortgaged">Mortgaged</option>
+                        <option value="livefamily">Live with Family</option>
+                        <option value="rented">Rented</option>
+                        <option value="boarder">Boarder</option>
+                        <option value="lease">Lease</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-6 col-sm-12 col-xs-12 fluid-l">
+                    <label for="crp" class="col-xs-12" style="padding:0px;">Current Residency Period*</label>
+                    <div class="col-xs-6 fluid-l">
+                        <select class="form-control" id="crp">
+                            <option selected disabled>Select Month</option>
+                                <option>0 Month</option>
+                                <option>1 Month</option>
+                                <option>2 Month</option>
+                                <option>3 Month</option>
+                                <option>4 Month</option>
+                                <option>5 Month</option>
+                                <option>6 Month</option>
+                                <option>7 Month</option>
+                                <option>8 Month</option>
+                                <option>9 Month</option>
+                                <option>10 Month</option>
+                                <option>11 Month</option>
+                                <option>12 Month</option>
+                        </select>
+                    </div>
+                    <div class="col-xs-6 fluid-r">
+                        <select class="form-control" id="crp">
+                            <option selected disabled>Year</option>
+                                <option>0 Year</option>
+                                <option>1 Year</option>
+                                <option>2 Year</option>
+                                <option>3 Year</option>
+                                <option>4 Year</option>
+                                <option>5 Year</option>
+                                <option>6 Year</option>
+                                <option>7 Year</option>
+                                <option>8 Year</option>
+                                <option>9 Year</option>
+                                <option>10 Year</option>
+                                <option>11 Year</option>
+                                <option>12 Year</option>
+                                <option>13 Year</option>
+                                <option>14 Year</option>
+                                <option>15 Year</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group col-md-6 col-sm-12 col-xs-12 fluid-r">
+                    <label for="phonenum">Phone*</label>
+                    <input type="text" class="form-control required" name="phone" id="phonenum" placeholder="For landlines include area code ..." onkeypress="return blockNonNumbers(this, event, false, false);" onkeyup="extractNumber(this,0,false);" onblur="extractNumber(this,0,false);" maxlength="10" aria-required="true">
+                </div>
+                <div class="form-group col-md-6 col-sm-12 col-xs-12 fluid-l">
+                  <label for="bussiness_name">Business Name*</label>
+                  <input type="text" class="form-control" id="bussiness_name">
+
+                </div>
+                <div class="form-group col-md-6 col-sm-12 col-xs-12 fluid-r">
+                    <label for="abn">ABN*</label>
+                    <input type="text" class="form-control" id="abn" placeholder="11 Digital ABN #">
+                </div>
+
+                <div class="form-group col-md-6 col-sm-12 col-xs-12 fluid-l">
+                  <label for="btype">Bussiness Type*</label>
+                  <select class="form-control" id="btype">
+                      <option selected disabled>Please Select</option>
+                      <option value="soletrader">Sole Trader</option>
+                      <option value="partnership">Partnership</option>
+                      <option value="company">Company</option>
+                      <option value="trust">Trust</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-6 col-sm-12 col-xs-12 fluid-r">
+                    <label for="emailadr">Email address:</label>
+                    <input type="email" class="form-control" id="emailadr">
+                </div>
+
+                <div class="form-group col-md-6 col-sm-12 col-xs-12 fluid-l">
+                    <label for="sel1" class="col-xs-12" style="padding:0px;">Business Trading Period*</label>
+                    <div class="col-xs-6 fluid-l">
+                        <select class="form-control" id="sel1">
+                            <option selected disabled>Month</option>
+                                <option>0 Month</option>
+                                <option>1 Month</option>
+                                <option>2 Month</option>
+                                <option>3 Month</option>
+                                <option>4 Month</option>
+                                <option>5 Month</option>
+                                <option>6 Month</option>
+                                <option>7 Month</option>
+                                <option>8 Month</option>
+                                <option>9 Month</option>
+                                <option>10 Month</option>
+                                <option>11 Month</option>
+                                <option>12 Month</option>
+                        </select>
+                    </div>
+                    <div class="col-xs-6 fluid-r">
+                        <select class="form-control" id="sel1">
+                            <option selected disabled>Year</option>
+                                <option>0 Year</option>
+                                <option>1 Year</option>
+                                <option>2 Year</option>
+                                <option>3 Year</option>
+                                <option>4 Year</option>
+                                <option>5 Year</option>
+                                <option>6 Year</option>
+                                <option>7 Year</option>
+                                <option>8 Year</option>
+                                <option>9 Year</option>
+                                <option>10 Year</option>
+                                <option>11 Year</option>
+                                <option>12 Year</option>
+                                <option>13 Year</option>
+                                <option>14 Year</option>
+                                <option>15 Year</option>
+                        </select>
+                    </div>
+                </div>
+
+
+
+                <div class="form-group col-md-6 col-sm-12 col-xs-12 fluid-r">
+                    <label for="adr" class="col-xs-12" style="padding:0px;">Adress*</label>
+                    <div class=" col-sm-4 col-xs-12 fluid-l">
+                      <input type="text" name="" value="" class="form-control" placeholder="Unit No">
+                    </div>
+                    <div class=" col-sm-4 col-xs-12 fluid">
+                      <input type="text" name="" value="" class="form-control" placeholder="Street No">
+                    </div>
+                    <div class=" col-sm-4 col-xs-12 fluid-r">
+                      <input type="text" name="" value="" class="form-control" placeholder="Street Name">
+                    </div>
+                </div>
+                <div class="form-group col-md-6 col-sm-12 col-xs-12 fluid-l">
+                    <label for="crstatus">Credit Status*</label>
+                    <select class="form-control" id="crstatus">
+                        <option selected disabled>Please Select</option>
+                        <option value="Excellent">Excellent</option>
+                        <option value="Good">Good</option>
+                        <option value="Average">Average</option>
+                        <option value="Known_Default">Known Default</option>
+                        <option value="Court_Judgement">Court Judgement</option>
+                        <option value="Bankruptcy">Bankruptcy</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-6 col-sm-12 col-xs-12 fluid-r">
+                    <label for="adrcon" class="col-xs-12" style="padding:0px;">Adress Countinued*</label>
+
+                        <div class=" col-sm-4 col-xs-12 fluid-l">
+                          <input type="text" name="" value="" class="form-control" placeholder="Street Type">
+                        </div>
+                        <div class=" col-sm-4 col-xs-12 fluid">
+                          <input type="text" name="" value="" class="form-control" placeholder="Postcode">
+                        </div>
+                        <div class=" col-sm-4 col-xs-12 fluid-r">
+                          <select class="form-control" id="adrcon">
+                              <option selected disabled>Choose State</option>
+                              <option value="QLD">QLD</option>
+                              <option value="NSW">NSW</option>
+                              <option value="VIC">VIC</option>
+                              <option value="TAS">TAS</option>
+                              <option value="ACT">ACT</option>
+                              <option value="SA">SA</option>
+                              <option value="WA">WA</option>
+                              <option value="NT">NT</option>
+                          </select>
+                        </div>
+
+                </div>
+                <div class="form-group col-md-6 col-sm-12 col-xs-12 fluid-l">
+                    <label for="driverlicence">Drivers Licence #*</label>
+                    <input type="text" class="form-control" id="driverlicence" placeholder="9 Digit Licence Number">
+                </div>
+                <div class="col-xs-12 fluid checkbox">
+                    <p><a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a> Acceptance!</p>
+                    <input id="accept" type="checkbox">
+                    <label for="accept">Yes I Accept</label>
+                </div>
+                <div class="col-xs-12 fluid">
+                    <button type="submit" class="btn btn-default">Apply Now</button>
+                </div>
+            </form>
+
+
+                </div>
+            </section>
+        </main>
+
+        <footer class="col-xs-12">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-xs-12">
+                        <div class="img">
+                            <img src="images/footerlogo.png" alt="footerlogo">
+                        </div>
+                        <ul class="contact-ul">
+                            <li><i class="fas fa-phone"></i> 1300 555 555</li>
+                            <li><i class="fas fa-map-marker-alt"></i> Lvl 1, 10 Main Street Osborne Park WA 6017</li>
+                            <li><i class="fas fa-envelope"></i> Sales@fleetplans.com.au </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 col-xs-6">
+                        <h4>INFORMATION</h4>
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                            <li><a href="#">Finance</a></li>
+                            <li><a href="#">Leasing</a></li>
+                            <li><a href="#">Partners</a></li>
+                            <li><a href="#">Support</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 col-xs-6">
+                        <h4>CONNECT</h4>
+                        <ul>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i>Twitter</a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                            <li><a href="#"><i class="fab fa-linkedin"></i> Linkedin</a></li>
+                            <li><a href="#"><i class="fab fa-pinterest"></i> Pinterest</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row bg-row">
+                <div class="container">
+                    <div class="col-md-4 fluid">
+                        <p class="on-p">&copy; FleetPlan 2018. All Right Reserved.</p>
+                    </div>
+                    <div class="col-md-4 fluidi">
+                        <ul class="terms-list">
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Disclaimer</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 fluid">
+                        <p class="on-p">Powered by: Viper Online</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div class="heartslide">
+        <h5 class="fav">FAVOURITES</h5>
+        <h3 class="">Next Step: Compare</h3>
+        <p>It looks like you don't have any favourite cars. Why not search for a car from the <a href="#">homepage</a> or let us <a href="#">Suggest a car</a> based on your lifestyle and needs.</p>
+    </div>
+    <div class="overlay"></div>
+
+
+    <script>
+
+
+        $(document).ready(function(){
+            // Add minus icon for collapse element which is open by default
+            $(".collapse.in").each(function(){
+                $(this).siblings(".panel-heading").find(".fas").addClass("fas fa-chevron-down").removeClass("fas fa-chevron-down");
+            });
+
+            // Toggle plus minus icon on show hide of collapse element
+            $(".collapse").on('show.bs.collapse', function(){
+                $(this).parent().find(".fas").removeClass("fas fa-chevron-down").addClass("fas fa-chevron-up");
+            }).on('hide.bs.collapse', function(){
+                $(this).parent().find(".fas").removeClass("fas fa-chevron-up").addClass("fas fa-chevron-down");
+            });
+        });
+
+        // side bar quries
+
+        $('.heart').on('click', function() {
+          $('.wrapper').toggleClass("moveleft");
+        });
+        $('.heart').on('click', function() {
+          $('.heartslide').toggleClass('showup');
+        });
+        $('.heart').on('click', function() {
+          $('body').toggleClass('seez');
+        });
+
+        $(".overlay").hide();
+
+       $('.heart').on('click', function() {
+          $('.overlay').show();
+        });
+
+
+//       Search bar Queries
+        $(".navbar-form").hide();
+        $('.cross').on('click', function() {
+          $('.navbar-form').hide();
+        });
+        $('.cross').on('click', function() {
+          $('.magnifier').show();
+        });
+        $('.cross').on('click', function() {
+          $('.nav-holder').show();
+        });
+        $('.cross').on('click', function() {
+          $('.magnifier').show();
+        });
+        $('.magnifier').on('click', function() {
+          $('.navbar-form').show();
+        });
+        $('.magnifier').on('click', function() {
+          $('.magnifier').hide();
+        });
+        $('.magnifier').on('click', function() {
+          $('.nav-holder').hide();
+        });
+//       Search bar Query End
+
+
+
+        $('.overlay').on('click', function() {
+            $('body').toggleClass('seez');
+          $('.wrapper').toggleClass("moveleft");
+            $('.heartslide').toggleClass('showup');
+            $(".overlay").hide();
+        });
+
+  // side barEnd
+
+    </script>
+
+</body>
+</html>

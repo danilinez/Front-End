@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Wheel Healthcare Account Activation</title>
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script language="javascript">
+        $(document).ready(function () {
+            var param = new Object();
+            param.userguid = qs("user");
+            param.process = qs("activate");
+
+            return $.ajax({
+                type: "POST",
+                url: "LinezWS_WHCS.asmx/fnActivateUser",
+                data: JSON.stringify(param),
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (msg) {
+                    if (msg.d == "1") {
+                        alert("Your Account is Activated");
+                        window.location = "login.html";
+                    }
+                    else if (msg.d == "2") {
+                        alert("Already Activated or wrong request");
+                        window.location = "login.html";
+                    }
+                    else {
+                        alert(msg.d);
+                    }
+
+                },
+                failure: function (msg) { alert(msg); }
+            });
+
+        });
+
+
+        function qs(key) {
+            key = key.replace(/[*+?^$.\[\]{}()|\\\/]/g, "\\$&"); // escape RegEx control chars
+            var match = location.search.match(new RegExp("[?&]" + key + "=([^&]+)(&|$)"));
+            return match && decodeURIComponent(match[1].replace(/\+/g, " "));
+        }
+    </script>
+</head>
+<body>
+ 
+</body>
+</html>

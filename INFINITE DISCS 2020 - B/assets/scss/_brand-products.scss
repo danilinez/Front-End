@@ -1,0 +1,169 @@
+.panel
+{
+    background-color: #fff;
+    padding:20px 25px;
+    height: 100%;
+    .text-center
+    {
+        font-size: 14px;
+        margin-bottom: 10px;
+        a
+        {
+            color:#555;
+            font-family: textbold;
+            &:hover
+            {
+                color:$pink;
+            }
+        }
+    }
+    h4
+    {
+        font-size: 18px;
+        text-align: center;
+        position: relative;
+        background:#f6f6f6;
+        margin:-19px -24px 20px;
+        padding:12px 10px;
+        text-transform: uppercase;
+        letter-spacing: .05em;
+        .h-icon
+        {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            img
+            {
+                height: 24px;
+                opacity: .2;   
+            }
+            &::after
+            {
+                content: "";
+                height:1px;
+                width: 40px;
+                background-color: #dadada;
+                left:calc(50% + 20px);
+                position: absolute;
+                top: 55%;
+            }
+            &::before
+            {
+                content: "";
+                height:1px;
+                width: 40px;
+                background-color: #dadada;
+                right:calc(50% + 20px);
+                position: absolute;
+                top: 55%;
+            }
+        }
+    }    
+}
+
+.panels-listing
+{
+    padding:60px 0px;
+    .hero-title
+    {
+        margin-bottom: 20px !important;
+    }
+    .info-p
+    {
+        color:#7b7b7b;
+        font-size: 16px;
+        margin:0px 0px 40px;
+        text-align: center;
+    }
+    .pod
+    {
+        padding:0px !important;
+        margin-bottom: 20px;
+        &:hover
+        {
+            .img-holder
+            {
+                img
+                {
+                    filter:blur(0px) !important;
+                    opacity: 1 !important;
+                }
+            }
+        }
+        h4
+        {
+            background-color: #f5f5f5 !important;
+            padding:0px !important;
+            overflow: hidden;
+            text-align: center;
+            a
+            {
+                text-align: center;
+                display: block;
+                padding:10px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+        .frow
+        {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin:5px 0px;
+            p
+            {
+                font-size: 13px;
+                font-family: medium;
+                margin:0px !important;
+            }
+            ul
+            {
+                margin:0px !important;
+                display: inline-flex;
+                li
+                {
+                    line-height: 12px;
+                    & ~ li{
+                        margin-left: 2px;
+                    }
+                }
+            }
+        }
+        .p-info
+        {
+            text-align: left;
+            font-family: text;
+            font-size: 13px;
+        }
+        .text
+        {
+            padding:10px 0px !important;
+        }
+        .btn
+        {
+            margin:0px 5px 5px 0px;
+        }
+    }
+    .vall
+    {
+        border-top:1px solid #eee;
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding-top: 15px;
+        a
+        {
+            display: inline-block;
+            font-family: textbold;
+            font-size: 14px;
+            text-transform: uppercase;
+            color:#333;
+            &:hover
+            {
+                color:$pink;
+            }
+        }
+    }
+}

@@ -1,0 +1,135 @@
+.footer
+{
+  padding: 40px 0px;
+  background-color: $dark;
+  color:$dtext;
+  .footer-about
+  {
+    @media (max-width:767px) {
+      margin-bottom: 30px;
+    }
+    img
+    {
+      max-height: 60px;
+    }
+    p
+    {
+      margin: 20px 0px;
+      @media (max-width:767px) {
+        font-size:14px;
+      }
+      @media (max-width:576px) {
+        font-size:13px;
+      }
+    }
+    ul
+    {
+      li
+      {
+        a
+        {
+          width: 36px;
+          height: 36px;
+          border:2px solid $dtext;
+          display: inline-block;
+          text-align: center;
+          border-radius: 100%;
+          line-height: 33px;
+          margin-right: 7px;
+          color:$dtext;
+          &:hover
+          {
+            color:$pink;
+            border-color:$pink;
+          }
+        }
+      }
+    }
+  }
+  .links
+  {
+    @media (min-width:1200px) {
+      padding-left:80px;
+    }
+    @media (min-width:768px) {
+      padding-left:40px;
+    }
+    h5
+    {
+      font-family: montb;
+      font-size: 18px;
+      color:$pink;
+      margin: 0px 0px 20px;
+    }
+    ul
+    {
+      li
+      {
+        display: block;
+        a{
+          color:$dtext;
+          &:hover
+          {
+            color:$pink;
+          }
+        }
+      }
+    }
+  }
+  .newsletter
+  {
+    h5
+    {
+      font-family: montb;
+      font-size: 18px;
+      color:$pink;
+      margin: 0px 0px 20px;
+    }
+    p
+    {
+      @media (max-width:767px) {
+        font-size:14px;
+      }
+      @media (max-width:576px) {
+        font-size:13px;
+      }
+    }
+    .form-control
+    {
+      background: #3b3b3b;
+      border-radius: 50px;
+      border:1px solid #555;
+      height: 40px;
+      color:#fff;
+      font-size: 14px;
+      &::placeholder
+      {
+        color:#ccc;
+      }
+    }
+    .btn-default
+    {
+      border:2px solid transparent;
+      border-radius: 50px;
+      margin-top: 10px;
+      font-size: 13px;
+      padding: 7px 12px;
+      &:hover
+      {
+        border:2px solid $pink;
+      }
+    }
+  }
+}
+.copyright
+{
+  text-align: center;
+  background: $black;
+  p
+  {
+    color:$dtext;
+    font-size: 13px;
+    padding: 10px 0px;
+    margin: 0px;
+  }
+}

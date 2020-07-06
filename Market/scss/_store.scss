@@ -1,0 +1,26 @@
+.store
+{
+  .store-products
+  {
+    padding: 50px 0px 100px;
+  }
+  @import 'product_item.scss';
+  .store-display
+  {
+    img
+    {
+      width:100%;
+    }
+    .store-title
+    {
+      padding: 15px 20px;
+      background: $green;
+      h1{
+        color:#fff;
+        margin: 0px;
+        font-size: 26px;
+        font-family: popb;
+      }
+    }
+  }
+}

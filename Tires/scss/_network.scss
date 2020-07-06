@@ -1,0 +1,529 @@
+.location-filter
+{
+  background: url('../images/filter-bg.png') repeat;
+  padding: 50px 0px;
+  label
+  {
+    font-family: medium;
+    @media (min-width:992px) {
+      margin-top:10px;
+    }
+  }
+  .form-group
+  {
+    margin-bottom: 0px !important;
+  }
+  .frow
+  {
+    display: flex;
+    @media (max-width:576px) {
+      flex-wrap: wrap;
+    }
+    input
+    {
+      @media (max-width:576px) {
+        width:auto;
+        flex-grow: 1;
+      }
+    }
+    select
+    {
+      width: auto;
+      margin: 0px 10px;
+      @media (max-width:576px) {
+        margin-right: 0px;
+      }
+    }
+    .btn-default
+    {
+      border:none;
+      background: $ldark;
+      color:#fff;
+      @media (max-width:576px) {
+        width:100%;
+        margin-top: 10px;
+      }
+      &:hover
+      {
+        background: $red;
+        color:#fff;
+      }
+    }
+    .form-control
+    {
+      border-radius: 0px;
+      height: 42px;
+    }
+  }
+  .checks
+  {
+    padding-left: 30px;
+    border-left:1px solid #ccc;
+    @media (max-width:767px) {
+      display:none;
+    }
+  }
+  .filter-check
+  {
+    margin-bottom: 10px;
+    &:last-child{
+      margin: 0px;
+    }
+    .check-label
+    {
+      position: relative;
+      font-size: 14px;
+      line-height: 21px;
+      margin: 0px;
+      background: #ccc;
+      color:$text;
+      padding:7px 10px 7px 35px;
+      cursor: pointer;
+      font-family: saira;
+      border:1px solid #aaa;
+      width: 100%;
+      &:hover
+      {
+        background-color:#ddd;
+      }
+      &::before
+      {
+        content: "";
+        position:absolute;
+        height: 18px;
+        width: 18px;
+        border:2px solid $text;
+        left: 10px;
+        top: 8px;
+      }
+      &::after
+      {
+        display: none;
+        content: "\2714";
+        position:absolute;
+        left: 14px;
+        top: 7px;
+        font-size: 13px;
+        color:#fff;
+      }
+    }
+    input[type=checkbox]
+    {
+      height: 0px;
+      visibility: hidden;
+      opacity: 0;
+      display: none;
+    }
+    input[type=checkbox]:checked ~ label
+    {
+      background: $ddark;
+      color:#fff;
+      border:1px solid #444;
+    }
+    input[type=checkbox]:checked ~ label:hover
+    {
+      background-color:#626262;
+    }
+    input[type=checkbox]:checked ~ label::before
+    {
+      border:2px solid #fff;
+    }
+    input[type=checkbox]:checked ~ label::after
+    {
+      display: block;
+    }
+  }
+}
+.installers
+{
+  padding: 50px 0px;
+  .flexed
+  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    h3
+    {
+      flex-grow: 1;
+      margin: 0px;
+      font-size: 24px;
+      span
+      {
+        color:$red;
+      }
+    }
+    .form-control
+    {
+      display: inline-block;
+      width: auto;
+      border-radius: 0px;
+      height: 44px;
+      background: #eee;
+    }
+  }
+  .installer-box
+  {
+    border:5px solid #eee;
+    margin-bottom: 30px;
+    .box-body
+    {
+      padding:30px 20px 20px;
+      position: relative;
+      .badge
+      {
+        font-family: saira;
+        font-size: 14px;
+        font-weight: normal;
+        padding: 5px 10px;
+        position: absolute;
+        top:-4px;
+        left: 20px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        background:$red;
+      }
+      .upper
+      {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        @media (max-width:576px) {
+          flex-direction: column;
+        }
+        .info 
+        {
+          @media (max-width:576px) {
+            margin-bottom: 15px;
+          }
+          h3
+          {
+            font-size: 16px;
+            margin: 0px 0px 5px;
+            strong
+            {
+              padding-right: 6px;
+              color:$red;
+              font-size: 14px;
+              span
+              {
+                font-family: bold;
+                font-size: 20px;
+              }
+            }
+          }
+          .name
+          {
+            font-size: 20px;
+            margin: 0px 0px 5px;
+            a
+            {
+              font-family:medium;
+            }
+          }
+          .ratin
+          {
+            font-size: 12px;
+            font-family: medium;
+            margin: 0px;
+            i.fas
+            {
+              color:rgb(255, 202, 28);
+            }
+            i.far
+            {
+              color:rgb(112, 112, 112);
+            }
+          }
+        }
+        .addrent
+        {
+          p
+          {
+            margin: 0px;
+          }
+          .adr
+          {
+            font-size: 13px;
+          }
+          .rent
+          {
+            b
+            {
+              font-weight: 500;
+              font-family: semibold;
+              color:$red;
+            }
+          }
+        }
+      }
+      .lower
+      {
+        .times{
+          margin: 10px 0px;
+          height: 50px;
+          overflow: hidden;
+          li
+          {
+            display: block;
+          }
+        }
+        .acts
+        {
+          li
+          {
+            margin-right: 3px;
+            margin-bottom: 7px;
+            .btn-default
+            {
+              border:1px solid #eee;
+              background: #eee;
+              font-size: 12px;
+              padding: 7px 20px;
+              text-transform: none;
+              &:hover
+              {
+                background: #fff;
+                color:#111;
+                border:1px solid #999;
+              }
+            }
+          }
+        }
+      }
+    }
+    .box-footer
+    {
+      padding: 15px 15px 10px 20px;
+      position: relative;
+      background: #eee;
+      .bfwrap
+      {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media (max-width:576px) {
+          flex-direction: column;
+        }
+        p
+        {
+          margin: 0px;
+          @media (max-width:576px) {
+            margin: 0px 0px 10px;
+          }
+          span
+          {
+            color:$red;
+            font-family: medium;
+          }
+        }
+        .btn-default
+        {
+          margin: 0px;
+          background: $ldark;
+          border-color:$ldark;
+          margin-left: 15px;
+          min-width: 140px;
+          color:#fff;
+          @media (max-width:576px) {
+            margin-left: 0px;
+            min-width: 240px;
+          }
+          &:hover
+          {
+            background: $red;
+          }
+        }
+      }
+    }
+    transition: .1s linear;
+    &:hover
+    {
+      border-color:#ddd;
+      .name
+      {
+        a
+        {
+          color:$red;
+        }
+      }
+      .box-footer
+      {
+        background:#ddd;
+        .btn-default
+        {
+          background: $red;
+          border-color:$red;
+        }
+      }
+    }
+  }
+  .modal
+  {
+    .map-wrapper
+    {
+      width: 100%;
+      position: relative;
+      padding-top: 60%;
+      @media (max-width:576px) {
+        padding-top: 130%;
+      }
+    }
+    iframe
+    {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+    }
+  }
+}
+.sf-modal
+{
+  @media (min-width: 576px)
+  {
+    .modal-dialog {
+        max-width: 600px;
+    }
+  }
+  .modal-body
+  {
+    padding: 15px 20px !important;
+    ul
+    {
+      li
+      {
+        padding-left: 20px;
+        position: relative;
+        display: block;
+        font-size: 14px;
+        margin-bottom: 6px;
+        color:#555;
+        &::before
+        {
+          content:"";
+          position: absolute;
+          left: -0px;
+          top: 5px;
+          height: 10px;
+          width:10px;
+          background: #2db533;
+          border-radius: 50px;
+        }
+        &.not
+        {
+          color:#aaa;
+          font-family: light;
+          &::before
+          {
+            background: #aaa;
+          }
+        }
+      }
+    }
+    .form-control
+    {
+      border-radius: 0px;
+      height: 45px;
+    }
+    .btn-default
+    {
+      border:none;
+      background: $ldark;
+      color:#fff;
+      &:hover
+      {
+        background: $red;
+        color:#fff;
+      }
+    }
+  }
+}
+
+
+// Date Time Picker Custom CSS (Styles)
+
+.dtp table.dtp-picker-days tr > td > a, .dtp .dtp-picker-time > a
+{
+  padding: 3px 0px;
+  min-width: 27px;
+  display: inline-block;
+}
+.dtp a.dtp-meridien-am, .dtp a.dtp-meridien-pm
+{
+  padding: 7px;
+}
+.dtp table.dtp-picker-days tr > td > a,
+.dtp table.dtp-picker-days tr > td > span
+{
+  font-size: 14px;
+}
+.dtp > .dtp-content
+{
+  max-width: 320px;
+  max-height: 540px;
+}
+.dtp div.dtp-date, .dtp div.dtp-time
+{
+  background: $red;
+}
+.dtp table.dtp-picker-days tr > td > a.selected
+{
+  background: $red;
+}
+.dtp > .dtp-content > .dtp-date-view > header.dtp-header
+{
+  background: $dred;
+}
+.dtp .dtp-actual-meridien a.selected
+{
+  background: $dred;
+}
+.dtp .p10 > a
+{
+  color:#fff;
+}
+.dtp div.dtp-actual-year
+{
+  color:#fff;
+}
+.hour-hand
+{
+  stroke:$red;
+}
+.minute-hand
+{
+  stroke:$red;
+}
+.dtp-buttons .btn
+{
+  background: #eee;
+  margin-left: 7px;
+  &:hover
+  {
+    background: $red;
+    color:#fff;
+  }
+}
+.dtp-picker-year .btn-default
+{
+  background: #eee;
+  border:none;
+  padding: 7px 25px 0px;
+  &:hover
+  {
+    background: $red;
+    color:#fff;
+  }
+}
+.year-picker-item:hover
+{
+  color:$red;
+}
+.year-picker-item.active
+{
+  color:$red;
+}

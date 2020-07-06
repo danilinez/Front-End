@@ -1,0 +1,86 @@
+.job_info
+{
+  position: relative;
+  padding: 60px 0px;
+  .text-content
+  {
+    padding-bottom: 40px;
+    h5
+    {
+      color: $text;
+      font-size: 20px;
+      font-weight: 700;
+      margin:0px 0px 15px;
+    }
+    p
+    {
+      font-size: 16px;
+      color:$text;
+      font-weight: 300;
+    }
+    a
+    {
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 14px;
+      i
+      {
+        margin-right: 5px;
+      }
+    }
+    a.text-client
+    {
+      color:$text;
+      &:hover
+      {
+        color: $orange;
+      }
+    }
+    a.text-career
+    {
+      color:$text;
+      &:hover
+      {
+        color: $teal;
+      }
+    }
+  }
+  form
+  {
+    label
+    {
+      font-size: 16px;
+    }
+    .form-control
+    {
+      border:1px solid $grey;
+      border-radius: 7px;
+      padding: 5px 10px;
+    }
+    .btn-primary
+    {
+      border:none;
+      font-weight: 700;
+      font-size: 14px;
+      padding: 7px 30px;
+      border-radius: 8px;
+    }
+  }
+}
+
+.fluid-r
+{
+  padding-right: 5px;
+  @media (max-width: 575px)
+  {
+    padding: 0px 10px !important;
+  }
+}
+.fluid-l
+{
+  padding-left: 5px;
+  @media (max-width: 575px)
+  {
+    padding: 0px 10px !important;
+  }
+}

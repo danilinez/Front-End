@@ -1,0 +1,9 @@
+#first-block, #second-block, #third-block, #fourth-block {
+text-align:center;
+padding:3.5em 0;
+}
+#carousel {
+text-align:left;
+background:#e5e5e5;
+}
+

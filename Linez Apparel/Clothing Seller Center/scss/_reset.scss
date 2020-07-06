@@ -1,0 +1,221 @@
+
+* {
+  box-sizing: border-box;
+  font-family: "sans", sans-serif;
+}
+
+ul {
+  margin: 0px ;
+  padding: 0px ;
+  li {
+    list-style-type: none;
+    display: inline-block;
+  }
+}
+a {
+  text-decoration: none !important;
+}
+.link {
+  text-decoration: none !important;
+}
+
+
+body {
+  background-color: #f2f3f7;
+  margin: 0px;
+  position: relative;
+  padding: 0px;
+  width: 100%;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+  background-color: transparent;
+  position: absolute;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color:$dark;
+}
+body::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.fluid {
+  padding-left: 7px !important;
+  padding-right: 7px !important;
+}
+// Margin Y axis Remover from row
+.mx-none{
+  margin: 0px -15px 0px -15px;
+}
+.hidden {
+  display: none;
+}
+.btn-dark:active {
+  transform: scale(0.97);
+}
+button:focus {
+  box-shadow: none !important;
+}
+*:focus {
+  outline-color: transparent !important;
+}
+
+.btn:focus,
+.form-control:focus {
+  box-shadow:none !important;
+}
+
+.btn-orange
+{
+  background: $orange;
+  color:#fff;
+  font-family: popl;
+  text-transform: uppercase;
+  border-radius: 0px;
+  border:none;
+  font-size: 13px;
+  padding: 10px 16px;
+  letter-spacing: .5px;
+  transition: .05s linear;
+  i
+  {
+    font-size: 16px;
+  }
+  // @media (max-width:1199px) {
+  //   font-size:17px;
+  //   padding: 8px 20px;
+  // }
+  // @media (max-width:991px) {
+  //   font-size:16px;
+  //   padding: 7px 16px;
+  // }
+  // @media (max-width:767px) {
+  //   font-size:15px;
+  //   padding: 6px 15px;
+  // }
+  // @media (max-width:576px) {
+  //   font-size:14px;
+  //   padding: 5px 12px;
+  // }
+  &:hover
+  {
+    background: $dark;
+    color:#fff;
+  }
+  
+  &:active
+  {
+    transform: scale(.97);
+  }
+}
+.common-title
+{
+  padding: 10px 0px;
+  margin-bottom: 30px;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  h1
+  {
+    font-size: calc(.5vw + 1em);
+    text-transform: uppercase;
+    margin: 0px 0px 0px;
+    position: relative;
+    font-family: popb; 
+  }
+  a
+  {
+    color:$orange;
+    border-bottom: 1px solid $orange;
+    &:hover
+    {
+      color:$dark;
+      border-color:$dark;
+    }
+  }
+}
+.link
+{
+  color:$orange;
+  border-bottom: 1px solid $orange;
+  &:hover
+  {
+    color:$dark;
+    border-color:$dark;
+  }
+}
+
+@media (max-width:420px){
+  .col-xs-12
+  {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+
+.scroll-btn
+{
+  position: fixed !important;
+  z-index: 999;
+  bottom: 30px !important;
+  right: 30px !important;
+  opacity: .7;
+  line-height: 10px;
+  padding: 8px 10px;
+  border-radius: 4px;
+  opacity: 0;
+  visibility: hidden;
+  &.show {
+    opacity: .7;
+    visibility: visible;
+  }
+  i
+  {
+    font-size: 28px !important;
+  }
+  &:hover
+  {
+    background: $orange;
+    opacity: 1;
+  }
+}
+.container-fluid
+{
+  width: 1280px;
+  max-width: 1280px;
+  min-width: 1280px;
+  @media (max-width:1300px) {
+    width: 1166px;
+    max-width: 1166px;
+    min-width: 1166px;
+  }
+}
+.select2-results__options
+{
+  li
+  {
+    display: block !important;
+  }
+}
+
+.breadcrumb
+{
+  background: transparent;
+  padding: 0px;
+  margin:0px 0px 20px;
+  a
+  {
+    color:rgb(0, 169, 221);
+    &:hover
+    {
+      color:$orange;
+    }
+  }
+}
+.form-group
+{
+  margin-bottom: 20px;
+}

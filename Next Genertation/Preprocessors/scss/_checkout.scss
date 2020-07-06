@@ -1,0 +1,312 @@
+.checkout
+{
+  background-color: #fff;
+  display: block;
+  width: 100%;
+  padding: 20px 20px 30px;
+  .col-lg-3
+  {
+    margin-bottom: 20px;
+  }
+  .category-h
+  {
+    padding: 10px 0px;
+    border:1px solid $red;
+    border-left: none;
+    border-right: none;
+    .h3, .date
+    {
+      margin: 0px;
+      font-family: source;
+      font-size: 28px;
+      color:$red;
+      strong
+      {
+        font-family: sbold;
+      }
+    }
+    .date
+    {
+      font-size: 20px;
+      padding-top: 5px;
+      @media (max-width:991px) {
+        text-align:left !important;
+      }
+    }
+  }
+  .common_h
+  {
+    margin: 10px 0px;
+    letter-spacing: 1px;
+    &.light
+    {
+      font-family: oswald;
+    }
+  }
+  .card
+  {
+    height: 100%;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.3);
+    border:1px solid #ddd;
+    border-bottom: none;
+    position: relative;
+    display: inline-block;
+    clear: both;
+    width:100%;
+    .img-box
+    {
+      padding: 0 1px;
+      width: 100%;
+      .img-holder
+      {
+        // display: table-cell;
+        overflow: hidden;
+        text-align: center;
+        vertical-align: middle;
+        width: 100%;
+        height: 150px;
+        .img-span 
+        {
+          display: block;
+          margin: 0 auto;
+          width: 100%;
+          position: relative;
+          top: 50%;
+          transform: translateY(-50%);
+          img
+          {
+            display: block;
+            margin: 0 auto;
+            max-height: 220px;
+            max-width: 220px;
+            width: auto;
+            height: auto;
+          }
+        }
+      }
+    }
+    // end
+    .card-body
+    {
+      position: relative;
+      background-color: #f9f9f9;
+      border-bottom:1px solid #ddd;
+      padding:5px 10px 8px;
+      h4
+      {
+        margin: 0px;
+        font-size: 18px;
+        font-family: 'sbold';
+      }
+    }
+    border:2px solid #eee;
+  }
+  .radiomask
+  {
+    width: 100%;
+    display: block;
+    clear: both;
+    height: auto;
+    border-radius: 2px;
+    .custom-control
+    {
+      padding-left: 0px !important;
+    }
+    .custom-radio{width: 100%;padding-left: 0px}
+    .custom-radio .custom-control-label
+    {
+      width: 100%;
+      cursor: pointer !important;
+      font-weight: 500;
+      font-family:'sbold' !important;
+      padding: 0px !important;
+      margin: 0px !important;
+      &:hover
+      {
+        background-color: #f1f1f1;
+      }
+    }
+    .custom-control-label::before,
+    .custom-control-label::after{
+      display: none !important;
+    }
+    .img-box
+    {
+      position: relative;
+      padding-top: 5px;
+      overflow: hidden;
+    }
+    .hover-box
+    {
+      position: absolute;
+      z-index: 100;
+      height: 102%;
+      width: 102%;
+      background:rgba($color: #000000, $alpha: .75);
+      top: 0px;
+      left: 0px;
+      transform: scale(.80);
+      opacity: 0;
+      transition: .3s ease-out;
+      p
+      {
+        position: relative;
+        color:#fff;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        margin: 0px;
+        font-size: 18px;
+      }
+    }
+    .custom-control-label .img-box:hover .hover-box
+    {
+      transform: scale(1);
+      opacity: 1;
+    }
+    .custom-control-label:hover .card
+    {
+      border-color:#111;
+    }
+    .custom-radio .custom-control-input:checked ~ .custom-control-label .card
+    {
+      border-color:#111;
+    }
+    .custom-control-label:hover .card .card-body
+    {
+      border-color:#111;
+      background: #111;
+      color:#fff;
+    }
+    .custom-radio .custom-control-input:checked ~ .custom-control-label .card .card-body
+    {
+      background: #111;
+      color:$red;
+      border-color:#111;
+    }
+  }
+  .table caption 
+  {
+    text-align: center;
+    background: #403a3a;
+    color: #fff;
+    padding: 5px;
+    caption-side: top;
+  }
+  .table tr th
+  {
+    font-family: 'sbold';
+    font-weight: 400;
+  }
+  .common_h
+  {
+    @media (min-width:768px) 
+    {
+      padding: 5px;
+      font-size: 24px;
+    }
+  }
+  article .btn:first-child
+  {
+    margin-bottom: 15px;
+  }
+  .form-control, select option
+  {
+    font-family: 'source';
+  }
+  .form-control:focus ~ .input-group-prepend .input-group-text
+  {
+    background-color: red;
+    color:#fff;
+  }
+  .form-control:focus{
+    box-shadow: none;
+    border-color:rgb(128, 175, 138);
+  }
+  .h4{
+    color:#111;
+    font-family: source;
+    margin: 10px 0px;
+    border-bottom:2px solid #ddd;
+    padding: 0px 0px 2px;
+  }
+  label
+  {
+    font-family: source;
+  }
+  .shipment-h
+  {
+    display: inline-block;
+    cursor: pointer;
+    &:hover
+    {
+      color:$red;
+    }
+  }
+  .tab-pane .custom-checkbox
+  {
+    float: right;
+    padding-top: 10px;
+    @media (max-width:576px) {
+      display:block;
+      width:100%;
+      clear:both;
+      float:none !important;
+    }
+    label
+    {
+      font-family: source;
+      &::selection
+      {
+        background:transparent;
+        color:#111;
+      }
+    }
+  }
+  .nav-pills{
+    border-bottom: 1px solid #e2e2e2;
+    margin: 20px 0px;
+    display: flex;
+    li
+    {
+      flex: 1;
+      width: 100%;
+      margin-right: 2px;
+      a
+      {
+        width: 100%;
+        background-color: #e6e8ea;
+        min-height: 50px;
+        display: inline-block;
+        color:#111;
+        font-family: sbold;
+        border:1px solid transparent;
+        padding:10px;
+        @media (max-width:575px) {
+          font-size: 14px;
+          min-height: 35px;
+        }
+        &:hover
+        {
+          background-color:#333;
+          color:#fff;
+        }
+        &.active
+        {
+          border:1px solid #111;
+          color:#fff;
+          background: #111;
+        }
+        img
+        {
+          max-width: 40px;
+          margin-right: 5px;
+          float: left;
+          @media (max-width:575px) {
+            max-width: 30px;
+          }
+        }
+      }
+    }
+  }
+}

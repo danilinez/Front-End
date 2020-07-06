@@ -1,0 +1,247 @@
+.register {
+    background-color: #fff;
+
+    label {
+        display: block;
+    }
+
+    .note {
+        background-color: #c1ebff;
+        border          : 1px solid #c1ebff;
+        text-align      : left;
+        padding         : 5px 8px;
+        margin          : 10px 0px 20px;
+        color           : #3a82bc;
+        font-family     : textsb;
+        font-size       : 12px;
+    }
+
+    h4 {
+        text-transform: uppercase;
+        margin-bottom : 20px;
+
+        a {
+            color         : #111;
+            font-family   : regular;
+            text-transform: uppercase;
+            display       : flex;
+            font-size     : 20px;
+
+            span {
+                color      : #111 !important;
+                font-family: bold;
+                font-size  : 20px;
+
+                small {
+                    display    : block;
+                    font-size  : 14px;
+                    font-family: text;
+                    color      : #7b7b7b;
+                    padding-top: 5px;
+                }
+            }
+        }
+    }
+
+    h1 {
+        font-family: bold;
+    }
+
+    .img-holder {
+        height  : calc(100vh - 50px);
+        position: sticky;
+        top     : 62px;
+
+        img {
+            position       : absolute;
+            top            : 0px;
+            left           : 0px;
+            height         : 100%;
+            width          : 100%;
+            object-fit     : cover;
+            object-position: center center;
+        }
+    }
+
+    .form {
+        max-width    : 600px;
+        display      : block;
+        margin       : 0 auto;
+        background   : #fff;
+        border-radius: 10px;
+        padding      : 0px 30px;
+
+        span {
+            color: #7b7b7b
+        }
+
+        .btn-danger {
+            border-radius: 3px;
+            background   : #EEE;
+            color        : #111;
+            border       : none;
+            font-family  : textsb;
+            font-size    : 13px;
+            padding      : 12px 10px;
+            width        : 100%;
+
+            &:active {
+                background-color: #ddd;
+                color           : #111;
+            }
+
+            &:hover {
+                background-color: #111;
+                color           : #fff;
+            }
+        }
+    }
+
+    input {
+        font-family: text;
+    }
+
+    .flex-box {
+        height         : auto;
+        display        : flex;
+        align-items    : center;
+        justify-content: center;
+
+        @media (max-width:991px) {
+            background-image   : url('../images/register.jpg');
+            background-size    : cover;
+            background-position: center center;
+            padding: 40px 0px;
+            background-attachment: fixed;
+        }
+
+        .f-wrap {
+            width           : 100%;
+            background-color: #fff;
+            padding         : 60px 0px;
+
+            @media (max-width:991px) {
+                max-width    : 450px;
+                padding      : 30px 0px;
+                border-radius: 10px;
+            }
+        }
+    }
+
+    .btn-default {
+        display         : inline-block;
+        font-family     : textbold;
+        font-size       : 14px;
+        text-transform  : uppercase;
+        border-radius   : 50px;
+        padding         : 10px 35px;
+        background-color: #333;
+        color           : #fff;
+        transition      : .15s linear;
+        min-width       : 150px;
+        margin          : 12px auto;
+        display         : block;
+
+        &:hover {
+            color           : #fff;
+            background-color: #000;
+        }
+    }
+
+    .form-group {
+        a {
+            font-family   : textbold;
+            color         : #000;
+            font-size     : 12px;
+            text-transform: uppercase;
+            line-height   : 16px;
+            margin        : 0px 5px 5px 0px !important;
+            display       : block;
+            float         : left;
+            padding       : 3px 0px;
+            border-bottom : 1px solid #ddd;
+            transition    : .1s linear;
+
+            &:hover {
+                border-bottom: 1px solid #111;
+            }
+        }
+    }
+
+    .form-control {
+        background-color: #f5f5f5;
+        border-color    : #ddd;
+    }
+
+    p {
+        font-size  : 14px;
+        font-family: text;
+        color      : #7b7b7b;
+        margin     : 0px 0px 0px;
+        text-align : center;
+
+        a {
+            font-family: textbold;
+            color      : #000;
+
+            &:hover {
+                color: $pink;
+            }
+        }
+    }
+}
+
+.modal {
+
+    .modal-content,
+    .modal-header {
+        border-radius: 0px !important;
+    }
+
+    .table {
+        margin          : 0px 0px !important;
+        border          : none !important;
+        border-collapse : collapse;
+        background-color: #fff;
+        ;
+
+        th,
+        td {
+            border-width: 1px !important;
+            padding     : 5px 10px !important
+        }
+
+        td {
+            font-family: text;
+            font-size  : 12px;
+        }
+    }
+
+    h4 {
+        margin: 0px !important;
+    }
+
+    label {
+        margin     : 0px !important;
+        font-family: textsb;
+        font-size  : 12px;
+    }
+
+    .btn {
+        text-transform: uppercase;
+
+        &:last-child {
+            background-color: #111;
+            color           : #fff;
+        }
+    }
+}
+
+.modal-open {
+    overflow     : initial !important;
+    padding-right: 0px !important;
+}
+
+.modal {
+    z-index: 1250 !important;
+}

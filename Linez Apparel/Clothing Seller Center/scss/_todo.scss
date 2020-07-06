@@ -1,0 +1,196 @@
+.todo-secter
+{
+  .todo-list
+  {
+    border:1px solid #ddd;
+    background: #fff;
+    padding: 20px 20px 40px;
+    .top
+    {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 40px;
+      h6, p
+      {
+        margin: 0px;
+      }
+      h6
+      {
+        font-size: 18px;
+      }
+      p
+      {
+        color:$orange;
+        strong
+        {
+          font-size: 18px;
+          font-family: sansbold;
+        }
+      }
+    }
+    .list
+    {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      position: relative;
+      z-index: 1;
+      .item
+      {
+        border:1px solid #eee;
+        text-align: center;
+        border-radius: 5px;
+        position: relative;
+        z-index: 10;
+        .reason
+        {
+          border-top-left-radius: 5px;
+          border-top-right-radius: 5px;
+          background: rgb(241, 241, 241);
+          padding: 3px 5px;
+          p
+          {
+            margin: 0px;
+            font-size: 14px;
+            color:#999;
+          }
+        }
+        .tag
+        {
+          background: #fff;
+          padding: 10px 15px;
+          border-bottom-left-radius: 5px;
+          border-bottom-right-radius: 5px;
+          h5
+          {
+            margin: 0px;
+            font-size: 16px;
+            color:#333;
+          }
+          height: 60px;
+          display: flex;
+          align-items:center;
+          justify-content: center;
+        }
+      }
+      .at-now
+      {
+        border:1px solid rgb(193, 232, 255);
+        animation-name: pump;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        .reason
+        {
+          background: rgb(224, 246, 255);
+          p
+          {
+            color:rgb(0, 183, 255);
+          }
+        }
+        .tag
+        {
+          h5
+          {
+            color:#353535;
+          }
+        }
+      }
+      .completed
+      {
+        border:1px solid rgb(207, 207, 207);
+        .reason
+        {
+          background: $success;
+          p
+          {
+            color:#fff;
+          }
+        }
+        .tag
+        {
+          h5
+          {
+            color:$success;
+          }
+        }
+      }
+    }
+    .progress-holder
+    {
+      position: relative;
+      z-index: 20;
+    }
+    .progress
+    {
+      position: absolute;
+      z-index: 0;
+      width: 100%;
+      top: 50%;      
+      transform: translateY(-50%);
+      height: 2px;
+      border:none;
+      overflow: visible;
+      .progress-bar
+      {
+        position: relative;
+        background: $success;
+        &::after
+        {
+          content:"";
+          position: absolute;
+          left: auto;
+          right:0px;
+          height: 10px;
+          width: 10px;
+          background: #fff;
+          border:2px solid $success;
+          border-radius: 100%;
+          transform: translateX(25%);
+        }
+      }
+      .none-c
+      {
+        width: 0%; 
+      }
+      .one-c
+      {
+        width: 25%; 
+      }
+      .two-c
+      {
+        width: 50%; 
+      }
+      .three-c
+      {
+        width: 75%; 
+      }
+      .four-c
+      {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@keyframes pump
+{
+  0%{ 
+    transform: scale(1);
+  }
+  80%{ 
+    transform: scale(1);
+  }
+  85%{ 
+    transform: scale(1.15);
+  }
+  90%{ 
+    transform: scale(1);
+  }
+  95%{ 
+    transform: scale(1.2);
+  }
+  100%{ 
+    transform: scale(1);
+  }
+}

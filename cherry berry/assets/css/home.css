@@ -1,0 +1,2109 @@
+
+    @import url("//fonts.googleapis.com/css?family=Roboto:400,700,300,500&subset=latin");
+    @import url("//fonts.googleapis.com/css?family=Open+Sans:400,700,300,600&subset=latin");
+    @import url("//fonts.googleapis.com/css?family=Montserrat:400,700,800,500&subset=latin");
+    @import url("//fonts.googleapis.com/css?family=Raleway:400,700,600,900,500,200,100,300&subset=latin");
+    @import url("//fonts.googleapis.com/css?family=Roboto+Slab:400,700,300&subset=latin");
+
+    @media (min-width: 300px) {
+      [data-css="tve-u-15ffd3feece"]>.tcb-flex-col>.tcb-col {
+        justify-content: center;
+      }
+
+      [data-css="tve-u-15ffd3ea9a4"] {
+        margin-bottom: 0px !important;
+      }
+
+      [data-css="tve-u-15ffd325122"] h3 {
+        margin: 0px !important;
+        padding: 0px !important;
+      }
+
+      [data-css="tve-u-15ffd325122"] p {
+        margin: 0px !important;
+        padding: 0px !important;
+      }
+
+      [data-css="tve-u-15ffd3185a5"]>ul>li {
+        margin-bottom: 20px;
+      }
+
+      [data-css="tve-u-15ffd27ac3e"] h2 {
+        margin: 0px !important;
+        padding: 0px !important;
+      }
+
+      [data-css="tve-u-15ffd27ac3e"] h1 {
+        margin: 0px !important;
+        padding: 0px !important;
+      }
+
+      [data-css="tve-u-15ffd29f42d"] {
+        line-height: 1.5em !important;
+        margin-left: 20px !important;
+      }
+
+      #tve_editor [data-css="tve-u-15ffd27ac3e"] .tcb-numbered-list-index {
+        color: rgb(255, 255, 255);
+        font-family: Raleway;
+        line-height: 0.8em;
+        font-size: 17px;
+      }
+
+      [data-css="tve-u-15ffd27ac3e"] .tcb-numbered-list-index {
+        font-weight: normal !important;
+      }
+
+      [data-css="tve-u-15ffd27ac3e"] {
+        border-radius: 62px;
+        overflow: hidden;
+        letter-spacing: 0px;
+        padding: 8px 2px !important;
+        background-image: linear-gradient(rgb(201, 220, 206), rgb(201, 220, 206)) !important;
+        background-size: auto !important;
+        background-position: 0px 0px !important;
+        background-attachment: scroll !important;
+        background-repeat: no-repeat !important;
+        margin-right: 8px !important;
+        margin-bottom: 0px !important;
+      }
+
+      [data-css="tve-u-15de4a69467"] {
+        margin-bottom: 0px !important;
+      }
+
+      [data-css="tve-u-15de4a6202f"] {
+        max-width: 74.5%;
+      }
+
+      [data-css="tve-u-15de4a61ffe"] {
+        max-width: 25.5%;
+      }
+
+      #tve_editor [data-css="tve-u-15de4a609d7"] {
+        font-size: 30px !important;
+      }
+
+      [data-css="tve-u-15de4a56d82"] {
+        float: right;
+        margin-left: auto;
+        margin-right: auto;
+        width: 93px;
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+        z-index: 3;
+        position: relative;
+      }
+
+      [data-css="tve-u-15de4a447d3"] {
+        border: 3px dashed rgb(69, 191, 85) !important;
+      }
+
+      [data-css="tve-u-15de4a41d66"] {
+        margin: 50px auto 0px !important;
+        padding: 20px !important;
+        max-width: 1000px;
+        float: none;
+      }
+
+      [data-css="tve-u-15ddcf00d16"] {
+        max-width: 780px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        margin-bottom: 0px !important;
+      }
+
+      [data-css="tve-u-15ddcee48c9"] {
+        width: 49px;
+        float: left;
+        margin: 0px 0px 0px -63px !important;
+      }
+
+      [data-css="tve-u-15ddcedb6b1"] {
+        margin-bottom: 30px !important;
+      }
+
+      [data-css="tve-u-15ddce9eb2f"] {
+        margin-bottom: 30px !important;
+      }
+
+      [data-css="tve-u-15ddce83d34"] {
+        background-color: rgb(201, 220, 206) !important;
+      }
+
+      [data-css="tve-u-15ddce8073b"] {
+        float: none;
+        margin-right: auto !important;
+        margin-left: auto !important;
+        padding: 30px 20px !important;
+        margin-top: 0px !important;
+      }
+
+      [data-css="tve-u-15ddce32505"] {
+        margin-bottom: 20px !important;
+      }
+
+      #tve_editor [data-css="tve-u-15ddce30d89"] {
+        color: rgb(51, 51, 51) !important;
+        font-size: 24px !important;
+      }
+
+      [data-css="tve-u-15ddce1e637"] {
+        background-color: rgb(247, 249, 249) !important;
+        border: 1px solid rgb(225, 230, 231) !important;
+      }
+
+      [data-css="tve-u-15dd0385aa7"] {
+        max-width: 45%;
+      }
+
+      [data-css="tve-u-15dd0385a82"] {
+        max-width: 55%;
+      }
+
+      [data-css="tve-u-15dd0384941"] {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        width: 402px;
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+      }
+
+      [data-css="tve-u-15dd0362265"] {
+        font-size: 30px;
+        width: 30px;
+        height: 30px;
+        border-radius: 36px;
+        overflow: hidden;
+        color: rgb(255, 255, 255);
+        float: none;
+        padding: 7px !important;
+        background-color: rgb(204, 51, 51) !important;
+        margin-bottom: 20px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+
+      [data-css="tve-u-15dd02ba810"] {
+        max-width: 1000px;
+        float: none;
+        z-index: 3;
+        position: relative;
+        margin: 0px auto 20px !important;
+      }
+
+      [data-css="tve-u-15dcd59b980"] {
+        font-size: 70px;
+        width: 70px;
+        height: 70px;
+        float: none;
+        margin: 0px auto 10px !important;
+      }
+
+      [data-css="tve-u-15dcd52c199"] {
+        margin-bottom: 35px !important;
+      }
+
+      [data-css="tve-u-15dcd52b5a6"] {
+        float: none;
+        margin-bottom: 0px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+
+      [data-css="tve-u-15dcd4a6a99"] {
+        max-width: 900px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        margin-bottom: 10px !important;
+      }
+
+      #tve_editor [data-css="tve-u-15dcd4a0ffc"] p,
+      #tve_editor [data-css="tve-u-15dcd4a0ffc"] li,
+      #tve_editor [data-css="tve-u-15dcd4a0ffc"] blockquote,
+      #tve_editor [data-css="tve-u-15dcd4a0ffc"] address {
+        color: rgb(255, 255, 255);
+      }
+
+      [data-css="tve-u-15dcd499673"] {
+        background-image: url("//buythiz.com/wp-content/uploads/tcb_lp_templates/templates/css/images/copy_sales_page_bg.jpg") !important;
+        background-size: cover !important;
+        background-position: 0px 0px !important;
+        background-attachment: scroll !important;
+        background-repeat: no-repeat !important;
+      }
+
+      [data-css="tve-u-15dcd49418a"] {
+        max-width: 1080px;
+      }
+
+      [data-css="tve-u-15dcd45e933"] {
+        background-color: rgb(238, 238, 238) !important;
+        background-image: url("//buythiz.com/wp-content/uploads/tcb_lp_templates/templates/css/images/copy2-page-bg.png") !important;
+        background-size: auto !important;
+        background-position: 0px 0px !important;
+        background-attachment: scroll !important;
+        background-repeat: repeat !important;
+      }
+
+      #tcb_landing_page h3 strong {
+        font-weight: 500;
+      }
+
+      #tcb_landing_page h3 {
+        font-family: Raleway;
+        font-weight: 300;
+        font-size: 28px;
+        line-height: 42px;
+      }
+
+      #tcb_landing_page h2 strong {
+        font-weight: 700;
+      }
+
+      #tcb_landing_page h2 {
+        font-family: "Roboto Slab";
+        font-weight: 400;
+        color: rgb(160, 0, 0);
+        font-size: 35px;
+        line-height: 45px;
+      }
+
+      #tcb_landing_page h1 strong {
+        font-weight: 700;
+      }
+
+      #tcb_landing_page h1 {
+        font-family: "Roboto Slab";
+        font-weight: 400;
+        font-size: 55px;
+        line-height: 65px;
+        color: rgb(0, 0, 0);
+      }
+
+      #tcb_landing_page p strong,
+      #tcb_landing_page li strong {
+        font-weight: 700;
+      }
+
+      #tcb_landing_page p,
+      #tcb_landing_page li {
+        font-family: Raleway;
+        font-weight: 400;
+        color: rgb(30, 30, 30);
+        font-size: 17px;
+        line-height: 28px;
+      }
+
+      [data-css="tve-u-15dcd4a0ffc"] {
+        max-width: 1080px;
+      }
+
+      [data-css="tve-u-15dcd4aa435"] {
+        padding: 30px 0px 60px !important;
+      }
+
+      [data-css="tve-u-15dcd4f533c"] {
+        line-height: 30px !important;
+      }
+
+      #tve_editor [data-css="tve-u-15dcd4f533c"] {
+        font-family: "Roboto Slab";
+        font-weight: 300;
+        font-size: 20px !important;
+        color: rgb(255, 255, 255) !important;
+      }
+
+      [data-css="tve-u-15dd037d548"] {
+        max-width: 900px;
+        float: none;
+        margin-bottom: 30px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+
+      [data-css="tve-u-15ddcf2fd7c"] {
+        padding: 60px 0px 70px !important;
+      }
+
+      #tve_editor [data-css="tve-u-15e05070638"] {
+        font-size: 42px !important;
+      }
+
+      [data-css="tve-u-15ffd3185a5"] .tcb-numbered-list-number {
+        font-size: 34px;
+      }
+
+      [data-css="tve-u-15ffd31cca0"] h2 {
+        margin: 0px !important;
+        padding: 0px !important;
+      }
+
+      [data-css="tve-u-15ffd31cca0"] h1 {
+        margin: 0px !important;
+        padding: 0px !important;
+      }
+
+      #tve_editor [data-css="tve-u-15ffd31cca0"] .tcb-numbered-list-index {
+        color: rgb(255, 255, 255);
+        font-family: Raleway;
+        line-height: 0.8em;
+        font-size: 17px;
+      }
+
+      [data-css="tve-u-15ffd31cca0"] .tcb-numbered-list-index {
+        font-weight: normal !important;
+      }
+
+      [data-css="tve-u-15ffd31cca0"] {
+        border-radius: 62px;
+        overflow: hidden;
+        letter-spacing: 0px;
+        padding: 8px 2px !important;
+        background-image: linear-gradient(rgb(201, 220, 206), rgb(201, 220, 206)) !important;
+        background-size: auto !important;
+        background-position: 0px 0px !important;
+        background-attachment: scroll !important;
+        background-repeat: no-repeat !important;
+        margin-right: 8px !important;
+        margin-bottom: 0px !important;
+      }
+
+      [data-css="tve-u-15ffd325122"] h2 {
+        margin: 0px !important;
+        padding: 0px !important;
+      }
+
+      [data-css="tve-u-15ffd325122"] h1 {
+        margin: 0px !important;
+        padding: 0px !important;
+      }
+
+      #tve_editor [data-css="tve-u-15ffd325122"] .tcb-numbered-list-index {
+        color: rgb(255, 255, 255);
+        font-family: Raleway;
+        line-height: 0.8em;
+        font-size: 17px;
+      }
+
+      [data-css="tve-u-15ffd325122"] .tcb-numbered-list-index {
+        font-weight: normal !important;
+      }
+
+      [data-css="tve-u-15ffd325122"] {
+        border-radius: 62px;
+        overflow: hidden;
+        letter-spacing: 0px;
+        padding: 8px 2px !important;
+        background-image: linear-gradient(rgb(201, 220, 206), rgb(201, 220, 206)) !important;
+        background-size: auto !important;
+        background-position: 0px 0px !important;
+        background-attachment: scroll !important;
+        background-repeat: no-repeat !important;
+        margin-right: 8px !important;
+        margin-bottom: 0px !important;
+      }
+
+      [data-css="tve-u-16d87457483"] {
+        max-width: 750px;
+        float: none;
+        margin: 0px auto 30px !important;
+      }
+
+      [data-css="tve-u-16d87457b8d"] {
+        margin-left: -30px;
+        padding: 0px !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d8745de03"] .tcb-button-link {
+        line-height: 1.2em;
+        font-size: 24px;
+      }
+
+      [data-css="tve-u-16d8745de03"] .tcb-button-link {
+        box-shadow: rgb(11, 11, 11) 0px 2px 5px 0px;
+        border-radius: 8px;
+        overflow: hidden;
+        padding: 10px !important;
+        background-image: none !important;
+        background-color: rgb(49, 174, 144) !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d8745de03"]:hover .tcb-button-link {
+        box-shadow: rgba(0, 0, 0, 0.7) 0px 9px 5px 0px !important;
+        background-image: none !important;
+        background-color: rgb(59, 147, 126) !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d874704a0"] .tcb-button-link {
+        line-height: 1.2em;
+        font-size: 24px;
+      }
+
+      [data-css="tve-u-16d874704a0"] .tcb-button-link {
+        box-shadow: rgb(0, 0, 0) 0px 2px 5px 0px;
+        border-radius: 8px;
+        overflow: hidden;
+        padding: 20px 13px !important;
+        background-image: none !important;
+        background-color: rgb(0, 197, 149) !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d874704a0"]:hover .tcb-button-link {
+        box-shadow: rgba(0, 0, 0, 0.7) 0px 9px 5px 0px !important;
+        background-color: rgb(47, 157, 131) !important;
+        background-image: none !important;
+      }
+
+      [data-css="tve-u-16d874704a0"] {
+        margin: 0px !important;
+      }
+
+      [data-css="tve-u-16d8745de03"] {
+        margin: 0px !important;
+      }
+
+      [data-css="tve-u-16d87457b8d"]>.tcb-flex-col {
+        padding-left: 30px;
+      }
+
+      #tcb_landing_page .tcb-button-link {
+        font-family: Raleway;
+        font-weight: 400;
+      }
+
+      #tcb_landing_page input {
+        font-family: Raleway;
+        font-weight: 400;
+      }
+
+      #tcb_landing_page .tcb-button-link strong {
+        font-weight: 700;
+      }
+
+      #tcb_landing_page input strong {
+        font-weight: 700;
+      }
+
+      #tve_editor [data-css="tve-u-16d875c4d7c"] {
+        font-size: 15px !important;
+      }
+
+      [data-css="tve-u-16d875c4d7c"] {
+        line-height: 23px !important;
+      }
+
+      [data-css="tve-u-16d875e69a9"] {
+        max-width: 900px;
+        float: none;
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+
+      [data-css="tve-u-16d875e9363"] {
+        line-height: 75px !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d875e9363"] {
+        text-shadow: rgba(0, 0, 0, 0.4) 3px 3px 2px;
+        color: rgb(255, 255, 255) !important;
+        font-size: 60px !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d875f5929"] {
+        font-size: 23px !important;
+        color: rgb(255, 255, 255) !important;
+      }
+
+      [data-css="tve-u-16d875f5929"] {
+        line-height: 35px !important;
+      }
+
+      [data-css="tve-u-16d87754f94"] {
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+      }
+
+      [data-css="tve-u-16d877559a6"] {
+        max-width: 1000px;
+        float: none;
+        margin: 0px auto 50px !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d8775ff5e"] {
+        color: rgb(255, 255, 255) !important;
+        font-family: Raleway !important;
+        font-weight: 400 !important;
+        font-size: 23px !important;
+      }
+
+      [data-css="tve-u-16d8775ff5e"] strong {
+        font-weight: 500 !important;
+      }
+
+      [data-css="tve-u-16d8775ff5e"] {
+        line-height: 37px !important;
+      }
+
+      [data-css="tve-u-16d8776ed82"] {
+        max-width: 900px;
+        float: none;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        margin-bottom: 30px !important;
+      }
+
+      [data-css="tve-u-16d87776944"] {
+        margin-top: 0px !important;
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+        margin-bottom: 0px !important;
+      }
+
+      [data-css="tve-u-16d87789330"] {
+        width: 200px;
+        float: none;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        margin-bottom: 25px !important;
+      }
+
+      [data-css="tve-u-16d877a5cf4"] {
+        font-family: Raleway !important;
+        font-weight: 400 !important;
+      }
+
+      [data-css="tve-u-16d877a5cf4"] strong {
+        font-weight: 700 !important;
+      }
+
+      [data-css="tve-u-16d87871c6c"] {
+        max-width: 1000px;
+        float: none;
+        margin-bottom: 40px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+
+      [data-css="tve-u-16d87876542"] {
+        float: none;
+        margin-bottom: 20px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+
+      #tve_editor [data-css="tve-u-15ddcf2d07a"] {
+        color: rgb(118, 31, 31) !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d878910e3"] {
+        font-size: 22px !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d878910e5"] {
+        font-size: 18px !important;
+      }
+
+      [data-css="tve-u-16d878910e3"] {
+        line-height: 32px !important;
+      }
+
+      [data-css="tve-u-16d878910e5"] {
+        line-height: 30px !important;
+      }
+
+      [data-css="tve-u-16d878acc67"] {
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+      }
+
+      [data-css="tve-u-16d878ad224"] {
+        max-width: 1000px;
+        float: none;
+        margin: 0px auto !important;
+      }
+
+      [data-css="tve-u-16d878b472c"] {
+        width: 100%;
+        float: none;
+        margin: 0px auto !important;
+      }
+
+      [data-css="tve-u-16d878bb218"] {
+        max-width: 1000px;
+        float: none;
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+
+      [data-css="tve-u-16d878dd699"] {
+        padding-top: 60px !important;
+        padding-bottom: 70px !important;
+      }
+
+      [data-css="tve-u-16d878dec54"] {
+        background-color: rgb(255, 255, 255) !important;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://buythiz.com/wp-content/uploads/2019/10/piano-3112410.jpg") !important;
+        background-size: auto, cover !important;
+        background-position: 50% 50%, 50% 0% !important;
+        background-attachment: scroll, scroll !important;
+        background-repeat: no-repeat, no-repeat !important;
+      }
+
+      [data-css="tve-u-16d878ea1e3"] {
+        max-width: 900px;
+        float: none;
+        margin-bottom: 35px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d878f6cd2"] {
+        font-size: 30px !important;
+        color: rgb(255, 255, 255) !important;
+      }
+
+      [data-css="tve-u-16d878f95c7"] {
+        max-width: 900px;
+        float: none;
+        margin-bottom: 40px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+
+      [data-css="tve-u-16d878fa167"]+div {
+        clear: none;
+      }
+
+      [data-css="tve-u-16d878fa167"] {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        width: 990px;
+        margin-top: 0px !important;
+        margin-bottom: 40px !important;
+      }
+
+      [data-css="tve-u-15ddcf1c78f"] {
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+      }
+
+      [data-css="tve-u-16d8790792f"] {
+        max-width: 1000px;
+        float: none;
+        margin: 0px auto 30px !important;
+      }
+
+      [data-css="tve-u-16d879158e7"] {
+        line-height: 26px !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d879158e7"] {
+        font-size: 18px !important;
+        font-family: Raleway !important;
+        font-weight: 400 !important;
+        color: rgb(255, 255, 255) !important;
+      }
+
+      [data-css="tve-u-16d879158e7"] strong {
+        font-weight: 600 !important;
+      }
+
+      [data-css="tve-u-16d8791bf8b"] {
+        padding: 10px !important;
+        background-color: rgb(204, 51, 51) !important;
+        margin-bottom: 10px !important;
+      }
+
+      [data-css="tve-u-16d8791d90b"] {
+        font-size: 70px;
+        width: 70px;
+        height: 70px;
+        float: none;
+        margin: 0px auto 10px !important;
+      }
+
+      [data-css="tve-u-16d87a5ad12"] {
+        font-size: 70px;
+        width: 70px;
+        height: 70px;
+        float: none;
+        margin: 0px auto 10px !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d87a646de"] {
+        font-size: 16px !important;
+        color: rgb(255, 255, 255) !important;
+      }
+
+      [data-css="tve-u-16d87a646de"] {
+        line-height: 26px !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d87a6603a"] {
+        font-size: 16px !important;
+        font-family: Raleway !important;
+        font-weight: 400 !important;
+        color: rgb(255, 255, 255) !important;
+      }
+
+      [data-css="tve-u-16d87a6603a"] strong {
+        font-weight: 700 !important;
+      }
+
+      [data-css="tve-u-16d87aa9902"] {
+        max-width: 800px;
+        float: none;
+        margin: 0px auto !important;
+      }
+
+      [data-css="tve-u-16d87aaaf88"] {
+        padding: 13px !important;
+        background-color: rgb(204, 51, 51) !important;
+        margin-bottom: 10px !important;
+      }
+
+      [data-css="tve-u-16d87aacb9f"] {
+        padding: 13px !important;
+        background-color: rgb(204, 51, 51) !important;
+        margin-bottom: 10px !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d87aeb92b"] {
+        font-size: 23px !important;
+      }
+
+      [data-css="tve-u-16d87457b8d"]>.tcb-flex-col>.tcb-col {
+        justify-content: center;
+      }
+
+      [data-css="tve-u-16d87b11356"] {
+        padding-top: 60px !important;
+        padding-bottom: 70px !important;
+      }
+
+      [data-css="tve-u-16d87b485d7"] {
+        max-width: 900px;
+        float: none;
+        margin-bottom: 0px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+
+      [data-css="tve-u-16d87b48bdd"] {
+        max-width: 900px;
+        float: none;
+        margin-bottom: 0px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+
+      [data-css="tve-u-16d87b4a3ff"] {
+        max-width: 900px;
+        float: none;
+        margin-bottom: 0px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+
+      [data-css="tve-u-16d87b4a999"] {
+        max-width: 900px;
+        float: none;
+        margin-bottom: 0px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+
+      [data-css="tve-u-16d87b4af8b"] {
+        max-width: 900px;
+        float: none;
+        margin-bottom: 0px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d87b4f8de"] {
+        color: rgb(255, 39, 39) !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d87b5239c"] {
+        color: rgb(255, 255, 255) !important;
+      }
+
+      [data-css="tve-u-16d87b5468a"] {
+        font-size: 70px;
+        width: 70px;
+        height: 70px;
+        float: none;
+        margin: 0px auto 10px !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d87b5468a"]> :first-child {
+        color: rgb(211, 210, 210);
+      }
+
+      [data-css="tve-u-16d87b573cc"] {
+        font-size: 70px;
+        width: 70px;
+        height: 70px;
+        float: none;
+        margin: 0px auto 10px !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d87b573cc"]> :first-child {
+        color: rgb(211, 210, 210);
+      }
+
+      #tve_editor [data-css="tve-u-15dcd59b980"]> :first-child {
+        color: rgb(211, 210, 210);
+      }
+
+      #tve_editor [data-css="tve-u-16d87b5e831"] {
+        font-size: 16px !important;
+        color: rgb(255, 255, 255) !important;
+      }
+
+      [data-css="tve-u-16d87b5e831"] {
+        line-height: 26px !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d87b5f320"] {
+        font-size: 16px !important;
+        font-family: Raleway !important;
+        font-weight: 400 !important;
+        color: rgb(255, 255, 255) !important;
+      }
+
+      [data-css="tve-u-16d87b5f320"] strong {
+        font-weight: 700 !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d87b5fea1"] {
+        font-size: 16px !important;
+        font-family: Raleway !important;
+        font-weight: 400 !important;
+        color: rgb(255, 255, 255) !important;
+      }
+
+      [data-css="tve-u-16d87b5fea1"] strong {
+        font-weight: 700 !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d8791d90b"]> :first-child {
+        color: rgb(211, 210, 210);
+      }
+
+      #tve_editor [data-css="tve-u-16d87a5ad12"]> :first-child {
+        color: rgb(211, 210, 210);
+      }
+
+      [data-css="tve-u-16d87b7b2f6"] {
+        width: 81%;
+        float: none;
+        margin: 0px auto !important;
+      }
+
+      [data-css="tve-u-16d87b7de88"] {
+        max-width: 58.3%;
+      }
+
+      [data-css="tve-u-16d87b7dec7"] {
+        max-width: 41.7%;
+      }
+
+      [data-css="tve-u-16d87b7f173"] {
+        max-width: 1000px;
+        float: none;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        margin-bottom: 0px !important;
+      }
+
+      [data-css="tve-u-16d87b89855"] {
+        background-color: rgb(255, 255, 255) !important;
+      }
+
+      [data-css="tve-u-16d87b910d7"] {
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d87bbfd21"] {
+        font-size: 30px !important;
+      }
+
+      [data-css="tve-u-16d87bbfd25"] {
+        color: rgb(160, 0, 0) !important;
+      }
+
+      [data-css="tve-u-16d87be14d4"] {
+        color: rgb(204, 51, 51) !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d87c0072b"] {
+        font-size: 25px !important;
+        color: rgb(30, 30, 30) !important;
+      }
+
+      #tve_editor [data-css="tve-u-15ffd3185a5"] li {
+        margin-bottom: 10px !important;
+      }
+
+      [data-css="tve-u-16d87c1c5ad"] {
+        margin-bottom: 0px !important;
+      }
+
+      [data-css="tve-u-16d87c1c5af"] {
+        margin-bottom: 0px !important;
+      }
+
+      [data-css="tve-u-16d87c29964"] {
+        max-width: 1000px;
+        float: none;
+        margin: 50px auto 40px !important;
+      }
+
+      [data-css="tve-u-15ffd3feece"] {
+        padding: 0px !important;
+      }
+
+      [data-css="tve-u-15ffd3185a5"] {
+        margin: 0px !important;
+        padding: 0px !important;
+      }
+
+      [data-css="tve-u-16d87c43b24"] {
+        font-size: 22px !important;
+      }
+
+      [data-css="tve-u-16d87c44c5c"] {
+        font-size: 22px !important;
+      }
+
+      [data-css="tve-u-16d87c82cf6"] {
+        padding-top: 60px !important;
+        padding-bottom: 70px !important;
+      }
+
+      [data-css="tve-u-16d87c8a13b"] {
+        max-width: 900px;
+        float: none;
+        margin: 0px auto 30px !important;
+        padding: 0px !important;
+      }
+
+      [data-css="tve-u-16d87cbd427"] {
+        padding: 30px 25px !important;
+        margin-bottom: 15px !important;
+      }
+
+      [data-css="tve-u-16d87cbe9a4"] {
+        width: 72px;
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 50px;
+        overflow: hidden;
+        box-shadow: rgba(0, 0, 0, 0.19) 4px 3px 6px 3px;
+        float: none;
+        margin: 0px auto !important;
+      }
+
+      [data-css="tve-u-16d87cc3a1c"] {
+        margin-left: 0px !important;
+        padding-left: 1px !important;
+        margin-top: 0px !important;
+        padding-top: 0px !important;
+      }
+
+      [data-css="tve-u-16d87cd1d48"] {
+        max-width: 14.3%;
+      }
+
+      [data-css="tve-u-16d87cd1d90"] {
+        max-width: 85.7%;
+      }
+
+      [data-css="tve-u-16d87cd4c0c"] {
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+      }
+
+      [data-css="tve-u-16d87cd4ebe"] {
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+      }
+
+      [data-css="tve-u-16d87cd4ebe"]>.tcb-flex-col>.tcb-col {
+        justify-content: center;
+      }
+
+      #tve_editor [data-css="tve-u-16d87cdba99"] {
+        font-size: 12px !important;
+      }
+
+      [data-css="tve-u-16d87cdba99"] {
+        line-height: 19px !important;
+      }
+
+      [data-css="tve-u-16d87cde481"] {
+        margin-top: 15px !important;
+      }
+
+      [data-css="tve-u-16d87d0874b"] {
+        line-height: 0.8em !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d87d19637"] {
+        font-size: 26px !important;
+      }
+
+      [data-css="tve-u-16d87d19637"] {
+        line-height: 38px !important;
+      }
+
+      [data-css="tve-u-16d87d3f17a"] {
+        max-width: 1000px;
+        float: none;
+        margin: 0px auto 30px !important;
+      }
+
+      [data-css="tve-u-16d87d3f409"] {
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+      }
+
+      [data-css="tve-u-16d87d47387"] {
+        width: 190px;
+        float: none;
+        margin: 0px auto !important;
+      }
+
+      [data-css="tve-u-16d87d6e611"] {
+        margin-bottom: 5px !important;
+      }
+
+      [data-css="tve-u-16d87d7900e"] {
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+        padding: 15px !important;
+      }
+
+      [data-css="tve-u-16d87d7b976"] {
+        border-radius: 15px;
+        overflow: hidden;
+        background-color: rgb(255, 255, 255) !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d87d85069"] {
+        font-size: 15px !important;
+      }
+
+      [data-css="tve-u-16d87d85069"] {
+        line-height: 25px !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d87d87797"] {
+        color: rgb(160, 0, 0) !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d87d89768"] {
+        color: rgb(160, 0, 0) !important;
+      }
+
+      [data-css="tve-u-16d87d87797"] {
+        line-height: 27px !important;
+      }
+
+      [data-css="tve-u-16d8c6cb81e"] {
+        padding: 0px !important;
+      }
+
+      [data-css="tve-u-16d8c6cbaf6"] {
+        margin: 0px auto 10px !important;
+        max-width: 600px;
+        float: none;
+      }
+
+      [data-css="tve-u-16d8c6cb81e"]>.tcb-flex-col>.tcb-col {
+        justify-content: center;
+      }
+
+      [data-css="tve-u-16d8c6d6311"] {
+        width: 49px;
+        float: left;
+        margin: 0px 0px 0px 14px !important;
+      }
+
+      [data-css="tve-u-16d8c6e8713"] {
+        padding-top: 60px !important;
+        padding-bottom: 70px !important;
+      }
+
+      [data-css="tve-u-16d8c6e9c9e"] {
+        background-color: rgb(225, 225, 225) !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d8c8106ee"] {
+        font-size: 35px !important;
+      }
+
+      [data-css="tve-u-16d8c8106ee"] {
+        line-height: 45px !important;
+      }
+
+      [data-css="tve-u-16d8c812e5b"] {
+        margin-bottom: 0px !important;
+        max-width: 900px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        float: none;
+      }
+
+      [data-css="tve-u-16d8c81b2c0"]::after {
+        clear: both;
+      }
+
+      [data-css="tve-u-16d8c85540e"] {
+        line-height: 0.8em !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d8c882ef5"] {
+        color: rgb(51, 51, 51) !important;
+        font-size: 24px !important;
+        text-transform: none !important;
+      }
+
+      [data-css="tve-u-16d8c8b23f6"] {
+        max-width: 900px;
+        float: none;
+        margin: 0px auto 30px !important;
+        padding: 0px !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d8c8cf49d"] {
+        color: rgb(255, 255, 255) !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d8c8cf4a0"] {
+        color: rgb(255, 255, 255) !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d8c8cf4a3"] {
+        color: rgb(255, 255, 255) !important;
+      }
+
+      [data-css="tve-u-16d8c8d0fdd"] {
+        float: none;
+        margin-bottom: 0px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+
+      [data-css="tve-u-16d8c8d3ca0"] {
+        width: 243px;
+        margin: 0px auto !important;
+        float: none;
+      }
+
+      [data-css="tve-u-16d8c8d523f"] {
+        max-width: 1000px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        float: none;
+      }
+
+      [data-css="tve-u-16d8c8d621d"] {
+        max-width: 29.1%;
+      }
+
+      [data-css="tve-u-16d8c8d627d"] {
+        max-width: 70.9%;
+      }
+
+      #tve_editor [data-css="tve-u-16d8c8dd477"] {
+        color: rgb(255, 255, 255) !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d8c8dd479"] {
+        color: rgb(255, 255, 255) !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d8c8dd47a"] {
+        color: rgb(255, 255, 255) !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d8c8dd47c"] {
+        color: rgb(255, 255, 255) !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d8c8dd47e"] {
+        color: rgb(255, 255, 255) !important;
+      }
+
+      [data-css="tve-u-16d8c8e20ec"] {
+        font-size: 20px !important;
+      }
+
+      [data-css="tve-u-16d8c8cf4a0"] {
+        line-height: 0.8em !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d8c8e48bd"] {
+        color: rgb(255, 255, 255) !important;
+      }
+
+      [data-css="tve-u-16d8c8e48bd"] {
+        line-height: 0.8em !important;
+      }
+
+      [data-css="tve-u-16d8c8dd479"] {
+        line-height: 0.8em !important;
+      }
+
+      [data-css="tve-u-16d8c8dd47c"] {
+        line-height: 0.8em !important;
+      }
+
+      [data-css="tve-u-16d8c8ebd9f"] {
+        max-width: 900px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        float: none;
+        padding: 20px !important;
+        background-color: rgba(255, 255, 255, 0.5) !important;
+      }
+
+      [data-css="tve-u-16d8c91cd99"] {
+        margin: 0px auto !important;
+        max-width: 1000px;
+        float: none;
+      }
+
+      [data-css="tve-u-16d8c91d0a1"] {
+        padding: 0px !important;
+      }
+
+      [data-css="tve-u-16d8c91db2c"] {
+        max-width: 1000px;
+        float: none;
+        z-index: 3;
+        position: relative;
+        margin: 0px auto 40px !important;
+      }
+
+      [data-css="tve-u-16d8c921e59"] {
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+      }
+
+      [data-css="tve-u-16d8c921e59"]>.tve_faq:hover {
+        background-color: rgb(204, 51, 51) !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d8c927328"] {
+        font-size: 16px !important;
+        font-family: Montserrat !important;
+        font-weight: 400 !important;
+      }
+
+      [data-css="tve-u-16d8c927328"] strong {
+        font-weight: 700 !important;
+      }
+
+      [data-css="tve-u-16d8c927328"] {
+        line-height: 26px !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d8c93dc35"] {
+        font-size: 16px !important;
+        font-family: Montserrat !important;
+        font-weight: 400 !important;
+      }
+
+      [data-css="tve-u-16d8c93dc35"] strong {
+        font-weight: 700 !important;
+      }
+
+      [data-css="tve-u-16d8c93dc35"] {
+        line-height: 26px !important;
+      }
+
+      [data-css="tve-u-16d8c9988fe"] {
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+      }
+
+      [data-css="tve-u-16d8c9988fe"]>.tve_faq:hover {
+        background-color: rgb(204, 51, 51) !important;
+      }
+
+      [data-css="tve-u-16d8c9b2a59"] {
+        padding: 0px !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d8c9e1d04"] {
+        font-size: 30px !important;
+        color: rgb(246, 232, 229) !important;
+      }
+
+      [data-css="tve-u-16d8c9e3827"] {
+        padding: 40px 0px !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d8c9e7107"] {
+        font-size: 42px !important;
+        color: rgb(255, 255, 255) !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d8c9e98f3"] {
+        font-size: 25px !important;
+        color: rgb(255, 255, 255) !important;
+      }
+
+      [data-css="tve-u-16d8c9f7446"] {
+        margin-bottom: 10px !important;
+      }
+
+      [data-css="tve-u-16d8c9fa6b0"] {
+        width: 291px;
+        margin: 0px auto !important;
+        float: none;
+      }
+
+      [data-css="tve-u-16d8c9fde91"] {
+        margin-bottom: 20px !important;
+      }
+
+      [data-css="tve-u-16d8ca00cd3"] {
+        max-width: 800px;
+        float: none;
+        margin: 20px auto 40px !important;
+      }
+
+      [data-css="tve-u-16d8ca1cca9"]>ul>li {
+        margin-bottom: 20px;
+      }
+
+      [data-css="tve-u-16d8ca1cca9"] .tcb-numbered-list-number {
+        font-size: 34px;
+      }
+
+      #tve_editor [data-css="tve-u-16d8ca1cca9"] li {
+        margin-bottom: 10px !important;
+      }
+
+      [data-css="tve-u-16d8ca1cca9"] {
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+        padding: 0px !important;
+      }
+
+      [data-css="tve-u-16d8ca20d1c"] {
+        max-width: 36.8%;
+      }
+
+      [data-css="tve-u-16d8ca20d20"] {
+        max-width: 63.2%;
+      }
+
+      [data-css="tve-u-16d8ca2447e"] {
+        font-family: "Open Sans" !important;
+        font-weight: 300 !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d8ca2447f"] {
+        color: rgb(255, 255, 255) !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d8ca24481"] {
+        color: rgb(255, 255, 255) !important;
+      }
+
+      [data-css="tve-u-16d8ca24482"] {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+      }
+
+      [data-css="tve-u-16d8ca24483"]+div {
+        clear: both;
+      }
+
+      [data-css="tve-u-16d8ca24483"] {
+        float: left;
+        width: 100%;
+        top: 0px;
+        left: 0px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+
+      [data-css="tve-u-16d8ca24484"] {
+        min-height: 66px !important;
+      }
+
+      [data-css="tve-u-16d8ca2447f"] {
+        line-height: 24px !important;
+      }
+
+      [data-css="tve-u-16d8ca24485"] {
+        max-width: 1110px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+
+      [data-css="tve-u-16d8ca24487"] {
+        background-color: rgb(44, 45, 50) !important;
+      }
+
+      [data-css="tve-u-16d8ca24481"] {
+        line-height: 24px !important;
+      }
+
+      [data-css="tve-u-16d8ca24488"] {
+        max-width: 28.1%;
+      }
+
+      [data-css="tve-u-16d8ca24489"] {
+        max-width: 32.3%;
+      }
+
+      [data-css="tve-u-16d8ca2448a"] {
+        max-width: 39.6%;
+      }
+
+      #tve_editor [data-css="tve-u-16d8ca2448b"] {
+        color: rgb(255, 255, 255) !important;
+        font-family: "Open Sans" !important;
+        font-weight: 400 !important;
+      }
+
+      [data-css="tve-u-16d8ca2448b"] {
+        line-height: 24px !important;
+      }
+
+      [data-css="tve-u-16d8ccda1d5"] {
+        max-width: 750px;
+        float: none;
+        margin: 0px auto 30px !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d8ccddbc7"] .tcb-button-link {
+        line-height: 1.2em;
+        font-size: 24px;
+      }
+
+      [data-css="tve-u-16d8ccddbc7"] .tcb-button-link {
+        box-shadow: rgb(0, 0, 0) 0px 2px 5px 0px;
+        border-radius: 8px;
+        overflow: hidden;
+        padding: 20px 13px !important;
+        background-image: none !important;
+        background-color: rgb(0, 197, 149) !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d8ccddbc7"]:hover .tcb-button-link {
+        box-shadow: rgba(0, 0, 0, 0.7) 0px 9px 5px 0px !important;
+        background-color: rgb(47, 157, 131) !important;
+        background-image: none !important;
+      }
+
+      [data-css="tve-u-16d8ccddbc7"] {
+        margin: 0px !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d8cd1178d"] .tcb-button-link {
+        line-height: 1.2em;
+        font-size: 24px;
+      }
+
+      [data-css="tve-u-16d8cd1178d"] .tcb-button-link {
+        box-shadow: rgb(0, 0, 0) 0px 2px 5px 0px;
+        border-radius: 8px;
+        overflow: hidden;
+        padding: 20px 13px !important;
+        background-image: none !important;
+        background-color: rgb(0, 197, 149) !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d8cd1178d"]:hover .tcb-button-link {
+        box-shadow: rgba(0, 0, 0, 0.7) 0px 9px 5px 0px !important;
+        background-color: rgb(47, 157, 131) !important;
+        background-image: none !important;
+      }
+
+      [data-css="tve-u-16d8cd1178d"] {
+        margin: 0px !important;
+      }
+
+      [data-css="tve-u-16d8cd16c5e"] {
+        max-width: 900px;
+        float: none;
+        margin: 0px auto 30px !important;
+        padding: 0px !important;
+      }
+
+      [data-css="tve-u-16d8cd1b205"] {
+        max-width: 900px;
+        float: none;
+        margin: 0px auto 30px !important;
+        padding: 0px !important;
+      }
+
+      [data-css="tve-u-16d8cd1d4ae"] {
+        max-width: 900px;
+        float: none;
+        margin: 0px auto 30px !important;
+        padding: 0px !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d8cd1eaf7"] .tcb-button-link {
+        line-height: 1.2em;
+        font-size: 24px;
+      }
+
+      [data-css="tve-u-16d8cd1eaf7"] .tcb-button-link {
+        box-shadow: rgb(0, 0, 0) 0px 2px 5px 0px;
+        border-radius: 8px;
+        overflow: hidden;
+        padding: 20px 13px !important;
+        background-image: none !important;
+        background-color: rgb(0, 197, 149) !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d8cd1eaf7"]:hover .tcb-button-link {
+        box-shadow: rgba(0, 0, 0, 0.7) 0px 9px 5px 0px !important;
+        background-color: rgb(47, 157, 131) !important;
+        background-image: none !important;
+      }
+
+      [data-css="tve-u-16d8cd1eaf7"] {
+        margin: 0px !important;
+      }
+
+      [data-css="tve-u-16d8cd36e2e"] {
+        max-width: 750px;
+        float: none;
+        margin: 0px auto 30px !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d8cd382e6"] .tcb-button-link {
+        line-height: 1.2em;
+        font-size: 24px;
+      }
+
+      [data-css="tve-u-16d8cd382e6"] .tcb-button-link {
+        box-shadow: rgb(0, 0, 0) 0px 2px 5px 0px;
+        border-radius: 8px;
+        overflow: hidden;
+        padding: 20px 13px !important;
+        background-image: none !important;
+        background-color: rgb(0, 197, 149) !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d8cd382e6"]:hover .tcb-button-link {
+        box-shadow: rgba(0, 0, 0, 0.7) 0px 9px 5px 0px !important;
+        background-color: rgb(47, 157, 131) !important;
+        background-image: none !important;
+      }
+
+      [data-css="tve-u-16d8cd382e6"] {
+        margin: 0px !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d8cd48029"] {
+        color: rgb(255, 39, 39) !important;
+      }
+
+      [data-css="tve-u-16d8cd54a1c"] {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        width: 402px;
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d8cd561aa"] {
+        font-size: 42px !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d8cd56d11"] {
+        font-size: 30px !important;
+      }
+
+      [data-css="tve-u-16d8cd56d15"] {
+        color: rgb(204, 51, 51) !important;
+      }
+
+      [data-css="tve-u-16d8cd56d18"] {
+        color: rgb(160, 0, 0) !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d8cd58ac5"] {
+        font-size: 25px !important;
+        color: rgb(30, 30, 30) !important;
+      }
+
+      [data-css="tve-u-16d8cd59f45"] {
+        margin-bottom: 30px !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d8cd5d7a8"] {
+        color: rgb(160, 0, 0) !important;
+      }
+
+      [data-css="tve-u-16d8cd5ea88"] {
+        max-width: 1000px;
+        float: none;
+        z-index: 3;
+        position: relative;
+        margin: 0px auto 20px !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d8cd66dad"] {
+        color: rgb(160, 0, 0) !important;
+      }
+
+      [data-css="tve-u-16d8cd75d21"] {
+        margin-bottom: 30px !important;
+      }
+    }
+
+    @media (max-width: 1023px) {
+      [data-css="tve-u-15ddcf1c78f"]>.tcb-flex-col>.tcb-col {
+        justify-content: center;
+      }
+
+      [data-css="tve-u-16d8ca24482"] {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+      }
+
+      [data-css="tve-u-16d8ccda1d5"] {
+        max-width: 720px;
+      }
+
+      [data-css="tve-u-16d8ccddbc7"] .tcb-button-link {
+        padding: 10px !important;
+      }
+
+      [data-css="tve-u-16d8791d90b"] {
+        font-size: 65px !important;
+        width: 65px !important;
+        height: 65px !important;
+        margin-bottom: 15px !important;
+      }
+
+      [data-css="tve-u-16d87b7b2f6"] {
+        width: 296px;
+      }
+
+      [data-css="tve-u-15ffd27ac3e"] {
+        padding: 8px 0px !important;
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+      }
+
+      [data-css="tve-u-15ffd31cca0"] {
+        padding: 8px 0px !important;
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+      }
+
+      [data-css="tve-u-15ffd325122"] {
+        padding: 8px 0px !important;
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+      }
+
+      [data-css="tve-u-15dd0385a82"] {
+        max-width: 53.9%;
+      }
+
+      [data-css="tve-u-15dd0385aa7"] {
+        max-width: 46.1%;
+      }
+
+      [data-css="tve-u-16d8cd1178d"] .tcb-button-link {
+        padding: 10px !important;
+      }
+
+      [data-css="tve-u-16d8cd16c5e"] {
+        max-width: 720px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        float: none;
+      }
+
+      [data-css="tve-u-16d8cd1b205"] {
+        max-width: 720px;
+      }
+
+      [data-css="tve-u-16d8c8b23f6"] {
+        max-width: 720px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        float: none;
+      }
+
+      [data-css="tve-u-16d8cd1d4ae"] {
+        max-width: 720px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        float: none;
+      }
+
+      [data-css="tve-u-16d8cd1eaf7"] .tcb-button-link {
+        padding: 10px !important;
+      }
+
+      [data-css="tve-u-16d8c8ebd9f"] {
+        max-width: 700px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        float: none;
+      }
+
+      [data-css="tve-u-16d87c8a13b"] {
+        max-width: 720px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        float: none;
+      }
+
+      [data-css="tve-u-16d8ca20d1c"] {
+        max-width: 42.7%;
+      }
+
+      [data-css="tve-u-16d8ca20d20"] {
+        max-width: 57.3%;
+      }
+
+      [data-css="tve-u-16d8ca1cca9"] {
+        padding-right: 0px !important;
+      }
+
+      [data-css="tve-u-16d8cd36e2e"] {
+        max-width: 720px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        float: none;
+      }
+
+      [data-css="tve-u-16d8cd382e6"] .tcb-button-link {
+        padding: 10px !important;
+      }
+    }
+
+    @media (max-width: 767px) {
+      #tve_editor [data-css="tve-u-15e05070638"] {
+        font-size: 30px !important;
+      }
+
+      [data-css="tve-u-15dd0384941"] {
+        width: 279px;
+      }
+
+      [data-css="tve-u-15dcd4aa435"] {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+      }
+
+      [data-css="tve-u-15de4b38a3a"] {
+        text-align: center;
+      }
+
+      [data-css="tve-u-15de4b38a19"] {
+        text-align: center;
+      }
+
+      [data-css="tve-u-15de4b389fa"] {
+        text-align: center;
+      }
+
+      [data-css="tve-u-15de4b389da"] {
+        text-align: center;
+      }
+
+      [data-css="tve-u-15de4a56d82"] {
+        width: 120px;
+        margin-bottom: 0px !important;
+      }
+
+      [data-css="tve-u-15ddce8073b"] {
+        margin-left: -20px !important;
+        margin-right: -20px !important;
+      }
+
+      [data-css="tve-u-15ddcf2d07a"] {
+        line-height: 1.25em !important;
+      }
+
+      #tve_editor [data-css="tve-u-15ddcf2d07a"] {
+        font-size: 30px !important;
+      }
+
+      [data-css="tve-u-15ddcf2fd7c"] {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+      }
+
+      [data-css="tve-u-16d87b4f8de"] {
+        line-height: 1.25em !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d87b4f8de"] {
+        font-size: 33px !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d87bbfd21"] {
+        font-size: 20px !important;
+      }
+
+      [data-css="tve-u-16d87cbd427"] {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d8c8106ee"] {
+        font-size: 30px !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d8c9e1d04"] {
+        font-size: 20px !important;
+      }
+
+      [data-css="tve-u-16d8c9e3827"] {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d8c9e7107"] {
+        font-size: 30px !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d875e9363"] {
+        font-size: 40px !important;
+      }
+
+      [data-css="tve-u-16d875e9363"] {
+        line-height: 55px !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d8775ff5e"] {
+        font-size: 20px !important;
+      }
+
+      [data-css="tve-u-16d877a5cf4"] {
+        font-family: Raleway !important;
+        font-weight: 400 !important;
+      }
+
+      [data-css="tve-u-16d8775ff5e"] {
+        line-height: 32px !important;
+      }
+
+      [data-css="tve-u-16d8ccddbc7"] {
+        margin-bottom: 15px !important;
+      }
+
+      [data-css="tve-u-16d8cd48029"] {
+        line-height: 1.25em !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d8cd48029"] {
+        font-size: 30px !important;
+      }
+
+      [data-css="tve-u-16d8cd4a25b"] {
+        margin-bottom: 0px !important;
+      }
+
+      [data-css="tve-u-16d8cd4d74f"] {
+        margin-top: 30px !important;
+        margin-bottom: 30px !important;
+      }
+
+      [data-css="tve-u-16d8cd4effb"] {
+        margin-top: 30px !important;
+        margin-bottom: 0px !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d8cd51268"] {
+        font-size: 30px !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d87d19637"] {
+        font-size: 20px !important;
+      }
+
+      [data-css="tve-u-16d87d19637"] {
+        line-height: 29px !important;
+      }
+
+      [data-css="tve-u-16d8cd54a1c"] {
+        width: 306px;
+      }
+
+      #tve_editor [data-css="tve-u-16d8cd561aa"] {
+        font-size: 35px !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d8cd56d11"] {
+        font-size: 25px !important;
+      }
+
+      [data-css="tve-u-16d8cd56d15"] {
+        color: rgb(204, 51, 51) !important;
+      }
+
+      [data-css="tve-u-16d8cd56d18"] {
+        color: rgb(160, 0, 0) !important;
+      }
+
+      [data-css="tve-u-16d8cd56d11"] {
+        line-height: 31px !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d8cd58ac5"] {
+        font-size: 20px !important;
+      }
+
+      [data-css="tve-u-16d8cd59f45"] {
+        margin-bottom: 15px !important;
+      }
+
+      [data-css="tve-u-16d8cd1178d"] {
+        margin-bottom: 15px !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d8cd5d7a8"] {
+        font-size: 30px !important;
+      }
+
+      [data-css="tve-u-16d8cd5ea88"] {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        float: none;
+      }
+
+      [data-css="tve-u-16d8cd61941"] {
+        margin-top: 30px !important;
+        margin-bottom: 30px !important;
+      }
+
+      [data-css="tve-u-16d8cd63574"] {
+        margin-top: 30px !important;
+        margin-bottom: 30px !important;
+      }
+
+      [data-css="tve-u-16d8cd652ee"] {
+        margin-top: 30px !important;
+        margin-bottom: 30px !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d8cd66dad"] {
+        font-size: 30px !important;
+      }
+
+      [data-css="tve-u-16d8c6cb81e"] {
+        flex-wrap: nowrap !important;
+      }
+
+      #tve_editor [data-css="tve-u-15de4a609d7"] {
+        font-size: 20px !important;
+      }
+
+      [data-css="tve-u-15de4a609d7"] {
+        line-height: 28px !important;
+      }
+
+      [data-css="tve-u-16d8cd1eaf7"] {
+        margin-bottom: 15px !important;
+      }
+
+      [data-css="tve-u-16d87be14d4"] {
+        color: rgb(204, 51, 51) !important;
+      }
+
+      [data-css="tve-u-16d87bbfd25"] {
+        color: rgb(160, 0, 0) !important;
+      }
+
+      [data-css="tve-u-16d87bbfd21"] {
+        line-height: 25px !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d87c0072b"] {
+        font-size: 20px !important;
+      }
+
+      [data-css="tve-u-16d87c0072b"] {
+        line-height: 36px !important;
+      }
+
+      [data-css="tve-u-16d8cd75d21"] {
+        margin-bottom: 15px !important;
+      }
+
+      [data-css="tve-u-16d874704a0"] {
+        margin-bottom: 15px !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d87d89768"] {
+        font-size: 30px !important;
+      }
+
+      [data-css="tve-u-16d8c9fa6b0"] {
+        width: 213px;
+      }
+
+      [data-css="tve-u-16d8c9e7107"] {
+        line-height: 40px !important;
+      }
+
+      #tve_editor [data-css="tve-u-16d8c9e98f3"] {
+        font-size: 20px !important;
+      }
+
+      [data-css="tve-u-16d8cd382e6"] {
+        margin-bottom: 15px !important;
+      }
+
+      [data-css="tve-u-16d8c9e1d04"] {
+        line-height: 25px !important;
+      }
+    }
+
+    .thrv_text_element p {
+      margin: 0;
+    }
+
+    .thrv_heading h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      margin: 0;
+    }
+    html {
+      height: auto;
+    }
+
+    html.tcb-editor {
+      overflow-y: initial;
+    }
+
+    body:before,
+    body:after {
+      height: 0 !important;
+    }
+
+    .thrv_page_section .out {
+      max-width: none
+    }
+
+    .tve_wrap_all {
+      position: relative;
+    }

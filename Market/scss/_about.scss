@@ -1,0 +1,41 @@
+.about
+{
+  padding: 0px 0px 50px;
+  .heading{
+    text-align: center;
+    padding: 40px 0px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+    max-width: 700px;
+    display: block;
+    margin: 0px auto -100px;
+    transform: translateY(-100%);
+    background: #fff;
+    @media (max-width:991px) {
+      transform: translateY(0%);
+      margin: 0px auto 40px;
+      width:100%;
+    }
+    p
+    {
+      font-size: 16px;
+      font-family: popsb;
+      color:#999;
+      margin: 0px 0px 10px;
+    }
+    h1
+    {
+      font-size: calc(1.2vw + 1.2em);
+      color:#111;
+      font-family: popsb;
+      margin: 0px;
+    }
+  }
+  .text{
+    p
+    {
+      font-size: 18px;
+      font-family: popl;
+      text-align: justify;
+    }
+  }
+}

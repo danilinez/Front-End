@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+body{margin:0; padding:0; background:url(../images/bg_login.jpg) repeat; font-family:Tahoma; font-size:12px;}
+img{border:0; outline:none;}
+.header{background:url(../images/login_header_bg.jpg) repeat;}
+.login-line{background:url(../images/login_line.jpg) repeat-x; height:1px;}
+.login-heading{background:url(../images/login_heading_bg.jpg) repeat-x; color:#FFFFFF; }
+.login_field_bg{ background:url(../images/login_field_bg.png) no-repeat; }
+.login_field_290{color:#4A4A4A; width:290px; border:0; outline:0; background:none; font-size:11px; }
+
+
+.footer{ color:#4A4A4A; font-size:11px; line-height:18px;}
+.footer a{ text-decoration:underline; font-size:11px; color:#4A4A4A;}
+.footer a:hover{ text-decoration:underline; font-size:11px; color:#FFFFFF;}

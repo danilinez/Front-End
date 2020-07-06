@@ -1,0 +1,204 @@
+$green:#6db367;
+$greenb:#0fbb00;
+@font-face {
+  font-family: maven;
+  src: url('fonts/maven.ttf');
+}
+@font-face {
+  font-family: mavenbold;
+  src: url('fonts/mavenBold.ttf');
+}
+@font-face {
+  font-family: raleway;
+  src: url('fonts/raleway.ttf');
+}
+@font-face {
+  font-family: ralewaylight;
+  src: url('fonts/RalewayLight.ttf');
+}
+@font-face {
+  font-family: ralewaybold;
+  src: url('fonts/RalewayBold.ttf');
+}
+@font-face {
+  font-family: rsemi;
+  src: url('fonts/maven.ttf');
+}
+
+h1, h2, h3, h4, h5, h6, strong
+{
+  font-family: 'mavenbold', sans-serif;
+}
+a
+{
+  font-family: 'maven', sans-serif;
+}
+
+p, span, li
+{
+  font-family: 'raleway', sans-serif;
+}
+.hide
+{
+  display: none;
+}
+*
+{
+  box-sizing: border-box;
+}
+ul
+{
+  margin: 0px;
+  padding: 0px;
+  li
+  {
+    list-style-type: none;
+    display: block;
+  }
+}
+a
+{
+  text-decoration: none !important;
+}
+.btn-default
+{
+  border:none;
+  font-family: 'rsemi';
+  border-radius: 0px;
+  padding: 6px 20px;
+  border:1px solid #ccc;
+  background: linear-gradient(to right, #6db367 50%, #fff 50%);
+  font-size: 12px;
+  color:#fff;
+  transition: .3s ease-out;
+  color:rgb(133, 133, 133);
+  background-position: 100% center;
+  background-size: 202%;
+  &:hover
+  {
+    background-position: 0% center;
+    color:#fff;
+    border-color:$green;
+  }
+}
+.link
+{
+  text-decoration: none !important;
+  &:hover
+  {
+    color:$green;
+  }
+}
+html
+{
+  overflow-x: hidden !important;
+}
+button, html [type="button"], [type="reset"], [type="submit"] {
+  -webkit-appearance: none;
+}
+body
+{
+  background-color: #f7f8f9;
+  margin: 0px;
+  position: relative;
+  padding: 0px;
+  width: 100%;
+  font-family: raleway;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+  background-color: $green;
+  position: absolute; }
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 1px;
+  background-color: $green;
+}
+body::-webkit-scrollbar-track {
+  border-radius: 1px;
+  background-color: #fff }
+
+
+.fluid
+{
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+}
+
+button:active
+{
+  transform: scale(.97);
+}
+button:focus
+{
+  box-shadow: none !important;
+}
+*:focus
+{
+  outline-color: transparent !important;
+}
+
+.common_h
+{
+  color:$green;
+  font-size: 45px;
+  position: relative;
+  text-transform: uppercase;
+  margin: 10px 0px 20px;
+  font-family: mavenbold;
+}
+.pagination
+{
+  width:100%;
+  margin: 20px 0px 30px;
+  li
+  {
+    margin: 0px 3px;
+    
+    &:last-child,
+    &:first-child
+    {
+      a
+      {
+        border:none;
+        border-radius: 1px;
+        &:hover
+        {
+          background-color:transparent;
+          color:$greenb !important;
+        }
+      }
+    }
+    &.active
+    {
+      a
+      {
+        background-color:$green !important;
+        border-color:$green !important;
+      }
+    }
+    a{
+      border:1px solid #ddd;
+      background-color:transparent;
+      color:$green;
+      font-family: rsemi;
+      border-radius: 100%;
+      min-width: 40px;
+      font-size: 12px;
+      text-align: center;
+      height: 40px;
+      padding-top: 10px;
+      &:hover
+      {
+        background-color:$green;
+        color:#fff  !important;
+        border-color:$green;
+      }
+    }
+  }
+}
+
+@import 'header.scss';
+@import 'footer.scss';
+@import 'home.scss';

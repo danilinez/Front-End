@@ -1,0 +1,265 @@
+doctype html
+html(lang='en')
+  head
+    title iCarryit
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    include includes/links
+  body.client_body
+    //- navbar
+    include includes/client/navbar
+    //- navbar end
+    
+    //- Hompage Body
+    main.client
+      //- banner 
+      .banner
+        .container.banner_content_wrapper
+          .banner_content
+            h2.display-4 Crowd Delivery Service...
+            h1.banner_title Made Easy, On-Demand
+            p.banner_text 
+              | Lorem ipsum dolor sit amet, per no tamquam omittam appellantur.
+              | Meis fierent id est, hinc reque intellegat.
+            ul.list-inline.app-btns
+              li.list-inline-item
+                a.mr-2(href='asd')
+                  img(src='assets/images/astore.png', alt='app_store')
+              li.list-inline-item
+                a(href='asd')
+                  img(src='assets/images/gplay.png', alt='google_play')
+        img.banner_bg(src='assets/images/client/banner.png', alt='banner')
+      
+      //- Banner End 
+      
+      //- Why ICarryIt
+      .why_icarry
+        .scroll-for-more.customit
+          a(href='javascript:void(0)')
+            img.arrow-down(src='assets/images/down-arrow.svg', alt='chevron_down')
+            | Scroll for More
+        .container
+          h1.common-heading Why Send With ICarryIt?
+          .phone-holder
+            img.leftcurve(src='assets/images/left_curve.png', alt='mobile')
+            img.rightcurve(src='assets/images/right_curve.png', alt='mobile')
+            ul.left-list
+              li
+                span All in-One Courier Service
+                img(src='assets/images/parcel.png', alt='mobile')
+              li.mid_item
+                span Set the Price that You Pay
+                img(src='assets/images/pay.png', alt='mobile')
+              li
+                span Up-to-Date Delivery Notifications
+                img(src='assets/images/bell.png', alt='mobile')
+            img.img-fluid.phone(src='assets/images/client/phone.png', alt='mobile')
+            ul.right-list
+              li
+                img(src='assets/images/lock.png', alt='mobile')
+                span Easy and Secure In-App Payment
+              li.mid_item
+                img(src='assets/images/deliver.png', alt='mobile')
+                span Same Day Tracked Delivery
+              li
+                img(src='assets/images/conversation.png', alt='mobile')
+                span Contact the Carrier at Any Time
+
+      //- Why ICarryIt End
+      
+      //- Video Banner
+      .video
+        .container-fluid
+          .video_wrapper
+            .play_video
+              a(data-toggle='modal', href='#video_popup')
+                img.img-fluid(src='assets/images/client/play.png', alt='video_play')
+            img.img-fluid(src='assets/images/video_banner.jpg', alt='video_banner')
+            #video_popup.modal.fade
+              .modal-dialog.modal-lg
+                .modal-content
+                  .modal-body
+                    button.close(type='button', data-dismiss='modal') ×
+                    video.carry_video(width='100%', height='auto')
+                      source(src='assets/video/icarry.mp4', type='video/mp4')
+    
+      //- Video Banner End
+      
+      //- Testimonials 
+      .testimonial
+        .container
+          #testimonials.carousel.slide(data-ride='carousel')
+            ul.carousel-indicators
+              li.active(data-target='#testimonials', data-slide-to='0')
+              li(data-target='#testimonials', data-slide-to='1')
+              li(data-target='#testimonials', data-slide-to='2')
+                
+            .carousel-inner
+              .carousel-item.active
+                .row
+                  .col-md-5.py-4
+                    .img-holder
+                      span.rating.orange-bg 
+                        h3 5
+                        small / 5 Stars
+                      img.img-fluid(src='assets/images/client/testimonial.jpg', alt='person')
+                  .col-md-7.py-4
+                    .testimonial_content
+                      img.left(src='assets/images/left-quote.svg', alt='quote')
+                      p.comment
+                        em
+                          |Lorem Ipsum Drom is a dummy text used in web pages.
+                          |Lorem dort vi sure ana aquo ela men sera nev duro
+                          |Lorem Ipsum Drom is a dummy text used in web pages.
+                          |Lorem dort vi sure ana aquo ela men sera nev duro.
+                      img.float-right.right(src='assets/images/right-quote.svg', alt='quote')
+                      .sender
+                        h5
+                          strong.client-text Jessica Blake
+                          |, Sender
+              .carousel-item
+                .row
+                  .col-md-5.py-4
+                    .img-holder
+                      span.rating.orange-bg 
+                        h3 5
+                        small / 5 Stars
+                      img.img-fluid(src='assets/images/client/testimonial.jpg', alt='video_play')
+                  .col-md-7.py-4
+                    .testimonial_content
+                      img.left(src='assets/images/left-quote.svg', alt='quote')
+                      p.comment
+                        em
+                          |Lorem Ipsum Drom is a dummy text used in web pages.
+                          |Lorem dort vi sure ana aquo ela men sera nev duro
+                          |Lorem Ipsum Drom is a dummy text used in web pages.
+                          |Lorem dort vi sure ana aquo ela men sera nev duro.
+                      img.float-right.right(src='assets/images/right-quote.svg', alt='quote')
+                      .sender
+                        h5
+                          strong.client-text Jessica Blake
+                          |, Sender
+              .carousel-item
+                .row
+                  .col-md-5.py-4
+                    .img-holder
+                      span.rating.orange-bg 
+                        h3 5
+                        small / 5 Stars
+                      img.img-fluid(src='assets/images/client/testimonial.jpg', alt='video_play')
+                  .col-md-7.py-4
+                    .testimonial_content
+                      img.left(src='assets/images/left-quote.svg', alt='quote')
+                      p.comment
+                        em
+                          |Lorem Ipsum Drom is a dummy text used in web pages.
+                          |Lorem dort vi sure ana aquo ela men sera nev duro
+                          |Lorem Ipsum Drom is a dummy text used in web pages.
+                          |Lorem dort vi sure ana aquo ela men sera nev duro.
+                      img.float-right.right(src='assets/images/right-quote.svg', alt='quote')
+                      .sender
+                        h5
+                          strong.client-text Jessica Blake
+                          |, Sender
+      
+      //- Testimonials End
+      
+      //- FAQ's
+      .faqs.text-center
+        .container
+          h1.common-heading Frquently Asked Questions
+          .acordians
+            #accordion.panel-group.row.text-left
+              .col-md-6
+                .panel.panel-default
+                  a(data-toggle='collapse', data-parent='#accordion', href='#collapse1')
+                    .panel-heading
+                      h4.panel-title.client-text
+                        | Frequently Asked Questions Goes Here? 
+                        i.fa.fa-chevron-down
+                  #collapse1.panel-collapse.collapse
+                    .panel-body
+                      p 
+                        | Lorem Ipsum dor ana mevis bon dira obrigado 
+                        | sen avitro cas. Lorem Ipsum is adummy text used for 
+                        | Web Pages in developments.
+                .panel.panel-default
+                  a(data-toggle='collapse', data-parent='#accordion', href='#collapse2')
+                    .panel-heading
+                      h4.panel-title.client-text
+                        | Frequently Asked Questions Goes Here? 
+                        i.fa.fa-chevron-down
+                  #collapse2.panel-collapse.collapse
+                    .panel-body
+                      p
+                        | Lorem Ipsum dor ana mevis bon dira obrigado 
+                        | sen avitro cas. Lorem Ipsum is adummy text used for 
+                        | Web Pages in developments.
+                .panel.panel-default
+                  a(data-toggle='collapse', data-parent='#accordion', href='#collapse3')
+                    .panel-heading
+                      h4.panel-title.client-text
+                        | Frequently Asked Questions Goes Here?  
+                        i.fa.fa-chevron-down
+                  #collapse3.panel-collapse.collapse
+                    .panel-body
+                      p
+                        | Lorem Ipsum dor ana mevis bon dira obrigado 
+                        | sen avitro cas. Lorem Ipsum is adummy text used for 
+                        | Web Pages in developments.
+              .col-md-6
+                .panel.panel-default
+                  a(data-toggle='collapse', data-parent='#accordion', href='#collapse4')
+                    .panel-heading
+                      h4.panel-title.client-text
+                        | Frequently Asked Questions Goes Here?  
+                        i.fa.fa-chevron-down
+                  #collapse4.panel-collapse.collapse
+                    .panel-body
+                      p
+                        | Lorem Ipsum dor ana mevis bon dira obrigado 
+                        | sen avitro cas. Lorem Ipsum is adummy text used for 
+                        | Web Pages in developments.
+                .panel.panel-default
+                  a(data-toggle='collapse', data-parent='#accordion', href='#collapse5')
+                    .panel-heading
+                      h4.panel-title.client-text
+                        | Frequently Asked Questions Goes Here?  
+                        i.fa.fa-chevron-down
+                  #collapse5.panel-collapse.collapse
+                    .panel-body
+                      p
+                        | Lorem Ipsum dor ana mevis bon dira obrigado 
+                        | sen avitro cas. Lorem Ipsum is adummy text used for 
+                        | Web Pages in developments.
+          //- download app
+          .download.text-left.client-gradient
+            .row
+              .col-md-6
+                .context
+                  h2 Download for Free!
+                  p 
+                    | Lorem ipsum dolor sit amet, per no tamquam omittam
+                    | appellantur. Meis fierent id est, hinc reque intellegat.
+                  ul.list-inline.app-btns
+                    li.list-inline-item
+                      a.mr-2(href='asd')
+                        img(src='assets/images/astore.png', alt='app_store')
+                    li.list-inline-item
+                      a(href='asd')
+                        img(src='assets/images/gplay.png', alt='google_play')
+              .col-md-6
+                .flip
+                  img.img-fluid(src='assets/images/client/tilt_mobile.png', alt='flip')
+                  
+      //- FAQ's End
+      
+      //- Footer
+      include includes/client/footer      
+      //- Footer End
+    
+    
+    //- Hompage Body End
+    
+    //- scripts
+    include includes/scripts

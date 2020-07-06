@@ -1,0 +1,62 @@
+.steps
+{
+  padding: 60px 0px;
+  ul
+  {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width:991px) {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    li
+    {
+      display: flex;
+      align-items: center;
+      @media (max-width:991px) {
+        justify-content: center;        
+        flex-direction: column;
+        text-align:center;
+      }
+      @media (max-width:767px) {
+        width:50%;
+        margin-bottom: 20px;
+      }
+      img
+      {
+        width: 80px;
+        @media (max-width:1199px) {
+          width: 70px;
+        }
+      }
+      .text
+      {
+        padding-left: 15px;
+        @media (max-width:991px) {
+          padding-left: 0px;
+        }
+        h3
+        {
+          font-family: extrabold;
+          color:$text;
+          text-transform: uppercase;
+          margin: 0px;
+          font-size: 18px;
+          @media (max-width:991px) {
+            margin: 10px 0px 0px;
+          }
+          span
+          {
+            font-family: extrabold;
+            color:$red;
+          }
+        }
+        p
+        {
+          margin: 0px;
+          color:#7d7d7d;
+        }
+      }
+    }
+  }
+}

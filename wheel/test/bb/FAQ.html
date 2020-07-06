@@ -1,0 +1,435 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home - WheelHealthcare</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <meta charset="UTF-8" />
+
+    <!-- <link rel="shortcut icon" href="assets/img/favicon.ico" />-->
+    <link href="assets-new/plugins/twitter-bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets-new/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="assets-new/plugins/ResponsiveSlides.js/responsiveslides.min.css" rel="stylesheet"/>
+    <link href="assets-new/plugins/jqueryui/css/jquery-ui.min.css" rel="stylesheet"/>
+    <link href="assets-new/css/style.css" rel="stylesheet" />
+
+    <!--[if lt IE 9]>
+        <script src="assets-new/plugins/html5shiv/html5shiv.min.js"></script>
+        <script src="assets-new/plugins/html5shiv/html5shiv-printshiv.min.js"></script>
+        <script src="assets-new/plugins/respond.js/respond.min.js"></script>
+        <script src="assets-new/js/matchMedia.min.js"></script>
+    <![endif]-->
+
+    <script src="assets-new/plugins/jquery/jquery.min.js"></script>
+    <script src="assets-new/plugins/jqueryui/jquery-ui.min.js"></script>
+    <script src="assets-new/plugins/jquery-migrate/jquery-migrate.min.js"></script>
+    <script src="assets-new/plugins/twitter-bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets-new/plugins/ResponsiveSlides.js/responsiveslides.min.js"></script>
+    <script src="assets-new/js/bootstrap-hover-dropdown.js"></script>
+    <script src="assets-new/js/jquery.equalheights.js"></script>
+    <script src="assets-new/plugins/jquery-scrolltofixed/jquery-scrolltofixed-min.js"></script>
+    <script src="assets-new/js/application.js"></script>
+
+    <script type="text/javascript">
+      window.onload = function () {
+        $.ajax({
+          type: "POST",
+          url: "LinezWS_WHCS.asmx/FnDeafultMedicalList",
+          data: "{}",
+          contentType: "application/json; charset=utf-8",
+          dataType: "json",
+          success: function (response) {
+
+            var result = response.d;
+            var josonProductsData = jQuery.parseJSON("[" + result + "]");
+            //var josonProductsData = response;
+            var myHTML = '';
+
+            for (var row = 0; row < Math.floor(josonProductsData[0].length); row++) {
+
+              myHTML += '<li>' + josonProductsData[0][row].sName + '</li>'
+            }
+
+            document.getElementById("medicines").innerHTML = myHTML;
+
+          },
+          failure: function (msg) {
+            alert(msg);
+          }
+        });
+
+
+
+      }
+
+
+
+      function Medicine(HrefValue) {
+
+        var href = HrefValue;
+        $.ajax({
+          type: "POST",
+          url: "LinezWS_WHCS.asmx/fnMedicinesList",
+          data: "{'sHref':'" + href + "'}",
+          contentType: "application/json; charset=utf-8",
+          dataType: "json",
+          success: function (response) {
+
+            var result = response.d;
+            var josonProductsData = jQuery.parseJSON("[" + result + "]");
+            //var josonProductsData = response;
+            var myHTML = '';
+
+            for (var row = 0; row < Math.floor(josonProductsData[0].length); row++) {
+
+              myHTML += '<li>' + josonProductsData[0][row].sName + '</li>'
+            }
+
+
+            document.getElementById("medicines").innerHTML = myHTML;
+
+          },
+          failure: function (msg) {
+            alert(msg);
+          }
+        });
+
+      }
+
+
+
+      function submitForm() {
+        var strName = document.getElementById("txtUsername");
+
+        var strPassword = document.getElementById("txtPassword");
+
+
+
+        if (strName.value.length < 1) {
+
+          strName.focus();
+
+          alert('Please enter username');
+
+          return false;
+
+        }
+
+        if (strPassword.value.length < 1) {
+
+          strPassword.focus();
+
+          alert('Please enter password');
+
+          return false;
+
+        }
+
+
+        fnValidateUser();
+
+      }
+
+      function fnValidateUser() {
+
+        var param = new Object();
+
+        //            txtUsername txtPassword
+        param.sUsername = $('#txtUsername').val();
+        param.sPassword = $('#txtPassword').val();
+        return $.ajax({
+          type: "POST",
+          url: "LinezWS_WHCS.asmx/fnValidateUser",
+          data: JSON.stringify(param),
+          contentType: "application/json; charset=utf-8",
+          dataType: "json",
+          success: function (msg) {
+            if (msg.d == "1") {
+              document.WHCSLive.submit();
+            }
+            else {
+              alert("Invalid Email/Password! Please Try Again.");
+            }
+
+          },
+          failure: function (msg) {
+            alert(msg);
+          }
+        });
+
+      }
+    </script>
+  </head>
+  <body>
+
+    <section id="top-bar">
+      <div class="container-fluid">
+        <div class="row">
+
+          <article class="col-sm-3">
+            <a href="index.html" id="logo"><img src="assets-new/img/logowheel.jpeg" alt="" class="img-responsive"/></a>
+          </article>
+          <nav class="col-sm-9">
+            <ul class="nav nav-tabs">
+              <li role="presentation" class="active"><a href="#">Personal</a></li>
+              <li role="presentation"><a href="#">Business</a></li>
+              <li role="presentation"><a href="contact_us.html">Contact Us</a></li>
+            </ul>
+            <ul class="list-inline">
+              <li><a href="about_us.html">About WHC</a></li>
+              <li><a href="careers.html">Careers</a></li>
+            </ul>
+          </nav>
+
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </section>
+
+
+    <header id="header">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-sm-2 col-sm-offset-5">
+
+            <button type="button" class="btn btn-info btn-sm btn-block">Login to myWHC</button>
+
+          </div>
+          <div class="col-sm-2"><button type="button" class="btn btn-info btn-sm btn-block">Request Call Back</button></div>
+          <div class="col-sm-3">
+
+            <div class="input-group input-group-sm">
+              <input type="text" class="form-control" placeholder="Search">
+              <span class="input-group-btn">
+                <button class="btn btn-info" type="button"><i class="fa fa-search"></i></button>
+              </span>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+
+        </div>
+      </div>
+      <div id="start-sticky-header"></div>
+      <div class="header-sticky">
+        <div class="container">
+          <nav class="navbar navbar-default " role="navigation">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-menu">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand visible-xs-block" href="#none" data-toggle="collapse" data-target="#main-menu">Menu</a>
+            </div>
+            <div class="collapse navbar-collapse" id="main-menu">
+              <ul class="nav navbar-nav">
+                <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+                <li class="dropdown dropdown-large">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products & Services <span class="caret"></span></a>
+                  <ul class="dropdown-menu dropdown-menu-large">
+                    <li class="container">
+                      <div class="row">
+
+                        <div class="col-sm-4">
+                          <ul class="list-unstyled"> <li class="dropdown-header">Products</li>
+                            <li><a href="prescription_and_non-prescription_medicine.html">Prescription &amp; Non-Prescription Medicine</a></li>
+                            <li><a href="dme_and_supplies.html">Durable Medical Equipment (DME) and Supplies</a></li>
+                            <li><a href="compounding.html">Compounding</a></li></ul>
+                        </div>
+                        <div class="col-sm-4">
+                          <ul class="list-unstyled">
+                            <li class="dropdown-header">Services</li>
+                            <li><a href="integrated_healthcare_cloud_technologies.html">Integrated Healthcare Cloud Technologies</a></li>
+                            <li><a href="personalized_healthcare_for_all.html">Personalized Healthcare For All</a></li>
+                            <li><a href="diabetes_education.html">Diabetes Education</a></li>
+                            <li><a href="disease_management.html">Disease Management</a></li>
+                            <li><a href="workers_compensation_pharmacy_solution.html">Workers&prime; Compensation Pharmacy Solution</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-sm-4">
+                          <ul class="list-unstyled">
+                            <li class="dropdown-header">Promotional Products</li>
+                            <li><a href="promotional_products.html">All Promotional Products</a></li>
+                            <li><a href="weight_loss_kit.html">Weight Loss Kit - $399</a></li>
+                            <li><a href="vitamins_for_life.html">Vitamins for life - $399</a></li>
+                            <li><a href="diaetic_kit.html">Diabetic Kit - $399</a></li>
+                            <li><a href="smart_home_health_care_kit.html">Smart Home Health Care Kit - $399</a></li>
+                            <li><a href="energy_saving_kit.html">Energy Saving Kit - $399</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown dropdown-large"><a href="how_it_works.html" class="dropdown-toggle" data-toggle="dropdown">How It Works<span class="caret"></span></a>
+               <ul class="dropdown-menu dropdown-menu-large">
+                    <li class="container">
+                      <div class="row">
+
+                        <div class="col-sm-4">
+                          <ul class="list-unstyled"> <li class="dropdown-header">Prescription Transfer</li>
+                           <li><a href="prescription_transfer.html">Prescription Transfer</a></li>
+                           <!--  <li><a href="dme_and_supplies.html">Durable Medical Equipment (DME) and Supplies</a></li>
+                            <li><a href="compounding.html">Compounding</a></li>--></ul>
+                        </div>
+                        <div class="col-sm-4">
+                          <ul class="list-unstyled">
+                            <li class="dropdown-header">Payment Methods</li>
+                           <li><a href="payment_methods.html">Payment Methods</a></li>
+                           <!--  <li><a href="personalized_healthcare_for_all.html">Personalized Healthcare For All</a></li>
+                            <li><a href="diabetes_education.html">Diabetes Education</a></li>
+                            <li><a href="disease_management.html">Disease Management</a></li>
+                            <li><a href="workers_compensation_pharmacy_solution.html">Workers&prime; Compensation Pharmacy Solution</a></li>-->
+                          </ul>
+                        </div>
+                        <div class="col-sm-4">
+                          <ul class="list-unstyled">
+                            <li class="dropdown-header">Delivery Options</li>
+                            <li><a href="delivery_options.html">Delivery Options</a></li>
+                           <!-- <li><a href="weight_loss_kit.html">Weight Loss Kit - $399</a></li>
+                            <li><a href="vitamins_for_life.html">Vitamins for life - $399</a></li>
+                            <li><a href="diaetic_kit.html">Diabetic Kit - $399</a></li>
+                            <li><a href="smart_home_health_care_kit.html">Smart Home Health Care Kit - $399</a></li>
+                            <li><a href="energy_saving_kit.html">Energy Saving Kit - $399</a></li>-->
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                
+                </li>
+                <li class="active"><a href="FAQ.html">FAQ's</a></li>
+              </ul>
+            </div>
+          </nav>
+
+        </div>
+      </div>
+    </header>
+
+  <main id="main">
+    <div class="container">
+      <img src="assets/img/Regenwasser_FragenundAntworten.jpg" alt="" class="img-responsive"/>
+      <div class="row">
+
+        <article class="col-sm-12">
+          <div class="well well-sm">
+            <h1 class="page-title">Frequently Asked Questions</h1>
+
+            <p class="text-justify"><strong>What are the benefits of signing up with WheelHealthcare?</strong><br>
+              Our membership comes with several great <i>benefits</i>, including members-only savings, 24/7 access to a pharmacist via online chat, and a simple way to manage your healthcare.
+
+              <br><br><strong>Can I still have my prescriptions mailed to me using Wheelhealthcare online? </strong><br>
+              Absolutely – the convenience of having your prescription mailed to you is also available on Wheelhc.com. Shipping is FREE if you select standard shipping.
+
+              <br><br><strong>How can I contact someone at WHC with questions and comments?</strong><br>
+              Visit our <i>Contact Us </i>section for information on all of the ways you can get in touch when you have a question or comment.
+
+              <br><br><strong>How do I sign up?</strong><br>
+              Go to our <i>signup page</i>, and fill in your information. You can also call us directly.
+
+              <br><br><strong>How do I fill a prescription?</strong><br>
+              For a new prescription, take the prescription from your healthcare provider and send us directly or your health care provider may choose to send or call in your prescription to our pharmacist directly. Once the prescription is in our system, we can take care of everything!!!!<br><br>
+              You can also order a refill using our automated voice response unit at 1-855-WheelHC or through the Mobile App.
+
+              <br><br><strong>How can I keep track of prescription refills with email and text reminders from WheelHealthcare?</strong><br>
+              Pharmacy email and text reminders from WHC are a timely way to remember to refill your prescription. <em><u>Sign in or create your online account</em></u>. After setting up your reminders, we’ll notify you via email or text message when your order is ready. All prescription refills ship free to your home or can be picked up at your neighborhood store.
+
+              <br><br><strong>How do I view my prescription history?</strong><br>
+              Our members can view <em>prescription history</em> online in an easy-to-read chart.
+
+              <br><br><strong>What is the return policy?</strong><br>
+              We guarantee total customer satisfaction. If you are not completely satisfied with your online purchase, you may return unused merchandise within 30 days of the original shipped date for a prompt refund. If you are returning a promotional package, you will be refunded for the merchandise total, plus applicable sales tax paid. Shipping and handling charges are not refundable unless product arrives damaged or the incorrect product was shipped. Please allow 3 business days for us to process your return. Please allow 1 to 2 billing cycles for the credit to show up on your credit card statement.
+
+              <br><br><strong>Will my medical records be kept private?</strong><br>
+              We understand that your health is your own private business. We can assure you that we will treat your medical and claim records and information in a confidential manner.
+              WheelHealthcare respects your privacy and is required by federal law to comply with the Health Insurance Portability and Accountability Act and Privacy regulations (45 C.F.R. Parts 160-164, collectively “HIPAA”). HIPAA allows for use and disclosure of your protected health information for health care operations and payment without your prior written consent. The following is a list of some of the allowed uses and disclosures, but is not an all inclusive list:
+
+            <ul>
+              <li>Claim processing</li>
+              <li>Performing peer review, utilization review, and medical audits</li>
+              <li>Administration of any programs established by us for quality health care and control of health care costs</li>
+              <li>Date of Injury/Accident</li>
+              <li>Adjuster&#39;s Contact Information (Name and Phone Number)</li>
+            </ul>
+            WheelHealthcare has taken important steps to protect your privacy:
+            <ul>
+              <li>Our employees have been trained to understand the importance of safeguarding your privacy. In fact, they sign confidentiality agreements to ensure they will carry out our established policies.</li>
+              <li>Employees only have access to information needed to perform their job functions.</li>
+              <li>Your oral, written, and electronic information is protected through data system security features and through established policies and procedures.
+              </li>
+              <li>Our contracted practitioners and providers follow state and federal confidentiality and privacy laws and regulations. They are committed to protecting your medical information.</li>
+              <li>WheelHealthcare Suppliers must sign Business Associate Agreements if they receive personal health information for purposes of plan administration, such as use of measurement data to improve quality.</li>
+              <li>WheelHealthcare Suppliers must sign Business Associate Agreements if they receive personal health information for purposes of plan administration, such as use of measurement data to improve quality.</li>
+              <li>It is our policy not to release member specific health information to employers unless allowed by law.</li>
+            </ul>
+
+            You also have rights related to the privacy of your health care information:
+            <ul>
+              <li>You have the right to approve the release of personal health information in special circumstances.</li>
+              <li>You have a right to request authorization for another individual to access your health care information who, under law, does not already have authorization to access the information.</li>
+              <li>You have the right to access your records received by WheelHealthcare from health care providers.</li>
+              <li>You have the right to request restrictions on your health care information.</li>
+            </ul>
+            <p>You can take comfort in knowing that privacy is important to us. We encourage you to call Customer Service if you have questions about our privacy policies and practices.</p>
+
+            <strong>What can I do if I have a problem or complaint?</strong>
+            <br>We hope you will be completely satisfied with our products and services. But if you should ever have a complaint or problem regarding the quality, accessibility, adequacy of facilities, or timeliness of services, or you wish to dispute a decision, please call Customer Service. Your satisfaction with our network of providers is very important to us. If you are unhappy with the quality of medical care or service that you have received from your provider or their office staff, please call Customer Service. Customer Service will work with you to resolve your complaint or assist you in finding another provider.
+
+            <br><br><strong>What if I have special language needs?</strong>
+            <br>If English is not your primary language, we can still assist you or family members with questions about your health. To find out about our translation services, please call your local Customer Service number. Spanish-speaking members will be offered the option of speaking with one of our bilingual representatives. Members needing help in other languages should indicate the specific language needed.
+
+
+
+          </div>
+        </article>
+
+
+      </div>
+
+    </div>
+  </main>
+
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+
+        <aside class="col-sm-8">
+
+          <ul class="list-inline links">
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="affiliates.html">Affiliates</a></li>
+            <li><a href="partners.html">Partners</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+            <li><a href="sitemap.html">Site Map</a></li>
+            <li><a href="FAQ.html">FAQ's</a></li>
+          </ul>
+        </aside>
+        <aside class="col-sm-4">
+          <ul class="list-inline social-icons">
+            <li><a href="https://www.facebook.com/pages/Wheel-Healthcare-Inc/537220013044604?fref=ts" target="_BLANK" class="fb"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/wheelhealthcare" target="_BLANK" class="tw"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://plus.google.com" target="_BLANK" class="gplus"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="https://www.linkedin.com/" target="_BLANK" class="in"><i class="fa fa-linkedin"></i></a></li>
+
+            <li><a href="http://www.youtube.com/" target="_BLANK" class="utube"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="http://www.flickr.com/" target="_BLANK" class="flckr"><i class="fa fa-flickr"></i></a></li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </footer>
+
+  <footer id="footer-bottom">
+    <div class="container">
+      <p>&copy; 2014 Wheel HealthCare Services, Inc. All rights reserved. <a href="privacy.html">Privacy </a> &middot; <a href="terms.html">Terms of Use</a></p>
+    </div>
+  </footer>
+
+  <a href="#none" class="scrollup">Scroll</a>
+</body>
+</html>

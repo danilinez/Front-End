@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home | Website Name</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/uikit.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
+    />
+    <link rel="stylesheet" href="assets/css/master.css" />
+
+    <style>
+      .search-bar .input-group
+      {
+        margin: 0px auto;
+        max-width:450px;
+      }
+      
+      .search-bar .input-group .btn-danger
+      {
+        font-family: 'source' !important;
+        font-size: 20px;
+        padding: 0px 20px;
+        box-shadow: none !important;
+        outline :transparent;
+        border:none;
+        border-bottom-right-radius: 3px;
+        border-top-right-radius: 3px;
+        background: #fe121b;
+        position: relative;
+        z-index: 100;
+      }
+      .search-bar .input-group .btn-danger i
+      {
+        font-size: 14px;
+        margin-right:2px;
+        position: relative;
+        top: -2px;
+      }
+      .search-bar .input-group .btn-danger:active
+      {
+        transform: scale(1);
+      }
+      .search-bar .input-group .form-control
+      {
+        font-family: source;
+        border-radius: 0px;
+        box-shadow: none !important;
+        outline :transparent;
+        border:none;
+        border-bottom-left-radius: 3px;
+        border-top-left-radius: 3px;
+        height: 42px;
+        background: #eee;
+      }
+      @media (max-width:576px)
+      {
+        .search-bar .input-group
+        {
+          max-width:100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+
+    <div class="header">
+      <div class="container">
+        <div class="logo">
+          <a href="index.html">
+            <img src="assets/images/logo.png" alt="_logo" />
+          </a>
+        </div>
+        <div class="search-bar">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Search">
+            <div class="input-group-append">
+              <button class="btn btn-danger" type="submit"><i class="fas fa-search"></i> Search</button> 
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="navigation">
+            <button class="btn btn-default btn-toggle">
+              <i class="fas fa-bars"></i> Menu
+            </button>
+            <ul>
+              <li>
+                <a href="#">next gen tour</a>
+                <ul class="sub_menu">
+                  <li><a href="#">2018 next gen tour</a></li>
+                  <li><a href="#">2017 next gen tour</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Sponsors & Partners</a></li>
+              <li><a href="#">Community</a></li>
+              <li><a href="#">NEWs</a></li>
+              <li><a href="#">About</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- navigation -->
+      <!-- navigation End -->
+
+
+      <div class="row">
+        <div class="content">
+          <h1>2019 STANDINGS</h1>
+          <h2 class="common_h">2019 OVERALL NEXT GEN POINTS STANDINGS</h2>
+          <ul>
+            <li>
+              <a href="#">Alan Barker - 124 Points</a>
+            </li>
+            <li>
+              <a href="#">Josh Smuckle - 120 Points</a>
+            </li>
+            <li>
+              <a href="#">That Guy - 120 Points</a>
+            </li>
+            <a href="#" class="link">View Overall Standings</a>
+          </ul>
+          <div class="row mt-4">
+            <div class="col-12">
+              <div class="form-group form-inline float-right">
+                <label for="srch" class="mr-1"> Search </label>
+                <input class="form-control" type="text" id="srch" />
+              </div>
+              <div class="form-group form-inline float-left">
+                <label for="chooze_records" class="mr-1">
+                  Record Per Page
+                </label>
+                <select class="form-control" id="chooze_records">
+                  <option value="10">10</option>
+                  <option value="25">25</option>
+                  <option value="50">50</option>
+                  <option value="100">100</option>
+                  <option value="200">200</option>
+                  <option value="all">all</option>
+                </select>
+              </div>
+              <div class="table-responsive data_table">
+                <table class="table table-bordered table-striped">
+                  <thead>
+                    <tr role="row">
+                      <th class="sorting">Player</th>
+                      <th class="sorting">City</th>
+                      <th class="sorting">State</th>
+                      <th class="sorting">Postcode</th>
+                      <th class="sorting">Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr role="row" class="odd">
+                      <td>"Talyn" Christopher Strum</td>
+                      <td>Williamsburg</td>
+                      <td>Verginia</td>
+                      <td>23185</td>
+                      <td>
+                        <button class="btn btn-success btn-sm" type="button">
+                          Add Player
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <ul class="pagination justify-content-end">
+                <li class="page-item">
+                  <a class="page-link" href="javascript:void(0);">Previous</a>
+                </li>
+                <li class="page-item active">
+                  <a class="page-link" href="javascript:void(0);">1</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="javascript:void(0);">2</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="javascript:void(0);">Next</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <h2 class="common_h">Region Leaders</h2>
+          <h2 class="common_h light">Northwest Region</h2>
+          <ul>
+            <li>
+              <a href="#">Alan Barker - 124 Points</a>
+            </li>
+            <li>
+              <a href="#">Josh Smuckle - 120 Points</a>
+            </li>
+            <li>
+              <a href="#">That Guy - 120 Points</a>
+            </li>
+            <a href="#" class="link">View Overall Standings</a>
+          </ul>
+          <h2 class="common_h light">Southwest Region</h2>
+          <ul>
+            <li>
+              <a href="#">Alan Barker - 124 Points</a>
+            </li>
+            <li>
+              <a href="#">Josh Smuckle - 120 Points</a>
+            </li>
+            <li>
+              <a href="#">That Guy - 120 Points</a>
+            </li>
+            <a href="#" class="link">View Overall Standings</a>
+          </ul>
+          <h2 class="common_h">Southwest Region</h2>
+          <ul class="bulleted">
+            <li>
+              <a href="#">Albama</a>
+            </li>
+            <li>
+              <a href="#">Alaska</a>
+            </li>
+            <li>
+              <a href="#">Arizona</a>
+            </li>
+            <li>
+              <a href="#">California</a>
+            </li>
+            <li>
+              <a href="#">Colorado</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="offset-lg-8 col-lg-4 text-center">
+            <ul class="social_links">
+              <li>
+                <a class="fb" href="#"> <i class="fab fa-facebook-f"></i> </a>
+              </li>
+              <li>
+                <a class="twt" href="#"> <i class="fab fa-twitter"></i> </a>
+              </li>
+              <li>
+                <a class="yt" href="#"> <i class="fab fa-youtube"></i> </a>
+              </li>
+              <li>
+                <a class="insta" href="#"> <i class="fab fa-instagram"></i> </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="copyright">&copy; 2018 Next Generation Disc Golf, LLC</p>
+      </div>
+    </footer>
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/bootstrapbundle.js"></script>
+    <script src="assets/js/uikit.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(".btn-toggle").click(function() {
+          $(".navigation > ul").slideToggle();
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,101 @@
+.products
+{
+  padding: 60px 0px;
+  .item
+  {
+    margin-bottom: 30px;
+    .img-holder
+    {
+      padding-top: 120%;
+      position: relative;
+      z-index: 50;
+      overflow: hidden;
+      .mask
+      {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        bottom:-80px;
+        background: rgba($color: #000000, $alpha: .8);
+        left: 0px;
+        z-index: 100;
+        transition: .3s cubic-bezier(0.93, 0.02, 0, 0.95);
+        p
+        {
+          padding: 10px;
+          color:$dtext;
+          text-align: center;
+          display: inline-block;
+          width: 100%;
+          margin: 0px;
+          font-size: 13px;
+          font-family: montmd;
+          &:hover
+          {
+            color:$pink;
+          }
+        }
+      }
+      &:hover .mask
+      {
+        bottom:0px;
+      }
+      img
+      {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+    .info
+    {
+      text-align: center;
+      margin-top:10px;
+      h4
+      {
+        margin: 0px;
+        a
+        {
+          color:$pink;
+          font-family: robb;
+          font-size: 18px;
+          color:$tpink;
+          &:hover
+          {
+            color:$black;
+          }
+        }
+      }
+      h3
+      {
+        margin: 0px 0px 10px;
+        a
+        {
+          color:$dark;
+          font-family: mont;
+          font-size: 18px;
+          &:hover
+          {
+            color:$tpink;
+            color:$tpink;
+          }
+        }
+      }
+      h2
+      {
+        font-size: 19px;
+        font-family: montb;
+        margin: 0px 0px 10px;
+      }
+      .btn-default
+      {
+        font-size: 13px;
+        padding: 7px 12px;
+      }
+    }
+  }
+}

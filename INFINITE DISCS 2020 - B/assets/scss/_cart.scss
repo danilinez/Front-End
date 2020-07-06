@@ -1,0 +1,344 @@
+.cart
+{
+  padding: 60px 0px;
+ 
+  .cart-table
+  {
+    position: relative;
+    width: 100%;
+    thead
+    {
+      @media (max-width:991px) {
+        display:none !important;
+      }
+      tr
+      {
+        background-color: #f6f6f6;
+        th
+        {
+          font-family: textbold;
+          font-size: 14px;
+          border:1px solid #ddd;
+          text-align: center;
+        }
+        th:first-child{
+          text-align: left;
+        }
+      }
+    }
+    tbody
+    {
+      background-color: #fff;
+      @media (max-width:991px) 
+      {
+        background-color: transparent;
+      }
+      tr
+      {
+        @media (max-width:991px) {
+          background-color: #fff;
+          display: flex;
+          flex-direction: column;
+          border:1px solid #ddd;
+          padding-top:70px;
+          margin-top: 10px;
+        }
+        position: relative;
+      }
+      td
+      {
+        border:1px solid #ddd;
+        vertical-align: middle;
+        text-align: center;
+        @media (max-width:991px) {
+          border:none !important;
+          padding:10px 15px !important;
+          border-bottom:1px solid #eee !important;
+          &:first-child
+          {
+            border-top:1px solid #eee !important;
+          }
+          &:last-child
+          {
+            padding:0px !important;
+            border-bottom:none !important;
+          }
+          .flex-after
+          {
+            display: flex;
+            justify-content: space-between ;
+            align-items: center;
+            h5
+            {
+              font-size: 12px;
+              font-family: textbold;
+              margin:0px;
+            }
+          }
+        }
+        p
+        {
+          margin:0px;
+        }
+        .form-control
+        {
+          max-width: 80px;
+          border-radius: 0px;
+          font-size: 18px;
+          font-family: text;
+          display: block;
+          margin:0 auto;
+          @media (max-width:991px){
+            font-size: 12px;
+            margin: 0px 0px 0px auto;
+            max-width: 50px;
+            padding:0px 0px 0px 10px;
+          }
+        }
+        h4
+        {
+          font-size: 20px;
+          font-family: textbold;
+          margin:0px;
+        }
+      }
+    }
+    .frow
+    {
+      display: flex;
+      align-items: center;
+
+    }
+    .product-img
+    {
+      border:1px solid #ddd;
+      position: relative;
+      background-color: #fff;
+      @media (max-width:991px) {
+        position: absolute;  
+        top: 9px;
+        left: 9px;
+      }
+      a
+      {
+        display:block;
+      }
+      img
+      {
+        width:65px;
+        height:65px;
+        object-fit: contain;
+        object-position: center;
+        @media (max-width:1199px) {
+          width:60px;
+          height:60px;
+        }
+        @media (max-width:991px) {
+          width:50px;
+          height:50px;
+        }
+      }        
+    }
+    .product-name
+    {
+      flex-grow: 1;
+      padding-left: 15px;
+      text-align: left;
+      @media (max-width:991px) {
+        text-align: right;
+        a
+        {
+          font-size: 14px !important;
+          font-family: textbold !important;
+        }
+      }
+      a
+      {
+        font-size: 18px;
+        font-family: text;
+        color:#333;
+        display: block;
+        @media (max-width:991px){
+          font-size: 16px;
+        }
+        &:hover
+        {
+          color:$pink;
+        }
+      }
+    }    
+    .del
+    {
+      .btn
+      {
+        background: transparent;
+        color:#111;
+        margin: 0px !important;
+        width:30px;
+        height:30px;
+        padding: 0px !important;
+        display: inline-block;
+        &:hover
+        {
+          color:rgb(230, 0, 0);
+        }
+      }
+      @media (max-width:991px) {
+        position: absolute;
+        top: 20px;
+        right: 5px;
+        .btn-default{
+          color:rgb(230, 0, 0) !important;
+        }
+      }
+    }
+  }
+}
+.promo-code
+{
+  margin: 20px 0px 40px;
+  > .row
+  {
+    align-items: center;
+  }
+  .content
+  {
+    display: flex;
+    align-items: center;
+    .icon
+    {
+      padding: 5px 10px;
+      @media (max-width:991px) {
+        padding: 5px 10px 5px 0px;
+      }
+      i
+      {
+        font-size: 18px;
+        transform: rotate(90deg);
+      }
+    }
+    .text
+    {
+      h4
+      {
+        font-size: 18px;
+        margin: 0px;
+        font-family: textbold;
+      }
+      
+    }
+  }
+  .input-group
+  {
+    .form-control
+    {
+      height: 45px;
+      border-radius: 0px;
+      font-size: 14px;
+      font-family: text;
+    }
+    .btn
+    {
+      font-family: textbold;
+      background-color: #fff;
+      border:1px solid #ddd;
+      font-size: 14px;
+      border-radius: 0px;
+      padding:5px 20px;
+      &:hover
+      {
+        background-color: #7b7b7b;
+        color:#fff;
+        border-color:#7b7b7b !important;
+      }
+    }
+  }
+}
+.cart-totals
+{
+  border: 1px solid #ddd;
+  ul
+  {
+    li
+    {
+      padding: 15px 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom:1px solid #eee;
+      span
+      {
+        color:#555;
+        font-family: textsb;
+        font-size: 16px;
+      }
+      strong
+      {
+        color:#111; 
+        font-family: textbold;
+        font-weight: 800;
+        &.big
+        {
+          font-size: 24px;
+        }
+      }
+      .big
+      {
+        font-family: textbold;
+        font-size: 20px;
+      }
+      label
+      {
+        cursor: pointer;
+        font-family: text;
+      }
+      // &:last-child{
+      //   border-bottom:none !important;
+      // }
+    }
+  }
+  h2
+  {
+    font-family: textbold;
+    font-weight: 500;
+  }
+  .btn-custom
+  {
+    font-family: textbold;
+    display: inline-block;
+    margin:0px ;
+  }
+  .frow
+  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top:20px;
+    a
+    {
+      font-family: textbold;
+      color:#111;
+      font-size: 14px;
+      &:hover
+      {
+        color:$pink;
+      }
+      i
+      {
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+// .update-btn
+// {
+//   font-size: 14px;
+//   font-family: text;
+//   background: #555;
+//   margin: 15px 0px 40px;
+//   &:hover
+//   {
+//     background: #333;
+//   }
+// }

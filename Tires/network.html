@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home | Tyres</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/owl.css" />
+    <link rel="stylesheet" href="fontawesome/css/all.css" />
+    <link rel="stylesheet" href="css/datetimepicker.css" />
+    <link rel="stylesheet" href="css/master.css" />
+  </head>
+  <body>
+    
+    <header class="header">
+      <div class="container">
+        <div class="brand-bar">
+          <button class="btn menu-btn"> <i class="far fa-bars"></i></button>
+          <div class="logo">
+            <a href="index.html">
+              <img src="images/logo.png" alt="logo">
+            </a>
+           </div>
+           <div class="com-bar">
+             <ul>
+               <li>
+                 <a href="orders.html">Order Tracking</a>
+               </li>
+               <li>
+                 <a href="faqs.html">Customer Service</a>
+               </li>
+               <li>
+               04 4 277 123
+             </li>
+             </ul>
+           </div>
+           <div class="uc-links">
+             <ul>
+               <li>
+                 <a href="cart.html"><i class="fal fa-user"></i></a>
+                <div class="dropdown-menu">
+                  <ul>
+                    <li>
+                      <a href="account-info.html"> My Account </a>
+                    </li>
+                    <li>
+                      <a href="orders.html"> My Orders </a>
+                    </li>
+                    <li>
+                      <a href="login.html"> Logout </a>
+                    </li>
+                  </ul>  
+                </div>
+               </li>
+               <li>
+                 <a href="cart.html"><i class="fal fa-shopping-cart"></i></a>
+               </li>
+             </ul>
+           </div>
+         </div>
+      </div>
+      <div class="header-links">
+        <div class="container">
+          <ul>
+            <li>
+              <a href="about.html">Why Tyres?</a>
+            </li>
+            <li>
+              <a href="network.html">Installer Network</a>
+            </li>
+            <li>
+              <a href="brands.html">Brands</a>
+            </li>
+            <li>
+              <a href="offer.html">Special Offers</a>
+            </li>
+            <li>
+              <a href="faqs.html">FAQ's</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <section class="location-filter">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-xl-6">
+            <div class="form-group">
+              <label for="al">Please Enter Your Location</label>
+              <div class="frow">
+                <input type="text" class="form-control" id="al" placeholder="e.g Al-Bashra">
+                <select class="form-control">
+                  <option value="10Km">10Km</option>
+                  <option value="20Km">20Km</option>
+                  <option value="30Km">30Km</option>
+                  <option value="40Km">40Km</option>
+                </select>
+                <button class="btn btn-default">Search</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-xl-3">
+            <div class="checks">
+              <div class="filter-check">
+                <input type="checkbox" value="checkedValue" id="a">
+                <label class="check-label" for="a">Mobile Installer</label>
+              </div>
+              <div class="filter-check">
+                <input type="checkbox" value="checkedValue" id="b">
+                <label class="check-label" for="b">Independent Installer</label>
+              </div>
+              <div class="filter-check">
+                <input type="checkbox" value="checkedValue" id="c">
+                <label class="check-label" for="c">Premium Installer</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="installers">
+      <div class="container">
+        <div class="flexed">
+          <h3><span>(5)</span> Installer Found</h3>
+          <select class="form-control">
+            <option value="sort" selected disabled>Sort By</option>
+            <option value="name">Name</option>
+            <option value="close">Closest to me</option>
+            <option value="rate">Rating</option>
+          </select>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-12">
+            <div class="installer-box">
+              <div class="box-body">
+                <span class="badge badge-primary">Independent Installer</span>
+                <div class="upper">
+                  <div class="info">
+                    <h3><strong><span>2.1</span>	Km</strong><small>away from you</small></h3>       
+                    <h4 class="name"><a href="#">Sand Dance Tyres</a></h4>
+                    <p class="ratin">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                      &nbsp;
+                      3	Reviews
+                    </p>
+                  </div>
+                  <div class="addrent">
+                    <p class="adr">Al Zhara Adnoc petrol pump</p>
+                  </div>
+                </div>
+                <div class="lower">
+                  <ul class="times">
+                    <li>Sat-Thu:  09:00 - 18:00</li>
+                    <li>Friday:  Closed</li>
+                  </ul>
+                  <ul class="acts">
+                    <li>
+                      <button class="btn btn-default" data-toggle="modal" data-target="#services">See All Services</button>
+                    </li>
+                    <li>
+                      <button class="btn btn-default" data-toggle="modal" data-target="#onmap">See on Map</button>
+                    </li>
+                    <li>
+                      <button class="btn btn-default" data-toggle="modal" data-target="#review">Review Installer</button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="box-footer">
+                <div class="bfwrap">
+                  <p>First Available Fitting Date: <span>Today</span></p>
+                  <button class="btn btn-default" data-toggle="modal" data-target="#dtpicker">Book Now</button>
+                </div>
+              </div>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="onmap" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="map-wrapper">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13613.720501724436!2d74.2913215697754!3d31.457352099999987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1560772432533!5m2!1sen!2s" frameborder="0" style="border:0" allowfullscreen></iframe>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="modal fade sf-modal" id="services" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <h5>Services</h5>
+                          <ul>
+                            <li class="not">Offer a mobile tire fitting service </li>
+                            <li>Install Run Flat Tyres </li>
+                            <li>Repair punctures  </li>
+                            <li>Wheel alignment </li>
+                            <li>Nitrogen Filling </li>
+                            <li>Wheel Rotation Services </li>
+                            <li>Battery Change & Test Brakes Suspension  </li>
+                            <li>Oil/Filter Wiper Change </li>
+                          </ul>
+                        </div>
+                        <div class="col-lg-6">
+                          <h5>Facilities</h5>
+                          <ul>
+                            <li>Offer a mobile tire fitting service </li>
+                            <li>Install Run Flat Tyres </li>
+                            <li>Repair punctures  </li>
+                            <li>Wheel alignment </li>
+                            <li>Nitrogen Filling </li>
+                            <li>Wheel Rotation Services </li>
+                            <li>Battery Change & Test Brakes Suspension  </li>
+                            <li>Oil/Filter Wiper Change </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="modal fade sf-modal" id="review" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <h5 class="mb-3">Review Installer</h5>
+                      <div class="form-group">
+                        <label for="eml">Email</label>
+                        <input type="email" class="form-control" id="eml">
+                      </div>
+                      <div class="form-group">
+                        <label for="ord">Order #</label>
+                        <input type="text" class="form-control" id="ord">
+                      </div>
+                      <button class="btn btn-default mt-2 mb-3">Review</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="modal fade sf-modal" id="dtpicker" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <h5 class="mb-3">Date Time Picker</h5>
+                      <div class="form-group">
+                        <label for="pick-date">Set Date and Time</label>
+                        <input type="text" id="pick-date" class="form-control" placeholder="Start Date">
+                      </div>
+                      <button class="btn btn-default mt-2 mb-3">Proceed</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-lg-6 col-12">
+            <div class="installer-box">
+              <div class="box-body">
+                <span class="badge badge-primary">Mobile Installer</span>
+                <div class="upper">
+                  <div class="info">
+                    <h3><strong><span>2.1</span>	Km</strong><small>away from you</small></h3>       
+                    <h4 class="name"><a href="#">Sand Dance Tyres</a></h4>
+                    <p class="ratin">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                      &nbsp;
+                      3	Reviews
+                    </p>
+                  </div>
+                  <div class="addrent">
+                    <p class="rent">Mobility Rent <b>AED 17</b></p>
+                  </div>
+                </div>
+                <div class="lower">
+                  <ul class="times">
+                    <li>Sat-Thu:  09:00 - 18:00</li>
+                    <li>Friday:  Closed</li>
+                  </ul>
+                  <ul class="acts">
+                    <li>
+                      <button class="btn btn-default">See All Services</button>
+                    </li>
+                    <li>
+                      <button class="btn btn-default">See on Map</button>
+                    </li>
+                    <li>
+                      <button class="btn btn-default">Review Installer</button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="box-footer">
+                <div class="bfwrap">
+                  <p>First Available Fitting Date: <span>Today</span></p>
+                  <button class="btn btn-default">Book Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="search-link">
+        <div class="container-fluid">
+          <div class="holder">
+            <h5>To search of your desired tyres</h5>
+            <a class="btn btn-default" href="index.html#search-here" role="button"> Click Here</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-wrap">
+        <div class="container">
+          <div class="fcontent">
+            <div class="links-holder">
+              <div class="row">
+                <div class="col-md-4 col-12">
+                  <div class="links">
+                    <h4>Fitting & Installation</h4>
+                    <ul>
+                      <li><a href="javasctript:void(0)">Installer Partner Network</a></li>
+                      <li><a href="javasctript:void(0)">Become an Installer Partner</a></li>
+                      <li><a href="javasctript:void(0)">Terms of Installer Partnership Agreement</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-4 col-12">
+                  <div class="links">
+                    <h4>Information</h4>
+                    <ul>
+                      <li><a href="javasctript:void(0)">Our Mission</a></li>
+                      <li><a href="javasctript:void(0)">Why Tyres Arabia?</a></li>
+                      <li><a href="javasctript:void(0)">News Room</a></li>
+                      <li><a href="javasctript:void(0)">Customer Feedback</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-4 col-12">
+                  <div class="links">
+                    <h4>FAQs</h4>
+                    <ul>
+                      <li><a href="javasctript:void(0)">How to Order</a></li>
+                      <li><a href="javasctript:void(0)">Tyre installation</a></li>
+                      <li><a href="javasctript:void(0)">Payments</a></li>
+                      <li><a href="javasctript:void(0)">Date of manufacture of Tyres</a></li>
+                      <li><a href="javasctript:void(0)">View all topics</a></li>
+                      <li><a href="javasctript:void(0)">Warranty</a></li>
+                      <li><a href="javasctript:void(0)">Returns &amp; Refunds</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="customer-service">
+              <h4>Customer Service</h4>
+              <p>Our tire experts are available to help and recommend the best tires for you in your online purchase process. Contact our sales experts now!</p>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="wigit">
+                    <img src="images/clock.png" alt="clock">
+                    <div class="text">
+                      <p>Monday to Sunday</p>
+                      <h5>8 am to 8 pm</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="wigit">
+                    <img src="images/phone.png" alt="clock">
+                    <div class="text">
+                      <p>Our Call Center</p>
+                      <h5>+92 321 1238412</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <div class="container">
+          <div class="cr-wrap">
+            <div class="rights">
+              <img src="images/flogo.png" alt="logo">
+              <div class="text">
+                <ul>
+                  <li>
+                    <a href="#">Terms of Use</a>
+                  </li>
+                  <li>
+                    <a href="#">Privacy Policy</a>
+                  </li>
+                  <li>
+                    <a href="#">TERMS OF SALES & SERVICES</a>
+                  </li>
+                </ul>
+                <p>Copyright 2019 TyresArabia. All rights reserved.</p>
+              </div>
+            </div>
+            <div class="social">
+              <ul>
+                <li>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-youtube"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!--______________________ Modals START _____________________________________ -->
+    
+    <!--Width Modal -->
+    <div class="modal fade" id="width" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><i class="far fa-times"></i></span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-8">
+                <div class="size-steps">
+                  <h2><small>Search by Size &nbsp; / </small>Width</h2>
+                  <img src="images/size-width.webp" alt="img">
+                </div>
+              </div>
+              <div class="col-md-4 d-md-block d-none">
+                 <div class="text-center">
+                  <img src="images/modal-size.webp" alt="img">
+                  <a href="javascript:void(0)">Learn how to read your tyre size</a>
+                </div>
+              </div>
+              <div class="col-12">
+                <h5 class="h5">Current Selection:</h5>
+                <div class="selection-box">
+                  <ul>
+                    <li><a href="#">155</a></li>
+                    <li><a href="#">156</a></li>
+                    <li><a href="#">157</a></li>
+                    <li><a href="#">158</a></li>
+                    <li><a href="#">159</a></li>
+                    <li><a href="#">160</a></li>
+                    <li><a href="#">161</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Height Modal -->
+    <div class="modal fade" id="height" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><i class="far fa-times"></i></span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-8">
+                <div class="size-steps">
+                  <h2><small>Search by Size &nbsp; / </small>Height</h2>
+                  <img src="images/size-height.webp" alt="img">
+                </div>
+              </div>
+              <div class="col-md-4 d-md-block d-none">
+                 <div class="text-center">
+                  <img src="images/modal-size.webp" alt="img">
+                  <a href="javascript:void(0)">Learn how to read your tyre size</a>
+                </div>
+              </div>
+              <div class="col-12">
+                <h5 class="h5">Current Selection:</h5>
+                <div class="selection-box">
+                  <ul>
+                    <li><a href="#">155</a></li>
+                    <li><a href="#">156</a></li>
+                    <li><a href="#">157</a></li>
+                    <li><a href="#">158</a></li>
+                    <li><a href="#">159</a></li>
+                    <li><a href="#">160</a></li>
+                    <li><a href="#">161</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Rim Modal -->
+    <div class="modal fade" id="rim" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><i class="far fa-times"></i></span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-8">
+                <div class="size-steps">
+                  <h2><small>Search by Size &nbsp; / </small>Rim Size</h2>
+                  <img src="images/size-rim.webp" alt="img">
+                </div>
+              </div>
+              <div class="col-md-4 d-md-block d-none">
+                 <div class="text-center">
+                  <img src="images/modal-size.webp" alt="img">
+                  <a href="javascript:void(0)">Learn how to read your tyre size</a>
+                </div>
+              </div>
+              <div class="col-12">
+                <h5 class="h5">Current Selection:</h5>
+                <div class="selection-box">
+                  <ul>
+                    <li><a href="#">155</a></li>
+                    <li><a href="#">156</a></li>
+                    <li><a href="#">157</a></li>
+                    <li><a href="#">158</a></li>
+                    <li><a href="#">159</a></li>
+                    <li><a href="#">160</a></li>
+                    <li><a href="#">161</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- size Location Modal -->
+    <div class="modal fade" id="size-loc" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><i class="far fa-times"></i></span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-8">
+                <div class="size-steps">
+                  <h2><small>Search by Size &nbsp; / </small>Location</h2>
+                  <img src="images/size-location.webp" alt="img">
+                </div>
+              </div>
+              <div class="col-md-4 d-md-block d-none">
+                 <div class="text-center">
+                  <img src="images/modal-size.webp" alt="img">
+                  <a href="javascript:void(0)">Learn how to read your tyre size</a>
+                </div>
+              </div>
+              <div class="col-12">
+                <h5 class="h5">Current Selection:</h5>
+                <div class="selection-box">
+                  <ul>
+                    <li><a href="#">155</a></li>
+                    <li><a href="#">156</a></li>
+                    <li><a href="#">157</a></li>
+                    <li><a href="#">158</a></li>
+                    <li><a href="#">159</a></li>
+                    <li><a href="#">160</a></li>
+                    <li><a href="#">161</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--______________________ Modals END HERE _____________________________________ -->
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrapbundle.js"></script>
+
+    <script type="text/javascript" src="js/dtpmoment.js"></script>
+    <script src="js/datetimepicker.js"></script>
+    <script src="js/owl.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>

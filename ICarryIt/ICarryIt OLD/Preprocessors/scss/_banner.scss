@@ -1,0 +1,89 @@
+.banner
+{
+  position: relative;
+  .banner_bg
+  {
+    position: relative;
+    z-index: 1;
+    top: -1px;
+    width: 100%;
+  }
+  .banner_content_wrapper
+  {
+    position: relative;
+    z-index: 20;
+    .banner_content
+    {
+      position: absolute;
+      z-index: 10;
+      top:200px;
+      width: 60%;
+      .display-4
+      {
+        font-size: 36px;
+        margin: 0px;
+        font-weight: 100;
+        margin:0px 0px 5px;
+      }
+      .banner_title
+      {
+        font-size: 54px;
+        font-weight: 700;
+        margin:0px 0px 20px;
+      }
+      .banner_text
+      {
+        font-size: 18px;
+        font-weight: 400;
+        margin:0px 0px 20px;
+      }
+      .app-btns
+      {
+        li
+        {
+          a
+          {
+            img
+            {
+              height: 50px;
+              transition: .1s ease;
+            }
+            &:hover
+            {
+              img
+              {
+                transform: scale(1.05);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.scroll-for-more
+{
+  position: absolute;
+  top: -8.5pc;
+  z-index: 10;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  a
+  {
+    font-size: 18px;
+    color: $grey;
+    text-decoration: none;
+    .arrow-down
+    {
+      display: block;
+      height: 25px;
+      color: red;
+      margin: 0 auto;
+      position: relative;
+      animation-name: fly;
+      animation-duration:1s;
+      animation-iteration-count: infinite;
+    }
+  }
+}

@@ -1,0 +1,218 @@
+.news_wrapper {
+  padding: 65px 0px;
+  .news {
+    .news-box {
+      padding-top: 10px;
+      margin-bottom: 25px;
+      background: #fff;
+      border: 1px solid #eee;
+      .content {
+        padding: 10px 20px;
+      }
+      .news-title {
+        margin: 0px;
+        a {
+          font-size: 28px;
+          font-family: "mavenbold";
+          color: #111;
+          &:hover {
+            color: $green;
+          }
+        }
+      }
+      .category_date {
+        margin: 10px 0px 20px;
+      }
+      .content > p {
+        margin: 30px 0px;
+      }
+      .btn-default {
+        margin: 0px 0px 20px;
+      }
+    }
+  }
+  .right-news {
+    background: #fff;
+    border: 2px solid #eee;
+    margin-bottom: 25px;
+    .top-tag {
+      padding: 15px 20px;
+      border-bottom: 1px solid #eee;
+      h3 {
+        font-size: 18px;
+        margin: 0px;
+      }
+    }
+    ul {
+      padding: 25px;
+    }
+    li:first-child {
+      padding-top: 0px;
+    }
+
+    h3 {
+      font-size: 24px;
+      margin: 0px 0px 20px;
+    }
+    ul {
+      li {
+        border-bottom: 1px solid #eee;
+        padding: 22px 0px;
+        &:last-child {
+          border-bottom: none;
+        }
+        a {
+          color: #333;
+          &:hover {
+            color: $greenb;
+          }
+          .img {
+            max-width: 100px;
+            float: left;
+            margin-right: 10px;
+          }
+          h4 {
+            font-family: maven;
+            font-size: 14px;
+            margin: 0px;
+          }
+          span {
+            color: #111;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+  .follow_blog {
+    background-color: #fff;
+    padding: 30px 20px;
+    display: inline-block;
+    width: 100%;
+    border: 2px solid #eee;
+    p {
+      margin: 0px;
+      float: left;
+      font-size: 14px;
+      color: #aaa;
+    }
+    ul {
+      float: right;
+      margin-top: -8px;
+      position: relative;
+      top: 2px;
+      li {
+        display: inline-block;
+        padding: 0px;
+        margin-bottom: 0px !important;
+        a {
+          display: inline-block;
+          width: 30px;
+          height: 30px;
+          text-align: center;
+          padding: 4.5px;
+          text-align: center;
+          margin: 0px;
+          font-size: 13px;
+          color: #bbb;
+          border: 1px solid #bbb;
+          border-radius: 100%;
+          &:hover {
+            border-color: $green;
+            color: $green;
+          }
+        }
+      }
+    }
+  }
+  .blogz {
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+    .news-box {
+      border: 1px solid #eee;
+      background-color: #fff;
+    }
+    .content {
+      padding: 5px 15px;
+      margin: 0px;
+    }
+  }
+  .news-box {
+    .news-title {
+      font-size: 16px;
+    }
+    .category_date {
+      margin: 5px 0px;
+      font-size: 13px;
+    }
+    p {
+      font-size: 13px;
+    }
+  }
+  ul {
+    li {
+      padding: 0px 0px 20px;
+      &:last-child {
+        margin-bottom: 10px;
+      }
+      a {
+        color: #333;
+        &:hover {
+          color: $greenb;
+        }
+        .img {
+          max-width: 100px;
+          float: left;
+          margin-right: 10px;
+        }
+        h4 {
+          font-family: maven;
+          font-size: 14px;
+          margin: 0px;
+        }
+        span {
+          color: #111;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+.link {
+  color: $green;
+  transition: 0.2s linear;
+  &:hover {
+    color: $greenb;
+  }
+}
+
+.advert
+{
+  background-color:#fff;
+  padding: 20px 15px;
+  margin: 30px 0px;
+  .ad
+  {
+    background-color:#e9eef1;
+    text-align:center;
+    position: relative;
+    p
+    {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 10;
+      color:#aaa;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .ad_slide
+  {
+    min-height: 100px;
+  }
+  .ad_box
+  {
+    min-height: 300px;
+  }
+}

@@ -1,0 +1,256 @@
+$maroon: #821305;
+$yellow: #eeb93b;
+$dark:#222;
+
+
+* {
+  box-sizing: border-box;
+  font-family: "regular", serif;
+}
+*::selection
+{
+  background-color: rgb(0, 162, 255);
+  color:#fff;
+}
+ul {
+  margin: 0px ;
+  padding: 0px ;
+  li {
+    list-style-type: none;
+    display: inline-block;
+  }
+}
+a {
+  text-decoration: none !important;
+}
+.link {
+  text-decoration: none !important;
+}
+
+.btn, button
+{
+  i
+  {
+    margin-right:5px;
+  }
+}
+.badge
+{
+  font-family: semibold;
+}
+
+html {
+  overflow-x: hidden !important;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fff;
+  margin: 0px;
+  position: relative;
+  padding: 0px;
+  width: 100%;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+  background-color: transparent;
+  position: absolute;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color:$yellow;
+}
+body::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.fluid {
+  padding-left: 7px !important;
+  padding-right: 7px !important;
+}
+// Margin Y axis Remover from row
+.mx-none{
+  margin: 0px -15px 0px -15px;
+}
+.hidden {
+  display: none;
+}
+.btn-primary:active {
+  transform: scale(0.97);
+}
+button:focus {
+  box-shadow: none !important;
+}
+*:focus {
+  outline-color: transparent !important;
+}
+
+.btn:focus,
+.form-control:focus {
+  box-shadow:none !important;
+}
+
+
+.owl-carousel
+{
+  position: relative;
+  .owl-nav
+  {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    *
+    {
+      transition: .3s ease;
+      box-shadow: none !important;
+      outline: none;
+    }
+    .owl-prev
+    {
+      position: absolute;
+      i
+      {
+        font-size: 24px;
+      }
+    }
+    .owl-next
+    {
+      position: absolute;
+      i
+      {
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+.cr-slider
+{
+  .owl-prev,
+  .owl-next {
+    background: $yellow !important;
+    color: #fff !important;
+    opacity: 1;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    transform: translateY(-100%);
+    transform: translateY(-50%);
+    @media (max-width:991px) {
+      width: 35px;
+      height: 35px;   
+      i
+      {
+        font-size: 16px !important;
+      }   
+    }
+  }
+  .owl-prev {
+    left: -50px;
+    @media (max-width:991px) 
+    {
+      left: 0px;
+    }
+  }
+  .owl-next {
+    right: -50px;
+    @media (max-width:991px) 
+    {
+      right: 0px;
+    }
+  }
+}
+
+.common-title
+{
+  margin-bottom: 30px;
+  padding: 20px 0px;
+  text-align: center;
+  h1
+  {
+    font-size: 36px;
+    margin: 0px;
+    font-family: regular;
+    text-transform: uppercase;
+    color:$yellow;
+    strong
+    {
+      font-family: bold;
+    }
+  }
+  img
+  {
+    height: 18px;
+    width: auto;
+    opacity: .35;
+  }
+  p
+  {
+    margin: 0px;
+    font-size: 15px;
+  }
+}
+
+
+.sec-padding
+{
+  padding: 50px 0px;
+}
+
+
+
+
+
+// input[type="number"]::-webkit-inner-spin-button,
+//   input[type="number"]::-webkit-outer-spin-button {
+//     -webkit-appearance: none;
+//     margin: 0;
+//   }
+
+.pager
+{
+  padding: 6px 0px;
+  border-top:1px solid #eee;
+  border-bottom:1px solid #eee;
+  li
+  {
+    color:$yellow;
+    font-family: medium;
+    font-size:14px;
+    a
+    {
+      font-size:14px;
+      font-family:semibold;
+      color:$dark;
+      &:hover
+      {
+        color:$yellow;
+      }
+      &::after{
+        content:"/";
+        font-family: light;
+        padding:0px 10px;
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+.btn-default
+{
+  background: $yellow;
+  color:#000;
+  padding: 10px 20px;
+  border:none;
+  font-family: bold;
+  font-size: 16px;
+  &:hover
+  {
+    background: $maroon;
+    color:$yellow;
+  }
+}

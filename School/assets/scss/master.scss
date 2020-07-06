@@ -1,0 +1,306 @@
+
+$blue:#00b8ff;
+$dblue:#08387f;
+
+@font-face {
+  font-family: regular;
+  src: url('fonts/Lato-Regular.ttf');
+}
+@font-face {
+  font-family: light;
+  src: url('fonts/Lato-Light.ttf');
+}
+@font-face {
+  font-family: bold;
+  src: url('fonts/Lato-Bold.ttf');
+}
+
+@media (max-width:420px)
+{
+  .col-xs-12
+  {
+    max-width: 100% !important;
+    flex: 0 0 100%;
+  }
+}
+
+.hidden
+{
+  display: none;
+}
+*
+{
+  box-sizing: border-box;
+  font-family: 'regular', sans-serif;
+}
+ul
+{
+  margin: 0px;
+  padding: 0px;
+  li
+  {
+    list-style-type: none;
+    display: block;
+    a
+    {
+      text-decoration: none !important;
+    }
+  }
+}
+
+.link
+{
+  text-decoration: none !important;
+  &:hover
+  {
+    color:$blue;
+  }
+}
+html
+{
+  overflow-x: hidden !important;
+  scroll-behavior: smooth;
+}
+
+body
+{
+  background-color: #fff;
+  margin: 0px;
+  position: relative;
+  padding: 0px;
+  width: 100%;
+  font-family: roboto;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+  background-color: $blue;
+  position: absolute; }
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 1px;
+  background-color: $blue;
+}
+body::-webkit-scrollbar-track {
+  border-radius: 1px;
+  background-color: #fff }
+
+
+.fluid
+{
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+}
+
+button:focus
+{
+  box-shadow: none !important;
+  outline: none !important; 
+}
+
+.common_h
+{
+  color:#333;
+  font-size: 45px;
+  position: relative;
+  text-transform: uppercase;
+  margin: 10px 0px 20px;
+  font-family: crete;
+  strong
+  {
+    font-family: crete;
+    color:$blue;
+  }
+  &::after
+  {
+    content: "";
+    height: 3px;
+    width:60px;
+    position:absolute;
+    bottom:-10px;
+    border-radius: 5px;
+    left:0px;
+    background:$blue;
+  }
+}
+
+
+.btn-primary
+{
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family:bold;
+  padding: 20px 30px;
+  min-width: 240px;
+  background: transparent;
+  border:none;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+  border-radius: 5px;
+  transition: .2s linear;
+  border:none;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  @media (max-width:1199px) {
+    font-size: 16px;
+    padding: 16px 25px;
+  }
+  @media (max-width:991px) {
+    font-size: 15px;
+    padding: 12px 20px;
+  }
+  @media (max-width:767px) {
+    font-size: 14px;
+    padding: 10px 18px;
+  }
+  @media (max-width:576px) {
+    font-size: 13px;
+    padding: 10px 15px;
+  }
+  &::before
+  {
+    transition: .2s linear;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    background: $dblue;
+    z-index: -5;
+    content: "";
+    position: absolute;
+    border-radius: 6px;
+  }
+  &::after
+  {
+    transition: .15s cubic-bezier(0.87, 0.16, 1, 1.05);
+    opacity: 0;
+    height: 100%;
+    width:100%;
+    left: 0px;
+    top: 0px;
+    background: $blue;
+    z-index: -1;
+    content: "";
+    position: absolute;
+    transform: scale(.5);
+    border-radius: 5px;
+    @media (max-width:767px) {
+      transform: scale(1.1);
+      opacity: 1;
+    }
+  }
+  &:hover
+  {
+    &::after
+    {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+}
+p
+{
+  color:#777;
+  font-size: 16px;
+  font-family: regular;
+}
+.heading
+{
+  clear: both;
+  width: 100%;
+  display: block;
+  margin: 0px 0px 30px;
+  img
+  {
+    height: 10px;
+    display: block;
+    position: relative;
+    left: -1px;
+    width: 100px;
+    margin: 0px 0px -5px;
+  }
+
+  p
+  {
+    margin:0px !important;
+    text-transform: uppercase;
+    color:#aaa !important;
+    letter-spacing: .5px;
+    word-spacing:2px;
+    font-size: 18px;
+    padding: 5px 0px;
+    max-height: 50px;
+    @media (max-width:1199px)
+    {
+      font-size: 16px;
+    }
+  }
+  h1
+  {
+    text-transform: uppercase;
+    margin: 0px;
+    @media (max-width:1199px)
+    {
+      font-size: 32px;
+    }
+    @media (max-width:991px)
+    {
+      font-size: 28px;
+    }
+    @media (max-width:767px)
+    {
+      font-size: 26px;
+    }
+    @media (max-width:576px)
+    {
+      font-size: 24px;
+    }
+    strong 
+    {
+      text-transform: uppercase;
+      color:$blue;
+      font-family: bold;
+    }
+    img
+    {
+      display: block;
+      margin:5px auto;
+      width: 100px;
+      height: 10px;
+    }
+  }
+}
+
+@import 'animation.scss';
+
+@import 'header.scss';
+
+@import 'banner.scss';
+
+@import 'welcome.scss';
+
+@import 'enroll.scss';
+
+@import 'tabs.scss';
+
+@import 'newsevents.scss';
+
+@import 'newsevents.scss';
+
+@import 'partners.scss';
+
+@import 'course_search.scss';
+
+@import 'footer.scss';
+
+
+
+
+
+
+

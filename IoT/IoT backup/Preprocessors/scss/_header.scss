@@ -1,0 +1,223 @@
+
+.contact_bar
+{
+  display: inline-block;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+  padding: 10px 0px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.411);
+  ul
+  {
+    position: relative;
+    li
+    {
+      font-size: 14px;
+      display: inline-block;
+      margin-right: 20px;
+      color:#fff;
+      i
+      {
+        color:$yellow;
+        margin-right: 10px;
+      }
+    }
+  }
+  .brands
+  {
+    position: relative;
+    z-index: 10;
+    float:right;
+    li
+    {
+      margin: 0px;
+      a
+      {
+        font-size: 16px;
+        cursor: pointer;
+        i
+        {
+          color:#fff;
+        }
+        &:hover
+        {
+          i
+          {
+            color:$yellow !important;
+          }
+        }
+      }
+    }
+  }
+}
+.navbar
+{
+  position: absolute;
+  top: 0px;
+  width:100%;
+  left: 0px;
+  z-index: 999;
+  margin: 50px 0px 0px;
+  border:none;
+  border-radius: 0px; 
+  padding: 0px 15px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.411);
+  @media (max-width:991px) {
+    padding: 0px 0px;
+  }
+  @media (max-width:767px) 
+  {
+    margin: 70px 0px 0px;
+  }
+  .navbar-brand
+  {
+    margin-right: 30px;
+    @media (max-width:991px) {
+      margin-right: 20px;
+    }
+  }
+  .navbar-toggler
+  {
+    i
+    {
+      color:$blue;
+    }
+    &:focus
+    {
+      outline-color: transparent;
+    }
+  }
+  .navbar-nav
+  {
+    margin: 0px;
+    padding: 0px;
+    @media(max-width:767px)
+    {
+      background: #fff;
+      padding: 0px !important;
+    }
+    @media (max-width:767px) {
+      padding: 0px 0px 15px 0px;
+    }
+    .nav-item
+    {
+      margin: 0px;
+      padding: 0px;
+      position: relative;
+      ul
+      {
+        visibility: hidden;
+        transition: .2s linear;
+        min-width: 250px;
+        left: 0px;
+        top: 100px;
+        opacity: 0;
+        position: absolute;
+        background: #fff;
+        li
+        {
+          position: relative;
+          height: auto;
+          display: block;
+          clear: both;
+          border-bottom:1px solid #eee;
+          a
+          {
+            padding: 10px 0px 10px 15px !important;
+            color: $text !important;
+            &:hover
+            {
+              color: $yellow !important;
+              background-color: $blue;
+              @media (max-width:767px)
+              {
+                color: #111 !important;
+              }
+            }
+          }
+        }
+      }
+      >.nav-link:hover
+      {
+        color:#111;
+      }
+      >.nav-link:hover::before
+      {
+        background-color: $yellow;
+      }
+      >.nav-link::before
+      {
+        content: "";
+        position: absolute;
+        transition: .2s linear;
+        height: 40px;
+        width:100%;
+        top: calc(50% - 20px);
+        left: 0px;
+        transform: skewX(-10deg);
+        z-index: -1;
+      }
+      .nav-link
+      {
+        font-family: tbold;
+        color:#fff;
+        font-size: 16px;
+        background: transparent;
+        padding:25px 15px;
+        position: relative;
+        @media (max-width:991px) {
+          font-family: tlight;
+        }
+        @media (max-width:767px) {
+          padding: 15px 10px;
+          color:#111;
+          font-family: telenor;
+          text-align: center;
+          border-bottom:1px solid #eee;
+          &::before{
+            height: 0px;
+            display: none;
+          }
+          &:hover
+          {
+            background-color:$yellow;
+          }
+          &:hover ~ ul,
+          & ~ ul:hover
+          {
+            top:0px !important;
+            margin: 0px;
+          }
+          & ~ ul
+          {
+            position: relative;
+            visibility:visible;
+            margin: 0px;
+            opacity: 1;
+            top: 0px;
+            li
+            {
+              border:none;
+              a
+              {
+                padding-left: 0px !important;
+                font-family: tlight;
+                font-size: 14px;
+                border-bottom:1px solid #eee !important;
+              }
+            }
+          }
+        }
+        &:hover ~ ul,
+        & ~ ul:hover
+        {
+          opacity: 1;
+          top: 74px;
+          visibility: visible;
+        }
+      }
+    }
+  }
+}

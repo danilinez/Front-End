@@ -1,0 +1,131 @@
+.contact
+{
+  div
+  {
+    position: relative;
+  }
+  iframe {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+  .contact_info
+  {
+    padding: 60px 80px;
+    background: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    ul
+    {
+      padding: 0px;
+      margin: 0px;
+      li
+      {
+        display: flex;
+        margin-bottom: 50px;
+        &:last-child
+        {
+          margin-bottom: 0px;
+        }
+        .icon
+        {
+          margin: 0px;
+          padding: 0px 20px 0px 10px;
+          i
+          {
+            font-size: 18px;
+            color: #fff;
+          }
+          .fa-phone
+          {
+            transform: rotateY(180deg);
+          }
+        }
+        .info
+        {
+          h5
+          {
+            font-size: 20px;
+            font-family: "tbold";
+            margin: 0px 0px 10px;
+            color:#fff;
+          }
+          p
+          {
+            color:#fff;
+            font-size: 24px;
+            line-height: 30px;
+            margin: 0px;
+            font-family: 'slight';
+          }
+          a, .link
+          {
+            font-family: 'slight';
+            color:#fff;
+            &:hover
+            {
+              text-decoration: underline !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  .getintouch
+  {
+    padding: 60px 0px;
+    background: #fff;
+    box-shadow: inset 0px 3px 5px 0px rgba(0,0,0,0.3);
+    .form-control::placeholder
+    {
+      font-family: 'slight';
+    }
+    .form-control
+    {
+      font-family: 'source';
+      font-size: 22px;
+      border-radius: 0px;
+      border:none;
+      border-bottom: 1px solid #aeaeae;
+      padding: 3px;
+      background-color: transparent;
+      &:focus
+      {
+        box-shadow: none;
+        border-color:#111;
+      }
+    }
+    input
+    {
+      height: 35px;
+    }
+    .form-group
+    {
+      margin: 0px 0px 25px;
+    }
+    h1
+    {
+      font-family: 'tbold';
+      text-align: center;
+      color:blue;
+      margin: 0px 0px 50px;
+      text-transform: uppercase;
+    }
+    .cont_us
+    {
+      p
+      {
+        margin: 0px 0px 10px;
+        font-size: 20px;
+        font-family: 'tlight';
+        strong
+        {
+          font-family: 'tbold';
+        }
+      }
+    }
+  }
+}

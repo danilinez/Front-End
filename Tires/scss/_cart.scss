@@ -1,0 +1,218 @@
+.cart-steps
+{
+  background-image: url('../images/filter-bg.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: repeat;
+  padding: 30px 0px;
+}
+.cart
+{
+  padding: 50px 0px;
+  .cart-table
+  {
+    min-width: 500px;
+    thead
+    {
+      background: #ddd;
+      th
+      {
+        text-align: center;
+      }
+    }
+    tbody
+    {
+      td
+      {
+        vertical-align: middle;
+        text-align: center;
+        padding: 10px 5px;
+        &:first-child
+        {
+          text-align: left;
+          padding: 10px 0px;
+        }
+        .flex-box
+        {
+          display: flex;
+          align-items:center;
+          justify-content: left;
+          @media (max-width:767px) {
+            flex-direction: column;
+            align-items: flex-start;
+          }
+          &.center-box
+          {
+            justify-content: center !important;
+            align-items: center !important;
+          }
+          img
+          {
+            margin-right: 15px;
+            border:1px solid #eee;
+            padding: 10px;
+            height:100px;
+            width:100px;
+            object-fit: contain;
+            object-position: center;
+            @media (max-width:767px) {
+              display:none;
+            }
+          }
+          .text
+          {
+            @media (max-width:767px) {
+              padding-left: 15px;
+            }
+            span
+            {
+              font-family: semibold;
+              color:#aaa;
+              font-size: 14px;
+            }
+            h5
+            {
+              font-size: 14px;
+              margin: 5px 0px;
+              a
+              {
+                font-size: 16px;
+                font-family: medium;
+                text-transform: uppercase;
+                small
+                {
+                  color:$red;
+                }
+              }
+            }
+            p
+            {
+              margin: 0px;
+              font-size: 12px;
+            }
+          }
+          .form-control
+          {
+            margin: 0px 6px;
+            width:50px;
+            text-align:center;
+            background: #eee;
+            @media (max-width:767px) {
+              font-size: 14px;
+              padding: 0px;
+              height: 28px;
+              margin: 5px 0px;
+            }
+          }
+          .btn-default
+          {
+            padding: 0px 10px;
+            font-size: 12px;
+            line-height: 28px;
+            border-color:#ddd;
+            &:hover
+            {
+              border-color:red;
+            }
+            &:active
+            {
+              transform: scale(.95);
+            }
+            @media (max-width:767px) {
+              font-size: 10px;
+            }
+          }
+        }
+        h6
+        {
+          margin: 0px;
+          font-family: semibold;
+        }
+      }
+      .installer
+      {
+        background: #eee;
+      }
+    }
+  }
+  .summary
+  {
+    background: #f6f6f6;
+    .t-header
+    {
+      width: 100%;
+      text-align: center;
+      font-size: 18px;
+      font-family: medium;
+      padding: 15px 0px;
+      background: #ddd;
+      color:#111;
+      display: inline-block;
+      margin:0px;
+    }
+    .table
+    {
+      tbody
+      {
+        td:last-child,
+        th:last-child
+        {
+          text-align: right;
+        }
+        td
+        {
+          font-family: medium;
+        }
+        td, th
+        {
+          vertical-align: middle;
+          font-size: 13px;
+        } 
+        th
+        {
+          font-weight: 500;
+          font-family: bold;
+          small
+          {
+            font-family: bold;
+          }
+        }
+      }
+    }
+    .form-group
+    {
+      padding: 15px;
+      label
+      {
+        font-size: 13px;
+        font-family: medium;
+      }
+      .btn-default
+      {
+        font-size: 12px;
+        font-family: semibold;
+        margin:10px 0px 0px;
+        padding: 12px 15px;
+        background: $ldark;
+        border:none;
+        color:#fff;
+        &:hover{
+          background: $red;
+          color:#fff;
+        }
+      }
+    }
+    .block
+    {
+      padding:0px 12px;
+      .btn-default
+      {
+        font-size: 14px;
+        padding: 10px;
+        font-family: bold;
+        width: 100%;
+        margin: 10px 0px 40px;
+      }
+    }
+  }
+}

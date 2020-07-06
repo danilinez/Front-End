@@ -1,0 +1,45 @@
+/*
+* Theme Name:
+* Description:
+* Author:
+* Author URI:
+*/
+#flash-card-container { height: 500px; position: relative; width: 96%; margin-top: 16px; margin-left: 5px;; }
+#flash-card-container input.hasDatepicker { position: relative; z-index: 1000; }
+.flash-card { cursor: pointer; float: left; width: 268px; height: 451px; position: relative; padding: 1px 14px; }
+.flash-card.front-card { cursor: default; }
+.loaded .flash-card { float: none; position: absolute; }
+.flash-card .fc-bg { left: 1px; position: absolute; top: 1px; }
+.flash-card .fc-frame { left: 0; position: absolute; top: 0; }
+.flash-card .fc-floor { position: absolute; bottom: 0; left: 0; width: 100%; z-index: -1; }
+.card-content a.btn {color: #000 !important;padding: 0 6px;font-size: 9px  !important;}
+.flash-card h2, .card-content { position: relative; }
+.flash-card h4 { color: #fff }
+.flash-card label { color: #FAFAFA }
+.card-header-1 { text-align: left; }
+.card-header-3 { text-align: center; }
+.loaded .flash-card-1 { left: 310px; top: 69px; z-index: 50; }
+.flash-card-1-content {
+ /* background: rgb(254,255,255);  Old browsers  background: -moz-linear-gradient(top, rgba(254,255,255,1) 0%, rgba(39,167,242,1) 0%, rgba(111,193,237,1) 100%);  FF3.6+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(254,255,255,1)), color-stop(0%, rgba(39,167,242,1)), color-stop(100%, rgba(111,193,237,1)));  Chrome,Safari4+  background: -webkit-linear-gradient(top, rgba(254,255,255,1) 0%, rgba(39,167,242,1) 0%, rgba(111,193,237,1) 100%);  Chrome10+,Safari5.1+  background: -o-linear-gradient(top, rgba(254,255,255,1) 0%, rgba(39,167,242,1) 0%, rgba(111,193,237,1) 100%);  Opera 11.10+  background: -ms-linear-gradient(top, rgba(254,255,255,1) 0%, rgba(39,167,242,1) 0%, rgba(111,193,237,1) 100%);  IE10+  background: linear-gradient(to bottom, rgba(254,255,255,1) 0%, rgba(39,167,242,1) 0%, rgba(111,193,237,1) 100%);  W3C  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#6fc1ed', GradientType=0 );  IE6-9 */border: 1px solid #000;height: 354px;
+ text-align: left; padding: 0 10px 10px 10px; border: 1px solid #fff; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;  }
+.flash-card-1-content-inner {margin-top:10px;background-color: #000;opacity: 0.8;filter: alpha(opacity=80);padding: 1px 10px 10px 10px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+.loaded .flash-card-2 { left: 130px; top: 35px; z-index: 40; }
+.flash-card-2-content {text-align: left;background-color:#000;border:1px solid black;opacity:0.7;filter:alpha(opacity=70);margin: 11px 0;padding: 0 10px 10px;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px; }
+.loaded .flash-card-3 { left: 490px; top: 35px; z-index: 40; }
+.flash-card-3-content {background-color:#000;border:1px solid black;opacity:0.7;filter:alpha(opacity=70);margin: 11px 0;padding: 0 10px 10px;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px; }
+.loaded .flash-card-4 { left: 0; top: 0; z-index: 30; }
+.flash-card-4-content {background-color:#000;border:1px solid black;opacity:0.7;filter:alpha(opacity=70);margin: 11px 0;padding: 0 10px 10px;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px; }
+.loaded .flash-card-5 { left: 625px; top: 0; z-index: 30; }
+.flash-card-5-content {background-color:#000;border:1px solid black;opacity:0.7;filter:alpha(opacity=70);margin: 11px 0;padding: 0 10px 10px;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px; }
+.loaded .flash-card-6 { left: 310px; top: 0; z-index: 20; }
+.flash-card h3 { font-family: 'Merienda', cursive; font-size: 17px; line-height: 23px; margin-top: 7px; color: #fff; }
+.flash-card .card-content p, .flash-card .card-content li, .flash-card .card-content a { font-size: 12px; line-height: 18px; color: #fff; text-decoration: none; }
+.flash-card .card-content a:link, .flash-card .card-content a:visited { text-decoration: none; }
+.flash-card .card-content a:hover, .flash-card .card-content a:hover { text-decoration: underline; color: #fff; }
+#layout-body-container .flash-card .card-content p a:link, #layout-body-container .flash-card .card-content p a:visited { border: 0; background: none; color: #fff; }
+.flash-card .card-content p em, .flash-card .card-content li em { font-size: 20px; font-weight: 400; font-style: normal; }
+.flash-card.search-flash-card { height: 1400px;/* background:url(../img/slide-frame-wetfloor.png) bottom center no-repeat;*/ }
+.loaded .flash-card.search-flash-card { height: 451px; width: 296px; padding: 0; }
+.loaded .flash-card .search-card .search-swappable-tabs ul, .loaded .flash-card .search-card .search-component-sub-form { opacity: .5; }
+.loaded .flash-card.front-card .search-card .search-swappable-tabs ul, .loaded .flash-card.front-card .search-card .search-component-sub-form { opacity: 1; }
+.card-header-2, .loaded .flash-card-3 .card-content, .loaded .flash-card-5 .card-content { text-align: right; }

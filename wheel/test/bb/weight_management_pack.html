@@ -1,0 +1,575 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home - WheelHealthcare</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <meta charset="UTF-8" />
+
+    <!-- <link rel="shortcut icon" href="assets/img/favicon.ico" />-->
+    <link href="assets-new/plugins/twitter-bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets-new/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="assets-new/plugins/ResponsiveSlides.js/responsiveslides.min.css" rel="stylesheet"/>
+    <link href="assets-new/plugins/jqueryui/css/jquery-ui.min.css" rel="stylesheet"/>
+    <link href="assets-new/css/style.css" rel="stylesheet" />
+
+    <!--[if lt IE 9]>
+        <script src="assets-new/plugins/html5shiv/html5shiv.min.js"></script>
+        <script src="assets-new/plugins/html5shiv/html5shiv-printshiv.min.js"></script>
+        <script src="assets-new/plugins/respond.js/respond.min.js"></script>
+        <script src="assets-new/js/matchMedia.min.js"></script>
+    <![endif]-->
+
+    <script src="assets-new/plugins/jquery/jquery.min.js"></script>
+    <script src="assets-new/plugins/jqueryui/jquery-ui.min.js"></script>
+    <script src="assets-new/plugins/jquery-migrate/jquery-migrate.min.js"></script>
+    <script src="assets-new/plugins/twitter-bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets-new/plugins/ResponsiveSlides.js/responsiveslides.min.js"></script>
+    <script src="assets-new/js/bootstrap-hover-dropdown.js"></script>
+    <script src="assets-new/js/jquery.equalheights.js"></script>
+    <script src="assets-new/plugins/jquery-scrolltofixed/jquery-scrolltofixed-min.js"></script>
+    <script src="assets-new/js/application.js"></script>
+
+    <script type="text/javascript">
+      window.onload = function () {
+        $.ajax({
+          type: "POST",
+          url: "LinezWS_WHCS.asmx/FnDeafultMedicalList",
+          data: "{}",
+          contentType: "application/json; charset=utf-8",
+          dataType: "json",
+          success: function (response) {
+
+            var result = response.d;
+            var josonProductsData = jQuery.parseJSON("[" + result + "]");
+            //var josonProductsData = response;
+            var myHTML = '';
+
+            for (var row = 0; row < Math.floor(josonProductsData[0].length); row++) {
+
+              myHTML += '<li>' + josonProductsData[0][row].sName + '</li>'
+            }
+
+            document.getElementById("medicines").innerHTML = myHTML;
+
+          },
+          failure: function (msg) {
+            alert(msg);
+          }
+        });
+
+
+
+      }
+
+
+
+      function Medicine(HrefValue) {
+
+        var href = HrefValue;
+        $.ajax({
+          type: "POST",
+          url: "LinezWS_WHCS.asmx/fnMedicinesList",
+          data: "{'sHref':'" + href + "'}",
+          contentType: "application/json; charset=utf-8",
+          dataType: "json",
+          success: function (response) {
+
+            var result = response.d;
+            var josonProductsData = jQuery.parseJSON("[" + result + "]");
+            //var josonProductsData = response;
+            var myHTML = '';
+
+            for (var row = 0; row < Math.floor(josonProductsData[0].length); row++) {
+
+              myHTML += '<li>' + josonProductsData[0][row].sName + '</li>'
+            }
+
+
+            document.getElementById("medicines").innerHTML = myHTML;
+
+          },
+          failure: function (msg) {
+            alert(msg);
+          }
+        });
+
+      }
+
+
+
+      function submitForm() {
+        var strName = document.getElementById("txtUsername");
+
+        var strPassword = document.getElementById("txtPassword");
+
+
+
+        if (strName.value.length < 1) {
+
+          strName.focus();
+
+          alert('Please enter username');
+
+          return false;
+
+        }
+
+        if (strPassword.value.length < 1) {
+
+          strPassword.focus();
+
+          alert('Please enter password');
+
+          return false;
+
+        }
+
+
+        fnValidateUser();
+
+      }
+
+      function fnValidateUser() {
+
+        var param = new Object();
+
+        //            txtUsername txtPassword
+        param.sUsername = $('#txtUsername').val();
+        param.sPassword = $('#txtPassword').val();
+        return $.ajax({
+          type: "POST",
+          url: "LinezWS_WHCS.asmx/fnValidateUser",
+          data: JSON.stringify(param),
+          contentType: "application/json; charset=utf-8",
+          dataType: "json",
+          success: function (msg) {
+            if (msg.d == "1") {
+              document.WHCSLive.submit();
+            }
+            else {
+              alert("Invalid Email/Password! Please Try Again.");
+            }
+
+          },
+          failure: function (msg) {
+            alert(msg);
+          }
+        });
+
+      }
+    </script>
+  </head>
+  <body>
+
+    <section id="top-bar">
+      <div class="container-fluid">
+        <div class="row">
+
+          <article class="col-sm-3">
+            <a href="index.html" id="logo"><img src="assets-new/img/logowheel.jpeg" alt="" class="img-responsive"/></a>
+          </article>
+          <nav class="col-sm-9">
+            <ul class="nav nav-tabs">
+              <li role="presentation" class="active"><a href="#">Personal</a></li>
+              <li role="presentation"><a href="#">Business</a></li>
+              <li role="presentation"><a href="contact_us.html">Contact Us</a></li>
+            </ul>
+            <ul class="list-inline">
+              <li><a href="about_us.html">About WHC</a></li>
+              <li><a href="careers.html">Careers</a></li>
+            </ul>
+          </nav>
+
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </section>
+
+
+    <header id="header">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-sm-2 col-sm-offset-5">
+
+            <button type="button" class="btn btn-info btn-sm btn-block">Login to myWHC</button>
+
+          </div>
+          <div class="col-sm-2"><button type="button" class="btn btn-info btn-sm btn-block">Request Call Back</button></div>
+          <div class="col-sm-3">
+
+            <div class="input-group input-group-sm">
+              <input type="text" class="form-control" placeholder="Search">
+              <span class="input-group-btn">
+                <button class="btn btn-info" type="button"><i class="fa fa-search"></i></button>
+              </span>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+
+        </div>
+      </div>
+      <div id="start-sticky-header"></div>
+      <div class="header-sticky">
+        <div class="container">
+          <nav class="navbar navbar-default " role="navigation">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-menu">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand visible-xs-block" href="#none" data-toggle="collapse" data-target="#main-menu">Menu</a>
+            </div>
+            <div class="collapse navbar-collapse" id="main-menu">
+              <ul class="nav navbar-nav">
+                <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+                <li class="dropdown dropdown-large">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products & Services <span class="caret"></span></a>
+                  <ul class="dropdown-menu dropdown-menu-large">
+                    <li class="container">
+                      <div class="row">
+
+                        <div class="col-sm-4">
+                          <ul class="list-unstyled"> <li class="dropdown-header">Products</li>
+                            <li><a href="prescription_and_non-prescription_medicine.html">Prescription &amp; Non-Prescription Medicine</a></li>
+                            <li><a href="dme_and_supplies.html">Durable Medical Equipment (DME) and Supplies</a></li>
+                            <li><a href="compounding.html">Compounding</a></li></ul>
+                        </div>
+                        <div class="col-sm-4">
+                          <ul class="list-unstyled">
+                            <li class="dropdown-header">Services</li>
+                            <li><a href="integrated_healthcare_cloud_technologies.html">Integrated Healthcare Cloud Technologies</a></li>
+                            <li><a href="personalized_healthcare_for_all.html">Personalized Healthcare For All</a></li>
+                            <li><a href="diabetes_education.html">Diabetes Education</a></li>
+                            <li><a href="disease_management.html">Disease Management</a></li>
+                            <li><a href="workers_compensation_pharmacy_solution.html">Workers&prime; Compensation Pharmacy Solution</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-sm-4">
+                          <ul class="list-unstyled">
+                            <li class="dropdown-header">Promotional Products</li>
+                            <li><a href="promotional_products.html">All Promotional Products</a></li>
+                            <li><a href="weight_loss_kit.html">Weight Loss Kit - $399</a></li>
+                            <li><a href="vitamins_for_life.html">Vitamins for life - $399</a></li>
+                            <li><a href="diaetic_kit.html">Diabetic Kit - $399</a></li>
+                            <li><a href="smart_home_health_care_kit.html">Smart Home Health Care Kit - $399</a></li>
+                            <li><a href="energy_saving_kit.html">Energy Saving Kit - $399</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown dropdown-large"><a href="how_it_works.html" class="dropdown-toggle" data-toggle="dropdown">How It Works<span class="caret"></span></a>
+               <ul class="dropdown-menu dropdown-menu-large">
+                    <li class="container">
+                      <div class="row">
+
+                        <div class="col-sm-4">
+                          <ul class="list-unstyled"> <li class="dropdown-header">Prescription Transfer</li>
+                           <li><a href="prescription_transfer.html">Prescription Transfer</a></li>
+                           <!--  <li><a href="dme_and_supplies.html">Durable Medical Equipment (DME) and Supplies</a></li>
+                            <li><a href="compounding.html">Compounding</a></li>--></ul>
+                        </div>
+                        <div class="col-sm-4">
+                          <ul class="list-unstyled">
+                            <li class="dropdown-header">Payment Methods</li>
+                           <li><a href="payment_methods.html">Payment Methods</a></li>
+                           <!--  <li><a href="personalized_healthcare_for_all.html">Personalized Healthcare For All</a></li>
+                            <li><a href="diabetes_education.html">Diabetes Education</a></li>
+                            <li><a href="disease_management.html">Disease Management</a></li>
+                            <li><a href="workers_compensation_pharmacy_solution.html">Workers&prime; Compensation Pharmacy Solution</a></li>-->
+                          </ul>
+                        </div>
+                        <div class="col-sm-4">
+                          <ul class="list-unstyled">
+                            <li class="dropdown-header">Delivery Options</li>
+                            <li><a href="delivery_options.html">Delivery Options</a></li>
+                           <!-- <li><a href="weight_loss_kit.html">Weight Loss Kit - $399</a></li>
+                            <li><a href="vitamins_for_life.html">Vitamins for life - $399</a></li>
+                            <li><a href="diaetic_kit.html">Diabetic Kit - $399</a></li>
+                            <li><a href="smart_home_health_care_kit.html">Smart Home Health Care Kit - $399</a></li>
+                            <li><a href="energy_saving_kit.html">Energy Saving Kit - $399</a></li>-->
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                
+                </li>
+                <li><a href="FAQ.html">FAQ's</a></li>
+              </ul>
+            </div>
+          </nav>
+
+        </div>
+      </div>
+    </header>
+
+  <main id="main">
+    <div class="container">
+      <div class="row">
+
+        <aside class="col-sm-4 col-md-3">
+          <div class="panel panel-default">
+            <div class="panel-heading"><h3 class="panel-title"><a href="promotional_products.html">Promotional Products</a></h3></div>
+            <ul class="list-group">
+
+
+              <li class="list-group-item"><a href="weight_loss_kit.html" title=" Weight Loss Kit"><strong> Weight Loss Kit - $399</strong></a></li>
+              <li class="list-group-item sub"><a href="weight_management_pack.html" title="Weight Management Pack (one month supply)">Weight Management Pack (one month supply)</a></li>
+
+              <li class="list-group-item sub">
+                <a href="electric_slimming_belt.html" title="Electric Slimming Belt">
+                  Slimming Belt
+                </a>
+              </li>
+              <li class="list-group-item sub"><a href="bmi_fat_monitor.html" title="BMI / Fat Monitor">
+                  BMI / Fat Monitor</a></li>
+              <li class="list-group-item sub"><a href="exercise_watch.html" title="Exercise Watch">Advance Exercise Watch with Digital Calorie Counter</a></li>
+              <li class="list-group-item sub">
+                <a href="tablet_pc_phone.html" title="Tablet PC/Phone">
+                  Tablet PC<i> by WHC</i> - Phone (Optional)
+                </a>
+              </li>
+              <li class="list-group-item"><a href="vitamins_for_life.html" title="Vitamins for life"><strong>Vitamins for life - $399</strong></a></li>
+              <li class="list-group-item sub"><a href="vitamins_pack.html" title="Vitamins Pack (one month supply)">Vitamins Pack (one month supply)</a></li>
+              <li class="list-group-item sub"> Body Fat/Weight Scale</li>
+              <li class="list-group-item sub"><a href="bmi_fat_monitor.html" title="BMI / Fat Monitor">
+                  BMI / Fat Monitor</a></li>
+              <li class="list-group-item sub"><a href="exercise_watch.html" title="Exercise Watch">Advance Exercise Watch with Digital Calorie Counter</a></li>
+              <li class="list-group-item sub"><a href="tablet_pc_phone.html" title="Tablet PC/Phone">Tablet PC <i>by WHC</i> - Phone (Optional)</a></li>
+
+
+              <li class="list-group-item"><a href="diaetic_kit.html" title=" Diabetic Kit"><strong> Diabetic Kit - $399</strong></a></li>
+
+              <li class="list-group-item sub"><a href="diabetic_support_pack.html" title="Diabetic-Support Pack™"> Diabetic-Support Pack™</a></li>
+              <li class="list-group-item sub">Diabetic Blood/Glucose Monitor</li>
+              <li class="list-group-item sub">Diabetic Sock</li>
+              <li class="list-group-item sub"><a href="bmi_fat_monitor.html" title="BMI / Fat Monitor">
+                  BMI / Fat Monitor</a></li>
+              <li class="list-group-item sub"><a href="exercise_watch.html" title="Exercise Watch">Advance Exercise Watch with Digital Calorie Counter</a></li>
+              <li class="list-group-item sub"><a href="tablet_pc_phone.html" title="Tablet PC/Phone">Tablet PC <i>by WHC</i> - Phone (Optional)</a></li>
+
+
+              <li class="list-group-item"><a href="smart_home_health_care_kit.html" title=" Smart Home Health Care Kit"><strong> Smart Home Health Care Kit - $399</strong></a>
+
+              <li class="list-group-item sub"><a href="smart_home_air_purifier.html" title="Smart Home air purifier">Smart Home air purifier</a></li>
+              <li class="list-group-item sub"><a href="exercise_watch.html" title="Exercise Watch">Advance Exercise Watch with Digital Calorie Counter</a></li>
+              <li class="list-group-item sub">Blood Pressure Monitor</li>
+              <li class="list-group-item sub"><a href="bmi_fat_monitor.html" title="BMI / Fat Monitor">
+                  BMI / Fat Monitor</a></li>
+              <li class="list-group-item sub">First Aid Kit</li>
+              <li class="list-group-item sub"><a href="tablet_pc_phone.html" title="Tablet PC/Phone">Tablet PC (Optional with any two of the above products)</a></li>
+
+              <li class="list-group-item"><a href="energy_saving_kit.html" title="Energy Saving Kit"><strong> Energy Saving Kit - $399</strong></a></li>
+
+              <li class="list-group-item sub">
+                <a href="home_electric_energy_saving_device.html" title="Home Electric Energy Saving Device">Home Electric Energy Saving Device</a>
+              </li>
+              <li class="list-group-item sub"><a href="smart_auto_fuel_saver.html" title="Smart Auto Fuel Saver">Smart Auto Fuel Saver</a>
+              </li>
+              <li class="list-group-item sub"><a href="bmi_fat_monitor.html" title="BMI / Fat Monitor">
+                  BMI / Fat Monitor</a></li>
+              <li class="list-group-item sub"><a href="exercise_watch.html" title="Advance Exercise Watch with Digital Calorie Counter">Advance Exercise Watch with Digital Calorie Counter</a>
+              </li>
+              <li class="list-group-item sub"><a href="tablet_pc_phone.html" title="Tablet PC/Phone">Tablet PC <i>by WHC</i> - Phone (Optional)</a>
+              </li>
+
+            </ul>
+          </div>
+        </aside>
+
+        <article class="col-sm-8 col-md-9">
+          <div class="well well-sm">
+            <h1 class="page-title">Weight Management Pack (one month supply)</h1>
+            <h4>Nutritional Support for Healthy Weight Management</h4>
+
+            <p>Weight Management Pack, by <abbr title="WheelHealthCare"> WHC</abbr>, supplies a combination of weight management
+              formulas in one convenient pack, each designed with a different function to target the factors that may
+              contribute to an unhealthy weight.
+            </p>
+            <p>Weight Management Pack has been revised to include the novel Metabolic Lean™ formula by Douglas
+              Laboratories. Metabolic Lean™ includes three branded and clinically studied materials-- Meratrim™ plant extract, Capsimax™ capsicum extract, and Zychrome® chromium complex. This special combination of ingredients may improve lipolysis, thermogenic activity, and insulin function. The ingredients in Metabolic Lean™ also help to increase adiponectin levels which facilitate proper fat metabolism and glucose regulation.
+            </p>
+            <div class="text-justify">
+              <h4>FUNCTIONS</h4>
+              <p><strong>Meratrim™</strong></p>
+
+              <p>Meratrim™ is a proprietary plant extract blend for weight management derived from two plants, <em>Sphaeranthus indicus </em>and <em>Garcinia mangostana</em>, traditionally used in Southeast Asian culture<strong>. </strong>Meratrim has been shown in two independent, randomized, double-blind, placebo-controlled clinical studies to significantly reduce body weight, BMI, and waist circumference within 8 weeks when used in combination with a diet and exercise plan. Meratrim appears to achieve this by modulating the accumulation of fat while simultaneously increasing fat burning. Toxicological studies on Meratrim have demonstrated a wide margin of safety.</p>
+
+              <p><strong>Capsicum</strong></p>
+
+              <p>Capsimax™ capsicum extract is a proprietary encapsulated form of premium, highly concentrated natural</p>
+
+              <p>capsicum fruit extract manufactured from hot red peppers. Capsaicinoids are a group of compounds which cause the “heat” found in hot peppers. Benefits of capsicum and capsaicinoids in animal and human studies have shown that it helps manage appetite, supports healthy metabolism to burn calories, and helps induce thermogenesis. Capsimax™ is a patent-pending encapsulated form of premium, highly concentrated natural capsicum extract. Using a proprietary matrix, Capsimax capsicum extract gives users the maximum effectiveness of capsaicinoids without any oral or gastric irritation, thus solving the problem of capsicum compliance.</p>
+
+              <p><strong>Chromium</strong></p>
+
+              <p>Zychrome™ is a unique, patent-pending chromium complex consisting of chromium, niacin and L-cysteine (chromium dinicocysteinate). Seventeen chromium complexes were screened in preclinical studies in order to arrive at the complex found in Zychrome™. <em>In vitro </em>and <em>in vivo </em>studies demonstrated that Zychrome is more efficacious than other forms of chromium in supporting healthy fasting glucose levels, glycated hemoglobin levels (HbA1c), insulin levels, CRP, MCP-1, ICAM-1 and oxidative stress levels†. These effects of Zychrome are mediated via the regulation of cell signal transduction pathways associated with insulin function, glucose control and vascular inflammation†. A randomized, double-blind, placebo-controlled clinical study showed that Zychrome significantly modulated the levels of insulin and insulin resistance as well as the inflammatory cytokine TNF and protein carbonyl, an oxidative stress marker. Toxicological studies have demonstrated a wide margin of safety.</p>
+
+              <p><strong>Garcinia cambogia</strong></p>
+
+              <p>This natural extract comes from a tropical fruit grown in several Asian rain forest areas. Research shows that (-) hydroxycitric acid helps maintain a healthy balance of hepatic lipogenesis and gluconeogenesis, thus preventing excessive conversion of glucose from dietary carbohydrate into body fat. Research also indicates that (-) hydroxycitric acid plays an important role in the regulation of normal appetite.</p>
+
+              <p><strong>Conjugated Linoleic Acid</strong></p>
+
+              <p>CLA is a mixture of conjugated dienoic derivatives of linoleic acid from safflower oil. Conjugated linoleic acid is found mainly in meat and dairy foods; however it can also be found in certain vegetable oils. Its presence in human tissue comes not only from dietary sources, but also from in vivo oxidation of linoleic acid. CLA has shown to be beneficial in supporting healthy weight management by maintaining normal fat metabolism and maintaining lean muscle mass in the body.</p>
+
+              <p><strong>Relora®</strong></p>
+
+              <p>Relora® is a patent-pending combination of two herbal extracts of Magnolia and Phellodendron bark (Asian cork tree). Both herbs have been used in Traditional Chinese Medicine for several hundred years. In a human study, 82% of the participants taking Relora® agreed with the statement that: “Relora® helps control irritability, emotional ups and downs, restlessness, tense muscles, poor sleep, fatigue, and concentration difficulties.” Relora® was found not to cause sedation, though 74% of the patients had more restful sleep. Additionally, no adverse side effects were reported during the trial. A healthy weight management program should include strategies to help support stress and anxiety, especially in individuals sensitive to stress-induced eating.</p>
+
+              <p><strong>B vitamins</strong></p>
+
+              <p>As co-enzymes, the B vitamins are essential components in most major metabolic reactions. They play an</p>
+
+              <p>important role in energy production, including the metabolism of lipids, carbohydrates, and proteins. B vitamins are also important for blood cells, hormones, and nervous system function. As water-soluble substances, B vitamins are not generally stored in the body in any appreciable amounts (with the exception of vitamin B12).</p>
+
+              <p>Therefore, the body needs an adequate supply of B vitamins on a daily basis.</p>
+
+              <h4>FORMULA</h4>
+
+              <p>Serving Size: 1 pack</p>
+
+              <p>Each Pack includes: 1 Nature’s Diet Caps+Herbs capsule, 2 CLA softgels, 1 Relora-Plex capsule, 1 Metabolic</p>
+
+              <p>Lean capsule</p>
+
+              <p>Calories ............................................. 9</p>
+
+              <p>Total Fat ........................................... 1g</p>
+
+              <p>Thiamine.......................................5 mg</p>
+
+              <p>Riboflavin......................................5 mg</p>
+
+              <p>Niacinamide..................................5 mg</p>
+
+              <p>Vitamin B-6 ...................................5 mg</p>
+
+              <p>Folic Acid ................................100 mcg</p>
+
+              <p>Vitamin B-12 .............................50 mcg</p>
+
+              <p>Chromium................................200 mcg</p>
+
+              <p>(from Chromium Polynicotinate/Dinicocysteinate)</p>
+
+              <p>Safflower Oil Complex ...........1,000 mg *</p>
+
+              <p>Providing</p>
+
+              <p>Conjugated linoleic Acid ........770 mg</p>
+
+              <p>Green Tea extract (leaf) .............0.5 mg *</p>
+
+              <p>Meratrim™ Proprietary Blend.....400 mg *</p>
+
+              <p>(<em>Sphaerantus indicus </em>[flower heads] extract, <em>Garcinia mangostana </em>[fruit rind] extract)</p>
+
+              <p>Capsaicinoids............................0.5 mg *</p>
+
+              <p>(from Capsimax™, providing capsaicin, dihydrocapsaicin, nordihydrocapsaicin)</p>
+
+              <p>Garcinia Cambogia (fruit) ......... 500 mg *</p>
+
+              <p>( ) supplying:</p>
+
+              <p>(-) hydroxycitric acid (HCA) .... 250 mg *</p>
+
+              <p>Proprietary Herbal Blend .......... 200 mg *</p>
+
+              <p>Green Tea Extract (leaf), <em>Eleutherococcus</em></p>
+
+              <p><em>senticosus </em>(root), Cayenne (Fruit), Gotu Kola</p>
+
+              <p>(Entire Plant), Beet Powder (Root), Ho Shou</p>
+
+              <p>Wu (Entire Plant), Wood Betony (Entire Plant),</p>
+
+              <p>Guarana (Seed) and Kola Nut (Roasted Seed)</p>
+
+              <p>Relora® ................................... 250 mg *</p>
+
+              <p>(a proprietary blend of a patented** extract from <em>Magnolia officinalis </em>[bark] and a proprietary extract from</p>
+
+              <p><em>Phellodendron amurense </em>[bark])</p>
+
+              <p>Other Ingredients: Gelatin, hydroxypropyl methylcellulose (capsule), cellulose, dicalcium phosphate,</p>
+
+              <p>vegetable stearate, glycerin, water, carob extract, titanium oxide pharmaceutical glaze and silica</p>
+
+              <p>&nbsp;</p>
+
+              <h4>SUGGESTED USE</h4>
+
+              <p>Adults take 1 pack 30 minutes before breakfast and 1 pack 30 minutes before dinner with 8 oz. of water, or as directed by your health care professional.</p>
+
+              <h4>SIDE EFFECTS</h4>
+
+              <p>Gastrointestinal side effects may occur.</p>
+
+              <p><strong>Warning: </strong>If you are pregnant or breastfeeding consult a physician prior to use. Excessive consumption may impair ability to drive or operate heavy machinery. Not recommended for consumption with alcoholic</p>
+
+              <p>beverages.</p>
+
+              <h4>STORAGE</h4>
+
+              <p>Store in a cool, dry place, away from direct light. Keep out of reach of children.</p>
+
+            </div>
+
+          </div>
+        </article>
+
+
+      </div>
+
+    </div>
+  </main>
+
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+
+        <aside class="col-sm-8">
+
+          <ul class="list-inline links">
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="affiliates.html">Affiliates</a></li>
+            <li><a href="partners.html">Partners</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+            <li><a href="sitemap.html">Site Map</a></li>
+            <li><a href="FAQ.html">FAQ's</a></li>
+          </ul>
+        </aside>
+        <aside class="col-sm-4">
+          <ul class="list-inline social-icons">
+            <li><a href="https://www.facebook.com/pages/Wheel-Healthcare-Inc/537220013044604?fref=ts" target="_BLANK" class="fb"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/wheelhealthcare" target="_BLANK" class="tw"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://plus.google.com" target="_BLANK" class="gplus"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="https://www.linkedin.com/" target="_BLANK" class="in"><i class="fa fa-linkedin"></i></a></li>
+
+            <li><a href="http://www.youtube.com/" target="_BLANK" class="utube"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="http://www.flickr.com/" target="_BLANK" class="flckr"><i class="fa fa-flickr"></i></a></li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </footer>
+
+  <footer id="footer-bottom">
+    <div class="container">
+      <p>&copy; 2014 Wheel HealthCare Services, Inc. All rights reserved. <a href="privacy.html">Privacy </a> &middot; <a href="terms.html">Terms of Use</a></p>
+    </div>
+  </footer>
+
+  <a href="#none" class="scrollup">Scroll</a>
+</body>
+</html>

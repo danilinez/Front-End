@@ -1,0 +1,444 @@
+.product-detail {
+  padding: 0px 0px 20px;
+  .product-h
+  {
+    color:$green;
+    font-size: 28px;
+    font-family: popsb;
+    margin: 0px 0px 20px;
+    @media (max-width:991px) {
+      font-size: 26px;      
+    }
+    @media (max-width:767px) {
+      font-size: 24px;      
+    }
+  }
+  .gallary
+  {
+    .carousel
+    {
+      display: flex;
+      .carousel-inner
+      {
+        .carousel-item
+        {
+          position: relative;
+          padding-top: 110%;
+          img
+          {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            height: 100%;
+            width:100%;
+            object-fit: contain;
+            object-position: center;
+          }
+        }
+      }
+      .carousel-indicators 
+      {
+        display: block;
+        position: relative;
+        margin: 0px 0px;
+        padding-right: 10px;
+        li 
+        {
+          max-width: 80px;
+          -webkit-transition: 0.1s ease;
+          -o-transition: 0.1s ease;
+          transition: 0.1s ease;
+          width: auto;
+          height: auto;
+          text-indent: 0;
+          border: 1px solid #ccc;
+          display: block;
+          & ~ li
+          {
+            margin-top: 10px;
+          }
+          img
+          {
+            opacity: .5;
+          }
+          &.active 
+          {
+            border: 1px solid $green;
+            img
+            {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    } 
+    @media (max-width:767px) 
+    {
+      margin-bottom: 30px;
+      .carousel
+      {
+        flex-direction:column;
+        .carousel-inner
+        {
+          order:1;
+        }
+        .carousel-indicators 
+        {
+          order:2;
+          padding: 0px 0px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex !important;
+          position: relative;
+          margin-right: 1%;
+          margin-left: 1%;
+          padding-top: 15px;
+          li ~ li
+          {
+            margin: 0px 7px !important;
+          }
+        }
+      }
+    }
+  } 
+  .detailz
+  {
+    border:1px solid #ddd;
+    .price-wish
+    {
+      border-bottom:1px solid #ddd;
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      .price
+      {
+        h3
+        {
+          color:$green;
+          font-family: pop;
+          font-weight: 500;
+          margin: 0px;
+        }
+        p
+        {
+          margin: 0px;
+          color:$gtext;
+        }
+      }
+      .wishrate
+      {
+        .checkbox
+        {
+          label
+          {
+            color:rgb(223, 0, 0);
+            cursor: pointer;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            i
+            {
+              margin-right: 5px;
+              font-size: 18px;
+              position: relative;
+              top: -1px;
+            }
+          }
+        }
+        .rating
+        {
+          *::selection
+          {
+            background: transparent;
+          }
+          ul
+          {
+            text-align: right;
+            li
+            {
+              position: relative;
+              display: inline-block;
+              width:100%;
+              .fa-star
+              {
+                font-size: 16px;
+                color:#ddd;
+                position: relative;
+                @media (max-width:576px) {
+                  font-size: 14px;
+                }
+                &.yellow
+                {
+                  color:rgb(255, 196, 0);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .addtocart
+    {
+      border-bottom:1px solid #ddd;
+      padding: 15px;
+      .frow
+      {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        .form-control
+        {
+          max-width: 80px;
+          margin-right: 20px;
+        }
+      }
+      .form-control
+      {
+        border-radius: 0px;
+      }
+      .act-label
+      {
+        font-family: popsb;
+        margin-top: 0px;
+      }
+      .pick-color,
+      .pick-size
+      {
+        margin-bottom: 20px;
+      }
+      .stock
+      {
+        margin: 15px 0px 0px;
+        font-size: 13px;
+        font-family: popm;
+        strong
+        {
+          letter-spacing: 1px;
+          padding-left: 5px;
+          font-family: popsb;
+          color:rgb(187, 0, 0);
+        }
+      }
+    }
+    .highlights
+    {
+      border-bottom:1px solid #ddd;
+      padding: 15px;
+      h5
+      {
+        color:#111;
+        font-size: 14px;
+        font-family: pop;
+        margin: 0px 0px 15px;
+      }
+      ul
+      {
+        li
+        {
+          display: block;
+          padding-left: 15px;
+          color:$gtext;
+          font-size: 14px;
+          font-family: pop;
+          &::before
+          {
+            content:'\2022';
+            position: relative;
+            left: -10px;
+          }
+        }
+      }
+    }
+    .ctg
+    {
+      padding: 15px;
+      p
+      {
+        font-size: 14px;
+        color:$gtext;
+        font-family: pop;
+        margin: 0px;
+        a
+        {
+          color:$green;
+          font-family: pop;
+        }
+      }
+    }
+  }
+}
+.related-products
+{
+  padding: 50px 0px 90px;
+  h2
+  {
+    margin: 0px 0px 30px;
+    color: #111;
+    font-family: popsb;
+  }
+  @import 'product_item.scss';
+  .product-card
+  {
+    margin-bottom:30px;
+    &:hover
+    {
+      .buy
+      {
+        box-shadow:0px 8px 8px -5px rgba(0,0,0,0.2);
+      }
+    }
+  }
+}
+.nav-pills
+{
+  border-bottom:1px solid #ddd;
+  margin-top:15px;
+  .nav-item
+  {
+    a
+    {
+      font-family: popm;
+      font-weight: 500;
+      color:$gtext;
+      border-radius: 0px;
+      margin-bottom: -1px;
+      &.active
+      {
+        background:transparent;
+        color:$green;
+        border-bottom:1px solid $green;
+      }
+    }
+  }
+}
+.tab-content
+{
+  padding: 20px 0px;
+  p
+  {
+    font-size: 14px;
+    color:$gtext;
+  }
+  input.form-control
+  {
+    border-radius: 0px;
+    height: 45px;
+  }
+  .btn-default
+  {
+    font-family: pop;
+  }
+}
+.reviews
+{
+  .commentlist
+  {
+    .review-holder
+    {
+      margin-bottom: 15px;
+      display: inline-block;
+      width: 100%;
+      & ~ .review-holder
+      {
+        border-top:1px solid #eee;
+      }
+    }
+    .review
+    {
+      border-radius: 5px;
+      padding: 15px 0px;
+      display: flex;
+      .img-holder
+      {
+        max-width: 150px;
+        min-width: 100px;
+        border-radius: 10px;
+        margin-right: 15px;
+        border:1px solid #ccc;
+        align-self:flex-start;
+        img
+        {
+          border-radius: 10px;
+        }
+        @media (max-width:576px) {
+          max-width: 80px;
+          min-width: 60px;
+        }
+      }
+      .comment
+      {
+        .rating
+        {
+          *::selection
+          {
+            background: transparent;
+          }
+          ul
+          {
+            li
+            {
+              position: relative;
+              display: inline-block;
+              width:100%;
+              .fa-star
+              {
+                font-size: 14px;
+                color:#ddd;
+                position: relative;
+                @media (max-width:576px) {
+                  font-size: 12px;
+                }
+                &.yellow
+                {
+                  color:rgb(255, 196, 0);
+                }
+              }
+            }
+          }
+        }
+        p
+        {
+          margin: 7px 0px 0px;
+          font-size: 14px;
+          color:$gtext;
+          font-family: popl;
+        }
+      }
+    }
+    .review-reply
+    {
+      margin-top: 15px;
+      margin-left: 60px;
+      @media (max-width:576px) {
+        margin-left: 30px;
+      }
+    }
+  }
+}
+h3.h3
+{
+  font-size: 20px;
+  font-family: popm;
+  margin: 0px 0px 15px;
+}
+.add-review-form
+{
+  margin-top: 20px;
+}
+.star-rating {
+  font-size:1.25em;
+  margin: 0px 0px 15px;
+}
+
+.star-rating .far
+{
+  color: $gtext;
+  cursor: pointer;
+}
+.star-rating .fas
+{
+  cursor: pointer;
+  color: #ffc401;
+}

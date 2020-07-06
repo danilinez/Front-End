@@ -1,0 +1,148 @@
+.navbar
+{
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, .3);
+  background-color:#fff;
+  padding: 0px;
+  margin: 0px;
+  .container
+  {
+    position: relative;
+  }
+  .right_nav
+  {
+    position: absolute;
+    right: 0px;
+    top:0px;
+  }
+  .navbar-nav
+  {
+    .nav-link
+    {
+      color:#555;
+      font-family: 'rsemi';
+      font-size: 12px;
+      padding: 15px 10px;
+      &:hover
+      {
+        color:$green;
+      }
+    }
+    &.ml-auto
+    {
+      .search
+      {
+        border-left: 1px solid #eee;
+        a
+        {
+          padding: 15px 20px;
+        }
+      }
+    }
+    .profile_icon
+    {
+      float: left;
+      position: relative;
+      margin-top: -7px;
+      border:2px solid #555;
+      border-radius: 100%;
+      max-width: 40px;
+      &:hover
+      {
+        border-color:$green;
+      }
+      img
+      {
+        border-radius: 100%;
+      }
+    }
+  }
+}
+.navbar-toggler
+{
+  padding: 13px 10px;
+}
+.quick-links
+{
+  background-color:#fff;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  display: block;
+  ul
+  {
+    display: flex;
+    @media (max-width:991px) {
+      flex-direction: column; 
+    }
+    li
+    {
+      display: block;
+      flex-grow: 1;
+      margin: 0px;
+      text-align:center;
+      &:first-child a
+      {
+        @media (max-width:991px) 
+        {
+          border-left: none !important;
+          border-top-left-radius:0px !important;
+        }
+        border-left:2px solid #eee;
+        border-top-left-radius:6px;
+      }
+      &:last-child a
+      {
+        border-top-right-radius:6px;
+        border-right:2px solid #eee;
+        @media (max-width:991px) 
+        {
+          border-right: none !important;
+          border-top-right-radius:0px !important;
+        }
+      }
+      a
+      {
+        @media (max-width:991px)
+        {
+          border-top:1px solid #eee;
+        } 
+        border-top:2px solid #eee;
+        color: #333;
+        display: inline-block;
+        width:100%;
+        padding: 10px 0px;
+        font-family: rsemi;
+        font-size: 12px;
+        transition: .2s ease-out;
+        &:hover
+        {
+          border-color:$green;
+          background-color:$green;
+          color:#fff;
+        }
+      }
+    }
+  }
+}
+.banner
+{
+  .carousel
+  {
+    max-height: 350px;
+    overflow: hidden;
+  }
+}
+
+@media (max-width:991px)
+{
+  ul.quick-menu
+  {
+    display: none;
+  }
+}
+@media (min-width:992px)
+{
+  .quick-btn, .qbtn-wrapper
+  {
+    display: none !important;
+  }
+}

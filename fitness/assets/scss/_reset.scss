@@ -1,0 +1,132 @@
+
+* {
+  box-sizing: border-box;
+  font-family: "urdu", serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+*::selection {
+  background-color: rgb(0, 162, 255);
+  color: #fff;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+
+  li {
+    list-style-type: none;
+    display: inline-block;
+  }
+}
+
+a,
+.link {
+  text-decoration: none !important;
+}
+
+.btn,
+button {
+  i {
+    margin-right: 5px;
+  }
+}
+
+html {
+  overflow-x: hidden !important;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fff;
+  margin: 0px;
+  position: relative;
+  padding: 0px;
+  width: 100%;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+  background-color: transparent;
+  position: absolute;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: $green;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.fluid {
+  padding-left: 7px !important;
+  padding-right: 7px !important;
+}
+
+// Margin Y axis Remover from row
+.mx-none {
+  margin: 0px -15px 0px -15px;
+}
+
+.hidden {
+  display: none;
+}
+
+.btn {
+  font-family: bold;
+  padding: 5px 30px;
+  border-radius: 6px;
+}
+
+
+.btn-green {
+  border: 2px solid $green !important;
+  background: $green !important;
+  color: #fff !important;
+}
+
+
+
+.btn-default:active {
+  transform: scale(0.97);
+}
+
+.btn-next:focus {
+  background: $green !important;
+  border-color: $green !important;
+}
+
+button:focus {
+  box-shadow: none !important;
+}
+
+*:focus {
+  outline-color: transparent !important;
+}
+
+.btn:focus,
+.form-control:focus {
+  box-shadow: none !important;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+@media(min-width:992px)
+{
+  .hide-before
+  {
+    display: none !important;
+  }
+}
+
+@media(max-width:991px)
+{
+  .hide-after
+  {
+    display: none !important;
+  }
+}

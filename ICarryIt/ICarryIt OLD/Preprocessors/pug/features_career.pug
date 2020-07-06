@@ -1,0 +1,124 @@
+doctype html
+html(lang='en')
+  head
+    title iCarryit
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    include includes/links
+  body.carrier_body
+    //- navbar
+    include includes/carrier/navbar
+    //- navbar end
+    
+    //- About Body
+    main.carrier.feature
+      //- banner 
+      .small_banner
+        .container.banner_content_wrapper
+          ul.breadcrumb
+            span.text-light You are here:
+            li.text-light
+              a.text-light(href='index_carrier.html') Home
+            li.text-light.noafter Features
+          .banner_content
+            h1.banner_title.text-light Features
+              .social_icons.text-center
+                ul.list-inline
+                  li.list-inline-item
+                    a.text-light.fb(href='javascript:void(0)')
+                      i.fab.fa-facebook-f
+                  li.list-inline-item
+                    a.text-light.twtr(href='javascript:void(0)')
+                      i.fab.fa-twitter
+                  li.list-inline-item
+                    a.text-light.msg(href='javascript:void(0)')
+                      i.fas.fa-envelope
+                  li.list-inline-item
+                    a.text-light.share(href='javascript:void(0)')
+                      i.fas.fa-share-alt
+        img.feature_banner_img.small_banner_img(src='assets/images/carrier/feature_banner.png', alt='banner')
+      
+      //- Banner End 
+
+      .feature-body
+        .container
+          .contentz
+              h4.text-center Why Carry with ICarryIt?
+              p.ptag.text-center
+                | Did you buy something and need someone to pick it up for you. Wan’t have you grocery brought home. Need to send furniture across town or to next town? Don’t have a large enough car to bring home that new TV? That’s what we’re here for!
+              .featurez
+                .row
+                  .col-xl-4.col-md-6
+                    .single_feature
+                      h3
+                        img(src='assets/images/carrier/package.png', alt='banner')
+                        | Choose the Cargo that Suits You
+                      p.detailz
+                        | Lorem Ipsum Dorem is a dummy text used in websites and designes to make your work faster without wasting your time but it is just a dummy text so keep on doing it. 
+                  .col-xl-4.col-md-6
+                    .single_feature
+                      h3
+                        img(src='assets/images/carrier/lock.png', alt='banner')
+                        | Hassle-Free Payments 
+                      p.detailz
+                        | Lorem Ipsum Dorem is a dummy text used in websites and designes to make your work faster without wasting your time but it is just a dummy text so keep on doing it. 
+                  .col-xl-4.col-md-6
+                    .single_feature
+                      h3
+                        img(src='assets/images/carrier/check.png', alt='banner')
+                        | Pick Up & Delivery Verification
+                      p.detailz
+                        | Lorem Ipsum Dorem is a dummy text used in websites and designes to make your work faster without wasting your time but it is just a dummy text so keep on doing it. 
+                  .col-xl-4.col-md-6
+                    .single_feature
+                      h3
+                        img(src='assets/images/carrier/mapmarker.png', alt='banner')
+                        | Optimised Delivery Routes
+                      p.detailz
+                        | Lorem Ipsum Dorem is a dummy text used in websites and designes to make your work faster without wasting your time but it is just a dummy text so keep on doing it. 
+                  .col-xl-4.col-md-6
+                    .single_feature
+                      h3
+                        img(src='assets/images/carrier/todos.png', alt='banner')
+                        | Track Live & Completed Orders
+                      p.detailz
+                        | Lorem Ipsum Dorem is a dummy text used in websites and designes to make your work faster without wasting your time but it is just a dummy text so keep on doing it. 
+                  .col-xl-4.col-md-6
+                    .single_feature
+                      h3
+                        img(src='assets/images/carrier/chat.png', alt='banner')
+                        | Contact the Client at Any Time
+                      p.detailz
+                        | Lorem Ipsum Dorem is a dummy text used in websites and designes to make your work faster without wasting your time but it is just a dummy text so keep on doing it. 
+            
+          //- download app
+          .download.text-left.carrier-gradient
+            .row
+              .col-md-6
+                .context
+                  h2.text-light Download for Free!
+                  p.text-light 
+                    | Lorem ipsum dolor sit amet, per no tamquam omittam
+                    | appellantur. Meis fierent id est, hinc reque intellegat.
+                  ul.list-inline.app-btns
+                    li.list-inline-item
+                      a.mr-2(href='asd')
+                        img(src='assets/images/astore.png', alt='app_store')
+                    li.list-inline-item
+                      a(href='asd')
+                        img(src='assets/images/gplay.png', alt='google_play')
+              .col-md-6
+                .flip
+                  img.img-fluid(src='assets/images/carrier/tilt_mobile.png', alt='flip')
+              
+      
+
+      //- Footer
+      include includes/carrier/footer      
+      //- Footer End
+    
+    
+    //- Hompage Body End
+    
+    //- scripts
+    include includes/scripts

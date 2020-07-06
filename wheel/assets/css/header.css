@@ -1,0 +1,27 @@
+#header {
+  padding: 7px 0;
+  background: #012060;
+}
+#header #logo {
+  display: block;
+  margin-bottom: 10px;
+  margin: 0px 0;
+}
+#header #logo img{}
+
+#header ul.links {
+  margin: 0px 0 10px;
+  font-size: 13px;
+}
+#header ul.links a {
+  color: #efefef;
+  font-size: 12px;
+}
+#header ul.links a:hover,#header ul.links a:focus {
+  color: #fff;
+}
+#header ul.links li:after {content: "\b7\a0";padding-left: 4px;color: #5B5D5E;}
+#header ul.links li:last-child:after {content: ''}
+#header ul.links li {  padding-right: 0px;  padding-left: 0px;}
+@media (min-width:768px) {#header ul.links {float: right;}}
+@media (max-width:768px) {#header ul.links {margin-top: 10px;}}

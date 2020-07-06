@@ -1,0 +1,1280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home | Tabeeb</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/owl.css" />
+    <link rel="stylesheet" href="assets/fontawesome/css/all.css" />
+    <link rel="stylesheet" href="assets/css/master.css" />
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-xl">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/images/logo.png" alt="logo">
+        </a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+      
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="navigation">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Find a Doctor</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Online Consultations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Hospitals</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Blog</a>
+            </li> 
+          </ul>
+        </div> 
+        <ul class="navbar-nav nav-btns">
+          <li class="nav-item">
+            <a class="btn btn-default" href="#" style="font-family:popsbold;"><i class="fas fa-sign-in-alt"></i> Login</a>
+          </li> 
+          <li class="nav-item">
+            <a class="btn btn-default join" href="#">Join as Patient</a>
+          </li> 
+          <li class="nav-item">
+            <a class="btn btn-default join" href="#">Join as Doctor</a>
+          </li> 
+        </ul>
+      </div>
+    </nav>
+    <div class="banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="content">
+              <div class="fadeup-a">
+                <h1>Health Directory</h1>
+                <p>A better Doctors , Clinics & Labs . We'll help you find it</p>
+              </div>
+              <div class="row">
+                <div class="col-12 justify-content-center d-flex">
+                  <div class="listing-search fadein">
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Doctor Name">
+                    </div> 
+                    <div class="drop dropdown" id="city">
+                      <button type="button" class="btn btn-primary">City</button>
+                      <div class="dropdown-menu city">
+                        <a class="dropdown-item" href="#">Lahore</a>
+                        <a class="dropdown-item" href="#">Islamabad</a>
+                        <a class="dropdown-item" href="#">Karachi</a>
+                        <a class="dropdown-item" href="#">Faisalabad</a>
+                      </div>
+                    </div>
+                    <!-- <div class="drop dropdown" id="area">
+                      <button type="button" class="btn btn-primary">Area</button>
+                      <div class="dropdown-menu area">
+                        <a class="dropdown-item" href="#">Bahria Town</a>
+                        <a class="dropdown-item" href="#">DHA</a>
+                        <a class="dropdown-item" href="#">Faisal Town</a>
+                        <a class="dropdown-item" href="#">Farooq Colony</a>
+                        <a class="dropdown-item" href="#">Iqbal Town</a>
+                        <a class="dropdown-item" href="#">Al Noor Town</a>
+                        <a class="dropdown-item" href="#">Walton</a>
+                      </div>
+                    </div> -->
+                    <div class="drop dropdown" id="skill">
+                      <button type="button" class="btn btn-primary">Speciality</button>
+                      <div class="dropdown-menu skill">
+                        <a class="dropdown-item" href="#">Allergy Specialist <span class="urdu">الرجی کا ڈاکٹر</span></a>
+                        <a class="dropdown-item" href="#">Andrologist <span class="urdu">اخراج کا ڈاکٹر</span></a>
+                        <a class="dropdown-item" href="#">Ansethetist <span class="urdu">بے ہوشی کا ڈاکٹر</span></a>
+                        <a class="dropdown-item" href="#">Cancer Specialist <span class="urdu">کینسر کا ڈاکٹر</span></a>
+                        <a class="dropdown-item" href="#">Cancer Sergon <span class="urdu">کینسر کا سرجن</span></a>
+                        <a class="dropdown-item" href="#">Heart Specialist <span class="urdu">دل کا ڈاکٹر</span></a>
+                        <a class="dropdown-item" href="#">Heart Surgon <span class="urdu">دل کا سرجن</span></a>
+                      </div>
+                    </div>
+                    <!-- <div class="drop dropdown" id="fee">
+                      <button type="button" class="btn btn-primary">Fee Range</button>
+                      <div class="dropdown-menu fee">
+                        <a class="dropdown-item" href="#">Rs. 500 - Rs. 100 </a>
+                        <a class="dropdown-item" href="#">Rs. 1000 - Rs. 1500 </a>
+                        <a class="dropdown-item" href="#">Rs. 1500 - Rs. 2000 </a>
+                        <a class="dropdown-item" href="#">Rs. 2000 - Rs. 2500 </a>
+                        <a class="dropdown-item" href="#">Rs. 2500 - Rs. 3000 </a>
+                        <a class="dropdown-item" href="#">Rs. 3000 - Rs. 3500 </a>
+                        <a class="dropdown-item" href="#">Rs. 3500 - Rs. 4500 </a>
+                        <a class="dropdown-item" href="#">Rs. 4500 - Rs. 5000 </a>
+                      </div>
+                    </div>
+                    <div class="drop dropdown" id="gender">
+                      <button type="button" class="btn btn-primary">Gender</button>
+                      <div class="dropdown-menu gender">
+                        <a class="dropdown-item" href="#">Male</a>
+                        <a class="dropdown-item" href="#">Female</a>
+                      </div>
+                    </div> -->
+                    <a class="btn btn-default search" href="#"><i class="fal fa-search"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <ul>
+                    <li>
+                      <div class="fadeup-a">
+                        <a href="#">
+                          <img src="assets/images/categorie-1.png" alt="categ">
+                          <h4>Doctors</h4>
+                        </a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="fadeup-b">
+                        <a href="#">
+                          <img src="assets/images/categorie-2.png" alt="categ">
+                          <h4>Clinics</h4>
+                        </a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="fadeup-c">
+                        <a href="#">
+                          <img src="assets/images/categorie-4.png" alt="categ">
+                          <h4>Hospitals</h4>
+                        </a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-sm-6">
+            <div class="fadeup-a">
+              <div class="text">
+                <img src="assets/images/service-1.png" alt="">
+                <h2>Reliable Places</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+              </div>
+            </div> 
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="fadeup-b">
+              <div class="text">
+                <img src="assets/images/service-2.png" alt="">
+                <h2>High Credibility</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="fadeup-c">
+              <div class="text">
+                <img src="assets/images/service-3.png" alt="">
+                <h2>Quick search</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="fadeup-d">
+              <div class="text">
+                <img src="assets/images/service-4.png" alt="">
+                <h2>Know better</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="featured">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="title fadeup-a">Featured Listings</h1>
+          </div>
+          <div class="col-12">
+            <div class="mid-pills fadein">
+              <ul class="nav nav-pills">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" href="#doctors">Doctors</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" href="#hospitals">Hospitals</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" href="#clinics">Clinics</a>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-content fadein">
+              <div class="tab-pane container active" id="doctors">
+                <div class="row">
+                  <div class="col-xl-6 col-sm-12 col-6">
+                    <div class="entity">
+                      <div class="img-holder">
+                        <img src="assets/images/doc.jpg" class="img-fluid" alt="doc">
+                      </div>
+                      <div class="text">
+                        <h4 class="name">Dr. Zain Ali</h4>
+                        <h5 class="speciality">Best Sergion of Heart and Brain</h5>
+                        <div class="intouch">
+                          <p><i class="fal fa-map-marker-alt"></i> 154 Bayswater Rd, W2 4HP, UK</p>
+                          <p><i class="fal fa-mobile"></i> +4 235 856843</p>
+                        </div>
+                      </div>
+                      <div class="action">
+                        <div class="rating">
+                          <ul>
+                            <li>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star"></i>
+                            </li>
+                            <li>
+                              <div class="checkbox">
+                                <label><input type="checkbox" class="hidden favorite"/><i class="far fa-heart"></i></label>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <a href="#" class="btn btn-primary">Book Appointment</a>
+                        <div class="votes">
+                          <p><i class="far fa-thumbs-up"></i>(1200 votes)</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-sm-12 col-6">
+                    <div class="entity">
+                      <div class="img-holder">
+                        <img src="assets/images/doc.jpg" class="img-fluid" alt="doc">
+                      </div>
+                      <div class="text">
+                        <h4 class="name">Dr. Zain Ali</h4>
+                        <h5 class="speciality">Best Sergion of Heart and Brain</h5>
+                        <div class="intouch">
+                          <p><i class="fal fa-map-marker-alt"></i> 154 Bayswater Rd, W2 4HP, UK</p>
+                          <p><i class="fal fa-mobile"></i> +4 235 856843</p>
+                        </div>
+                      </div>
+                      <div class="action">
+                        <div class="rating">
+                          <ul>
+                            <li>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star"></i>
+                            </li>
+                            <li>
+                              <div class="checkbox">
+                                <label><input type="checkbox" class="hidden favorite"/><i class="far fa-heart"></i></label>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <a href="#" class="btn btn-primary">Book Appointment</a>
+                        <div class="votes">
+                          <p><i class="far fa-thumbs-up"></i>(1200 votes)</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-sm-12 col-6">
+                    <div class="entity">
+                      <div class="img-holder">
+                        <img src="assets/images/doc.jpg" class="img-fluid" alt="doc">
+                      </div>
+                      <div class="text">
+                        <h4 class="name">Dr. Zain Ali</h4>
+                        <h5 class="speciality">Best Sergion of Heart and Brain</h5>
+                        <div class="intouch">
+                          <p><i class="fal fa-map-marker-alt"></i> 154 Bayswater Rd, W2 4HP, UK</p>
+                          <p><i class="fal fa-mobile"></i> +4 235 856843</p>
+                        </div>
+                      </div>
+                      <div class="action">
+                        <div class="rating">
+                          <ul>
+                            <li>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star"></i>
+                            </li>
+                            <li>
+                              <div class="checkbox">
+                                <label><input type="checkbox" class="hidden favorite"/><i class="far fa-heart"></i></label>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <a href="#" class="btn btn-primary">Book Appointment</a>
+                        <div class="votes">
+                          <p><i class="far fa-thumbs-up"></i>(1200 votes)</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-sm-12 col-6">
+                    <div class="entity">
+                      <div class="img-holder">
+                        <img src="assets/images/doc.jpg" class="img-fluid" alt="doc">
+                      </div>
+                      <div class="text">
+                        <h4 class="name">Dr. Zain Ali</h4>
+                        <h5 class="speciality">Best Sergion of Heart and Brain</h5>
+                        <div class="intouch">
+                          <p><i class="fal fa-map-marker-alt"></i> 154 Bayswater Rd, W2 4HP, UK</p>
+                          <p><i class="fal fa-mobile"></i> +4 235 856843</p>
+                        </div>
+                      </div>
+                      <div class="action">
+                        <div class="rating">
+                          <ul>
+                            <li>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star"></i>
+                            </li>
+                            <li>
+                              <div class="checkbox">
+                                <label><input type="checkbox" class="hidden favorite"/><i class="far fa-heart"></i></label>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <a href="#" class="btn btn-primary">Book Appointment</a>
+                        <div class="votes">
+                          <p><i class="far fa-thumbs-up"></i>(1200 votes)</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-sm-12 col-6">
+                    <div class="entity">
+                      <div class="img-holder">
+                        <img src="assets/images/doc.jpg" class="img-fluid" alt="doc">
+                      </div>
+                      <div class="text">
+                        <h4 class="name">Dr. Zain Ali</h4>
+                        <h5 class="speciality">Best Sergion of Heart and Brain</h5>
+                        <div class="intouch">
+                          <p><i class="fal fa-map-marker-alt"></i> 154 Bayswater Rd, W2 4HP, UK</p>
+                          <p><i class="fal fa-mobile"></i> +4 235 856843</p>
+                        </div>
+                      </div>
+                      <div class="action">
+                        <div class="rating">
+                          <ul>
+                            <li>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star"></i>
+                            </li>
+                            <li>
+                              <div class="checkbox">
+                                <label><input type="checkbox" class="hidden favorite"/><i class="far fa-heart"></i></label>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <a href="#" class="btn btn-primary">Book Appointment</a>
+                        <div class="votes">
+                          <p><i class="far fa-thumbs-up"></i>(1200 votes)</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-sm-12 col-6">
+                    <div class="entity">
+                      <div class="img-holder">
+                        <img src="assets/images/doc.jpg" class="img-fluid" alt="doc">
+                      </div>
+                      <div class="text">
+                        <h4 class="name">Dr. Zain Ali</h4>
+                        <h5 class="speciality">Best Sergion of Heart and Brain</h5>
+                        <div class="intouch">
+                          <p><i class="fal fa-map-marker-alt"></i> 154 Bayswater Rd, W2 4HP, UK</p>
+                          <p><i class="fal fa-mobile"></i> +4 235 856843</p>
+                        </div>
+                      </div>
+                      <div class="action">
+                        <div class="rating">
+                          <ul>
+                            <li>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star"></i>
+                            </li>
+                            <li>
+                              <div class="checkbox">
+                                <label><input type="checkbox" class="hidden favorite"/><i class="far fa-heart"></i></label>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <a href="#" class="btn btn-primary">Book Appointment</a>
+                        <div class="votes">
+                          <p><i class="far fa-thumbs-up"></i>(1200 votes)</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+              <div class="tab-pane container fade" id="hospitals">
+                <div class="row">
+                  <div class="col-xl-6 col-sm-12 col-6">
+                    <div class="entity">
+                      <div class="img-holder">
+                        <img src="assets/images/hospital.jpg" class="img-fluid" alt="doc">
+                      </div>
+                      <div class="text">
+                        <h4 class="name">National Hospital</h4>
+                        <h5 class="speciality">Best Hospital of City</h5>
+                        <div class="intouch">
+                          <p><i class="fal fa-map-marker-alt"></i> 154 Bayswater Rd, W2 4HP, UK</p>
+                          <p><i class="fal fa-mobile"></i> +4 235 856843</p>
+                        </div>
+                      </div>
+                      <div class="action">
+                        <div class="rating">
+                          <ul>
+                            <li>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star"></i>
+                            </li>
+                            <li>
+                              <div class="checkbox">
+                                <label><input type="checkbox" class="hidden favorite"/><i class="far fa-heart"></i></label>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <a href="#" class="btn btn-primary">Book Appointment</a>
+                        <div class="votes">
+                          <p><i class="far fa-thumbs-up"></i>(1200 votes)</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-sm-12 col-6">
+                    <div class="entity">
+                      <div class="img-holder">
+                        <img src="assets/images/hospital.jpg" class="img-fluid" alt="doc">
+                      </div>
+                      <div class="text">
+                        <h4 class="name">National Hospital</h4>
+                        <h5 class="speciality">Best Hospital of City</h5>
+                        <div class="intouch">
+                          <p><i class="fal fa-map-marker-alt"></i> 154 Bayswater Rd, W2 4HP, UK</p>
+                          <p><i class="fal fa-mobile"></i> +4 235 856843</p>
+                        </div>
+                      </div>
+                      <div class="action">
+                        <div class="rating">
+                          <ul>
+                            <li>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star"></i>
+                            </li>
+                            <li>
+                              <div class="checkbox">
+                                <label><input type="checkbox" class="hidden favorite"/><i class="far fa-heart"></i></label>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <a href="#" class="btn btn-primary">Book Appointment</a>
+                        <div class="votes">
+                          <p><i class="far fa-thumbs-up"></i>(1200 votes)</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-sm-12 col-6">
+                    <div class="entity">
+                      <div class="img-holder">
+                        <img src="assets/images/hospital.jpg" class="img-fluid" alt="doc">
+                      </div>
+                      <div class="text">
+                        <h4 class="name">National Hospital</h4>
+                        <h5 class="speciality">Best Hospital of City</h5>
+                        <div class="intouch">
+                          <p><i class="fal fa-map-marker-alt"></i> 154 Bayswater Rd, W2 4HP, UK</p>
+                          <p><i class="fal fa-mobile"></i> +4 235 856843</p>
+                        </div>
+                      </div>
+                      <div class="action">
+                        <div class="rating">
+                          <ul>
+                            <li>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star"></i>
+                            </li>
+                            <li>
+                              <div class="checkbox">
+                                <label><input type="checkbox" class="hidden favorite"/><i class="far fa-heart"></i></label>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <a href="#" class="btn btn-primary">Book Appointment</a>
+                        <div class="votes">
+                          <p><i class="far fa-thumbs-up"></i>(1200 votes)</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-sm-12 col-6">
+                    <div class="entity">
+                      <div class="img-holder">
+                        <img src="assets/images/hospital.jpg" class="img-fluid" alt="doc">
+                      </div>
+                      <div class="text">
+                        <h4 class="name">National Hospital</h4>
+                        <h5 class="speciality">Best Hospital of City</h5>
+                        <div class="intouch">
+                          <p><i class="fal fa-map-marker-alt"></i> 154 Bayswater Rd, W2 4HP, UK</p>
+                          <p><i class="fal fa-mobile"></i> +4 235 856843</p>
+                        </div>
+                      </div>
+                      <div class="action">
+                        <div class="rating">
+                          <ul>
+                            <li>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star"></i>
+                            </li>
+                            <li>
+                              <div class="checkbox">
+                                <label><input type="checkbox" class="hidden favorite"/><i class="far fa-heart"></i></label>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <a href="#" class="btn btn-primary">Book Appointment</a>
+                        <div class="votes">
+                          <p><i class="far fa-thumbs-up"></i>(1200 votes)</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-sm-12 col-6">
+                    <div class="entity">
+                      <div class="img-holder">
+                        <img src="assets/images/hospital.jpg" class="img-fluid" alt="doc">
+                      </div>
+                      <div class="text">
+                        <h4 class="name">National Hospital</h4>
+                        <h5 class="speciality">Best Hospital of City</h5>
+                        <div class="intouch">
+                          <p><i class="fal fa-map-marker-alt"></i> 154 Bayswater Rd, W2 4HP, UK</p>
+                          <p><i class="fal fa-mobile"></i> +4 235 856843</p>
+                        </div>
+                      </div>
+                      <div class="action">
+                        <div class="rating">
+                          <ul>
+                            <li>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star"></i>
+                            </li>
+                            <li>
+                              <div class="checkbox">
+                                <label><input type="checkbox" class="hidden favorite"/><i class="far fa-heart"></i></label>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <a href="#" class="btn btn-primary">Book Appointment</a>
+                        <div class="votes">
+                          <p><i class="far fa-thumbs-up"></i>(1200 votes)</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-sm-12 col-6">
+                    <div class="entity">
+                      <div class="img-holder">
+                        <img src="assets/images/hospital.jpg" class="img-fluid" alt="doc">
+                      </div>
+                      <div class="text">
+                        <h4 class="name">National Hospital</h4>
+                        <h5 class="speciality">Best Hospital of City</h5>
+                        <div class="intouch">
+                          <p><i class="fal fa-map-marker-alt"></i> 154 Bayswater Rd, W2 4HP, UK</p>
+                          <p><i class="fal fa-mobile"></i> +4 235 856843</p>
+                        </div>
+                      </div>
+                      <div class="action">
+                        <div class="rating">
+                          <ul>
+                            <li>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star"></i>
+                            </li>
+                            <li>
+                              <div class="checkbox">
+                                <label><input type="checkbox" class="hidden favorite"/><i class="far fa-heart"></i></label>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <a href="#" class="btn btn-primary">Book Appointment</a>
+                        <div class="votes">
+                          <p><i class="far fa-thumbs-up"></i>(1200 votes)</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane container fade" id="clinics">
+                <div class="row">
+                  <div class="col-xl-6 col-sm-12 col-6">
+                    <div class="entity">
+                      <div class="img-holder">
+                        <img src="assets/images/clinic.JPG" class="img-fluid" alt="doc">
+                      </div>
+                      <div class="text">
+                        <h4 class="name">Life Clinic</h4>
+                        <h5 class="speciality">Best Hospital of City</h5>
+                        <div class="intouch">
+                          <p><i class="fal fa-map-marker-alt"></i> 154 Bayswater Rd, W2 4HP, UK</p>
+                          <p><i class="fal fa-mobile"></i> +4 235 856843</p>
+                        </div>
+                      </div>
+                      <div class="action">
+                        <div class="rating">
+                          <ul>
+                            <li>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star"></i>
+                            </li>
+                            <li>
+                              <div class="checkbox">
+                                <label><input type="checkbox" class="hidden favorite"/><i class="far fa-heart"></i></label>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <a href="#" class="btn btn-primary">Book Appointment</a>
+                        <div class="votes">
+                          <p><i class="far fa-thumbs-up"></i>(1200 votes)</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-sm-12 col-6">
+                    <div class="entity">
+                      <div class="img-holder">
+                        <img src="assets/images/clinic.JPG" class="img-fluid" alt="doc">
+                      </div>
+                      <div class="text">
+                        <h4 class="name">Life Clinic</h4>
+                        <h5 class="speciality">Best Hospital of City</h5>
+                        <div class="intouch">
+                          <p><i class="fal fa-map-marker-alt"></i> 154 Bayswater Rd, W2 4HP, UK</p>
+                          <p><i class="fal fa-mobile"></i> +4 235 856843</p>
+                        </div>
+                      </div>
+                      <div class="action">
+                        <div class="rating">
+                          <ul>
+                            <li>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star"></i>
+                            </li>
+                            <li>
+                              <div class="checkbox">
+                                <label><input type="checkbox" class="hidden favorite"/><i class="far fa-heart"></i></label>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <a href="#" class="btn btn-primary">Book Appointment</a>
+                        <div class="votes">
+                          <p><i class="far fa-thumbs-up"></i>(1200 votes)</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-sm-12 col-6">
+                    <div class="entity">
+                      <div class="img-holder">
+                        <img src="assets/images/clinic.JPG" class="img-fluid" alt="doc">
+                      </div>
+                      <div class="text">
+                        <h4 class="name">Life Clinic</h4>
+                        <h5 class="speciality">Best Hospital of City</h5>
+                        <div class="intouch">
+                          <p><i class="fal fa-map-marker-alt"></i> 154 Bayswater Rd, W2 4HP, UK</p>
+                          <p><i class="fal fa-mobile"></i> +4 235 856843</p>
+                        </div>
+                      </div>
+                      <div class="action">
+                        <div class="rating">
+                          <ul>
+                            <li>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star"></i>
+                            </li>
+                            <li>
+                              <div class="checkbox">
+                                <label><input type="checkbox" class="hidden favorite"/><i class="far fa-heart"></i></label>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <a href="#" class="btn btn-primary">Book Appointment</a>
+                        <div class="votes">
+                          <p><i class="far fa-thumbs-up"></i>(1200 votes)</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-sm-12 col-6">
+                    <div class="entity">
+                      <div class="img-holder">
+                        <img src="assets/images/clinic.JPG" class="img-fluid" alt="doc">
+                      </div>
+                      <div class="text">
+                        <h4 class="name">Life Clinic</h4>
+                        <h5 class="speciality">Best Hospital of City</h5>
+                        <div class="intouch">
+                          <p><i class="fal fa-map-marker-alt"></i> 154 Bayswater Rd, W2 4HP, UK</p>
+                          <p><i class="fal fa-mobile"></i> +4 235 856843</p>
+                        </div>
+                      </div>
+                      <div class="action">
+                        <div class="rating">
+                          <ul>
+                            <li>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star"></i>
+                            </li>
+                            <li>
+                              <div class="checkbox">
+                                <label><input type="checkbox" class="hidden favorite"/><i class="far fa-heart"></i></label>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <a href="#" class="btn btn-primary">Book Appointment</a>
+                        <div class="votes">
+                          <p><i class="far fa-thumbs-up"></i>(1200 votes)</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-sm-12 col-6">
+                    <div class="entity">
+                      <div class="img-holder">
+                        <img src="assets/images/clinic.JPG" class="img-fluid" alt="doc">
+                      </div>
+                      <div class="text">
+                        <h4 class="name">Life Clinic</h4>
+                        <h5 class="speciality">Best Hospital of City</h5>
+                        <div class="intouch">
+                          <p><i class="fal fa-map-marker-alt"></i> 154 Bayswater Rd, W2 4HP, UK</p>
+                          <p><i class="fal fa-mobile"></i> +4 235 856843</p>
+                        </div>
+                      </div>
+                      <div class="action">
+                        <div class="rating">
+                          <ul>
+                            <li>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star"></i>
+                            </li>
+                            <li>
+                              <div class="checkbox">
+                                <label><input type="checkbox" class="hidden favorite"/><i class="far fa-heart"></i></label>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <a href="#" class="btn btn-primary">Book Appointment</a>
+                        <div class="votes">
+                          <p><i class="far fa-thumbs-up"></i>(1200 votes)</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-sm-12 col-6">
+                    <div class="entity">
+                      <div class="img-holder">
+                        <img src="assets/images/clinic.jpg" class="img-fluid" alt="doc">
+                      </div>
+                      <div class="text">
+                        <h4 class="name">Life Clinic</h4>
+                        <h5 class="speciality">Best Hospital of City</h5>
+                        <div class="intouch">
+                          <p><i class="fal fa-map-marker-alt"></i> 154 Bayswater Rd, W2 4HP, UK</p>
+                          <p><i class="fal fa-mobile"></i> +4 235 856843</p>
+                        </div>
+                      </div>
+                      <div class="action">
+                        <div class="rating">
+                          <ul>
+                            <li>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star yellow"></i>
+                              <i class="fas fa-star"></i>
+                            </li>
+                            <li>
+                              <div class="checkbox">
+                                <label><input type="checkbox" class="hidden favorite"/><i class="far fa-heart"></i></label>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <a href="#" class="btn btn-primary">Book Appointment</a>
+                        <div class="votes">
+                          <p><i class="far fa-thumbs-up"></i>(1200 votes)</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <a href="#" class="show-all fadeup-a">Show All <i class="fal fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="register">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-12">
+            <div class="text leftin">
+              <h1>Register For Free!</h1>
+              <p>Register Now to contact doctors and hospitals</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-12">
+            <a href="#" class="btn btn-primary fadein">Register Now</a>
+          </div>
+        </div>
+      </div> 
+    </section>
+
+    <section class="blog">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="title fadeup-a">Our Blogs</h1>
+          </div>
+          <div class="col-12">
+            <div class="row">
+              <div class="col-sm-6 col-12">
+                <div class="fadeup-b">
+                  <div class="item">
+                    <div class="row">
+                      <div class="col-lg-5 col-12">
+                        <img src="assets/images/doc.jpg" class="img-fluid" alt="img">
+                      </div>
+                      <div class="col-lg-7 col-12">
+                        <div class="text">
+                          <a href="#"><i class="far fa-folder-open"></i> News</a>
+                          <h4><a href="#">Todays Dr. Zubair succeded in heart surgory at Doctors Hospital</a></h4>
+                          <div class="author">
+                            <p><i class="far fa-user"></i> By: Robert Dennis</p>
+                          </div> 
+                        </div>
+                      </div>
+                    </div> 
+                  </div>
+                </div> 
+              </div>
+              <div class="col-sm-6 col-12">
+                <div class="fadeup-c">
+                  <div class="item">
+                    <div class="row">
+                      <div class="col-lg-5 col-12">
+                        <img src="assets/images/doc.jpg" class="img-fluid" alt="img">
+                      </div>
+                      <div class="col-lg-7 col-12">
+                        <div class="text">
+                          <a href="#"><i class="far fa-folder-open"></i> News</a>
+                          <h4><a href="#">Todays Dr. Zubair succeded in heart surgory at Doctors Hospital</a></h4>
+                          <div class="author">
+                            <p><i class="far fa-user"></i> By: Robert Dennis</p>
+                          </div> 
+                        </div>
+                      </div>
+                    </div> 
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-12">
+                <div class="fadeup-b">
+                  <div class="item">
+                    <div class="row">
+                      <div class="col-lg-5 col-12">
+                        <img src="assets/images/doc.jpg" class="img-fluid" alt="img">
+                      </div>
+                      <div class="col-lg-7 col-12">
+                        <div class="text">
+                          <a href="#"><i class="far fa-folder-open"></i> News</a>
+                          <h4><a href="#">Todays Dr. Zubair succeded in heart surgory at Doctors Hospital</a></h4>
+                          <div class="author">
+                            <p><i class="far fa-user"></i> By: Robert Dennis</p>
+                          </div> 
+                        </div>
+                      </div>
+                    </div> 
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-12">
+                <div class="fadeup-c">
+                  <div class="item">
+                    <div class="row">
+                      <div class="col-lg-5 col-12">
+                        <img src="assets/images/doc.jpg" class="img-fluid" alt="img">
+                      </div>
+                      <div class="col-lg-7 col-12">
+                        <div class="text">
+                          <a href="#"><i class="far fa-folder-open"></i> News</a>
+                          <h4><a href="#">Todays Dr. Zubair succeded in heart surgory at Doctors Hospital</a></h4>
+                          <div class="author">
+                            <p><i class="far fa-user"></i> By: Robert Dennis</p>
+                          </div> 
+                        </div>
+                      </div>
+                    </div> 
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                  <a href="#" class="show-all fadeup-a">Show All <i class="fal fa-arrow-circle-right"></i></a>
+                </div>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pmdc">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-12">
+            <div class="text leftin">
+              <h1>Are you a PMDC verified doctor and want to grow your Practice?</h1>
+            </div>
+          </div>
+          <div class="col-lg-4 col-12">
+            <a href="#" class="btn btn-primary fadein">Register Yourself</a>
+          </div>
+        </div>
+      </div> 
+    </section>
+
+    <section class="newsletter">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-3">
+            <h1 class="leftin">Subscribe for Latest News</h1>
+          </div>
+          <div class="col-xl-9">
+            <div class="form fadein">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Your Name">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Your Email">
+              </div>
+              <div class="form-group">
+                <input type="submit" class="btn btn-primary" value="Subscribe">
+              </div>
+            </div>
+          </div> 
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="content leftin">
+              <h1>Quick Links</h1>
+              <ul class="links">
+                <li>
+                  <a href="#"><i class="fas fa-angle-right"></i> Find a Doctor</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-angle-right"></i> Join as Doctor</a>
+                </li>
+                <li>
+                  <a href="#"> <i class="fas fa-angle-right"></i> Online Consultations</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-angle-right"></i> Hospitals</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-angle-right"></i> About Us</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-angle-right"></i> Forum</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-angle-right"></i> Our Blogs</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-angle-right"></i> Contact Us</a>
+                </li>
+              </ul>
+            </div> 
+          </div>
+          <div class="col-lg-4">
+            <div class="content">
+              <h1 class="leftin">Facebook Feeds</h1>
+              <ul class="feeds fadeup-c">
+                <li>
+                  <a href="#">
+                    <div class="img">
+                      <img src="assets/images/doc.jpg" class="img-fluid" alt="doc">
+                    </div>
+                    <h2>Dr. Steve Northrop</h2>
+                    <p>MDS - Paedodontics & Preventive Dentistry</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="img">
+                      <img src="assets/images/doc.jpg" class="img-fluid" alt="doc">
+                    </div>
+                    <h2>Dr. Steve Northrop</h2>
+                    <p>MDS - Paedodontics & Preventive Dentistry</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="img">
+                      <img src="assets/images/doc.jpg" class="img-fluid" alt="doc">
+                    </div>
+                    <h2>Dr. Steve Northrop</h2>
+                    <p>MDS - Paedodontics & Preventive Dentistry</p>
+                  </a>
+                </li>
+                <a href="#" class="link">view more</a>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="content">
+              <h1 class="leftin">Twitter Feeds</h1>
+              <ul class="feeds fadeup-d">
+                <li>
+                  <a href="#">
+                    <div class="img">
+                      <img src="assets/images/doc.jpg" class="img-fluid" alt="doc">
+                    </div>
+                    <h2>Dr. Steve Northrop</h2>
+                    <p>MDS - Paedodontics & Preventive Dentistry</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="img">
+                      <img src="assets/images/doc.jpg" class="img-fluid" alt="doc">
+                    </div>
+                    <h2>Dr. Steve Northrop</h2>
+                    <p>MDS - Paedodontics & Preventive Dentistry</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="img">
+                      <img src="assets/images/doc.jpg" class="img-fluid" alt="doc">
+                    </div>
+                    <h2>Dr. Steve Northrop</h2>
+                    <p>MDS - Paedodontics & Preventive Dentistry</p>
+                  </a>
+                </li>
+                <a href="#" class="link">view more</a>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="copy">
+      <div class="container">
+        <div class="col-12">
+          <p>&copy; Tabib 2019 - 2020 All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+    <div class="call-us">
+      <a href="tel:03224311887">
+        <div class="phone-holder">
+          <img src="assets/images/call.svg" alt="call">
+          <p>Call Us</p>
+        </div>
+      </a>
+    </div>
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/bootstrapbundle.js"></script>
+    <script src="assets/js/owl.js"></script>
+    <script src="assets/js/nicescroll.js"></script>
+    <script src="assets/js/custom.js"></script>
+  
+    <script>
+      jQuery(document).ready(function() {
+        $("body").niceScroll({
+          cursorcolor: "#007cff",
+          cursorwidth: "12px",
+          cursorborderradius: "0px",
+          cursorborder: "0px solid transparent",
+          hidecursordelay: 1000, 
+          autohidemode: false,
+          scrollspeed: 120
+          // bouncescroll: true
+        });
+        // $("body").getNiceScroll(0).doScrollTop(y, 10000);
+        $('.navbar-toggler').click(function(){
+          $('.nav-btns').slideToggle(200);
+        });
+        $(".favorite").click(function() {
+          if ($(this).is(":checked")) {
+            $(".fa-heart")
+              .removeClass("far")
+              .addClass("fas");
+          } else {
+            $(".fa-heart")
+              .removeClass("fas")
+              .addClass("far");
+          }
+        });
+      });
+      $(function () {
+        $(document).scroll(function () {
+          var $nav = $(".navbar");
+          $nav.toggleClass('scrolled', $(this).scrollTop() > 1 );
+        });
+
+        /* Anything that gets to the document
+        will hide the dropdown */
+
+      });
+
+      $('#city').click(function(){
+        $('.city').slideToggle(200);
+        $('.area').slideUp(200);
+        $('.skill').slideUp(200);
+        $('.fee').slideUp(200);
+        $('.gender').slideUp(200);
+      });
+      $('#area').click(function(){
+        $('.city').slideUp(200);
+        $('.skill').slideUp(200);
+        $('.fee').slideUp(200);
+        $('.gender').slideUp(200);
+        $('.area').slideToggle(200);
+      });
+      $('#skill').click(function(){
+        $('.city').slideUp(200);
+        $('.fee').slideUp(200);
+        $('.gender').slideUp(200);
+        $('.area').slideUp(200);
+        $('.skill').slideToggle(200);
+      });
+      $('#fee').click(function(){
+        $('.city').slideUp(200);
+        $('.gender').slideUp(200);
+        $('.area').slideUp(200);
+        $('.skill').slideUp(200);
+        $('.fee').slideToggle(200);
+      });
+      $('#gender').click(function(){
+        $('.city').slideUp(200);
+        $('.area').slideUp(200);
+        $('.skill').slideUp(200);
+        $('.fee').slideUp(200);
+        $('.gender').slideToggle(200);
+      });
+
+      $(document).on("click", function(event){
+        var $trigger = $(".dropdown");
+        if($trigger !== event.target && !$trigger.has(event.target).length){
+          $(".dropdown-menu").slideUp("fast");
+        }           
+      });
+
+    </script>
+  </body>
+</html>

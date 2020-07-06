@@ -1,0 +1,164 @@
+.event-detail {
+    padding: 40px 0px;
+}
+
+.e-panel
+{
+    background-color: #fff;
+    padding:10px;
+    h3
+    {
+        font-size: 20px;
+        font-family: textsb;
+        margin:0px 0px 10px;
+    }
+    .flex
+    {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        h2
+        {
+            font-size: 24px;
+            font-family: textsb;
+            margin:0px 0px 20px;
+        }
+        .date
+        {
+            font-family: text;
+            font-size: 12px;
+            margin:0px;
+            color:#7b7b7b;
+        }
+        .badge
+        {
+            font-family: textsb;
+            font-size: 11px;
+            font-weight: 100;
+            border-radius: 3px;
+            padding:2px 5px 4px;
+        }
+    }
+    .row
+    {
+        margin-left: -5px !important;
+        margin-right: -5px !important;
+        > div
+        {
+            padding-left:5px !important;
+            padding-right:5px !important;
+        }
+    }
+    .btn-block
+    {
+        width:100%;
+        background-color: rgb(0, 124, 226);
+        color:#fff;
+        font-size: 16px;
+        font-family: text;
+        margin:10px 0 20px;
+        &:hover
+        {
+            background-color: $pink;
+        }
+    }
+    .location-box
+    {
+        border:1px solid #eee;
+        background-color: #f9f9f9;
+        padding:10px;
+    }
+    .frow
+    {
+        display: flex;
+        i
+        {
+            min-width: 30px;
+            text-align: center;
+            font-size: 20px;
+            position: relative;
+            margin-right: 5px;
+        }
+        p
+        {
+            font-size: 13px;
+        }
+    }
+    .table
+    {
+        tr
+        {
+            td, th
+            {
+                padding:5px 8px;
+                font-size: 13px;
+                a
+                {
+                    font-family: textsb;
+                    color:rgb(0, 63, 145);
+                    &:hover
+                    {
+                        color:$pink;
+                    }
+                }
+            }
+        }
+    }
+    .panel
+    {
+        padding:0px;
+        h4
+        {
+            border:1px solid #ddd;
+            margin:0px;
+        }
+        table
+        {
+            margin:0px;
+            border:none;
+            thead
+            {
+                th
+                {
+                    background-color:#eee;
+                    border-color:#eee;
+                }
+            }
+        }
+    }
+}
+
+.editor-content {
+    border:1px solid #eee;
+    background-color: #f9f9f9;
+    padding:10px;
+    font-family: text;
+    margin-bottom: 10px;
+    p
+    {
+        font-size: 13px;
+    }
+
+    ul {
+        font-family: text;
+
+        li {
+            display    : block;
+            font-size  : 13px;
+            font-family: text;
+            strong {
+                font-weight: 400;
+                font-family: textbold;
+            }
+            a
+            {
+                font-family: text;
+                color:#333;
+                &:hover
+                {
+                    color:$pink;
+                }
+            }
+        }
+    }
+}

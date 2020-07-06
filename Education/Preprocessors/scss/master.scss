@@ -1,0 +1,161 @@
+$green:#00c355;
+$teal:#00c1d9;
+$pink:#f04cb1;
+$yellow:#ffb600;
+
+@font-face {
+  font-family: crete;
+  src: url('fonts/crete.otf');
+}
+@font-face {
+  font-family: roboto;
+  src: url('fonts/roboto.ttf');
+}
+@font-face {
+  font-family: rlight;
+  src: url('fonts/rlight.ttf');
+}
+@font-face {
+  font-family: rbold;
+  src: url('fonts/rbold.ttf');
+}
+
+@media (max-width:420px)
+{
+  .col-xs-12
+  {
+    max-width: 100% !important;
+    flex: 0 0 100%;
+  }
+}
+h1, h2, h3, h4, h5, h6, strong, a 
+{
+  font-family: 'rbold', sans-serif;
+}
+
+p, span, li
+{
+  font-family: 'roboto', sans-serif;
+}
+.hidden
+{
+  display: none;
+}
+*
+{
+  box-sizing: border-box;
+  font-family: 'roboto', sans-serif;
+}
+ul
+{
+  margin: 0px;
+  padding: 0px;
+  li
+  {
+    list-style-type: none;
+    display: block;
+    a
+    {
+      text-decoration: none !important;
+    }
+  }
+}
+.btn-info
+{
+  border:none;
+  font-family: 'rbold';
+  background: linear-gradient(to left, $yellow 50%, $green 50%);
+  background-size: 200% 100%;
+  background-position: bottom right;
+  border-radius: 0px;
+  padding: 10px 30px;
+  font-size: 14px;
+  color:#111;
+  transition: .3s ease;
+  &:hover
+  {
+    background-position: bottom left;
+  }
+}
+.link
+{
+  text-decoration: none !important;
+  &:hover
+  {
+    color:$green;
+  }
+}
+html
+{
+  overflow-x: hidden !important;
+}
+
+body
+{
+  background-color: #fff;
+  margin: 0px;
+  position: relative;
+  padding: 0px;
+  width: 100%;
+  font-family: roboto;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+  background-color: $yellow;
+  position: absolute; }
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 1px;
+  background-color: $yellow;
+}
+body::-webkit-scrollbar-track {
+  border-radius: 1px;
+  background-color: #fff }
+
+
+.fluid
+{
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+}
+
+button:active
+{
+  transform: scale(.97);
+}
+button:focus
+{
+  box-shadow: none !important;
+}
+
+.common_h
+{
+  color:#333;
+  font-size: 45px;
+  position: relative;
+  text-transform: uppercase;
+  margin: 10px 0px 20px;
+  font-family: crete;
+  strong
+  {
+    font-family: crete;
+    color:$yellow;
+  }
+  &::after
+  {
+    content: "";
+    height: 3px;
+    width:60px;
+    position:absolute;
+    bottom:-10px;
+    border-radius: 5px;
+    left:0px;
+    background:$yellow;
+  }
+}
+
+@import 'header.scss';
+@import 'footer.scss';
+@import 'home.scss';
+@import 'animations.scss';

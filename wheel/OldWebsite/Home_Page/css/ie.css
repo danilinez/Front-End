@@ -1,0 +1,11 @@
+/*
+    Document   : ie
+    Created on : Jun 29, 2013, 11:03:31 PM
+    Author     : Linez Technologies
+    Description: ie specific styles
+*/
+
+
+.input-block-level {
+ min-height: 17px;
+}

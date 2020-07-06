@@ -1,0 +1,36 @@
+.thirds03 {
+		float: left;
+		width: 242px;/*old 225px*/
+		height: 125px;
+			color: #fff;
+			margin-bottom: 31px;
+			text-align: center;
+			padding: 30px 28px 40px;
+			margin: 10px 10px 10px 10px;
+	}
+.title03{
+	line-height: 30px;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+  font-size: 14px;
+  color: #fff; 
+  border-bottom: 4px #fff solid;
+  padding-bottom: 9px;
+  margin: 5px 0 32px;
+  }
+
+
+
+	
+.bg103 {
+  background: #1C86EE; /*#99b563;*/
+  border: 1px solid #90a961;
+}
+.bg203 {
+  background: #008B00; /*#5b82ab;*/
+  border: 1px solid #4b7097;
+}
+.bg303 {
+  background: #CD2626; /*#da5c4f;*/
+  border: 1px solid #e65a4c;
+}

@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home - WheelHealthcare</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <meta charset="UTF-8" />
+
+    <!-- <link rel="shortcut icon" href="assets/img/favicon.ico" />-->
+    <link href="assets-new/plugins/twitter-bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets-new/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="assets-new/plugins/ResponsiveSlides.js/responsiveslides.min.css" rel="stylesheet"/>
+    <link href="assets-new/plugins/jqueryui/css/jquery-ui.min.css" rel="stylesheet"/>
+    <link href="assets-new/css/style.css" rel="stylesheet" />
+
+    <!--[if lt IE 9]>
+        <script src="assets-new/plugins/html5shiv/html5shiv.min.js"></script>
+        <script src="assets-new/plugins/html5shiv/html5shiv-printshiv.min.js"></script>
+        <script src="assets-new/plugins/respond.js/respond.min.js"></script>
+        <script src="assets-new/js/matchMedia.min.js"></script>
+    <![endif]-->
+
+    <script src="assets-new/plugins/jquery/jquery.min.js"></script>
+    <script src="assets-new/plugins/jqueryui/jquery-ui.min.js"></script>
+    <script src="assets-new/plugins/jquery-migrate/jquery-migrate.min.js"></script>
+    <script src="assets-new/plugins/twitter-bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets-new/plugins/ResponsiveSlides.js/responsiveslides.min.js"></script>
+    <script src="assets-new/js/bootstrap-hover-dropdown.js"></script>
+    <script src="assets-new/js/jquery.equalheights.js"></script>
+    <script src="assets-new/plugins/jquery-scrolltofixed/jquery-scrolltofixed-min.js"></script>
+    <script src="assets-new/js/application.js"></script>
+<script type="text/javascript" src="reveal/jquery.reveal.js"></script>
+    <script src="assets-new/js/jquery.validate.min.js"></script>
+    <link rel="stylesheet" href="reveal/reveal.css">
+    <script type="text/javascript">
+      window.onload = function () {
+        $.ajax({
+          type: "POST",
+          url: "LinezWS_WHCS.asmx/FnDeafultMedicalList",
+          data: "{}",
+          contentType: "application/json; charset=utf-8",
+          dataType: "json",
+          success: function (response) {
+
+            var result = response.d;
+            var josonProductsData = jQuery.parseJSON("[" + result + "]");
+            //var josonProductsData = response;
+            var myHTML = '';
+
+            for (var row = 0; row < Math.floor(josonProductsData[0].length); row++) {
+
+              myHTML += '<li>' + josonProductsData[0][row].sName + '</li>'
+            }
+
+            document.getElementById("medicines").innerHTML = myHTML;
+
+          },
+          failure: function (msg) {
+            alert(msg);
+          }
+        });
+
+
+
+      }
+
+
+
+      function Medicine(HrefValue) {
+
+        var href = HrefValue;
+        $.ajax({
+          type: "POST",
+          url: "LinezWS_WHCS.asmx/fnMedicinesList",
+          data: "{'sHref':'" + href + "'}",
+          contentType: "application/json; charset=utf-8",
+          dataType: "json",
+          success: function (response) {
+
+            var result = response.d;
+            var josonProductsData = jQuery.parseJSON("[" + result + "]");
+            //var josonProductsData = response;
+            var myHTML = '';
+
+            for (var row = 0; row < Math.floor(josonProductsData[0].length); row++) {
+
+              myHTML += '<li>' + josonProductsData[0][row].sName + '</li>'
+            }
+
+
+            document.getElementById("medicines").innerHTML = myHTML;
+
+          },
+          failure: function (msg) {
+            alert(msg);
+          }
+        });
+
+      }
+
+
+
+      function submitForm() {
+        var strName = document.getElementById("txtUsername");
+
+        var strPassword = document.getElementById("txtPassword");
+
+
+
+        if (strName.value.length < 1) {
+
+          strName.focus();
+
+          alert('Please enter username');
+
+          return false;
+
+        }
+
+        if (strPassword.value.length < 1) {
+
+          strPassword.focus();
+
+          alert('Please enter password');
+
+          return false;
+
+        }
+
+
+        fnValidateUser();
+
+      }
+
+      function fnValidateUser() {
+
+        var param = new Object();
+
+        //            txtUsername txtPassword
+        param.sUsername = $('#txtUsername').val();
+        param.sPassword = $('#txtPassword').val();
+        return $.ajax({
+          type: "POST",
+          url: "LinezWS_WHCS.asmx/fnValidateUser",
+          data: JSON.stringify(param),
+          contentType: "application/json; charset=utf-8",
+          dataType: "json",
+          success: function (msg) {
+            if (msg.d == "1") {
+              document.WHCSLive.submit();
+            }
+            else {
+              alert("Invalid Email/Password! Please Try Again.");
+            }
+
+          },
+          failure: function (msg) {
+            alert(msg);
+          }
+        });
+
+      }
+    </script>
+  </head>
+  <body>
+
+    <section id="top-bar">
+      <div class="container-fluid">
+        <div class="row">
+
+          <article class="col-sm-3">
+            <a href="index.html" id="logo"><img src="assets-new/img/logowheel.jpeg" alt="" class="img-responsive"/></a>
+          </article>
+          <nav class="col-sm-9">
+            <ul class="nav nav-tabs">
+              <li role="presentation"><a href="#">Personal</a></li>
+              <li role="presentation"><a href="#">Business</a></li>
+              <li role="presentation"><a href="contact_us.html">Contact Us</a></li>
+            </ul>
+            <ul class="list-inline">
+              <li><a href="about_us.html">About WHC</a></li>
+              <li><a href="careers.html">Careers</a></li>
+            </ul>
+          </nav>
+
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </section>
+
+
+    <header id="header">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-sm-2 col-sm-offset-5">
+
+            <button type="button" class="btn btn-info btn-sm btn-block">Login to myWHC</button>
+
+          </div>
+          <div class="col-sm-2"><a href="#" class="big-link" data-reveal-id="loginModel" style="text-decoration:none"><button type="button" class="btn btn-info btn-sm btn-block">Request Call Back</button></a></div>
+          <div class="col-sm-3">
+
+            <div class="input-group input-group-sm">
+              <input type="text" class="form-control" placeholder="Search">
+              <span class="input-group-btn">
+                <button class="btn btn-info" type="button"><i class="fa fa-search"></i></button>
+              </span>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+
+        </div>
+      </div>
+      <div id="start-sticky-header"></div>
+      <div class="header-sticky">
+        <div class="container">
+          <nav class="navbar navbar-default " role="navigation">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-menu">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand visible-xs-block" href="#none" data-toggle="collapse" data-target="#main-menu">Menu</a>
+            </div>
+            <div class="collapse navbar-collapse" id="main-menu">
+              <ul class="nav navbar-nav">
+                <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+                <li class="dropdown dropdown-large">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products & Services <span class="caret"></span></a>
+                  <ul class="dropdown-menu dropdown-menu-large">
+                    <li class="container">
+                      <div class="row">
+
+                        <div class="col-sm-4">
+                          <ul class="list-unstyled"> <li class="dropdown-header">Products</li>
+                            <li><a href="prescription_and_non-prescription_medicine.html">Prescription &amp; Non-Prescription Medicine</a></li>
+                            <li><a href="dme_and_supplies.html">Durable Medical Equipment (DME) and Supplies</a></li>
+                            <li><a href="compounding.html">Compounding</a></li></ul>
+                        </div>
+                        <div class="col-sm-4">
+                          <ul class="list-unstyled">
+                            <li class="dropdown-header">Services</li>
+                            <li><a href="integrated_healthcare_cloud_technologies.html">Integrated Healthcare Cloud Technologies</a></li>
+                            <li><a href="personalized_healthcare_for_all.html">Personalized Healthcare For All</a></li>
+                            <li><a href="diabetes_education.html">Diabetes Education</a></li>
+                            <li><a href="disease_management.html">Disease Management</a></li>
+                            <li><a href="workers_compensation_pharmacy_solution.html">Workers&prime; Compensation Pharmacy Solution</a></li>
+                          </ul>
+                        </div>
+                        <!-- <div class="col-sm-4">
+                          <ul class="list-unstyled">
+                            <li class="dropdown-header">Promotional Products</li>
+                            <li><a href="promotional_products.html">All Promotional Products</a></li>
+                            <li><a href="weight_loss_kit.html">Weight Loss Kit - $499</a></li>
+                            <li><a href="vitamins_for_life.html">Vitamins for life - $499</a></li>
+                            <li><a href="diaetic_kit.html">Diabetic Kit - $499</a></li>
+                            <li><a href="smart_home_health_care_kit.html">Smart Home Health Care Kit - $499</a></li>
+                            <li><a href="energy_saving_kit.html">Energy Saving Kit - $499</a></li>
+                          </ul>
+                        </div> -->
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown dropdown-large"><a href="how_it_works.html" class="dropdown-toggle" data-toggle="dropdown">How It Works<span class="caret"></span></a>
+                <ul class="dropdown-menu dropdown-menu-large">
+                    <li class="container">
+                      <div class="row">
+<div class="row">
+                          <div class="col-xs-6 col-sm-3">
+                          <ul class="list-unstyled">
+                            <li class="dropdown-header">How It Works</li>
+                            <li><a href="how_it_works.html">How It Works</a></li>
+                           <!-- <li><a href="weight_loss_kit.html">Weight Loss Kit - $399</a></li>
+                            <li><a href="vitamins_for_life.html">Vitamins for life - $399</a></li>
+                            <li><a href="diaetic_kit.html">Diabetic Kit - $399</a></li>
+                            <li><a href="smart_home_health_care_kit.html">Smart Home Health Care Kit - $399</a></li>
+                            <li><a href="energy_saving_kit.html">Energy Saving Kit - $399</a></li>-->
+                          </ul>
+                        </div> 
+                        <div class="col-xs-6 col-sm-3">
+                          <ul class="list-unstyled"> <li class="dropdown-header">Prescription Transfer</li>
+                           <li><a href="how_it_works.html#prescriptiontransfer">Prescription Transfer</a></li>
+                           <!--  <li><a href="dme_and_supplies.html">Durable Medical Equipment (DME) and Supplies</a></li>
+                            <li><a href="compounding.html">Compounding</a></li>--></ul>
+                        </div>
+                        <div class="col-xs-6 col-sm-3">
+                          <ul class="list-unstyled">
+                            <li class="dropdown-header">Payment Methods</li>
+                           <li><a href="how_it_works.html#paymentmethods">Payment Methods</a></li>
+                           <!--  <li><a href="personalized_healthcare_for_all.html">Personalized Healthcare For All</a></li>
+                            <li><a href="diabetes_education.html">Diabetes Education</a></li>
+                            <li><a href="disease_management.html">Disease Management</a></li>
+                            <li><a href="workers_compensation_pharmacy_solution.html">Workers&prime; Compensation Pharmacy Solution</a></li>-->
+                          </ul>
+                        </div>
+                        <div class="col-xs-6 col-sm-3">
+                          <ul class="list-unstyled">
+                            <li class="dropdown-header">Delivery Options</li>
+                            <li><a href="how_it_works.html#deliveryoptions">Delivery Options</a></li>
+                           <!-- <li><a href="weight_loss_kit.html">Weight Loss Kit - $399</a></li>
+                            <li><a href="vitamins_for_life.html">Vitamins for life - $399</a></li>
+                            <li><a href="diaetic_kit.html">Diabetic Kit - $399</a></li>
+                            <li><a href="smart_home_health_care_kit.html">Smart Home Health Care Kit - $399</a></li>
+                            <li><a href="energy_saving_kit.html">Energy Saving Kit - $399</a></li>-->
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                
+                </li>
+                <li><a href="FAQ.html">FAQ's</a></li>
+              </ul>
+            </div>
+          </nav>
+
+        </div>
+      </div>
+    </header>
+
+  <main id="main">
+    <div class="container">
+      <div class="row">
+
+        <article class="col-sm-12">
+          <div class="well well-sm">
+            <h1 class="page-title">Terms of Use</h1>
+
+            <p>These Terms of Use apply to all visitors who use the publicly available pages of the Wheelhcs.com website located at http://www.wheelhcs.com/, Registered Members (or "Registered Beneficiaries" in the case of the TRICARE program) of the Member Website, and those users who have been granted authorized access to non-publicly available portions of the Wheelhcs.com website (individually and collectively, the "Site"). The Site may be accessed via the World Wide Web, mobile device or through a hyperlink embedded in an email or on a website hosted by a third party or one of our affiliated companies. The "Member Website" is a member-only account portal available through the Site or via mobile access which enables Registered Members to access their personal account information and to use certain other services offered only to Registered Members who use the Member Website (collectively, the "Services"). Individual members of an applicable prescription drug benefit plan who have submitted a completed account registration form on the Site, or who have completed the appropriate registration process from their plan sponsor's website, or who have completed the registration process via telephone with a customer service representative are all "Registered Members" who will be provided access to the Member Website after completing the registration process. These Terms of Use are between a user of any portion of the Site ("you" or "your") and your plan sponsor's pharmacy benefit manager or, if not applicable, Wheel Healthcare Holding Company (in either case, "we", "us" or "our"). If you access non-publicly available portions of the Site to which you have been granted authorized access (other than the Member Website), any additional Terms of Use located on those pages will also apply and will control in the event of a conflict with these Terms of Use.</p>
+
+            <h4>1. Registration and Assent</h4>
+
+            <p>Access to the Site and use of Services is conditioned upon your assent to these Terms of Use. You are deemed to have assented to these Terms of Use when you use any publicly available page of the Site. You are deemed to have assented to these Terms of Use as applicable to the Member Website, when you complete any of the online registration processes required for Registered Members as described above and you have indicated at the end of the registration process that you accept these Terms of Use along with the Privacy Promise incorporated herein and made available at Privacy Promise. You are deemed to have accepted these Terms of Use each time you access the Site and each time you use your personal login and password to access the Member Website portion of the Site. These Terms of Use and the Privacy Promise are available during registration for the Member Website and on various pages of the Site.</p>
+
+            <h4>2. Updates.</h4>
+
+            <p>From time to time, we may, in our sole discretion, modify these Terms of Use, indicated by a new version number and revision date. It is important that you check these Terms of Use every time you visit the Site. Your use of the Site, and your continued use of the Site after these Terms of Use have been updated, indicates your agreement and acceptance of these Terms of Use and the Privacy Promise, including the modifications made as of the date of your use.</p>
+
+            <h4>3. User Obligations</h4>
+
+            <p>You are required to comply with all applicable laws in connection with your use of the Site and the Services. As a condition of your use of the Service, you agree that you will not use the Service for any purpose that is unlawful or prohibited by these Terms of Use. You agree that you will only provide information during registration and in connection with any and all other uses of the Site or Services that is true and accurate, identifies only you or the family member to whom the information applies, and is not false, misleading or otherwise an impersonation of any person or entity.</p>
+
+            <h4>4. Site Content and Intellectual Property Rights</h4>
+
+            <p>This Site may contain text, images, software (including images or files incorporated in or generated by the software or data accompanying such software), photographs, video, graphics, audio, features, data, designs, images, and other such similar content (collectively "Site Content"). Unless otherwise expressly identified, Site Content is owned by us or by our third party licensors. The Site Content is protected by United States and international copyright, trademark and other laws. You may browse the Site and download Site Content solely for your personal use, provided you keep intact all copyright and other proprietary notices. Except as expressly permitted, you may not, modify, copy, reproduce, republish, upload, post, transmit, hyperlink to or from, or distribute in any way Site Content from this Site, including code and software underlying this Site, nor may you sell, transfer or otherwise use the Site or the Site Content in commerce or for any public or commercial endeavor without our prior and express written consent. We may in our sole discretion make changes to the Site Content at any time without notice.</p>
+
+            <h4>5. No Professional Advice</h4>
+
+            <p>The information provided on the Site or through the Services is for informational purposes or general guidance only, and does not constitute medical, legal, or other professional advice. We do not warrant or guarantee the accuracy, completeness, adequacy or currency of the Site Content, nor do we endorse any views or opinions that may be included in the Site Content or other information provided through the Services. The Site is not a substitute for medical advice and it is important that you not make medical decisions without first consulting your personal physician or other healthcare professional. The receipt of any questions or feedback you submit to us does not create a professional relationship and does not create any privacy interests other than those described in our Privacy Promise.</p>
+
+            <h4>6. Linking Policy</h4>
+
+            <p>Our Site may contain hyperlinks allowing our users to connect to websites owned by our third party vendors, distributors, and providers ("Linked Sites"). You may also access our Site through a hyperlink embedded in a Linked Site. We provide hyperlinks to the Linked Sites as part of the Services to enable you to conveniently access websites that may be of interest to you. The inclusion of such Linked Sites on our Site is not an endorsement, sponsorship or recommendation of those Linked Sites. We may not have any ownership interest in, nor do we have any control over, the content posted on these Linked Sites or the services and products that may be offered on these Linked Sites. We are not responsible for the availability or reliability of the contents of the Linked Sites, including, without limitation, hyperlinks contained on the Linked Sites, or any changes or updates to terms or conditions applicable to the Linked Sites. Please note that when you click on a hyperlink that transfers you from our Site to a third party's Linked Site, you will have left our Site, and these Terms of Use will immediately cease to apply. We are under no obligation to notify you when you have left our Site and accessed a Linked Site. Use of any Linked Site will be governed by the terms and conditions (if any) on the Linked Site. We are not responsible for the privacy policies applicable to any Linked Site. You may, at your option, participate in surveys or provide other information to our affiliates that control a Linked Site, and that information may be shared with us or with others subject to the privacy policy terms set forth on that Linked Site.</p>
+
+            <h4>7. Use Restrictions</h4>
+
+            <p>You agree that you will not: (a) use this Site or the Services for any purpose that is unlawful, illegal or a violation of applicable Federal, State or local law or which is prohibited by these Terms of Use; (b) engage in any activity or use any device, software or routine that interferes with a user's access to this Site or the proper operation of this Site or the Services; (c) delete or revise any Site Content or information of any other user; (d) take any action that imposes an unreasonable or disproportionately large load on the Site's infrastructure; (e) allow any other person or entity to use your username or password for posting, copying, extracting, downloading, viewing, transmitting or receiving data of any kind; or (f) attempt to decipher, decompile, disassemble or reverse engineer any of the software comprising or in any way making up a part of the Site or the Services.</p>
+
+            <h4>8. Disclaimer of Warranties</h4>
+
+            <p>THE SITE, AND THE SITE CONTENT THEREON IS PROVIDED ON AN "AS IS", "AS AVAILABLE" BASIS WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED. TO THE FULLEST EXTENT PERMISSIBLE UNDER APPLICABLE LAW, WE EXPRESSLY DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, WARRANTIES OF PERFORMANCE, MERCHANTABILITY, AND FITNESS FOR A PARTICULAR PURPOSE. WHILE WE USE REASONABLE EFFORTS TO INCLUDE ACCURATE AND UP-TO-DATE SITE CONTENT, WE DO NOT WARRANT OR MAKE ANY REPRESENTATIONS REGARDING THE ACCURACY OF RESULTS OR RELIABILITY OF THE SITE, SITE CONTENT OR THE SERVICES. WE DO NOT MAKE ANY WARRANTY AS TO THE LIFE OF ANY URL. WE DO NOT WARRANT THAT ACCESS TO OR USE OF THE SITE OR SERVICES WILL BE UNINTERRUPTED, SECURE, COMPLETE OR ERROR FREE, THAT DEFECTS WILL BE CORRECTED, OR THAT THE SITE OR THE SERVER(S) THAT MAKE THE SITE AVAILABLE ARE FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS. BY USING THE SITE, YOU ACKNOWLEDGE THE LIKELIHOOD OF SOME HUMAN AND MACHINE ERRORS, DELAYS, INTERRUPTIONS AND LOSSES, INCLUDING THE INADVERTENT LOSS OF DATA OR DAMAGE TO MEDIA, AND AGREE TO HOLD US HARMLESS FROM AND AGAINST ANY VIRAL INFECTION OR OTHER COMPUTER MALFUNCTION CAUSED AT ALL OR IN PART BY YOUR USE OF THE SITE. YOU ASSUME THE ENTIRE COST OF ALL NECESSARY COMPUTER OR NETWORK SERVICING, REPAIR OR CORRECTION. THE PERFORMANCE OF THE SITE VARIES WITH THE MANUFACTURER'S EQUIPMENT WITH WHICH IT IS USED.</p>
+
+            <h4>9. Limitation of Liability</h4>
+
+            <p>UNDER NO CIRCUMSTANCES WILL WE BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, PUNITIVE, OR CONSEQUENTIAL DAMAGES OF ANY KIND, ARISING FROM YOUR USE OF THIS SITE, INCLUDING, WITHOUT LIMITATION, LOSS OF BUSINESS OR PROFITS, LOSS OF DATA, COMPUTER VIRUSES, TECHNICAL, HARDWARE OR SOFTWARE FAILURES, UNAVAILABLE OR INTERRUPTED NETWORK CONNECTIONS, BREACH OF SECURITY, OR VIRUSES, WORMS, OR OTHER HARMFUL COMPONENTS, EVEN IF WE HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. YOU SPECIFICALLY ACKNOWLEDGE AND AGREE THAT WE ARE NOT LIABLE FOR THE CONDUCT OF ANY SITE USER. IF YOU ARE DISSATISFIED WITH THE SITE, THE SITE CONTENT, OR THESE TERMS OF USE, YOUR SOLE AND EXCLUSIVE REMEDY IS TO DISCONTINUE USING THE SITE.</p>
+
+            <h4>10. Notice of Copyright Infringement</h4>
+
+            <p>If you believe that your work has been copied and is accessible on this Service in a way that constitutes copyright infringement, please provide our designated Copyright Agent identified below with the following information: identification of the copyrighted work claimed to have been infringed;</p>
+
+            <p>identification of the allegedly infringing material on the Service that is requested to be removed;</p>
+
+            <p>your name, address and daytime telephone number, and an e-mail address if available, so that we may contact you if necessary; a statement that you have a good faith belief that the use of the copyrighted work is not authorized by the copyright owner, its agent, or the law; a statement that the information in the notification is accurate, and under penalty of perjury, that the signatory is authorized to act on behalf of the owner of an exclusive copyright right that is allegedly infringed; and a physical or electronic signature of the copyright owner or the person authorized on the owner's behalf to assert infringement of copyright and to submit the statement. Contact Information for Our Copyright Agent: Legal Department, Intellectual Property Wheel Healthcare Holding Company ADDRESS e-mail: info@wheelhcs.com.</p>
+
+            <p>We will remove any content which infringes the copyright of any person under the laws of the United States upon receipt of information as set forth in Subsections (a) - (f) above, and may, in our sole discretion if we deem it appropriate, terminate access rights of any user who we reasonably believe violates any United States copyright laws.</p>
+
+            <h4>11. Choice of Law and Forum</h4>
+
+            <p>These Terms of Use shall be governed by and construed in accordance with the laws of the State of Missouri, excluding its conflict of law rules. We each expressly agree to submit to the exclusive jurisdiction and venue of the courts in Missouri in all disputes arising out of or relating to the use of the Site and/or the Services.</p>
+
+            <h4>12. No Waiver</h4>
+
+            <p>Our failure to enforce any provisions of these Terms of Use or respond to a breach by you or other parties shall not in any way waive our right to enforce subsequently any terms or conditions of these Terms of Use or to act with respect to similar breaches.</p>
+
+            <h4>13. Severability and Integration</h4>
+
+            <p>Unless otherwise specified herein, these Terms of Use and the Privacy Promise incorporated herein constitute the entire agreement between you and us with respect to your use of the Site and the Services, subject to the separate terms and conditions of other sites or services to which we provide hyperlinks from this Site. If any portion of these Terms of Use is held invalid or unenforceable, that portion shall be construed in a manner consistent with applicable law to reflect, as nearly as possible, the original intention of the parties, and the remaining portions shall remain in full force and effect.</p>
+
+            <div class="clearfix"></div>
+
+          </div>
+        </article>
+
+
+      </div>
+
+    </div>
+  </main>
+
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+
+        <aside class="col-sm-8">
+
+          <ul class="list-inline links">
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="affiliates.html">Affiliates</a></li>
+            <li><a href="partners.html">Partners</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+            <li><a href="sitemap.html">Site Map</a></li>
+            <li><a href="FAQ.html">FAQ's</a></li>
+          </ul>
+        </aside>
+        <aside class="col-sm-4">
+          <ul class="list-inline social-icons">
+            <li><a href="https://www.facebook.com/pages/Wheel-Healthcare-Inc/537220013044604?fref=ts" target="_BLANK" class="fb"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/wheelhealthcare" target="_BLANK" class="tw"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://plus.google.com" target="_BLANK" class="gplus"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="https://www.linkedin.com/" target="_BLANK" class="in"><i class="fa fa-linkedin"></i></a></li>
+
+            <li><a href="http://www.youtube.com/" target="_BLANK" class="utube"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="http://www.flickr.com/" target="_BLANK" class="flckr"><i class="fa fa-flickr"></i></a></li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+
+    
+    <div id="loginModel" class="reveal-modal">
+    <div id="alert"></div>
+	<form class="form-horizontal" name="request1" id="request" method="post" action="contact_mail.php" enctype="text/plain">
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">Name</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputPassword3" class="col-sm-2 control-label">Phone No.</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone No.">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputPassword3" class="col-sm-2 control-label">Email</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="email" name="email"  placeholder="Email">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputPassword3" class="col-sm-2 control-label">Message</label>
+    <div class="col-sm-10">
+      <textarea name="message" id="message" class="form-control" rows="3" placeholder="Message"></textarea>
+    </div>
+  </div>
+ 
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <input type="submit" class="btn btn-default" value="Submit" name="contact">
+    </div>
+  </div>
+</form>
+<style>
+.invalid{
+
+	border:1px solid red;
+}
+</style>
+<script>
+$(document).ready(function() {
+
+$("#request").validate({
+             rules:
+          {
+            name:
+
+            {
+
+              required: true
+            },
+            phone:
+
+            {
+
+              required: true
+            },
+
+            email:
+            {
+
+              required: true,
+              email:true,
+            },
+            message:
+
+            {
+
+              required: true
+            }
+  },
+
+errorPlacement: function(error,element) {
+
+            element.attr('placeholder',error.text());
+
+        },
+
+		 submitHandler: function()
+
+          {
+
+           // $("#Addloader").show();
+
+         
+
+             dataString = $('#request').serialize();        
+
+                
+
+             $.ajax({
+
+
+
+                type: "POST",
+
+                url: "contact_mail.php",              
+
+                data: dataString,                               
+
+                success: function(msd)
+
+                {  
+
+			//alert(msd);
+				// $("#Addloader").hide();
+
+				if(msd==1){
+					$('#alert').html('<div class="success">Message Sent Successfully</div>');
+
+                    $("#alert").fadeIn();
+				}
+
+				else{
+
+					$('#alert').html('<div class="error">Message Delivery failed</div>');
+
+                    $("#alert").fadeIn();
+				}
+
+					setTimeout(function(){
+    $('.close-reveal-modal').click();
+     location.reload(true);
+}, 1000);
+
+				}
+
+
+
+             })
+
+            
+
+          }
+
+});
+
+
+
+});
+</script>
+
+</div>
+  </footer>
+
+  <footer id="footer-bottom">
+    <div class="container">
+      <p>&copy; 2014 Wheel HealthCare Services, Inc. All rights reserved. <a href="privacy.html">Privacy </a> &middot; <a href="terms.html">Terms of Use</a></p>
+    </div>
+  </footer>
+
+  <a href="#none" class="scrollup">Scroll</a>
+</body>
+</html>

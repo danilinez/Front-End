@@ -1,0 +1,172 @@
+.region
+{
+  >.row
+  {
+    background-color: #fff;
+  }
+  .region_details
+  {
+    padding: 30px 10px;
+    h1
+    {
+      font-family: 'osbold', sans-serif;
+      font-size: 50px;
+      margin: 10px 0px;
+    }
+    .btn-default
+    {
+      background-color:$red;
+      color:#fff;
+      font-family: osbold !important;
+      font-size: 20px;
+      padding: 18px 25px;
+      border-radius: 6px;
+      display: block;
+      margin: 0 auto 15px;
+      text-transform: uppercase;
+      i
+      {
+        margin-right: 15px;
+      }
+      &:hover
+      {
+        background:$black;
+      }
+    }
+    .list_h
+    {
+      font-family: 'osbold';
+      font-size: 20px;
+      margin: 40px 0px 15px;
+    }
+    ul
+    {
+      margin: 0px 0px 30px 20px;
+      li
+      {
+        display: list-item;
+        list-style-type: decimal !important;
+        font-family: 'source';
+        padding-left:5px;
+      }
+    }
+    .table-responsive
+    {
+      td, th
+      {
+        padding: 5px 8px;
+      }
+      td, th, a
+      {
+        font-family: 'source';
+        font-size: 14px;
+      }
+      table
+      {
+        width: 100%;
+        min-width: 700px;
+      }
+      thead
+      {
+        tr
+        {
+          th
+          {
+            font-family: 'sbold';
+            border-bottom:1px solid $red;
+          }
+        }
+      }
+    }
+    .registered_persons
+    {
+      background-color: #ccc;
+      padding: 20px;
+      h3
+      {
+        margin: 0px 0px 20px;
+        font-size: 18px;
+        padding: 5px;
+      }
+      .row
+      {
+        background-color: transparent;  
+      }
+      time
+      {
+        font-size: 12px;
+        font-family: source;
+        text-transform: capitalize;
+      }
+      p
+      {
+        margin: 0px;
+      }
+      img
+      {
+        margin-top: -40px;
+      }
+    }
+  }
+  .region_menus
+  {
+    background:#eee;
+    padding: 20px;
+    .common_h
+    {
+      margin: 20px 0px 10px;
+      font-size: 20px;
+      padding: 7px;
+    }
+    .tour_menu
+    {
+      ul{
+        li{
+          a{
+            font-family: 'obold';
+            color: #ff0000;
+            &:hover
+            {
+              text-decoration: underline !important;
+            }
+          }
+        }
+      }
+    }
+    .news_menu
+    {
+      .news_box{
+        margin-bottom:14px;
+        .link
+        {
+          font-size: 12px;
+        }
+        .news_img
+        {
+          float: right;
+        }
+        h3
+        {
+          background:$black;
+          font-size: 16px;
+          padding: 5px 10px;
+          line-height: 20px;
+          margin: 0px;
+          a
+          {
+            font-family: 'obold';
+            color:$red;
+          }
+        }
+        p
+        {
+          margin: 0px 0px 5px;
+          line-height: 12px;
+          font-size: 12px;
+          width: 70%;
+        }
+      }
+    }
+  }
+}
+

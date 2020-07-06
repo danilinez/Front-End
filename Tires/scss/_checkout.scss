@@ -1,0 +1,216 @@
+.checkout
+{
+  padding: 50px 0px;
+  .container  
+  {
+    @media (max-width:1199px)
+    {
+        max-width: 100% !important;
+        width: 100% !important;
+    } 
+  }
+  .block-h
+  {
+    padding: 15px;
+    margin: 0px 0px 30px;
+    color:$text;
+    background: #ddd;
+    font-size: 16px;
+    font-family: semibold;
+  }
+  .form-control
+  {
+    min-height: 46px;
+    background: #f9f9f9;
+    border:1px solid #ddd;
+    &::placeholder
+    {
+      color:#aaa;
+      font-family:light;
+    }
+  }
+  textarea
+  {
+    margin-bottom: 30px;
+  }
+  .form-check
+  {
+    padding: 0px;
+    .form-check-label
+    {
+      cursor: pointer;
+      width: 100%;
+      background: #f6f6f6;
+      border:1px solid #eee;
+      padding: 12px 30px 10px;
+      font-family: medium;
+    }
+  }
+  .form-check
+  {
+    margin-bottom: 30px;
+  }
+  .method-wrap
+  {
+    padding: 20px 5px;
+    background: #f9f9f9;
+    p
+    {
+      margin: 0px;
+      font-size: 13px;
+      font-weight: 500;
+      strong
+      {
+        font-size: 14px;
+        font-weight: 500;
+        font-family: semibold;
+      }
+    }
+    .table
+    {
+      background: #fff;
+      thead
+      {
+        th
+        {
+          border:none;
+          font-size: 13px;
+        }
+      }
+      th
+      {
+        vertical-align: middle;
+        padding: 10px;
+        font-family: medium;
+        font-weight: 500;
+        text-transform: capitalize;
+      }
+      td
+      {
+        vertical-align: middle;
+        font-size: 14px;
+        font-family: medium;
+        font-weight: 500;
+        text-transform: capitalize;
+        padding: 10px;
+        p
+        {
+          margin: 0px;
+          b
+          {
+            font-weight: 500;
+            font-family: semibold;
+          }
+        }
+      }
+    }
+    .total
+    {
+      th, td
+      {
+        padding: 10px 15px;
+        &:first-child{
+          text-align: left;
+        }
+        &:last-child{
+          text-align: right;
+        }
+        border:none;
+      }
+      td
+      {
+        border:none;
+        font-family: 500;
+        font-family: saira;
+        font-size: 14px;
+      }
+      th
+      {
+        font-size: 14px;
+        font-weight: 500;
+        font-family:medium;
+      }
+    }
+    .checks-submit
+    {
+      padding: 0px 15px;
+      .form-check
+      {
+        margin: 0px 0px 10px;
+        label
+        {
+          // border:none; 
+          background: #f1f1f1;
+        }
+      }
+      .cart-link
+      {
+        padding: 15px;
+        color:$red;
+        background: #fff;
+        text-align: center;
+        display: inline-block;
+        width: 100%;
+        border:1px solid #eee;
+        margin: 20px 0px 10px;
+      }
+      .btn-default
+      {
+        width: 100%;
+        padding: 12px;
+        margin: 10px 0px 0px;
+        font-family: bold;
+      }
+    }
+  }
+}
+
+.thanks
+{
+  text-align: center;
+  padding: 60px 0px;
+  .icon
+  {
+    text-align: center;
+    width: 100%;
+    display: block;
+    padding: 10px 0px 40px;
+    i
+    {
+      font-size: 100px;
+      color:$text;
+    }
+  }
+  h3
+  {
+    color:$red;
+    margin: 20px 0px;
+    font-size: 24px;
+    font-family: semibold;
+  }
+  h5{
+    color:$text;
+    font-family: medium;
+    span
+    {
+      color:$red;
+      font-family: medium;
+    }
+  }
+  p
+  {
+    color:#555;
+    max-width: 800px;
+    display: block;
+    margin: 20px auto 40px;
+  }
+  .btn-default
+  {
+    @media (min-width:992px) {
+      padding: 12px 40px;
+      font-size: 20px;
+      font-family: semibold;
+    }
+    
+  }
+}

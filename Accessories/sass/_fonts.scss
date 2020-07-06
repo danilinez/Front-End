@@ -1,0 +1,45 @@
+@font-face {
+  font-family: regular;
+  src: url("../css/fonts/Raleway.ttf");
+}
+@font-face {
+  font-family: light;
+  src: url("../css/fonts/Raleway-Light.ttf");
+}
+@font-face {
+  font-family: medium;
+  src: url("../css/fonts/Raleway-Medium.ttf");
+}
+@font-face {
+  font-family: bold;
+  src: url("../css/fonts/Raleway-Bold.ttf");
+}
+@font-face {
+  font-family: semibold;
+  src: url("../css/fonts/Raleway-SemiBold.ttf");
+}
+@font-face {
+  font-family: num_regular;
+  src: url("../css/fonts/Lato-Regular.ttf");
+}
+@font-face {
+  font-family: num_light;
+  src: url("../css/fonts/Lato-Light.ttf");
+}
+@font-face {
+  font-family: num_bold;
+  src: url("../css/fonts/Lato-Bold.ttf");
+}
+
+.num
+{
+  font-family: 'num_regular', serif !important;
+}
+.num-bold{
+  
+  font-family: 'num_bold', serif !important;
+}
+.num-light{
+  
+  font-family: 'num_light', serif !important;
+}

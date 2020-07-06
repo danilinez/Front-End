@@ -1,0 +1,198 @@
+doctype html
+html(lang='en')
+  head
+    title iCarryit
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    include includes/links
+  body.client_body
+    //- navbar
+    include includes/client/navbar
+    //- navbar end
+    
+    //- About Body
+    main.client.career
+      .fluid_bcrumb.yellow-bg
+        .container
+          ul.breadcrumb
+              span You are here:
+              li
+                a(href='index_carrier.html') Home
+              li.noafter Career
+      //- banner 
+      .small_banner
+        .container.banner_content_wrapper
+          .banner_content
+            h1.banner_title Join Our Thriving Team
+        img.small_banner_img(src='assets/images/client/about_banner.png', alt='banner')
+      
+      //- Banner End 
+
+      //- Job_info 
+      
+      .join_team
+        .social_icons.text-center
+          ul.list-inline
+            li.list-inline-item
+              a.fb(href='javascript:void(0)')
+                i.fab.fa-facebook-f
+            li.list-inline-item
+              a.twtr(href='javascript:void(0)')
+                i.fab.fa-twitter
+            li.list-inline-item
+              a.msg(href='javascript:void(0)')
+                i.fas.fa-envelope
+            li.list-inline-item
+              a.share(href='javascript:void(0)')
+                i.fas.fa-share-alt
+        .container
+          .content_slides
+            .row
+              .col-md-6
+                .about_job
+                  .job_title.yellow-bg
+                    h4 Job Tilte Goes Here
+                  .job_descript
+                    p
+                      | Lorem Ipsum Dort Sevit new text written by alot of people
+                      | who whatever do any thing so try to skip development in the designing and just work work...&nbsp;
+                      a.client-text(href='javascript:void(0)')
+                        strong
+                          |Find out more 
+                          i.fas.fa-chevron-right
+              .col-md-6
+                .about_job
+                  .job_title.yellow-bg
+                    h4 Job Tilte Goes Here
+                  .job_descript
+                    p
+                      | Lorem Ipsum Dort Sevit new text written by alot of people
+                      | who whatever do any thing so try to skip development in the designing and just work work...&nbsp;
+                      a.client-text(href='javascript:void(0)')
+                        strong
+                          |Find out more 
+                          i.fas.fa-chevron-right
+              .col-md-6
+                .about_job
+                  .job_title.yellow-bg
+                    h4 Job Tilte Goes Here
+                  .job_descript
+                    p
+                      | Lorem Ipsum Dort Sevit new text written by alot of people
+                      | who whatever do any thing so try to skip development in the designing and just work work...&nbsp;
+                      a.client-text(href='javascript:void(0)')
+                        strong
+                          |Find out more 
+                          i.fas.fa-chevron-right
+              .col-md-6
+                .about_job
+                  .job_title.yellow-bg
+                    h4 Job Tilte Goes Here
+                  .job_descript
+                    p
+                      | Lorem Ipsum Dort Sevit new text written by alot of people
+                      | who whatever do any thing so try to skip development in the designing and just work work...&nbsp;
+                      a.client-text(href='javascript:void(0)')
+                        strong
+                          |Find out more 
+                          i.fas.fa-chevron-right
+              .col-md-6
+                .about_job
+                  .job_title.yellow-bg
+                    h4 Job Tilte Goes Here
+                  .job_descript
+                    p
+                      | Lorem Ipsum Dort Sevit new text written by alot of people
+                      | who whatever do any thing so try to skip development in the designing and just work work...&nbsp;
+                      a.client-text(href='javascript:void(0)')
+                        strong
+                          |Find out more 
+                          i.fas.fa-chevron-right
+      //- Testimonials 
+      .testimonial.team_testimonials
+        .container
+          #testimonials.carousel.slide(data-ride='carousel')
+            ul.carousel-indicators
+              li.active(data-target='#testimonials', data-slide-to='0')
+              li(data-target='#testimonials', data-slide-to='1')
+              li(data-target='#testimonials', data-slide-to='2')
+                
+            .carousel-inner
+              .carousel-item.active
+                .row
+                  .col-md-5.py-4
+                    .img-holder
+                      span.rating.orange-bg 
+                        h3 5
+                        small / 5 Stars
+                      img.img-fluid(src='assets/images/client/testimonial.jpg', alt='person')
+                  .col-md-7.py-4
+                    .testimonial_content
+                      img.left(src='assets/images/left-quote.svg', alt='quote')
+                      p.comment
+                        em
+                          |Lorem Ipsum Drom is a dummy text used in web pages.
+                          |Lorem dort vi sure ana aquo ela men sera nev duro
+                          |Lorem Ipsum Drom is a dummy text used in web pages.
+                          |Lorem dort vi sure ana aquo ela men sera nev duro.
+                      img.float-right.right(src='assets/images/right-quote.svg', alt='quote')
+                      .sender
+                        h5
+                          strong.client-text Jessica Blake
+                          |, Sender
+              .carousel-item
+                .row
+                  .col-md-5.py-4
+                    .img-holder
+                      span.rating.orange-bg 
+                        h3 5
+                        small / 5 Stars
+                      img.img-fluid(src='assets/images/client/testimonial.jpg', alt='video_play')
+                  .col-md-7.py-4
+                    .testimonial_content
+                      img.left(src='assets/images/left-quote.svg', alt='quote')
+                      p.comment
+                        em
+                          |Lorem Ipsum Drom is a dummy text used in web pages.
+                          |Lorem dort vi sure ana aquo ela men sera nev duro
+                          |Lorem Ipsum Drom is a dummy text used in web pages.
+                          |Lorem dort vi sure ana aquo ela men sera nev duro.
+                      img.float-right.right(src='assets/images/right-quote.svg', alt='quote')
+                      .sender
+                        h5
+                          strong.client-text Jessica Blake
+                          |, Sender
+              .carousel-item
+                .row
+                  .col-md-5.py-4
+                    .img-holder
+                      span.rating.orange-bg 
+                        h3 5
+                        small / 5 Stars
+                      img.img-fluid(src='assets/images/client/testimonial.jpg', alt='video_play')
+                  .col-md-7.py-4
+                    .testimonial_content
+                      img.left(src='assets/images/left-quote.svg', alt='quote')
+                      p.comment
+                        em
+                          |Lorem Ipsum Drom is a dummy text used in web pages.
+                          |Lorem dort vi sure ana aquo ela men sera nev duro
+                          |Lorem Ipsum Drom is a dummy text used in web pages.
+                          |Lorem dort vi sure ana aquo ela men sera nev duro.
+                      img.float-right.right(src='assets/images/right-quote.svg', alt='quote')
+                      .sender
+                        h5
+                          strong.client-text Jessica Blake
+                          |, Sender
+      
+      //- Testimonials End
+
+      //- Footer
+      include includes/client/footer      
+      //- Footer End
+    
+    
+    //- Hompage Body End
+    
+    //- scripts
+    include includes/scripts

@@ -1,0 +1,54 @@
+:selection {
+  background: #002060;
+  text-shadow: none;
+  color: #000
+}
+body {
+  font-family: 'Open Sans',sans-serif
+;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway',sans-serif;
+  margin: 15px 0;
+  /* color: #27A7F2; */
+}
+a {color: #27A7F2;}
+a:hover,a:focus {color: #002060}
+a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {border-color: #002060;background-color: #F5F5F5;}
+h1 a,h2 a,h3 a,h4 a,h5 a,h6 a {color: #27A7F2;}
+a:hover h1 ,a:focus h1 ,
+a:hover h2 ,a:focus h2,
+a:hover h3,a:focus h3,
+a:hover h4,a:focus h4,
+a:hover h5,a:focus h5,
+a:hover h6,a:focus h6  {color:#002060 }
+h1 a:hover,h1 a:focus,
+h2 a:hover,h2 a:focus,
+h3 a:hover,h3 a:focus,
+h4 a:hover,h4 a:focus,
+h5 a:hover,h5 a:focus,
+h6 a:hover,h6 a:focus  {color: #012060;}
+::-webkit-input-placeholder, ::-moz-placeholder, :-moz-placeholder, :-ms-input-placeholder, .placeholder {
+  color: #999;
+}
+.scrollup {
+  background: url('../img/totop.png') no-repeat;
+  background-color: #002060;
+  width: 51px;
+  height: 51px;
+  opacity: 0.3;
+  position: fixed;
+  bottom: 75px;
+  right: 10px;
+  display: none;
+  text-indent: -9999px;
+  border-radius: 3px;
+}
+.text-center .img-responsive {
+  display: inline-block;
+}
+.list-inline>li:first-child {padding-left: 0;}
+.list-inline>li:last-child {padding-right: 0;}
+h1, .h1 {
+  font-size: 30px;
+}

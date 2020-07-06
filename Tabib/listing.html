@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home | Tabeeb</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/owl.css" />
+    <link rel="stylesheet" href="assets/css/jqueryui.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.css" />
+    <link rel="stylesheet" href="assets/css/master.css" />
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-xl">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/images/logo.png" alt="logo">
+        </a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+      
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="navigation">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Find a Doctor</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Online Consultations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Hospitals</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Blog</a>
+            </li> 
+          </ul>
+        </div>
+        <div class="profile-section">
+          <a href="#">
+            <div class="profile-img-circle">
+              <img src="assets/images/doc.jpg" class="img-fluid" alt="profile">
+            </div>
+            <h5 class="pname">Bilal Ahmed <i class="fas fa-angle-down"></i></h5>
+          </a>
+          <div class="dropdown-menu">
+            <ul>
+              <li>
+                <a href="#"><i class="far fa-user"></i> Profile Settings</a>
+              </li>
+              <li>
+                <a href="#"><i class="far fa-calendar-check"></i> Appointments</a>
+              </li>
+              <li>
+                <a href="#"><i class="far fa-heart"></i> Favorite Listing</a>
+              </li>
+              <li>
+                <a href="#"><i class="far fa-envelope"></i> Private Messages</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
+              </li>
+            </ul>
+          </div>
+        </div> 
+      </div>
+    </nav>
+    
+    <div class="search-filters">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="listing-search">
+              <div class="drop dropdown" id="area">
+                <button type="button" class="btn btn-primary">Area</button>
+                <div class="dropdown-menu area">
+                  <a class="dropdown-item" href="#">Bahria Town</a>
+                  <a class="dropdown-item" href="#">DHA</a>
+                  <a class="dropdown-item" href="#">Faisal Town</a>
+                  <a class="dropdown-item" href="#">Farooq Colony</a>
+                  <a class="dropdown-item" href="#">Iqbal Town</a>
+                  <a class="dropdown-item" href="#">Al Noor Town</a>
+                  <a class="dropdown-item" href="#">Walton</a>
+                </div>
+              </div>
+              <div class="drop dropdown" id="fee">
+                <button type="button" class="btn btn-primary">Fee Range</button>
+                <div class="dropdown-menu fee">
+                  <a class="dropdown-item" href="#">Rs. 500 - Rs. 100 </a>
+                  <a class="dropdown-item" href="#">Rs. 1000 - Rs. 1500 </a>
+                  <a class="dropdown-item" href="#">Rs. 1500 - Rs. 2000 </a>
+                  <a class="dropdown-item" href="#">Rs. 2000 - Rs. 2500 </a>
+                  <a class="dropdown-item" href="#">Rs. 2500 - Rs. 3000 </a>
+                  <a class="dropdown-item" href="#">Rs. 3000 - Rs. 3500 </a>
+                  <a class="dropdown-item" href="#">Rs. 3500 - Rs. 4500 </a>
+                  <a class="dropdown-item" href="#">Rs. 4500 - Rs. 5000 </a>
+                </div>
+              </div>
+              <div class="drop dropdown" id="gender">
+                <button type="button" class="btn btn-primary">Gender</button>
+                <div class="dropdown-menu gender">
+                  <a class="dropdown-item" href="#">Male</a>
+                  <a class="dropdown-item" href="#">Female</a>
+                </div>
+              </div>
+              <a class="btn btn-default search" href="#"><i class="fas fa-search"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <section class="listing">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="filters">
+              <h2><img src="assets/images/filters.svg" alt="filter">Filters</h2>
+              <h3 class="hh">Availability</h3>
+              <ul class="filter-checks">
+                <li>
+                  <div class="custom-control custom-checkbox custom-control-inline">
+                    <input type="checkbox" class="custom-control-input" id="anyd" checked />
+                    <label class="custom-control-label" for="anyd">Any</label>
+                  </div>
+                </li>
+                <li>
+                  <div class="custom-control custom-checkbox custom-control-inline">
+                    <input type="checkbox" class="custom-control-input" id="monday" />
+                    <label class="custom-control-label" for="monday">Monday</label>
+                  </div>
+                </li>
+                <li>
+                  <div class="custom-control custom-checkbox custom-control-inline">
+                    <input type="checkbox" class="custom-control-input" id="tuesday" />
+                    <label class="custom-control-label" for="tuesday">Tuesday</label>
+                  </div>
+                </li>
+                <li>
+                  <div class="custom-control custom-checkbox custom-control-inline">
+                    <input type="checkbox" class="custom-control-input" id="wednesday" />
+                    <label class="custom-control-label" for="wednesday">Wednesday</label>
+                  </div>
+                </li>
+                <li>
+                  <div class="custom-control custom-checkbox custom-control-inline">
+                    <input type="checkbox" class="custom-control-input" id="Thirsday" />
+                    <label class="custom-control-label" for="Thirsday">Thirsday</label>
+                  </div>
+                </li>
+                <li>
+                  <div class="custom-control custom-checkbox custom-control-inline">
+                    <input type="checkbox" class="custom-control-input" id="friday" />
+                    <label class="custom-control-label" for="friday">Friday</label>
+                  </div>
+                </li>
+                <li>
+                  <div class="custom-control custom-checkbox custom-control-inline">
+                    <input type="checkbox" class="custom-control-input" id="saturday" />
+                    <label class="custom-control-label" for="saturday">Saturday</label>
+                  </div>
+                </li>
+                <li>
+                  <div class="custom-control custom-checkbox custom-control-inline">
+                    <input type="checkbox" class="custom-control-input" id="sunday" />
+                    <label class="custom-control-label" for="sunday">Sunday</label>
+                  </div>
+                </li>
+              </ul>
+              <div class="time-range">
+                <div id="time-range-slider" class="ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content">
+                  <div class="sliders_step1">
+                    <div id="slider-range"></div>
+                  </div>
+                  <div class="ui-slider-range ui-corner-all ui-widget-header"></div>
+                </div>
+                <div class="time-range-text">
+                  <span>Time Range: </span>
+                  <span class="min-time">1:15 AM</span> - <span class="max-time">11:59 PM</span>
+                </div>
+              </div>
+              <h3 class="hh">Gender</h3>
+              <ul class="filter-checks">
+                <li>
+                  <div class="custom-control custom-checkbox custom-control-inline">
+                    <input type="checkbox" class="custom-control-input" id="allg" checked/>
+                    <label class="custom-control-label" for="allg">All</label>
+                  </div>
+                </li>
+                <li>
+                  <div class="custom-control custom-checkbox custom-control-inline">
+                    <input type="checkbox" class="custom-control-input" id="gmale" />
+                    <label class="custom-control-label" for="gmale">Male</label>
+                  </div>
+                </li>
+                <li>
+                  <div class="custom-control custom-checkbox custom-control-inline">
+                    <input type="checkbox" class="custom-control-input" id="gfemale" />
+                    <label class="custom-control-label" for="gfemale">Female</label>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-9">
+            <!-- <div class="row">
+              <div class="col-12">
+                <h2>Doctors Listing</h2>
+              </div>
+            </div> -->
+            <div class="listing-results">
+              <div class="row">
+                <div class="col-12">
+                  <div class="entity">
+                    <div class="img-holder">
+                      <img src="assets/images/doc.jpg" class="img-fluid" alt="doc">
+                    </div>
+                    <div class="text">
+                      <h4 class="name">Dr. Zain Ali</h4>
+                      <h5 class="speciality">Best Sergion of Heart and Brain</h5>
+                      <div class="intouch">
+                        <p><i class="fas fa-map-marker-alt"></i> 154 Bayswater Rd, W2 4HP, UK</p>
+                        <p><i class="fas fa-mobile-alt"></i> +4 235 856843</p>
+                      </div>
+                    </div>
+                    <div class="action">
+                      <div class="rating">
+                        <ul>
+                          <li>
+                            <i class="fas fa-star yellow"></i>
+                            <i class="fas fa-star yellow"></i>
+                            <i class="fas fa-star yellow"></i>
+                            <i class="fas fa-star yellow"></i>
+                            <i class="fas fa-star"></i>
+                          </li>
+                          <li>
+                            <div class="checkbox">
+                              <label><input type="checkbox" class="hidden favorite"/><i class="far fa-heart"></i></label>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <a href="#" class="btn btn-primary">Book Appointment</a>
+                      <div class="votes">
+                        <p><i class="far fa-thumbs-up"></i>(1200 votes)</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="entity">
+                    <div class="img-holder">
+                      <img src="assets/images/doc.jpg" class="img-fluid" alt="doc">
+                    </div>
+                    <div class="text">
+                      <h4 class="name">Dr. Zain Ali</h4>
+                      <h5 class="speciality">Best Sergion of Heart and Brain</h5>
+                      <div class="intouch">
+                        <p><i class="fas fa-map-marker-alt"></i> 154 Bayswater Rd, W2 4HP, UK</p>
+                        <p><i class="fas fa-mobile-alt"></i> +4 235 856843</p>
+                      </div>
+                    </div>
+                    <div class="action">
+                      <div class="rating">
+                        <ul>
+                          <li>
+                            <i class="fas fa-star yellow"></i>
+                            <i class="fas fa-star yellow"></i>
+                            <i class="fas fa-star yellow"></i>
+                            <i class="fas fa-star yellow"></i>
+                            <i class="fas fa-star"></i>
+                          </li>
+                          <li>
+                            <div class="checkbox">
+                              <label><input type="checkbox" class="hidden favorite"/><i class="far fa-heart"></i></label>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <a href="#" class="btn btn-primary">Book Appointment</a>
+                      <div class="votes">
+                        <p><i class="far fa-thumbs-up"></i>(1200 votes)</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="entity">
+                    <div class="img-holder">
+                      <img src="assets/images/doc.jpg" class="img-fluid" alt="doc">
+                    </div>
+                    <div class="text">
+                      <h4 class="name">Dr. Zain Ali</h4>
+                      <h5 class="speciality">Best Sergion of Heart and Brain</h5>
+                      <div class="intouch">
+                        <p><i class="fas fa-map-marker-alt"></i> 154 Bayswater Rd, W2 4HP, UK</p>
+                        <p><i class="fas fa-mobile-alt"></i> +4 235 856843</p>
+                      </div>
+                    </div>
+                    <div class="action">
+                      <div class="rating">
+                        <ul>
+                          <li>
+                            <i class="fas fa-star yellow"></i>
+                            <i class="fas fa-star yellow"></i>
+                            <i class="fas fa-star yellow"></i>
+                            <i class="fas fa-star yellow"></i>
+                            <i class="fas fa-star"></i>
+                          </li>
+                          <li>
+                            <div class="checkbox">
+                              <label><input type="checkbox" class="hidden favorite"/><i class="far fa-heart"></i></label>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <a href="#" class="btn btn-primary">Book Appointment</a>
+                      <div class="votes">
+                        <p><i class="far fa-thumbs-up"></i>(1200 votes)</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="entity">
+                    <div class="img-holder">
+                      <img src="assets/images/doc.jpg" class="img-fluid" alt="doc">
+                    </div>
+                    <div class="text">
+                      <h4 class="name">Dr. Zain Ali</h4>
+                      <h5 class="speciality">Best Sergion of Heart and Brain</h5>
+                      <div class="intouch">
+                        <p><i class="fas fa-map-marker-alt"></i> 154 Bayswater Rd, W2 4HP, UK</p>
+                        <p><i class="fas fa-mobile-alt"></i> +4 235 856843</p>
+                      </div>
+                    </div>
+                    <div class="action">
+                      <div class="rating">
+                        <ul>
+                          <li>
+                            <i class="fas fa-star yellow"></i>
+                            <i class="fas fa-star yellow"></i>
+                            <i class="fas fa-star yellow"></i>
+                            <i class="fas fa-star yellow"></i>
+                            <i class="fas fa-star"></i>
+                          </li>
+                          <li>
+                            <div class="checkbox">
+                              <label><input type="checkbox" class="hidden favorite"/><i class="far fa-heart"></i></label>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <a href="#" class="btn btn-primary">Book Appointment</a>
+                      <div class="votes">
+                        <p><i class="far fa-thumbs-up"></i>(1200 votes)</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="entity">
+                    <div class="img-holder">
+                      <img src="assets/images/doc.jpg" class="img-fluid" alt="doc">
+                    </div>
+                    <div class="text">
+                      <h4 class="name">Dr. Zain Ali</h4>
+                      <h5 class="speciality">Best Sergion of Heart and Brain</h5>
+                      <div class="intouch">
+                        <p><i class="fas fa-map-marker-alt"></i> 154 Bayswater Rd, W2 4HP, UK</p>
+                        <p><i class="fas fa-mobile-alt"></i> +4 235 856843</p>
+                      </div>
+                    </div>
+                    <div class="action">
+                      <div class="rating">
+                        <ul>
+                          <li>
+                            <i class="fas fa-star yellow"></i>
+                            <i class="fas fa-star yellow"></i>
+                            <i class="fas fa-star yellow"></i>
+                            <i class="fas fa-star yellow"></i>
+                            <i class="fas fa-star"></i>
+                          </li>
+                          <li>
+                            <div class="checkbox">
+                              <label><input type="checkbox" class="hidden favorite"/><i class="far fa-heart"></i></label>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <a href="#" class="btn btn-primary">Book Appointment</a>
+                      <div class="votes">
+                        <p><i class="far fa-thumbs-up"></i>(1200 votes)</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="entity">
+                    <div class="img-holder">
+                      <img src="assets/images/doc.jpg" class="img-fluid" alt="doc">
+                    </div>
+                    <div class="text">
+                      <h4 class="name">Dr. Zain Ali</h4>
+                      <h5 class="speciality">Best Sergion of Heart and Brain</h5>
+                      <div class="intouch">
+                        <p><i class="fas fa-map-marker-alt"></i> 154 Bayswater Rd, W2 4HP, UK</p>
+                        <p><i class="fas fa-mobile-alt"></i> +4 235 856843</p>
+                      </div>
+                    </div>
+                    <div class="action">
+                      <div class="rating">
+                        <ul>
+                          <li>
+                            <i class="fas fa-star yellow"></i>
+                            <i class="fas fa-star yellow"></i>
+                            <i class="fas fa-star yellow"></i>
+                            <i class="fas fa-star yellow"></i>
+                            <i class="fas fa-star"></i>
+                          </li>
+                          <li>
+                            <div class="checkbox">
+                              <label><input type="checkbox" class="hidden favorite"/><i class="far fa-heart"></i></label>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <a href="#" class="btn btn-primary">Book Appointment</a>
+                      <div class="votes">
+                        <p><i class="far fa-thumbs-up"></i>(1200 votes)</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="content leftin">
+              <h1>Quick Links</h1>
+              <ul class="links">
+                <li>
+                  <a href="#"><i class="fas fa-angle-right"></i> Find a Doctor</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-angle-right"></i> Join as Doctor</a>
+                </li>
+                <li>
+                  <a href="#"> <i class="fas fa-angle-right"></i> Online Consultations</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-angle-right"></i> Hospitals</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-angle-right"></i> About Us</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-angle-right"></i> Forum</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-angle-right"></i> Our Blogs</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-angle-right"></i> Contact Us</a>
+                </li>
+              </ul>
+            </div> 
+          </div>
+          <div class="col-lg-4">
+            <div class="content">
+              <h1 class="leftin">Facebook Feeds</h1>
+              <ul class="feeds fadeup-c">
+                <li>
+                  <a href="#">
+                    <div class="img">
+                      <img src="assets/images/doc.jpg" class="img-fluid" alt="doc">
+                    </div>
+                    <h2>Dr. Steve Northrop</h2>
+                    <p>MDS - Paedodontics & Preventive Dentistry</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="img">
+                      <img src="assets/images/doc.jpg" class="img-fluid" alt="doc">
+                    </div>
+                    <h2>Dr. Steve Northrop</h2>
+                    <p>MDS - Paedodontics & Preventive Dentistry</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="img">
+                      <img src="assets/images/doc.jpg" class="img-fluid" alt="doc">
+                    </div>
+                    <h2>Dr. Steve Northrop</h2>
+                    <p>MDS - Paedodontics & Preventive Dentistry</p>
+                  </a>
+                </li>
+                <a href="#" class="link">view more</a>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="content">
+              <h1 class="leftin">Twitter Feeds</h1>
+              <ul class="feeds fadeup-d">
+                <li>
+                  <a href="#">
+                    <div class="img">
+                      <img src="assets/images/doc.jpg" class="img-fluid" alt="doc">
+                    </div>
+                    <h2>Dr. Steve Northrop</h2>
+                    <p>MDS - Paedodontics & Preventive Dentistry</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="img">
+                      <img src="assets/images/doc.jpg" class="img-fluid" alt="doc">
+                    </div>
+                    <h2>Dr. Steve Northrop</h2>
+                    <p>MDS - Paedodontics & Preventive Dentistry</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="img">
+                      <img src="assets/images/doc.jpg" class="img-fluid" alt="doc">
+                    </div>
+                    <h2>Dr. Steve Northrop</h2>
+                    <p>MDS - Paedodontics & Preventive Dentistry</p>
+                  </a>
+                </li>
+                <a href="#" class="link">view more</a>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="copy">
+      <div class="container">
+        <div class="col-12">
+          <p>&copy; Tabib 2019 - 2020 All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+    <div class="call-us">
+      <a href="tel:03224311887">
+        <div class="phone-holder">
+          <img src="assets/images/call.svg" alt="call">
+          <p>Call Us</p>
+        </div>
+      </a>
+    </div>
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/bootstrapbundle.js"></script>
+    <script src="assets/js/owl.js"></script>
+    <script src="assets/js/nicescroll.js"></script>
+    <script src="assets/js/jqueryui.js"></script>
+    <script src="assets/js/custom.js"></script>
+  
+    <script>
+      jQuery(document).ready(function() {
+        $("body").niceScroll({
+          cursorcolor: "#007cff",
+          cursorwidth: "12px",
+          cursorborderradius: "0px",
+          cursorborder: "0px solid transparent",
+          hidecursordelay: 1000, 
+          autohidemode: false,
+          scrollspeed: 120
+          // bouncescroll: true
+        });
+        // $("body").getNiceScroll(0).doScrollTop(y, 10000);
+        $('.navbar-toggler').click(function(){
+          $('.nav-btns').slideToggle(200);
+        });
+        $('#category').click(function(){
+          $('.dropdown-menu').slideToggle(200);
+        });
+        $(".favorite").click(function() {
+          if ($(this).is(":checked")) {
+            $(".fa-heart")
+              .removeClass("far")
+              .addClass("fas");
+          } else {
+            $(".fa-heart")
+              .removeClass("fas")
+              .addClass("far");
+          }
+        });
+      });
+      $(function () {
+        $(document).scroll(function () {
+          var $nav = $(".navbar");
+          $nav.toggleClass('scrolled', $(this).scrollTop() > 1 );
+        });
+
+    
+
+        // Time Range Slider Scripts .....
+
+        var time_slider = jQuery("#time-range-slider");
+        time_slider.slider({
+          range: true,
+          min: 0,
+          max: 1440,
+          step: 15,
+          values: [80, 1440],
+          slide: function (e, ui) {
+            var hours1 = Math.floor(ui.values[0] / 60);
+            var minutes1 = ui.values[0] - (hours1 * 60);
+            if (hours1.length == 1) hours1 = '0' + hours1;
+            if (minutes1.length == 1) minutes1 = '0' + minutes1;
+            if (minutes1 == 0) minutes1 = '00';
+            if (hours1 >= 12) {
+              if (hours1 == 12) {
+                hours1 = hours1;
+                minutes1 = minutes1 + " PM";
+              } else {
+                hours1 = hours1 - 12;
+                minutes1 = minutes1 + " PM";
+              }
+            } else {
+              hours1 = hours1;
+              minutes1 = minutes1 + " AM";
+            }
+            if (hours1 == 0) {
+              hours1 = 12;
+              minutes1 = minutes1;
+            }
+            jQuery('.min-time').html(hours1 + ':' + minutes1);
+            var hours2 = Math.floor(ui.values[1] / 60);
+            var minutes2 = ui.values[1] - (hours2 * 60);
+            if (hours2.length == 1) hours2 = '0' + hours2;
+            if (minutes2.length == 1) minutes2 = '0' + minutes2;
+            if (minutes2 == 0) minutes2 = '00';
+            if (hours2 >= 12) {
+              if (hours2 == 12) {
+                hours2 = hours2;
+                minutes2 = minutes2 + " PM";
+              } else if (hours2 == 24) {
+                hours2 = 11;
+                minutes2 = "59 PM";
+              } else {
+                hours2 = hours2 - 12;
+                minutes2 = minutes2 + " PM";
+              }
+            } else {
+              hours2 = hours2;
+              minutes2 = minutes2 + " AM";
+            }
+            jQuery('.max-time').html(hours2 + ':' + minutes2);
+          }
+        });
+
+        // Time Range Slider Scripts - END
+        $('#city').click(function(){
+        $('.city').slideToggle(200);
+        $('.area').slideUp(200);
+        $('.skill').slideUp(200);
+        $('.fee').slideUp(200);
+        $('.gender').slideUp(200);
+      });
+      $('#area').click(function(){
+        $('.city').slideUp(200);
+        $('.skill').slideUp(200);
+        $('.fee').slideUp(200);
+        $('.gender').slideUp(200);
+        $('.area').slideToggle(200);
+      });
+      $('#skill').click(function(){
+        $('.city').slideUp(200);
+        $('.fee').slideUp(200);
+        $('.gender').slideUp(200);
+        $('.area').slideUp(200);
+        $('.skill').slideToggle(200);
+      });
+      $('#fee').click(function(){
+        $('.city').slideUp(200);
+        $('.gender').slideUp(200);
+        $('.area').slideUp(200);
+        $('.skill').slideUp(200);
+        $('.fee').slideToggle(200);
+      });
+      $('#gender').click(function(){
+        $('.city').slideUp(200);
+        $('.area').slideUp(200);
+        $('.skill').slideUp(200);
+        $('.fee').slideUp(200);
+        $('.gender').slideToggle(200);
+      });
+
+      $(document).on("click", function(event){
+        var $trigger = $(".dropdown");
+        if($trigger !== event.target && !$trigger.has(event.target).length){
+          $(".dropdown-menu").slideUp("fast");
+        }           
+      });
+
+      });
+    </script>
+  </body>
+</html>

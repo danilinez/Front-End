@@ -1,0 +1,108 @@
+doctype html
+html(lang='en')
+  head
+    title iCarryit
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    include includes/links
+  body.client_body
+    //- navbar
+    include includes/client/navbar
+    //- navbar end
+    
+    //- About Body
+    main.client.about
+      //- banner 
+      .small_banner
+        .container.banner_content_wrapper
+          ul.breadcrumb
+            span You are here:
+            li
+              a(href='index_client.html') Home
+            li
+              a(href='index_client.html') Career
+            li.noafter Job Title Goes Here
+          .banner_content
+            h1.banner_title Job Title Goes Here
+        img.small_banner_img(src='assets/images/client/about_banner.png', alt='banner')
+      
+      //- Banner End 
+
+      //- Job_info 
+      
+      .job_info
+        .social_icons.text-center
+          ul.list-inline
+            li.list-inline-item
+              a.fb(href='javascript:void(0)')
+                i.fab.fa-facebook-f
+            li.list-inline-item
+              a.twtr(href='javascript:void(0)')
+                i.fab.fa-twitter
+            li.list-inline-item
+              a.msg(href='javascript:void(0)')
+                i.fas.fa-envelope
+            li.list-inline-item
+              a.share(href='javascript:void(0)')
+                i.fas.fa-share-alt
+        .container
+          .row
+            .col-lg-6
+              .text-content
+                h5 Job Information
+                p
+                  | Lorem ipsum dolor sit amet, no quod tempor inermis vim. Vix te novum iuvaret corpor, in nulla intellegat sed. Probo fabulas id eos, libris salutandi cu vix, quo case est causae scaevola ex. Eos te munere doctus, ius an homero eripuit delicatissimi. At eam alia vidisse, torquatos temporibus pro cu, labitur aliquam ex pro. Quo no nullam scaevola ullamcorper, eu eam  impetus detraxit. Cu ius oratio iisque, eu mei audiam perfecto accusamus. Ut ignota hendrerit voluptatibus.
+                  br
+                  br
+                  | Te vim antiopam argumentum. Dignissim dissentiet mei eu, cum corpora reprimique at. Ius graeci prodesset ei, ea idque lorem delicatissimi eos, minim tractatos eloquentiam in mei. Ad duo fuisset officiis assentior. Tale ubique vituperata ius cu, eam putent maiestatis consequuntur. Ea clita cetero instructior.
+                  br
+                  br
+                  | Hinc cibo appetere ad vis, minim oratio ne eum, cu mei sumo nihil. Mei in malis quidam conclusionemque. No vide appetere sea, modus legimus has in. Tamquam vocibus graecis id quo. Sale postea vix ne, iudico everti eos ex.
+                a.text-career(href='career.html')
+                  i.fas.fa-chevron-left
+                  | BACK TO CAREERS
+            .col-lg-6
+              form.text-left
+                .row
+                  .form-group.col-sm-6.fluid-r
+                    label First Name*
+                    input#your_name.form-control(type='text')
+                  .form-group.col-sm-6.fluid-l
+                    label Last Name*
+                    input#your_name.form-control(type='text')
+                  .form-group.col-sm-6.fluid-r
+                    label Telephone Number*
+                    input#your_name.form-control(type='text')
+                  .form-group.col-sm-6.fluid-l
+                    label Email Address*
+                    input#your_name.form-control(type='email')
+                  .form-group.col-md-12
+                    label Message*
+                    textarea#comment.form-control(rows='6')
+                  .form-group.col-md-12
+                    p
+                      | I would like to opt in recieve marketing Communications via:
+                      .form-check-inline.checks
+                        input#one.form-check-input(type='checkbox', name='optcheckbox')
+                        label.form-check-label(for='one')
+                          | Email
+                      .form-check-inline.checks
+                        input#two.form-check-input(type='checkbox', name='optcheckbox')
+                        label.form-check-label(for='two')
+                          | Telephone
+                      .form-check-inline.checks
+                        input#three.form-check-input(type='checkbox', name='optcheckbox')
+                        label.form-check-label(for='three')
+                          | Post
+                button.btn.btn-primary.submit.yellow-bg(type='submit') Submit Enquirey
+      //- Job_info End 
+
+      //- Footer
+      include includes/client/footer      
+      //- Footer End
+    
+    
+    //- Hompage Body End
+    
+    //- scripts
+    include includes/scripts

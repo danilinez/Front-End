@@ -1,0 +1,225 @@
+doctype html
+html(lang='en')
+  head
+    title iCarryit
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    include includes/links
+  body.carrier_body
+    //- navbar
+    include includes/carrier/navbar
+    //- navbar end
+    
+    //- About Body
+    main.client.about
+      //- banner 
+      .small_banner
+        .container.banner_content_wrapper
+          ul.breadcrumb
+            span.text-light You are here:
+            li.text-light
+              a.text-light(href='index_carrier.html') Home
+            li.noafter.text-light About Us
+          .banner_content
+            h1.banner_title(style='color:#fff') About Us
+        img.small_banner_img(src='assets/images/carrier/about_banner.png', alt='banner')
+      
+      //- Banner End 
+
+      .about_content
+        .social_icons.text-center
+          ul.list-inline
+            li.list-inline-item
+              a.fb(href='javascript:void(0)')
+                i.fab.fa-facebook-f
+            li.list-inline-item
+              a.twtr(href='javascript:void(0)')
+                i.fab.fa-twitter
+            li.list-inline-item
+              a.msg(href='javascript:void(0)')
+                i.fas.fa-envelope
+            li.list-inline-item
+              a.share(href='javascript:void(0)')
+                i.fas.fa-share-alt
+        .container
+          .row
+            .col-xl-6.col-lg-12
+              h3.main_h3 Our Story
+              p.p
+                strong
+                  | Our business was born out of frustration. How is it possible that our streets are stuck with big trucks, cars, bicycles and it’s so awfully difficult to get any easy and decent priced transport?
+                br
+                br
+                | Do you share our pain? Sending an item is like starting a struggle that takes for days: We find the best way to send, find out the prices, package the item, bring it to somewhere and then start wondering what happens to it. And to be honest, that’s one of the reasons we have too small pants in our closets and wrong sized sofa in the living room.
+                br
+                br
+                | We wanted to do things differently. We wanted to create a service that is easy, secured, affordable and uses the optimal potential of every carrier. We wanted our clients to have the possibility to set up the price they are ready to pay while we make sure that our carriers have a proper compensation by combining the packages in an optimal way. We wanted you to relax (or whatever you like the best) while we do the job.
+            .col-xl-6.col-lg-12
+              #gallary.carousel.slide(data-ride='carousel')    
+                .carousel-inner
+                  .carousel-item.active
+                      img.img-fluid(src='assets/images/slide.jpg', alt='quote')
+                  .carousel-item
+                      img.img-fluid(src='assets/images/slide.jpg', alt='quote')
+                  .carousel-item
+                      img.img-fluid(src='assets/images/slide.jpg', alt='quote')
+                ul.carousel-indicators
+                  li.active(data-target='#gallary', data-slide-to='0')
+                    li(data-target='#gallary', data-slide-to='1')
+                      li(data-target='#gallary', data-slide-to='2')
+      .light_gradient
+        .container
+          .services_range
+            h2.common-heading Our Range of Services
+            .row
+              .col-md-4.pod
+                img(src='assets/images/carrier/run.png', alt='quote')
+                h4.display
+                  | ICarryIt - Crowd Transportation
+                p.descript
+                  | Lorem Ipsum Dort Sevit new text written by alot of people
+                  | who whatever do any thing so try to skip development in the designing
+              .col-md-4.pod
+                img(src='assets/images/carrier/chat.png', alt='quote')
+                h4.display
+                  | Sharing Economy / Crowd Services Platform
+                p.descript
+                  | Lorem Ipsum Dort Sevit new text written by alot of people
+                  | who whatever do any thing so try to skip development in the designing
+              .col-md-4.pod
+                img(src='assets/images/carrier/connect.png', alt='quote')
+                h4.display
+                  | Technology Consulting
+                p.descript
+                  | Lorem Ipsum Dort Sevit new text written by alot of people
+                  | who whatever do any thing so try to skip development in the designing.
+      
+          .team
+            h2.common-heading Meet the Team
+            .row
+              .col-md-12
+                #team.carousel.slide(data-ride='carousel')    
+                  .carousel-inner
+                    .carousel-item.active
+                      .row
+                        .col-md-3.col-sm-6.col-12
+                          .profile_holder
+                            img.img-fluid(src='assets/images/client/testimonial.jpg', alt='quote')
+                          .name_rank
+                            h5.carrier-text Robert Mark
+                            span Team Manager
+                        .col-md-3.col-sm-6.col-12
+                          .profile_holder
+                            img.img-fluid(src='assets/images/client/testimonial.jpg', alt='quote')
+                          .name_rank
+                            h5.carrier-text Robert Mark
+                            span Team Manager
+                        .col-md-3.col-sm-6.col-12
+                          .profile_holder
+                            img.img-fluid(src='assets/images/client/testimonial.jpg', alt='quote')
+                          .name_rank
+                            h5.carrier-text Robert Mark
+                            span Team Manager
+                        .col-md-3.col-sm-6.col-12
+                          .profile_holder
+                            img.img-fluid(src='assets/images/client/testimonial.jpg', alt='quote')
+                          .name_rank
+                            h5.carrier-text Robert Mark
+                            span Team Manager
+                    .carousel-item
+                      .row
+                        .col-md-3.col-sm-6.col-12
+                          .profile_holder
+                            img.img-fluid(src='assets/images/client/testimonial.jpg', alt='quote')
+                          .name_rank
+                            h5.carrier-text Robert Mark
+                            span Team Manager
+                        .col-md-3.col-sm-6.col-12
+                          .profile_holder
+                            img.img-fluid(src='assets/images/client/testimonial.jpg', alt='quote')
+                          .name_rank
+                            h5.carrier-text Robert Mark
+                            span Team Manager
+                        .col-md-3.col-sm-6.col-12
+                          .profile_holder
+                            img.img-fluid(src='assets/images/client/testimonial.jpg', alt='quote')
+                          .name_rank
+                            h5.carrier-text Robert Mark
+                            span Team Manager
+                        .col-md-3.col-sm-6.col-12
+                          .profile_holder
+                            img.img-fluid(src='assets/images/client/testimonial.jpg', alt='quote')
+                          .name_rank
+                            h5.carrier-text Robert Mark
+                            span Team Manager
+                    .carousel-item
+                      .row
+                        .col-md-3.col-sm-6.col-12
+                          .profile_holder
+                            img.img-fluid(src='assets/images/client/testimonial.jpg', alt='quote')
+                          .name_rank
+                            h5.carrier-text Robert Mark
+                            span Team Manager
+                        .col-md-3.col-sm-6.col-12
+                          .profile_holder
+                            img.img-fluid(src='assets/images/client/testimonial.jpg', alt='quote')
+                          .name_rank
+                            h5.carrier-text Robert Mark
+                            span Team Manager
+                        .col-md-3.col-sm-6.col-12
+                          .profile_holder
+                            img.img-fluid(src='assets/images/client/testimonial.jpg', alt='quote')
+                          .name_rank
+                            h5.carrier-text Robert Mark
+                            span Team Manager
+                        .col-md-3.col-sm-6.col-12
+                          .profile_holder
+                            img.img-fluid(src='assets/images/client/testimonial.jpg', alt='quote')
+                          .name_rank
+                            h5.carrier-text Robert Mark
+                            span Team Manager
+                        
+                  ul.carousel-indicators
+                    li.active(data-target='#team', data-slide-to='0')
+                      li(data-target='#team', data-slide-to='1')
+                        li(data-target='#team', data-slide-to='2')
+      .light_gradient
+        .container
+          .about_heap
+            h2.common-heading Be Part of Our Amazing Team
+            .row
+              .col-md-6
+                .about_job
+                  .job_title.blue-bg
+                    h4.text-light Job Tilte Goes Here
+                  .job_descript
+                    p
+                      | Lorem Ipsum Dort Sevit new text written by alot of people
+                      | who whatever do any thing so try to skip development in the designing and just work work...&nbsp;
+                      a.carrier-text(href='javascript:void(0)')
+                        strong
+                          |Find out more 
+                          i.fas.fa-chevron-right
+              .col-md-6
+                .about_job
+                  .job_title.blue-bg
+                    h4.text-light Job Tilte Goes Here
+                  .job_descript
+                    p
+                      | Lorem Ipsum Dort Sevit new text written by alot of people
+                      | who whatever do any thing so try to skip development in the designing and just work work...&nbsp;
+                      a.carrier-text(href='javascript:void(0)')
+                        strong
+                          |Find out more 
+                          i.fas.fa-chevron-right
+        
+      
+      //- Footer
+      include includes/carrier/footer      
+      //- Footer End
+    
+    
+    //- Hompage Body End
+    
+    //- scripts
+    include includes/scripts

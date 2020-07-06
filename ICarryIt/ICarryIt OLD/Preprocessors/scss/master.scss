@@ -1,0 +1,423 @@
+*
+{
+  font-family: 'Heebo', sans-serif;
+  font-weight: 300;
+}
+// Local Fonts
+// @font-face
+// {
+//   font-family: h_light;
+//   src: url('fonts/Heebo-Light.tff');
+// }
+// @font-face
+// {
+//   font-family: h_regular;
+//   src: url('fonts/Heebo-Regular.tff');
+// }
+// @font-face
+// {
+//   font-family: h_bold;
+//   src: url('fonts/Heebo-Bold.tff');
+// }
+// @font-face
+// {
+//   font-family: open_sans;
+//   src: url('fonts/OpenSans.tff');
+// }
+body
+{
+  background: #fff;
+  margin: 0px;
+  position: relative;
+  padding: 0px;
+  width: auto;
+  overflow-x: hidden;
+}
+html
+{
+  overflow-x: hidden !important;
+  overflow-y: scroll;
+}
+
+// variables
+$orange:#ff7d32;
+$yellow:#ffc633;
+$blue:#7ac8cf;
+$teal:#286e91;
+$text:#342e2e;
+$grey:#a6a6a6;
+
+// variables end
+
+.client_body::-webkit-scrollbar {
+  width: 12px;
+  background-color: $orange;
+  position: absolute;
+}
+.client_body::-webkit-scrollbar-thumb {
+  border-radius: 1px;
+  background-color: $yellow;
+  border: 1px solid $text;
+}
+.client_body::-webkit-scrollbar-track {
+  border-radius: 1px;
+  background-color: $orange;
+}
+// ------------------
+.carrier_body::-webkit-scrollbar {
+  width: 12px;
+  background-color: $teal;
+  position: absolute;
+}
+.carrier_body::-webkit-scrollbar-thumb {
+  border-radius: 1px;
+  background-color: $blue;
+  border: 1px solid $text;
+}
+.carrier_body::-webkit-scrollbar-track {
+  border-radius: 1px;
+  background-color: $teal;
+}
+
+main
+{
+  margin-top: 100px;
+  @media (max-width: 1200px)
+  {
+    margin-top: 90px;
+  }
+  @media (max-width: 991px)
+  {
+    margin-top: 72px;
+  }
+  @media (max-width: 767px)
+  {
+    margin-top: 60px;
+  }
+}
+
+
+.common-heading
+{
+  font-size: 34px;
+  font-weight: 700;
+  color: $text;
+  margin: 60px 0px;
+  text-align: center !important;
+}
+h1, h2, h3, h4, h5, h6, p, small, big, span
+{
+  color: $text;
+}
+.client-text
+{
+  color: $orange !important;
+}
+.yellow-bg
+{
+  background-color: $yellow !important;
+}
+.orange-bg
+{
+  background-color: $orange !important;
+}
+.carrier-text
+{
+  color: $teal !important;
+}
+.teal-bg
+{
+  background-color: $teal !important;
+}
+.blue-bg
+{
+  background-color: $blue !important;
+}
+
+
+// form css
+input.form-control
+{
+  height: 45px;
+  background: #fff;
+  font-size: 16px;
+  color: $text;
+  border:none;
+  box-shadow: none !important;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+textarea.form-control
+{
+  background: #fff;
+  font-size: 16px;
+  color: $text;
+  border:none;
+  box-shadow: none !important;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+.form-check-inline
+{
+  margin-right: 30px;
+}
+.form-check-label
+{
+  position: relative;
+  left: 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.form-check-label::before
+{
+  content: '';
+  position: absolute;
+  left: -20px;
+  top: 4px;
+  padding: 1px;
+  height: 14px;
+  width: 14px;
+  border:2px solid $text;
+  border-radius: 100%;
+  background: transparent;
+}
+.form-check-input[type="radio"],
+.form-check-input[type="checkbox"]
+{
+  display: none;
+}
+.form-check-input[type="radio"]:checked + .form-check-label::before,
+.form-check-input[type="checkbox"]:checked + .form-check-label::before
+{
+  background: $text !important;
+}
+.checks
+{
+  .form-check-label::before
+  {
+    border-radius: 0px;
+  }
+}
+.language_changer
+{
+  .text-dark
+  {
+    @media (min-width: 992px)
+    {
+      padding-left: 10px !important;
+      margin-left: 5px !important;
+    }
+  }
+  .text-light
+  {
+    @media (min-width: 992px)
+    {
+      padding-left: 10px !important;
+      margin-left: 10px !important;
+    }
+  }
+  .text-dark::before{
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 30px;
+    left: -5px;
+    background: $text;
+    opacity: .3;
+    top: 5px;
+    @media (max-width: 1200px)
+    {
+      top: 2px;
+      height: 25px;
+    }
+    @media (max-width: 991px)
+    {
+      height: 20px;
+      top: 5px;
+      left: -2px;
+    }
+  }
+  .text-light::before{
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 30px;
+    left: -5px;
+    background: #fff;
+    opacity: .3;
+    top: 5px;
+    @media (max-width: 1200px)
+    {
+      top: 2px;
+      height: 25px;
+    }
+    @media (max-width: 991px)
+    {
+      height: 20px;
+      top: 5px;
+      left: -2px;
+    }
+  }
+  a:after
+  {
+    display: none;
+  }
+  .text-light.active, .text-light:focus, .text-light:hover
+  {
+    color: #fff !important;
+  }
+  .dropdown-menu
+  {
+    border-radius: 0px;
+    overflow-y: scroll;
+    max-height: 200px !important;
+    padding: 0px 0px;
+  }
+  .text-dark
+  {
+    letter-spacing: 0px;
+    &:hover
+    {
+      letter-spacing: .1px;
+    }
+    @media (max-width: 1200px)
+    {
+      letter-spacing: 0px;
+      &:hover
+      {
+        letter-spacing: 0px;
+      }
+    }
+  }
+  .text-light ~ .dropdown-menu
+  {
+    background: $teal;
+  }
+  .text-light ~ .dropdown-menu .dropdown-item
+  {
+    color: #fff;
+    margin-bottom: 1px;
+  }
+  .text-light ~ .dropdown-menu .dropdown-item.active
+  {
+    top:10px;
+    background: $blue;
+    color: #fff;
+  }
+  .text-dark ~ .dropdown-menu
+  {
+    background: $orange;
+  }
+  .text-dark ~ .dropdown-menu .dropdown-item
+  {
+    margin-bottom: 1px;
+  }
+  .text-dark ~ .dropdown-menu .dropdown-item.active
+  {
+    background: $yellow;
+    color: $text;
+  }
+
+  .text-light ~ .dropdown-menu::-webkit-scrollbar {
+  	width: 6px;
+  	background-color: $teal;
+    position: absolute;
+  }
+  .text-light ~ .dropdown-menu::-webkit-scrollbar-thumb {
+    border-radius: 1px;
+    background-color: $blue;
+
+  }
+  .text-light ~ .dropdown-menu::-webkit-scrollbar-track {
+    border-radius: 1px;
+    background-color: $teal;
+  }
+// -----------
+  .text-dark ~ .dropdown-menu::-webkit-scrollbar {
+  	width: 6px;
+  	background-color: $orange;
+    position: absolute;
+  }
+  .text-dark ~ .dropdown-menu::-webkit-scrollbar-thumb {
+    border-radius: 1px;
+    background-color: $yellow;
+
+  }
+  .text-dark ~ .dropdown-menu::-webkit-scrollbar-track {
+    border-radius: 1px;
+    background-color: $orange;
+  }
+  #navbardrop
+  {
+    position: relative;
+    top: 3px;
+    @media (max-width: 1200px)
+    {
+      top: 0px;
+      left: -8px;
+    }
+    @media (max-width: 767px)
+    {
+      letter-spacing: 1px;
+      &:hover
+      {
+        letter-spacing: 1.5px;
+      }
+    }
+    @media (max-width: 575px)
+    {
+      letter-spacing: 1px;
+      &:hover
+      {
+        letter-spacing: 1.5px;
+      }
+    }
+    &:hover
+    {
+      font-weight: 700;
+    }
+  }
+  a
+  {
+    font-weight: 400;
+    .sort
+    {
+      height: 12px;
+      float: right;
+      margin-left: 5px;
+      top: 5px;
+      position: relative;
+      @media (max-width: 1200px)
+      {
+        top: 4px;
+      }
+    }
+  }
+  .text-light ~ .dropdown-menu .dropdown-item:hover{
+    background: $blue;
+    color: #fff;
+  }
+  .text-dark ~ .dropdown-menu .dropdown-item:hover{
+    background: $yellow;
+    color: $text;
+  }
+  .dropdown-menu .dropdown-item{
+      font-weight: 500;
+  }
+}
+// files
+@import 'animations';
+@import 'navbar';
+@import 'banner';
+@import 'whyicarry';
+@import 'video-banner';
+@import 'testimonials';
+@import 'faqs';
+@import 'feature';
+@import 'about';
+@import 'career';
+@import 'job_info';
+@import 'contactus';
+@import 'footer';
+@import 'responsive';
+// files end

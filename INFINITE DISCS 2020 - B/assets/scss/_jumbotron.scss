@@ -1,0 +1,66 @@
+.jumbo-display
+{
+    padding:60px 0px;
+    background-image: url('../images/storein.png');
+    background-position: 0px 5%;
+    background-size:cover;
+    background-repeat: no-repeat;
+    position: relative;
+    &::after
+    {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        top:0px;
+        left:0px;
+        background-color: rgba(0,0,0,0.75);
+    }
+    .display-text
+    {
+        position: relative;
+        z-index: 10;
+        h1
+        {
+            color:#fff;
+            text-transform: uppercase;
+            font-size: 42px;
+            margin:0px 0px 30px;
+            font-family: sbold;
+        }
+        .breadcrumb
+        {
+            background-color: transparent;
+            padding:0px;
+            margin:0px;
+            .breadcrumb-item
+            {
+                & ~ .breadcrumb-item 
+                {
+                    padding-left: 20px;
+                    &:before
+                    {
+                        position: relative;
+                        left:-5px;
+                        color:rgb(94, 94, 94);
+                        content:"/";
+                        font-family: textlight;
+                        font-size: 18px;
+                    }
+                }
+                font-family: textbold;
+                color:#fff;
+                a
+                {
+                    color:#9eabb6;
+                    font-family: text;
+                    &:hover
+                    {
+                        color:$pink;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Test</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+</head>
+
+<body>
+
+
+    <div id="wrapper">
+        <ul>
+            <li>One</li>
+            <li>Two</li>
+            <li>Three</li>
+        </ul>
+    </div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+
+            $("#wrapper ul li").focus(function() {
+                $(this).css("background-color", "#aaaaaa");
+            });
+
+        });
+    </script>
+</body>
+
+</html>

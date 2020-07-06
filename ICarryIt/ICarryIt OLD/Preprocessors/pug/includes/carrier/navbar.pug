@@ -1,0 +1,38 @@
+nav.navbar.navbar-expand-md.bg-dark.navbar-light.blue-bg
+  .container  
+    a.navbar-brand(href='index_carrier.html')
+      img(src='assets/images/footer_logo.png', alt='logo')
+    ul.navbar-nav.language_changer.mr-auto
+      li.nav-item.dropdown
+        a#navbardrop.nav-link.dropdown-toggle.text-light(href='#', data-toggle='dropdown')
+          | EN
+          img.sort(src='assets/images/sort-light.svg', alt='logo')
+        .dropdown-menu
+          a.dropdown-item.active(href='#') English
+          a.dropdown-item(href='#') Arabic
+          a.dropdown-item(href='#') Turkish
+          a.dropdown-item(href='#') Spanish
+          a.dropdown-item(href='#') French
+          a.dropdown-item(href='#') Dutch
+          a.dropdown-item(href='#') Danish
+          a.dropdown-item(href='#') Chinese
+          a.dropdown-item(href='#') Urdu
+    button.navbar-toggler(type='button', data-toggle='collapse', data-target='#collapsibleNavbar')
+      span.navbar-toggler-icon
+    #collapsibleNavbar.collapse.navbar-collapse
+      ul.navbar-nav.ml-auto
+        li.nav-item
+          a.nav-link.active.a(href='index_carrier.html', style='color:#fff;') Home
+        li.nav-item
+          a.nav-link.b(href='about_carrier.html', style='color:#fff;') About
+        li.nav-item
+          a.nav-link.c(href='features_career.html', style='color:#fff;') Features
+        li.nav-item
+          a.nav-link.d(href='career_carrier.html', style='color:#fff;') Careers
+        li.nav-item
+          a.nav-link.e(href='contact_carrier.html', style='color:#fff;') Contact Us
+        li.nav-item
+          form(action='index_client.html')
+            button.btn.btn-primary.theme-changer.yellow-bg(type='submit')
+              i.fas.fa-exchange-alt.mr-2
+              | Switch To Sender

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home | Website Name</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+    <!-- <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" hre  f="assets/css/owltheme.css"> -->
+
+    <link rel="stylesheet" href="assets/css/master.css">
+  </head>
+  <body>
+
+<!-- Header Start -->
+    <nav class="navbar navbar-expand-md">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="assets/images/logo.png" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav ml-auto">
+            <form class="form-inline" action="/action_page.php">
+              <div class="input-group">
+                <input type="text" class="form-control">
+                <div class="input-group-append">
+                  <button class="btn btn-dark" type="submit"><i class="fas fa-search"></i> Search</button>
+                </div>
+              </div>
+            </form>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><img src="assets/images/redo.svg" alt=""> </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- Header End -->
+
+
+<!--  Navigation End   -->
+
+<!--  Breadcrumb Start   -->
+    <section class="container-fluid breadcrumb_wrapper">
+      <ul dir="rtl" class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">メッセージ</a></li>
+      </ul>
+    </section>
+
+
+    <section class="settings">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-4 col-xl-3">
+            <div class="settings_menu">
+              <button type="button" class="btn btn-default" id="open_menu">
+                <i class="fas fa-bars"></i> <small>メニュー</small>
+              </button>
+              <ul>
+                <li >
+                  <a href="#">
+                    <i class="fas fa-caret-right"></i> 設定
+                  </a>
+                </li>
+                <li class="active">
+                  <a href="#">
+                    <i class="fas fa-caret-right"></i> 個人ページ変更
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fas fa-caret-right"></i> オーナー申請
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fas fa-caret-right"></i> フォロー
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fas fa-caret-right"></i> フォロワー
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fas fa-caret-right"></i> プレゼントボックス
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-8 col-xl-9">
+            <div class="change">
+              <h3>個人ページに連携するSNSのアカウント登録とフリーエリアに表示する文字を変更できます。</h3>
+              <form>
+                <div class="form-group">
+                  <label for="twitterUserName">Twitter</label>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">@</span>
+                    </div>
+                    <input type="text" class="form-control" id="twitterUserName" value="John">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="fbUserName">Facebook</label>
+                  <input type="text" class="form-control" id="fbUserName">
+                </div>
+                <div class="form-group">
+                  <label for="instaUserName">Instagram</label>
+                  <input type="text" class="form-control" id="instaUserName">
+                </div>
+                <div class="form-group">
+                  <label for="bio">フリーエリア</label>
+                  <p class="counter">残り<span id="counter">512</span>文字</p>
+                  <textarea class="form-control" rows="5" id="bio" maxlength="512"></textarea>
+                  <p class="amount">最大<span>512</span>文字</p>
+                </div>
+                <button type="button" class="btn btn-primary">変更申請 </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <footer>
+      <ul>
+        <li><a href="#">ご利用にあたって</a></li>
+        <li><a href="#">お問い合わせ </a></li>
+        <li><a href="#">会社概要</a></li>
+        <li><a href="#">よくある質問</a></li>
+        <li><a href="#">特定商取引法に基づく表記 </a></li>
+        <li><a href="#">プライバシーポリシー</a></li>
+      </ul>
+      <div class="website-brand">
+        <a href="index.html">
+          <img src="assets/images/footer_logo.png" alt="">
+        </a>
+      </div>
+    </footer>
+
+    <!-- Grid Enter -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- <script src="assets/js/owl.js"></script>
+    <script src="assets/js/masonry.min.js"></script> -->
+    <script type="text/javascript">
+
+      $(document).ready(function(){
+
+      // Setting Menu Collapse
+        $('#open_menu').click(function(e){
+           e.stopPropagation();
+          if ($(this).hasClass('active')){
+            $('.settings_menu ul').fadeOut(200);
+            $(this).removeClass('active');
+          } else {
+            $('.settings_menu ul').fadeIn(200);
+            $(this).addClass('active');
+          }
+        });
+
+        function closeMenu(){
+          $('.settings_menu ul').fadeOut(200);
+          $('#open_menu').removeClass('active');
+        }
+
+        if($(window).width() < 975){
+          $(document.body).click( function(e) {
+            closeMenu();
+          });
+        }
+
+
+        $(".settings_menu ul").click( function(e) {
+            e.stopPropagation();
+        });
+
+        var maxLength = 512;
+        $('textarea').keyup(function() {
+          var length = $(this).val().length;
+          var length = maxLength-length;
+          $('#counter').text(length);
+        });
+
+     });
+
+    </script>
+  </body>
+</html>

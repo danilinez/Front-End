@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home - WheelHealthcare</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <meta charset="UTF-8" />
+
+    <!-- <link rel="shortcut icon" href="assets/img/favicon.ico" />-->
+    <link href="assets-new/plugins/twitter-bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets-new/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="assets-new/plugins/ResponsiveSlides.js/responsiveslides.min.css" rel="stylesheet"/>
+    <link href="assets-new/plugins/jqueryui/css/jquery-ui.min.css" rel="stylesheet"/>
+    <link href="assets-new/css/style.css" rel="stylesheet" />
+
+    <!--[if lt IE 9]>
+        <script src="assets-new/plugins/html5shiv/html5shiv.min.js"></script>
+        <script src="assets-new/plugins/html5shiv/html5shiv-printshiv.min.js"></script>
+        <script src="assets-new/plugins/respond.js/respond.min.js"></script>
+        <script src="assets-new/js/matchMedia.min.js"></script>
+    <![endif]-->
+
+    <script src="assets-new/plugins/jquery/jquery.min.js"></script>
+    <script src="assets-new/plugins/jqueryui/jquery-ui.min.js"></script>
+    <script src="assets-new/plugins/jquery-migrate/jquery-migrate.min.js"></script>
+    <script src="assets-new/plugins/twitter-bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets-new/plugins/ResponsiveSlides.js/responsiveslides.min.js"></script>
+    <script src="assets-new/js/bootstrap-hover-dropdown.js"></script>
+    <script src="assets-new/js/jquery.equalheights.js"></script>
+    <script src="assets-new/plugins/jquery-scrolltofixed/jquery-scrolltofixed-min.js"></script>
+    <script src="assets-new/js/application.js"></script>
+<script type="text/javascript" src="reveal/jquery.reveal.js"></script>
+    <script src="assets-new/js/jquery.validate.min.js"></script>
+    <link rel="stylesheet" href="reveal/reveal.css">
+    <script type="text/javascript">
+      window.onload = function () {
+        $.ajax({
+          type: "POST",
+          url: "LinezWS_WHCS.asmx/FnDeafultMedicalList",
+          data: "{}",
+          contentType: "application/json; charset=utf-8",
+          dataType: "json",
+          success: function (response) {
+
+            var result = response.d;
+            var josonProductsData = jQuery.parseJSON("[" + result + "]");
+            //var josonProductsData = response;
+            var myHTML = '';
+
+            for (var row = 0; row < Math.floor(josonProductsData[0].length); row++) {
+
+              myHTML += '<li>' + josonProductsData[0][row].sName + '</li>'
+            }
+
+            document.getElementById("medicines").innerHTML = myHTML;
+
+          },
+          failure: function (msg) {
+            alert(msg);
+          }
+        });
+
+
+
+      }
+
+
+
+      function Medicine(HrefValue) {
+
+        var href = HrefValue;
+        $.ajax({
+          type: "POST",
+          url: "LinezWS_WHCS.asmx/fnMedicinesList",
+          data: "{'sHref':'" + href + "'}",
+          contentType: "application/json; charset=utf-8",
+          dataType: "json",
+          success: function (response) {
+
+            var result = response.d;
+            var josonProductsData = jQuery.parseJSON("[" + result + "]");
+            //var josonProductsData = response;
+            var myHTML = '';
+
+            for (var row = 0; row < Math.floor(josonProductsData[0].length); row++) {
+
+              myHTML += '<li>' + josonProductsData[0][row].sName + '</li>'
+            }
+
+
+            document.getElementById("medicines").innerHTML = myHTML;
+
+          },
+          failure: function (msg) {
+            alert(msg);
+          }
+        });
+
+      }
+
+
+
+      function submitForm() {
+        var strName = document.getElementById("txtUsername");
+
+        var strPassword = document.getElementById("txtPassword");
+
+
+
+        if (strName.value.length < 1) {
+
+          strName.focus();
+
+          alert('Please enter username');
+
+          return false;
+
+        }
+
+        if (strPassword.value.length < 1) {
+
+          strPassword.focus();
+
+          alert('Please enter password');
+
+          return false;
+
+        }
+
+
+        fnValidateUser();
+
+      }
+
+      function fnValidateUser() {
+
+        var param = new Object();
+
+        //            txtUsername txtPassword
+        param.sUsername = $('#txtUsername').val();
+        param.sPassword = $('#txtPassword').val();
+        return $.ajax({
+          type: "POST",
+          url: "LinezWS_WHCS.asmx/fnValidateUser",
+          data: JSON.stringify(param),
+          contentType: "application/json; charset=utf-8",
+          dataType: "json",
+          success: function (msg) {
+            if (msg.d == "1") {
+              document.WHCSLive.submit();
+            }
+            else {
+              alert("Invalid Email/Password! Please Try Again.");
+            }
+
+          },
+          failure: function (msg) {
+            alert(msg);
+          }
+        });
+
+      }
+    </script>
+  </head>
+  <body>
+
+    <section id="top-bar">
+      <div class="container-fluid">
+        <div class="row">
+
+          <article class="col-sm-3">
+            <a href="index.html" id="logo"><img src="assets-new/img/logowheel.jpeg" alt="" class="img-responsive"/></a>
+          </article>
+          <nav class="col-sm-9">
+            <ul class="nav nav-tabs">
+              <li role="presentation" class="active"><a href="#">Personal</a></li>
+              <li role="presentation"><a href="#">Business</a></li>
+              <li role="presentation"><a href="contact_us.html">Contact Us</a></li>
+            </ul>
+            <ul class="list-inline">
+              <li><a href="about_us.html">About WHC</a></li>
+              <li><a href="careers.html">Careers</a></li>
+            </ul>
+          </nav>
+
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </section>
+
+
+    <header id="header">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-sm-2 col-sm-offset-5">
+
+            <button type="button" class="btn btn-info btn-sm btn-block">Login to myWHC</button>
+
+          </div>
+          <div class="col-sm-2"><a href="#" class="big-link" data-reveal-id="loginModel" style="text-decoration:none"><button type="button" class="btn btn-info btn-sm btn-block">Request Call Back</button></a></div>
+          <div class="col-sm-3">
+
+            <div class="input-group input-group-sm">
+              <input type="text" class="form-control" placeholder="Search">
+              <span class="input-group-btn">
+                <button class="btn btn-info" type="button"><i class="fa fa-search"></i></button>
+              </span>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+
+        </div>
+      </div>
+      <div id="start-sticky-header"></div>
+      <div class="header-sticky">
+        <div class="container">
+          <nav class="navbar navbar-default " role="navigation">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-menu">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand visible-xs-block" href="#none" data-toggle="collapse" data-target="#main-menu">Menu</a>
+            </div>
+            <div class="collapse navbar-collapse" id="main-menu">
+              <ul class="nav navbar-nav">
+                <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+                <li class="dropdown dropdown-large">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products & Services <span class="caret"></span></a>
+                  <ul class="dropdown-menu dropdown-menu-large">
+                    <li class="container">
+                      <div class="row">
+
+                        <div class="col-sm-4">
+                          <ul class="list-unstyled"> <li class="dropdown-header">Products</li>
+                            <li><a href="prescription_and_non-prescription_medicine.html">Prescription &amp; Non-Prescription Medicine</a></li>
+                            <li><a href="dme_and_supplies.html">Durable Medical Equipment (DME) and Supplies</a></li>
+                            <li><a href="compounding.html">Compounding</a></li></ul>
+                        </div>
+                        <div class="col-sm-4">
+                          <ul class="list-unstyled">
+                            <li class="dropdown-header">Services</li>
+                            <li><a href="integrated_healthcare_cloud_technologies.html">Integrated Healthcare Cloud Technologies</a></li>
+                            <li><a href="personalized_healthcare_for_all.html">Personalized Healthcare For All</a></li>
+                            <li><a href="diabetes_education.html">Diabetes Education</a></li>
+                            <li><a href="disease_management.html">Disease Management</a></li>
+                            <li><a href="workers_compensation_pharmacy_solution.html">Workers&prime; Compensation Pharmacy Solution</a></li>
+                          </ul>
+                        </div>
+                        <!-- <div class="col-sm-4">
+                          <ul class="list-unstyled">
+                            <li class="dropdown-header">Promotional Products</li>
+                            <li><a href="promotional_products.html">All Promotional Products</a></li>
+                            <li><a href="weight_loss_kit.html">Weight Loss Kit - $499</a></li>
+                            <li><a href="vitamins_for_life.html">Vitamins for life - $499</a></li>
+                            <li><a href="diaetic_kit.html">Diabetic Kit - $499</a></li>
+                            <li><a href="smart_home_health_care_kit.html">Smart Home Health Care Kit - $499</a></li>
+                            <li><a href="energy_saving_kit.html">Energy Saving Kit - $499</a></li>
+                          </ul>
+                        </div> -->
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown dropdown-large active"><a href="how_it_works.html" class="dropdown-toggle" data-toggle="dropdown">How It Works<span class="caret"></span></a>
+                <ul class="dropdown-menu dropdown-menu-large">
+                    <li class="container">
+                      <div class="row">
+<div class="row">
+                          <div class="col-xs-6 col-sm-3">
+                          <ul class="list-unstyled">
+                            <li class="dropdown-header">How It Works</li>
+                            <li><a href="how_it_works.html">How It Works</a></li>
+                           <!-- <li><a href="weight_loss_kit.html">Weight Loss Kit - $399</a></li>
+                            <li><a href="vitamins_for_life.html">Vitamins for life - $399</a></li>
+                            <li><a href="diaetic_kit.html">Diabetic Kit - $399</a></li>
+                            <li><a href="smart_home_health_care_kit.html">Smart Home Health Care Kit - $399</a></li>
+                            <li><a href="energy_saving_kit.html">Energy Saving Kit - $399</a></li>-->
+                          </ul>
+                        </div> 
+                        <div class="col-xs-6 col-sm-3">
+                          <ul class="list-unstyled"> <li class="dropdown-header">Prescription Transfer</li>
+                           <li><a href="how_it_works.html#prescriptiontransfer">Prescription Transfer</a></li>
+                           <!--  <li><a href="dme_and_supplies.html">Durable Medical Equipment (DME) and Supplies</a></li>
+                            <li><a href="compounding.html">Compounding</a></li>--></ul>
+                        </div>
+                        <div class="col-xs-6 col-sm-3">
+                          <ul class="list-unstyled">
+                            <li class="dropdown-header">Payment Methods</li>
+                           <li><a href="how_it_works.html#paymentmethods">Payment Methods</a></li>
+                           <!--  <li><a href="personalized_healthcare_for_all.html">Personalized Healthcare For All</a></li>
+                            <li><a href="diabetes_education.html">Diabetes Education</a></li>
+                            <li><a href="disease_management.html">Disease Management</a></li>
+                            <li><a href="workers_compensation_pharmacy_solution.html">Workers&prime; Compensation Pharmacy Solution</a></li>-->
+                          </ul>
+                        </div>
+                        <div class="col-xs-6 col-sm-3">
+                          <ul class="list-unstyled">
+                            <li class="dropdown-header">Delivery Options</li>
+                            <li><a href="how_it_works.html#deliveryoptions">Delivery Options</a></li>
+                           <!-- <li><a href="weight_loss_kit.html">Weight Loss Kit - $399</a></li>
+                            <li><a href="vitamins_for_life.html">Vitamins for life - $399</a></li>
+                            <li><a href="diaetic_kit.html">Diabetic Kit - $399</a></li>
+                            <li><a href="smart_home_health_care_kit.html">Smart Home Health Care Kit - $399</a></li>
+                            <li><a href="energy_saving_kit.html">Energy Saving Kit - $399</a></li>-->
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                
+                </li>
+                <li><a href="FAQ.html">FAQ's</a></li>
+              </ul>
+            </div>
+          </nav>
+
+        </div>
+      </div>
+    </header>
+
+
+    <main id="main" class="no-title">
+      <div class="container">
+        <img src="assets/img/paymeny-banner.jpg" class="img-responsive" alt="">
+
+        <div class="row">
+
+          <article class="col-sm-12">
+            <div class="well well-sm">
+              <h1 class="page-title">How it works</h1>
+
+              <div class="row">
+                <section class="col-sm-8">
+
+
+                  <ol class="lead"><li>Contact your Personal Account Manager first &nbsp;at 1.855.WHEELHC (943.3542) or visit your family doctor</li><li>From setting up your doctor’s appointment to delivery of your medicine/product to your doorstep, <strong>we can do it ALL!!!!&nbsp;</strong></li></ol>
+                  <p style="margin: 0">&nbsp;</p>
+                  <div class="row">
+                    <aside class="col-md-4">
+                      <p>
+                        <a href="prescription_transfer.html" class="btn btn-primary btn-block btn-big">Prescription Transfer</a>
+                      </p>
+                    </aside>
+                    <aside class="col-md-4">
+                      <p>
+                        <a href="payment_methods.html" class="btn btn-primary btn-block btn-big">Payment Methods</a>
+                      </p>
+                    </aside>
+                    <aside class="col-md-4">
+                      <p>
+                        <a href="delivery_options.html" class="btn btn-primary btn-block btn-big">Delivery Options</a>
+                      </p>
+                    </aside>
+                  </div>
+                  <p style="margin: 0">&nbsp;</p>
+                  <p class="lead text-center">There is no obligation, no fees, no risk, and we will maintain your account for you. Currently, we are offering free membership and the rebate program to medical professionals and our patients. Hospitals, Clinics, Private Practices, Home Care Specialists, Nursing Homes and our Patients, all stand to save money when they become members.</p>
+
+                </section>
+                <aside class="col-sm-4">
+                  <h5 class="text-danger" style="margin-top: 0"><b>No Fee, No Obligation & No Risk....</b></h5>
+                  <p class="lead"><i>"Setting up an account with Wheelhealthcare is easy, simple and FREE. Call us and within minutes you can start taking advantage of our free and convenient services, and start saving on every prescription you fill using our nationwide network of Pharmacies."</i></p>
+                  <p class="text-center">
+                    <img src="assets/img/1411584096.jpg" alt=""/>
+                  </p>
+                  <p class="text-center">
+                    <img src="assets/img/1125073.jpg" alt=""/>
+                  </p>
+                </aside>
+              </div>
+              <hr>
+              <h1 class="page-title" id="paymentmethods">Payment Methods</h1>
+              <p>We accept several methods of payment as listed below. We guarantee that every transaction you make at WHC will be 100% secure.</p>
+              <div class="row">
+                <aside class="col-md-4">
+                  <h5><b>Major Insurance Plans</b></h5>
+                  <p>WHC is committed to making things simpler for our valued clients and to provide them with the care they need by offering a full range of primary and specialty services, and accepting most major insurance plans, including <b>Medicare</b> and <b>Medicaid</b>. </p>
+                  <p><img src="assets/img/8538246.jpg" alt="" class="img-responsive"/></p>
+                </aside>
+                <aside class="col-md-4">
+                  <h5><b>Credit Cards and Online Payments</b></h5>
+                  <p>WHC currently accepts Visa and MasterCard. You can safely enter your entire credit card number via our secure server, which encrypts all submitted information. Your card number will be protected using state-of-the-art encryption methods to assure a safe purchasing experience on our site.</p>
+                  <p>Every transaction you make at WHC will be 100% secure. This means you pay nothing if unauthorized charges are made to your credit card as a result of your purchase.
+                  </p>
+                  <h5><b>Cash on Delivery (COD)</b></h5>
+                  <p>With this service, you can pay in cash to the delivery agent upon receipt of your order. Simple, Secure and Absolutely Hassle-free!
+                    Enjoy having a peace of mind when you purchase using our COD service.</p>
+                  <h5><b>Checks & Money Orders</b></h5>
+                  <p>We gladly accept money orders and cashier's checks.
+                  </p>
+                  <h5><b>Fax, Phone and Email</b></h5>
+                  <p>If you prefer to call, fax or email your order to Wheelhealthcare, the numbers are listed below.</p>
+                  <p><b>Toll Free: 1.855.WHEELHC (943.3542)<br>
+                      Fax: 1.866.639.3165<br>
+                      Email: cs@wheelhc.com </b></p>
+                </aside>
+                <aside class="col-sm-4">
+                  <h5><b>Workers' Compensation Insurance</b></h5>
+                  <p>We accept most workers' compensation insurances. You will be asked to provide the following information prior to placing your order:</p>
+                  <ul><li>Employer Information<br></li><li>Workers' Compensation Carrier Name<br></li><li>Claim Number<br></li><li>Date of Injury/Accident<br></li><li>Adjuster's Contact Information (Name and Phone Number)<br></li></ul>
+                  <p>Please inform our staff if your insurance or personal information (address, phone, etc.) has recently changed. It is important that we have this information for insurance verification and pre-certification.</p>
+                  <h5 style="line-height: 1.8" class="text-danger"><b>A Complete Workers'<br> Compensation Solution....</b></h5>
+                  <p class="lead"><i>"At WHC, we offer unparalleled client service. It includes facilitating prescription medication and expediting home medication delivery for patients as well as managing the claims process for patients, attorneys and doctors." </i></p>
+                </aside>
+              </div>
+              <div class="row"></div>
+              <hr>
+              <p class="small text-right">(**The trademarks identified herein are the registered trademarks of their owners.)</p>
+
+            </div>
+          </article>
+
+
+        </div>
+
+      </div>
+  </main>
+
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+
+          <aside class="col-sm-8">
+
+            <ul class="list-inline links">
+              <li><a href="about_us.html">About Us</a></li>
+              <li><a href="affiliates.html">Affiliates</a></li>
+              <li><a href="partners.html">Partners</a></li>
+              <li><a href="careers.html">Careers</a></li>
+              <li><a href="contact_us.html">Contact Us</a></li>
+              <li><a href="sitemap.html">Site Map</a></li>
+              <li><a href="FAQ.html">FAQ's</a></li>
+            </ul>
+          </aside>
+          <aside class="col-sm-4">
+            <ul class="list-inline social-icons">
+              <li><a href="https://www.facebook.com/pages/Wheel-Healthcare-Inc/537220013044604?fref=ts" target="_BLANK" class="fb"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://twitter.com/wheelhealthcare" target="_BLANK" class="tw"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://plus.google.com" target="_BLANK" class="gplus"><i class="fa fa-google-plus"></i></a></li>
+              <li><a href="https://www.linkedin.com/" target="_BLANK" class="in"><i class="fa fa-linkedin"></i></a></li>
+
+              <li><a href="http://www.youtube.com/" target="_BLANK" class="utube"><i class="fa fa-youtube"></i></a></li>
+              <li><a href="http://www.flickr.com/" target="_BLANK" class="flckr"><i class="fa fa-flickr"></i></a></li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+
+      
+    <div id="loginModel" class="reveal-modal">
+    <div id="alert"></div>
+	<form class="form-horizontal" name="request1" id="request" method="post" action="contact_mail.php" enctype="text/plain">
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">Name</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputPassword3" class="col-sm-2 control-label">Phone No.</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone No.">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputPassword3" class="col-sm-2 control-label">Email</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="email" name="email"  placeholder="Email">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputPassword3" class="col-sm-2 control-label">Message</label>
+    <div class="col-sm-10">
+      <textarea name="message" id="message" class="form-control" rows="3" placeholder="Message"></textarea>
+    </div>
+  </div>
+ 
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <input type="submit" class="btn btn-default" value="Submit" name="contact">
+    </div>
+  </div>
+</form>
+<style>
+.invalid{
+
+	border:1px solid red;
+}
+</style>
+<script>
+$(document).ready(function() {
+
+$("#request").validate({
+             rules:
+          {
+            name:
+
+            {
+
+              required: true
+            },
+            phone:
+
+            {
+
+              required: true
+            },
+
+            email:
+            {
+
+              required: true,
+              email:true,
+            },
+            message:
+
+            {
+
+              required: true
+            }
+  },
+
+errorPlacement: function(error,element) {
+
+            element.attr('placeholder',error.text());
+
+        },
+
+		 submitHandler: function()
+
+          {
+
+           // $("#Addloader").show();
+
+         
+
+             dataString = $('#request').serialize();        
+
+                
+
+             $.ajax({
+
+
+
+                type: "POST",
+
+                url: "contact_mail.php",              
+
+                data: dataString,                               
+
+                success: function(msd)
+
+                {  
+
+			//alert(msd);
+				// $("#Addloader").hide();
+
+				if(msd==1){
+					$('#alert').html('<div class="success">Message Sent Successfully</div>');
+
+                    $("#alert").fadeIn();
+				}
+
+				else{
+
+					$('#alert').html('<div class="error">Message Delivery failed</div>');
+
+                    $("#alert").fadeIn();
+				}
+
+					setTimeout(function(){
+    $('.close-reveal-modal').click();
+     location.reload(true);
+}, 1000);
+
+				}
+
+
+
+             })
+
+            
+
+          }
+
+});
+
+
+
+});
+</script>
+
+</div>
+    </footer>
+
+    <footer id="footer-bottom">
+      <div class="container">
+        <p>&copy; 2014 Wheel HealthCare Services, Inc. All rights reserved. <a href="privacy.html">Privacy </a> &middot; <a href="terms.html">Terms of Use</a></p>
+      </div>
+    </footer>
+
+    <a href="#none" class="scrollup">Scroll</a>
+  </body>
+</html>

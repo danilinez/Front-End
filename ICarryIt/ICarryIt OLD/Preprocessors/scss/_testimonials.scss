@@ -1,0 +1,107 @@
+.testimonial
+{
+  background-image: url('images/testimonial_bg.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  padding: 130px 0px;
+  .carousel-indicators
+  {
+    left: -90px;
+  }
+  .carousel-indicators li
+  {
+    border: 1px solid $text;
+    background: transparent;
+    width: 14px;
+    height: 14px;
+    border-radius: 100%;
+    margin: 0px 5px;
+    cursor: pointer;
+  }
+  .carousel-indicators .active
+  {
+    background: $text;
+  }
+  .carousel-item
+  {
+    .img-holder
+    {
+      position: relative;
+      height: 345px;
+      width: 345px;
+      border:10px solid #fff;
+      box-shadow:0px 0px 30px 5px rgba(0, 0, 0, 0.2);
+      border-radius: 100%;
+      margin: 0 auto;
+      img
+      {
+        border-radius: 100%;
+      }
+      .rating
+      {
+        position: absolute;
+        color:#fff;
+        text-align: center;
+        border-radius: 100%;
+        padding: 20px 14px 12px;
+        bottom: 0px;
+        right: 0px;
+        h3
+        {
+          color:#fff;
+          font-size: 32px;
+          font-weight: 700;
+          margin: 0px;
+          display: block;
+          line-height: 14px;
+        }
+        small
+        {
+          font-size: 11px;
+          color: #ffffffa8;
+        }
+      }
+    }
+    .testimonial_content
+    {
+      img
+      {
+        height: 100px;
+        margin-bottom: 20px;
+        position: relative;
+      }
+      .left
+      {
+        animation-name: top;
+        animation-duration: 1.5s;
+      }
+      .right
+      {
+        animation-name: bottom;
+        animation-duration: 1.5s;
+        top: -35px;
+      }
+      .comment
+      {
+        position: relative;
+        font-size: 20px;
+        font-weight: 300;
+        animation-name: left;
+        animation-duration:1s;
+      }
+      .sender
+      {
+        animation-name: land;
+        animation-timing-function: ease;
+        animation-duration: 1s;
+        position: relative;
+        top: 30px;
+        h5
+        {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}

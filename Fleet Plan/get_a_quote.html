@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Fleet Plans</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="index.html"><img src="images/FleetPlan-Logo.png" alt="logo"></a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <div class="nav-holder">
+                         <ul class="nav navbar-nav">
+                            <li><a href="brands.html">BRANDS</a></li>
+                            <li><a href="machmakers.html">MATCHMAKERS</a></li>
+                            <li><a href="specialoffers.html" class="redit">Current OFFERS</a></li>
+                            <li><a href="truck&equipments.html">TRUCKS & EQUIPMENT</a></li>
+                        </ul>
+                    </div>
+                    <form class="navbar-form">
+                      <div class="input-group">
+                        <span class="input-group-addon"><i class="fas fa-search"></i></span>
+                        <input id="email" type="text" class="form-control" name="email" placeholder="Search your Favourite Car" autocomplete="off">
+                        <a href="#" class="cross hidden-xs"> <i class="fas fa-times"></i></a>
+                      </div>
+                    </form>
+                    <ul class="social_head">
+                        <li class="social pull-right"><a href="#" class="heart"><i class="far fa-heart"></i></a></li>
+                        <li class="social pull-right"><a type="button" data-toggle="modal" data-target="#login-modal"><i class="far fa-user"></i></a></li>
+                        <li class="social pull-right hidden-xs"><a href="#" class="magnifier"><i class="fas fa-search"></i></a></li>
+                    </ul>
+                </div>
+              </div>
+            </nav>
+            <div class="modal login-modal" id="login-modal" role="dialog">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <h1>Sign up now and <br> enjoy these benefits</h1>
+                        <ul>
+                            <li><img src="images/check.png" />Request competitive quotes on the car you want to buy</li>
+                            <li><img src="images/check.png" />Access your favourites on all devices</li>
+                        </ul>
+                        <button class="btn btn-default"><i class="fab fa-facebook-square"></i> Sign up with Facebook</button>
+                        <p>Creating an account means you're OK with Fleet Plans</p>
+                        <a href="javascript:void(0)">Terms of Service and Privacy Policy</a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </header>
+        <main>
+
+            <section class="quote_banner">
+                <div class="container-fluid">
+                    <button class="btn btn-default dismis hide_slide"><i class="fas fa-times"></i></button>
+                    <div class="col-md-4 howit_works">
+                        <h3><span style="padding: 10px 19px">1</span><br>Confirm your needs</h3>
+                        <p>Lorem Ipsum is a dummy text used to develop webpages fast. so dont wase your time and use this dummy text and work fast</p>
+                    </div>
+                    <div class="col-md-4 howit_works">
+                        <h3><span>2</span><br>Nigotiating for you</h3>
+                        <p>Lorem Ipsum is a dummy text used to develop webpages fast. so dont wase your time and use this dummy text and work fast</p>
+                    </div>
+                    <div class="col-md-4 howit_works">
+                        <h3><span>3</span><br>Best offers ready</h3>
+                        <p>Lorem Ipsum is a dummy text used to develop webpages fast. so dont wase your time and use this dummy text and work fast</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="getaquote sec-pad">
+                <div class="container-fluid">
+                    <div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
+                        <h2>Getting a Quote</h2>
+                        <p>Fleet Plan will send your requests to our specialists, who will negotiate the most competative price. you can expect a Quote back within 3 days.</p>
+                        <input class="help-more" type="button" value="more about how it works">
+                        <div class="col-xs-12 form-detailz">
+                            <h3>SUZUKI <br><big>Baleno</big><br><span>GL</span> </h3>
+                            <h3 class="cprice">$400,500<span>drive away <i class="fas fa-info-circle"></i></span></h3>
+                        </div>
+                        <form>
+                            <div class="form-group col-xs-12 fluid">
+                                <label for="fname">First Name</label>
+                                <input type="text" class="form-control" id="fname" onkeyup="myFunction()" value="">
+                                <img class="fill-wr" src="images/error.png" id="img_right_wrong">
+                            </div>
+                            <div class="form-group col-xs-12 fluid">
+                                <label for="lname">Last Name</label>
+                                <input type="text" class="form-control" id="lname">
+                            </div>
+                            <div class="form-group col-xs-12 fluid">
+                                <label for="emaile">Email</label>
+                                <input type="text" class="form-control" id="emaile">
+                            </div>
+                            <div class="form-group col-xs-12 fluid">
+                                <label for="pnum">Phone Number</label>
+                                <input type="text" class="form-control" id="pnum">
+                            </div>
+                            <div class="form-group col-xs-12 fluid">
+                                <label for="pcode">Postcode</label>
+                                <input type="text" class="form-control" id="pcode">
+                            </div>
+                            <div class="form-group col-xs-12 fluid">
+                                <label for="sel1">What Time Would You Like to Recive A Call</label>
+                                <div class="col-sm-6 col-xs-12 fluid-l">
+                                    <select class="form-control" id="sel1">
+                                        <option selected disabled>Hour</option>
+                                        <option>1AM</option>
+                                        <option>2AM</option>
+                                        <option>3AM</option>
+                                        <option>4AM</option>
+                                        <option>5AM</option>
+                                        <option>6AM</option>
+                                        <option>7AM</option>
+                                        <option>8AM</option>
+                                        <option>9AM</option>
+                                        <option>10AM</option>
+                                        <option>11AM</option>
+                                        <option>12AM</option>
+                                        <option>1PM</option>
+                                        <option>2PM</option>
+                                        <option>3PM</option>
+                                        <option>4PM</option>
+                                        <option>5PM</option>
+                                        <option>6PM</option>
+                                        <option>7PM</option>
+                                        <option>8PM</option>
+                                        <option>9PM</option>
+                                        <option>10PM</option>
+                                        <option>11PM</option>
+                                        <option>12PM</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-6 col-xs-12 fluid-r">
+                                    <select class="form-control" id="sel1">
+                                        <option selected disabled>Minutes</option>
+                                        <option>00</option>
+                                        <option>10</option>
+                                        <option>20</option>
+                                        <option>30</option>
+                                        <option>40</option>
+                                        <option>50</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group col-xs-12 fluid">
+                                <label>What are you looking to buy</label>
+                                <input id="purchase_time1" type="radio" name="buytime">
+                                <label for="purchase_time1" class="radio-inline ml1 bleft_radius">Now</label>
+                                <input id="purchase_time2" type="radio" name="buytime">
+                                <label for="purchase_time2" class="radio-inline">2 Weeks</label>
+                                <input id="purchase_time3" type="radio" name="buytime">
+                                <label for="purchase_time3" class="radio-inline bright_radius">2+ weeks</label>
+                            </div>
+                            <div class="form-group col-xs-12 fluid two_option_radio">
+                                <label>Do you need finance</label>
+                                <input id="agree1" type="radio" name="fin-yn">
+                                <label for="agree1" class="radio-inline ml1 bleft_radius">Yes</label>
+                                <input id="agree2" type="radio" name="fin-yn">
+                                <label for="agree2" class="radio-inline bright_radius">No</label>
+                            </div>
+                            <div class="form-group col-xs-12 fluid two_option_radio">
+                                <label>Do you have a price you'd like to benchmarked?</label>
+                                <input id="iagree1" type="radio" name="bmarked">
+                                <label for="iagree1" class="radio-inline ml1 bleft_radius">Yes</label>
+                                <input id="iagree2" type="radio" name="bmarked">
+                                <label for="iagree2" class="radio-inline bright_radius">No</label>
+                            </div>
+                            <div class="form-group col-xs-12 fluid">
+                                <label for="name">What is Your monthly budget?</label>
+                                <div class="input-group">
+                                <span class="input-group-addon">$</span>
+                                <input id="email" type="text" class="form-control" name="email">
+                              </div>
+                            </div>
+                            <div class="form-group col-xs-12 two_option_radio fluid">
+                                <label>Do you have a trade-in?</label>
+                                <input id="yeshave" type="radio" name="tradein" value="1">
+                                <label for="yeshave" class="radio-inline ml1 bleft_radius">Yes</label>
+                                <input id="donthave" type="radio" name="tradein" value="2">
+                                <label for="donthave" class="radio-inline bright_radius">No</label>
+                            </div>
+                            <div class="form-group col-xs-12 fluid" id="tradein_detailz">
+                                <label for="pnum">Phone Number</label>
+                                <div class="col-sm-6 col-xs-12 fluid-l">
+                                    <input type="text" class="form-control" placeholder="Make">
+                                </div>
+                                <div class="col-sm-6 col-xs-12 fluid-r">
+                                    <input type="text" class="form-control" placeholder="Model">
+                                </div>
+                                <div class="col-sm-6 col-xs-12 fluid-l">
+                                    <input type="text" class="form-control" placeholder="Year">
+                                </div>
+                                <div class="col-sm-6 col-xs-12 fluid-r">
+                                    <input type="text" class="form-control" placeholder="Odometer">
+                                </div>
+                            </div>
+                            <div class="col-xs-12 fluid">
+                                <p>By clicking <strong>submit</strong>, I agree to the <a href="privacy.html" target="_blank">General and Privacy Terms</a></p>
+                                <button class="btn btn-default" type="submit">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="col-xs-12">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-xs-12">
+                        <div class="img">
+                            <img src="images/footerlogo.png" alt="footerlogo">
+                        </div>
+                        <ul class="contact-ul">
+                            <li><i class="fas fa-phone"></i> 1300 555 555</li>
+                            <li><i class="fas fa-map-marker-alt"></i> Lvl 1, 10 Main Street Osborne Park WA 6017</li>
+                            <li><i class="fas fa-envelope"></i> Sales@fleetplans.com.au </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 col-xs-6">
+                        <h4>INFORMATION</h4>
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                            <li><a href="#">Finance</a></li>
+                            <li><a href="#">Leasing</a></li>
+                            <li><a href="#">Partners</a></li>
+                            <li><a href="#">Support</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 col-xs-6">
+                        <h4>CONNECT</h4>
+                        <ul>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i>Twitter</a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                            <li><a href="#"><i class="fab fa-linkedin"></i> Linkedin</a></li>
+                            <li><a href="#"><i class="fab fa-pinterest"></i> Pinterest</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row bg-row">
+                <div class="container">
+                    <div class="col-md-4 fluid">
+                        <p class="on-p">&copy; FleetPlan 2018. All Right Reserved.</p>
+                    </div>
+                    <div class="col-md-4 fluidi">
+                        <ul class="terms-list">
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Disclaimer</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 fluid">
+                        <p class="on-p">Powered by: Viper Online</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div class="heartslide">
+        <h5 class="fav">FAVOURITES</h5>
+        <h3 class="">Next Step: Compare</h3>
+        <p>It looks like you don't have any favourite cars. Why not search for a car from the <a href="#">homepage</a> or let us <a href="#">Suggest a car</a> based on your lifestyle and needs.</p>
+    </div>
+    <div class="overlay"></div>
+
+
+    <script>
+
+
+        $(document).ready(function(){
+            // Add minus icon for collapse element which is open by default
+            $(".collapse.in").each(function(){
+                $(this).siblings(".panel-heading").find(".fas").addClass("fas fa-chevron-down").removeClass("fas fa-chevron-down");
+            });
+
+            // Toggle plus minus icon on show hide of collapse element
+            $(".collapse").on('show.bs.collapse', function(){
+                $(this).parent().find(".fas").removeClass("fas fa-chevron-down").addClass("fas fa-chevron-up");
+            }).on('hide.bs.collapse', function(){
+                $(this).parent().find(".fas").removeClass("fas fa-chevron-up").addClass("fas fa-chevron-down");
+            });
+        });
+
+        // side bar quries
+
+        $('.heart').on('click', function() {
+          $('.wrapper').toggleClass("moveleft");
+        });
+        $('.heart').on('click', function() {
+          $('.heartslide').toggleClass('showup');
+        });
+        $('.heart').on('click', function() {
+          $('body').toggleClass('seez');
+        });
+
+        $(".overlay").hide();
+
+       $('.heart').on('click', function() {
+          $('.overlay').show();
+        });
+
+        $('.overlay').on('click', function() {
+            $('body').toggleClass('seez');
+          $('.wrapper').toggleClass("moveleft");
+            $('.heartslide').toggleClass('showup');
+            $(".overlay").hide();
+        });
+
+  // side barEnd
+
+//       Search bar Queries
+        $(".navbar-form").hide();
+        $('.cross').on('click', function() {
+          $('.navbar-form').hide();
+        });
+        $('.cross').on('click', function() {
+          $('.magnifier').show();
+        });
+        $('.cross').on('click', function() {
+          $('.nav-holder').show();
+        });
+        $('.cross').on('click', function() {
+          $('.magnifier').show();
+        });
+        $('.magnifier').on('click', function() {
+          $('.navbar-form').show();
+        });
+        $('.magnifier').on('click', function() {
+          $('.magnifier').hide();
+        });
+        $('.magnifier').on('click', function() {
+          $('.nav-holder').hide();
+        });
+//       Search bar Query End
+
+
+
+        $('#tradein_detailz').hide();
+        $('input[name="tradein"]').bind('change',function(){
+            var showOrHide = ($(this).val() == 1) ? true : false;
+            $('#tradein_detailz').toggle(showOrHide);
+         });
+
+
+//    Get Quote Banner Start
+        $('.quote_banner').hide();
+        $('.help-more').click(function() {
+          if ($(this).val() == 'more about how it works') {
+            $(this).val('less about how it works')
+          } else {
+            $(this).val('more about how it works')
+          }
+            $(".quote_banner").slideToggle(300);
+        });
+        $('.dismis').click(function() {
+          if ($('.help-more').val() == 'more about how it works') {
+            $('.help-more').val('less about how it works')
+          } else {
+            $('.help-more').val('more about how it works')
+          }
+            $(".quote_banner").slideToggle(300);
+        });
+
+//    Get Quote Banner End
+
+function myFunction() {
+    var x = document.getElementById("fname");
+    var curVal = x.value;
+    var imageRW = document.getElementById('img_right_wrong');
+    if (curVal <= 5)
+    {
+ 			//wrong.png
+      imageRW.src = "images/error.png";
+    }
+    else
+    {
+ 			//right.png
+      imageRW.src = "images/checkmark.png";
+    }
+}
+
+
+    </script>
+
+</body>
+</html>

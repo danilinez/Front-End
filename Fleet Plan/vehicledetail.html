@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Fleet Plans</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/owl.css">
+  <link rel="stylesheet" href="css/owltheme.css">
+  <link rel="stylesheet" href="css/nouislider.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+              data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><img src="images/FleetPlan-Logo.png" alt="logo"></a>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="nav-holder">
+              <ul class="nav navbar-nav">
+                <li><a href="brands.html">BRANDS</a></li>
+                <li><a href="machmakers.html">MATCHMAKERS</a></li>
+                <li><a href="specialoffers.html" class="redit">Current OFFERS</a></li>
+                <li><a href="truck&equipments.html">TRUCKS & EQUIPMENT</a></li>
+              </ul>
+            </div>
+            <form class="navbar-form">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fas fa-search"></i></span>
+                <input id="email" type="text" class="form-control" name="email" placeholder="Search your Favourite Car"
+                  autocomplete="off">
+                <a href="#" class="cross hidden-xs"> <i class="fas fa-times"></i></a>
+              </div>
+            </form>
+            <ul class="social_head">
+              <li class="social pull-right"><a href="#" class="heart"><i class="far fa-heart"></i></a></li>
+              <li class="social pull-right"><a type="button" data-toggle="modal" data-target="#login-modal"><i
+                    class="far fa-user"></i></a></li>
+              <li class="social pull-right"><a href="#" class="magnifier"><i class="fas fa-search"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="modal login-modal" id="login-modal" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+              <h1>Sign up now and <br> enjoy these benefits</h1>
+              <ul>
+                <li><img src="images/check.png" />Request competitive quotes on the car you want to buy</li>
+                <li><img src="images/check.png" />Access your favourites on all devices</li>
+              </ul>
+              <button class="btn btn-default"><i class="fab fa-facebook-square"></i> Sign up with Facebook</button>
+              <p>Creating an account means you're OK with Fleet Plans</p>
+              <a href="javascript:void(0)">Terms of Service and Privacy Policy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+
+      <section class="vdetail-header">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-xs-12">
+              <div class="vtitle">
+                <h3><strong>Hiluix</strong> 2019</h3>
+                <button class="btn back-btn"><i class="fas fa-chevron-left"></i> Toyota</button>
+              </div>
+            </div>
+            <div class="col-md-6 col-xs-6 show-lg">
+              <div class="fp-text">
+                <img src="images/font-img.png" alt="img">
+                <!-- <h6>For Bussiness Use</h6> -->
+              </div>
+            </div>
+            <div class="col-md-3 col-xs-12">
+              <div class="weekly-price">
+                <p><small>From</small> <strong>$25,450</strong> <br /> <small>Estimated Drive Away <i
+                      class="fas fa-info-circle"></i> </small></p>
+                <div class="flex-row">
+                  <p style="display:inline-block;">On selected versions:</p>
+                  <a href="#" class="current_offer_tag">CURRENT OFFER <i class="fas fa-angle-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 show-xs">
+              <img src="images/font-img.png" class="img-responsive" alt="img">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <style>
+        @media (max-width:991px) {
+          .show-lg {
+            display: none !important;
+          }
+
+          .show-xs {
+            display: block;
+          }
+        }
+
+        @media (min-width:992px) {
+          .show-lg {
+            display: block;
+          }
+
+          .show-xs {
+            display: none;
+          }
+        }
+      </style>
+
+      <section class="vdetail-banner banner">
+
+        <!-- Wrapper for slides -->
+
+
+        <div id="gallery" class="modal gallery_modal fade" role="dialog">
+          <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              <div class="modal-body">
+                <div id="galary_slider" class="owl-carousel owl-theme galary_slider pad-top">
+                  <div class="item">
+                    <img src="images/galary1.jpg" alt="Image" class="img-responsive">
+                  </div>
+                  <div class="item">
+                    <img src="images/galary2.jpg" alt="Image" class="img-responsive">
+                  </div>
+                  <div class="item">
+                    <img src="images/galary3.jpg" alt="Image" class="img-responsive">
+                  </div>
+                  <div class="item">
+                    <img src="images/galary4.jpg" alt="Image" class="img-responsive">
+                  </div>
+                  <div class="item">
+                    <img src="images/galary5.jpg" alt="Image" class="img-responsive">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="owl-carousel owl-theme car_detail_banner pad-top">
+          <div class="item">
+            <a href="#">
+              <img src="images/ferrari_ext_0.jpg" alt="Image" style="width:100%;">
+            </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <img src="images/ferrari_ext_1.jpg" alt="Image" style="width:100%;">
+            </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <img src="images/ferrari_ext_2.jpg" alt="Image" style="width:100%;">
+            </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <img src="images/ferrari_ext_3.jpg" alt="Image" style="width:100%;">
+            </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <img src="images/ferrari_ext_4.jpg" alt="Image" style="width:100%;">
+            </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <img src="images/ferrari_ext_5.jpg" alt="Image" style="width:100%;">
+            </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <img src="images/ferrari_int_1.jpg" alt="Image" style="width:100%;">
+            </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <img src="images/ferrari_int_2.jpg" alt="Image" style="width:100%;">
+            </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <img src="images/ferrari_int_3.jpg" alt="Image" style="width:100%;">
+            </a>
+          </div>
+        </div>
+        <div class="gmask">
+          <a data-toggle="modal" href="#gallery">4 <i class="fas fa-camera"></i> </a>
+        </div>
+      </section>
+      <div class="inote">
+        <div class="container">
+          <div class="col-xs-12">
+            <p>Images may differ from selected variants</p>
+          </div>
+        </div>
+      </div>
+
+
+      <section class="variants">
+        <div class="container">
+          <div class="variants-wrap">
+            <div class="brand-hero-title">
+              <div class="text">
+                <h1>Abarth</h1>
+                <p>Choose a model and save</p>
+              </div>
+              <div class="img">
+                <img src="images/title-brand-image.png" alt="">
+              </div>
+            </div>
+            <div class="col">
+              <div class="variants-action">
+                <h4>TOYOTA HILUX WORKMATE</h4>
+                <!-- <a data-toggle="modal" href="#change-variants">Explore All Models <i
+                    class="fas fa-angle-double-right"></i> <i class="fas fa-hand-pointer    "></i></a> -->
+              </div>
+            </div>
+            <div class="col">
+              <div class="variant-specs">
+                <ul class="vinfo">
+                  <li>UTE</li>
+                  <li>MANUAL</li>
+                  <li>UNLEADED</li>
+                  <li>2WD (RWD)</li>
+                </ul>
+                <div class="vspecs"><span>4 Cylinders, 2, 2.4L | 5 SP Manual | 94 KW / 194 NM | Year - 2019</span></div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="shareon">
+                <div class="wrap">
+                  <p>Share on:</p>
+                  <ul>
+                    <li><a href="#"><img src="images/facebook.svg" alt="fb"></a></li>
+                    <li><a href="#"><img src="images/twitter.svg" alt="ttr"></a></li>
+                    <li><a href="#"><img src="images/linkedin.svg" alt="lin"></a></li>
+                  </ul>
+                </div>
+                <div class="checkbox">
+                  <label><input type="checkbox" value="" class="hidden heart-check"><i
+                      class="far fa-heart hrt"></i></label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="modal testdrive_modal" id="change-variants" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+
+            <button class="close btn btn-default" data-dismiss="modal"><i class="fa fa-times"
+                aria-hidden="true"></i></button>
+
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-12">
+                  <h2>Select your CAR NAME model variant below</h2>
+                </div>
+              </div>
+              <div class="row">
+                <div class="align-mid">
+                  <ul>
+                    <li>
+                      <img src="images/vdc.png" />
+                      <div class="checkbox">
+                        <input id="v-type" type="checkbox" class="hidden" checked>
+                        <label for="v-type">Hatch</label>
+                      </div>
+                    </li>
+                    <li>
+                      <div id='imagedest'>
+                      </div>
+                      <form name='test' class="radio">
+                        <input class="hidden" id="v-mgear1" type="radio" name="field" value="one"
+                          onchange='check_valu()' checked>
+                        <label for="v-mgear1">Mannual</label>
+
+                        <input class="hidden" id="v-agear1" type="radio" name="field" value="two"
+                          onchange='check_valu()'>
+                        <label for="v-agear1">Auto</label>
+                      </form>
+                    </li>
+                    <li>
+                      <img src="images/fuel.png" />
+                      <div class="checkbox">
+                        <input id="v-fuel" type="checkbox" class="hidden" checked>
+                        <label for="v-fuel">Unleaded petrol</label>
+                      </div>
+                    </li>
+                    <li>
+                      <img src="images/2wd.png" />
+                      <div class="checkbox">
+                        <input id="v-wd" type="checkbox" class="hidden" checked>
+                        <label for="v-wd">2wd (fwd)</label>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="row">
+                <div class="testdrive_options">
+                  <p>There are <strong>2</strong> 595 model variants available with your criteria</p>
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <h5 class="drive_price"> <span class="c_offer_tag">CURRENT OFFER </span> $31,600 <i
+                            class="fas fa-chevron-right"></i></h5>
+                        <h4>Competezion</h4>
+                        <p>2wd(fwd) - unleaded petrol</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <h5 class="drive_price">$31,600 <i class="fas fa-chevron-right"></i></h5>
+                        <h4>Competezion</h4>
+                        <p>2wd(fwd) - unleaded petrol</p>
+                      </a>
+                    </li>
+                    <li class="disable">
+                      <a href="#">
+                        <h5 class="drive_price">$31,600 <i class="fas fa-chevron-right"></i></h5>
+                        <h4>Competezion</h4>
+                        <p>2wd(fwd) - unleaded petrol</p>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="vehical-detail">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="testdrive_options">
+              <p>Click and select from <strong>22</strong> MITSUBISHI TRITON models</p>
+              <ul>
+                <li>
+                  <a href="#">
+                    <div class="flex-text">
+                      <h4>Competezion</h4>
+                      <h5 class="drive_price"> <span class="c_offer_tag">CURRENT OFFER </span> $31,600 <i
+                          class="fas fa-chevron-right"></i></h5>
+                    </div>
+                    <div class="flex-text">
+                      <p>UTE - Manual - Disel - 2WD (RWD)</p>
+                      <p>4 Cylinders, 2, 2.4L | 5 SP Manual | 94 KW / 194 NM | Year - 2019</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="flex-text">
+                      <h4>Competezion</h4>
+                      <h5 class="drive_price"> <span class="c_offer_tag">CURRENT OFFER </span> $31,600 <i
+                          class="fas fa-chevron-right"></i></h5>
+                    </div>
+                    <div class="flex-text">
+                      <p>UTE - Manual - Disel - 2WD (RWD)</p>
+                      <p>4 Cylinders, 2, 2.4L | 5 SP Manual | 94 KW / 194 NM | Year - 2019</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="flex-text">
+                      <h4>Competezion</h4>
+                      <h5 class="drive_price"> <span class="c_offer_tag">CURRENT OFFER </span> $31,600 <i
+                          class="fas fa-chevron-right"></i></h5>
+                    </div>
+                    <div class="flex-text">
+                      <p>UTE - Manual - Disel - 2WD (RWD)</p>
+                      <p>4 Cylinders, 2, 2.4L | 5 SP Manual | 94 KW / 194 NM | Year - 2019</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="flex-text">
+                      <h4>Competezion</h4>
+                      <h5 class="drive_price"> <span class="c_offer_tag">CURRENT OFFER </span> $31,600 <i
+                          class="fas fa-chevron-right"></i></h5>
+                    </div>
+                    <div class="flex-text">
+                      <p>UTE - Manual - Disel - 2WD (RWD)</p>
+                      <p>4 Cylinders, 2, 2.4L | 5 SP Manual | 94 KW / 194 NM | Year - 2019</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="flex-text">
+                      <h4>Competezion</h4>
+                      <h5 class="drive_price"> <span class="c_offer_tag">CURRENT OFFER </span> $31,600 <i
+                          class="fas fa-chevron-right"></i></h5>
+                    </div>
+                    <div class="flex-text">
+                      <p>UTE - Manual - Disel - 2WD (RWD)</p>
+                      <p>4 Cylinders, 2, 2.4L | 5 SP Manual | 94 KW / 194 NM | Year - 2019</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="flex-text">
+                      <h4>Competezion</h4>
+                      <h5 class="drive_price"> <span class="c_offer_tag">CURRENT OFFER </span> $31,600 <i
+                          class="fas fa-chevron-right"></i></h5>
+                    </div>
+                    <div class="flex-text">
+                      <p>UTE - Manual - Disel - 2WD (RWD)</p>
+                      <p>4 Cylinders, 2, 2.4L | 5 SP Manual | 94 KW / 194 NM | Year - 2019</p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="overview-table">
+              <h3>Overview</h3>
+              <div class="fix-height-table">
+                <table class="table">
+                  <tbody>
+                    <tr>
+                      <th scope="row">Body shape</th>
+                      <td>UTE</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Seats</th>
+                      <td>2 SEATER / 2 DOORS</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Engine</th>
+                      <td>4 CYLINDERS, 2.7L</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Fuel Type</th>
+                      <td>UNLEADED</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Transmission</th>
+                      <td>5 SP MANUAL</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Power / Torque</th>
+                      <td>122 KW / 245 NM</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Fuel Efficiency</th>
+                      <td>11.1L / 100 KM</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Wheels Driven</th>
+                      <td>2WD (RWD)</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">ANCAP Safety Rating</th>
+                      <td><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                          class="fas fa-star"></i><i class="fas fa-star"></i></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Warranty</th>
+                      <td>5 YEARS / UNLIMITED KM</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Service Interval</th>
+                      <td>6 MONTHS / 10,000 KM</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Release Date</th>
+                      <td>AUGUST 2018</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="pile">
+              <div class="get-started">
+                <div class="fleft">
+                  <h3><span class="del">$25,660</span> <strong> $25,660</strong></h3>
+                  <p>Estimated Drive Away <i class="fas fa-info-circle"></i></p>
+                </div>
+                <div class="fright">
+                  <img src="images/bpg.png" alt="">
+                  <i class="fas fa-info-circle"></i>
+                </div>
+                <button class="btn-get-started">Get A Quote Today <i class="fas fa-arrow-circle-right"></i></button>
+              </div>
+              <div class="budget">
+                <h3><strong>Choose Payment Option?</strong></h3>
+
+                <ul class="nav nav-pills">
+                  <li class="active">
+                    <a data-toggle="pill" href="#weekly">Weekly</a>
+                  </li>
+                  <li>
+                    <a data-toggle="pill" href="#monthly">Monthly</a>
+                  </li>
+                </ul>
+
+                <div class="tab-content">
+                  <div id="weekly" class="tab-pane fade in active">
+                    <div class="row">
+                      <div class="col-xs-6" style="padding-right:0px;">
+                        <h4>$191.00 <small>per</small> Week</h4>
+                      </div>
+                      <div class="col-xs-6" style="padding-left:0px;">
+                        <h5>For Business Use</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="monthly" class="tab-pane fade">
+                    <div class="row">
+                      <div class="col-xs-6" style="padding-right:0px;">
+                        <h4>$7891.00 <small>per</small> Month</h4>
+                      </div>
+                      <div class="col-xs-6" style="padding-left:0px;">
+                        <h5>For Business Use</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="liscence">
+                <h4>Fleet Plan Liscence</h4>
+                <p>Lorem ipsum dolor seit venciet is a dummy text written for future use to make sure here we are going
+                  to use a text soon. seit venciet is a dummy text written for future use to make sure here we are going
+                  to use a text soon.</p>
+              </div>
+              <div class="call-expert">
+                <h4>Call our expert on <a href="tel:123 12387 123"><i class="fa fa-phone"></i> 151 1239 123</a></h4>
+                <p>Got a Question? Our freindly car experts are ready to help you out.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
+  </section>
+
+  <div class="talk-to-expert">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <h3>We source new vehicles for business every day!</h3>
+        </div>
+        <div class="col-md-6 col-xs-12">
+          <ul>
+            <li><span>&#x2714;</span> Independent advice to help you select the right vehicle</li>
+            <li><span>&#x2714;</span> Free quotes for any Make and Model</li>
+            <li><span>&#x2714;</span> Test drives available at your convenience</li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-xs-12">
+          <ul>
+            <li><span>&#x2714;</span> Nationwide vehicle dealer network</li>
+            <li><span>&#x2714;</span> Flexible finance and leasing solutions to match your budget</li>
+            <li><span>&#x2714;</span> Including great deals offered by Dealers and Manufactures</li>
+          </ul>
+        </div>
+
+        <div class="col-xs-12">
+          <button class="btn btn-default" data-toggle="modal" data-target="#pick-testdrive">Talk to an expert</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal testdrive_modal" id="pick-testdrive" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+
+        <button class="close btn btn-default" data-dismiss="modal"><i class="fa fa-times"
+            aria-hidden="true"></i></button>
+
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-12">
+              <h2>Select your CAR NAME model variant below</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="align-mid">
+              <ul>
+                <li>
+                  <img src="images/vdc.png" />
+                  <div class="checkbox">
+                    <input id="v-type" type="checkbox" class="hidden" checked>
+                    <label for="v-type">Hatch</label>
+                  </div>
+                </li>
+                <li>
+                  <div id='imagedest1'>
+                  </div>
+                  <form name='test' class="radio">
+                    <input class="hidden" id="v-mgear1" type="radio" name="field" value="one" onchange='check_valu()'
+                      checked>
+                    <label for="v-mgear1">Mannual</label>
+
+                    <input class="hidden" id="v-agear1" type="radio" name="field" value="two" onchange='check_valu()'>
+                    <label for="v-agear1">Auto</label>
+                  </form>
+                </li>
+                <li>
+                  <img src="images/fuel.png" />
+                  <div class="checkbox">
+                    <input id="v-fuel" type="checkbox" class="hidden" checked>
+                    <label for="v-fuel">Unleaded petrol</label>
+                  </div>
+                </li>
+                <li>
+                  <img src="images/2wd.png" />
+                  <div class="checkbox">
+                    <input id="v-wd" type="checkbox" class="hidden" checked>
+                    <label for="v-wd">2wd (fwd)</label>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="testdrive_options">
+              <p>There are <strong>2</strong> 595 model variants available with your criteria</p>
+              <ul>
+                <li>
+                  <a href="#">
+                    <h5 class="drive_price"> <span class="c_offer_tag">CURRENT OFFER </span> $31,600 <i
+                        class="fas fa-chevron-right"></i></h5>
+                    <h4>Competezion</h4>
+                    <p>2wd(fwd) - unleaded petrol</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <h5 class="drive_price">$31,600 <i class="fas fa-chevron-right"></i></h5>
+                    <h4>Competezion</h4>
+                    <p>2wd(fwd) - unleaded petrol</p>
+                  </a>
+                </li>
+                <li class="disable">
+                  <a href="#">
+                    <h5 class="drive_price">$31,600 <i class="fas fa-chevron-right"></i></h5>
+                    <h4>Competezion</h4>
+                    <p>2wd(fwd) - unleaded petrol</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="specs sec-pad">
+    <div class="container">
+      <h2>Specificaions</h2>
+      <div class="accordians">
+        <div class="panel-group" id="accordion">
+          <div class="panel panel-default">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  Standard Features<i class="fas fa-chevron-down"></i>
+                </h4>
+              </div>
+            </a>
+            <div id="collapse1" class="panel-collapse collapse">
+              <div class="panel-body">
+                <div class="col-md-3 col-xs-6 col-xxs-12 fluid">
+                  <h3><img src="images/guage.png">Interior</h3>
+                  <div class="col-xs-12 text-left palet first-palet">
+                    <h4>Seating</h4>
+                    <ul>
+                      <li>Adjust Driver Seat - Manual</li>
+                      <li>Adjust Driver Seat - Manual</li>
+                      <li>Cloth Trim</li>
+                      <li>Headrests - Adjustable on All Seats</li>
+                      <li>
+                        <h5>Seats</h5> 5
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-3 col-xs-6 col-xxs-12 fluid">
+                  <h3><img src="images/rim.png">Exterior</h3>
+                  <div class="col-xs-12 text-left palet nd">
+                    <h4>Diamension and weight</h4>
+                    <ul>
+                      <li>
+                        <h5>HEIGHT (MM) <b>[+$600]</b></h5> 1450
+                      </li>
+                      <li>
+                        <h5>Weight (MM)</h5> 895
+                      </li>
+                      <li>
+                        <h5>Length (MM)</h5> 3995
+                      </li>
+                      <li>
+                        <h5>Minimum ground clearance (MM)</h5> 2250
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-3 col-xs-6 col-xxs-12 fluid">
+                  <h3><img src="images/key.png">Safety</h3>
+                  <div class="col-xs-12 text-left palet ndl">
+                    <h4>Diamension and weight</h4>
+                    <ul>
+                      <li>
+                        <h5>HEIGHT (MM)</h5> 1450
+                      </li>
+                      <li>
+                        <h5>Weight (MM)</h5> 895
+                      </li>
+                      <li>
+                        <h5>Length (MM)</h5> 3995
+                      </li>
+                      <li>
+                        <h5>Minimum ground clearance (MM)</h5> 2250
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-3 col-xs-6 col-xxs-12 fluid">
+                  <h3><img src="images/piston.png">Mechanics</h3>
+                  <div class="col-xs-12 text-left last-palet palet">
+                    <h4>Diamension and weight</h4>
+                    <ul>
+                      <li>
+                        <h5>HEIGHT (MM)</h5> 1450
+                      </li>
+                      <li>
+                        <h5>Weight (MM)</h5> 895
+                      </li>
+                      <li>
+                        <h5>Length (MM)</h5> 3995
+                      </li>
+                      <li>
+                        <h5>Minimum ground clearance (MM)</h5> 2250
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="undecided">
+    <div class="container">
+      <h2><small>Undecided? Let's look at some alternatives</small></h2>
+      <p>View cars similar to the...</p>
+      <div class="variants">
+        <div class="variants-wrap">
+          <div class="col">
+            <div class="variants-action">
+              <h4>TOYOTA HILUX WORKMATE</h4>
+              <a data-toggle="modal" href="#change-variants">Explore All Models <i class="fas fa-angle-double-right"></i> <i class="fas fa-hand-pointer"></i></a>
+            </div>
+          </div>
+          <div class="col">
+            <ul class="vinfo">
+              <li>UTE</li>
+              <li>MANUAL</li>
+              <li>UNLEADED</li>
+              <li>2WD (RWD)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <p>… and base the similarity upon</p>
+      <div class="similarity-checks">
+        <div class="form-check">
+          <input type="radio" class="form-check-input" name="optradio" id="rad_1">
+          <label class="form-check-label" for="rad_1">Performance</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" name="optradio" id="rad_2">
+          <label class="form-check-label" for="rad_2">Fuel Efficiency </label>
+        </div>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" name="optradio" id="rad_3">
+          <label class="form-check-label" for="rad_3">Styling</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" name="optradio" id="rad_4">
+          <label class="form-check-label" for="rad_4">Utility</label>
+        </div>
+        <button class="view-similar">View Similar Cars</button>
+      </div>
+    </div>
+  </section>
+
+
+  </main>
+
+  <footer class="col-xs-12" style="margin-top:0px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-xs-12">
+          <div class="img">
+            <img src="images/footerlogo.png" alt="footerlogo">
+          </div>
+          <ul class="contact-ul">
+            <li><i class="fas fa-phone"></i> 1300 555 555</li>
+            <li><i class="fas fa-map-marker-alt"></i> Lvl 1, 10 Main Street Osborne Park WA 6017</li>
+            <li><i class="fas fa-envelope"></i> Sales@fleetplans.com.au </li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-xs-6">
+          <h4>INFORMATION</h4>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Finance</a></li>
+            <li><a href="#">Leasing</a></li>
+            <li><a href="#">Partners</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-xs-6">
+          <h4>CONNECT</h4>
+          <ul>
+            <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i>Twitter</a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+            <li><a href="#"><i class="fab fa-linkedin"></i> Linkedin</a></li>
+            <li><a href="#"><i class="fab fa-pinterest"></i> Pinterest</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row bg-row">
+      <div class="container">
+        <div class="col-md-4 fluid">
+          <p class="on-p">&copy; FleetPlan 2018. All Right Reserved.</p>
+        </div>
+        <div class="col-md-4 fluidi">
+          <ul class="terms-list">
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Disclaimer</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 fluid">
+          <p class="on-p">Powered by: Viper Online</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  </div>
+
+  <div class="heartslide">
+    <h5 class="fav">FAVOURITES</h5>
+    <h3 class="">Next Step: Compare</h3>
+    <p>It looks like you don't have any favourite cars. Why not search for a car from the <a href="#">homepage</a> or
+      let us <a href="#">Suggest a car</a> based on your lifestyle and needs.</p>
+  </div>
+  <div class="overlay"></div>
+
+  <script src="js/owl.js"></script>
+  <script src="js/nouislider.js"></script>
+  <script>
+
+
+    $(document).ready(function () {
+
+      var slider = document.getElementById('nouislider');
+      noUiSlider.create(slider, {
+        start: [0],
+        step: 1,
+        range: {
+          min: [0],
+          max: [10]
+        },
+        pips: {
+          mode: 'range',
+          density: 13
+        }
+      });
+
+      slider.noUiSlider.on('hover', function (value) {
+        console.log(value);
+      });
+
+
+      // Add minus icon for collapse element which is open by default
+      $(".collapse.in").each(function () {
+        $(this).siblings(".panel-heading").find(".fas").addClass("fas fa-chevron-down").removeClass("fas fa-chevron-down");
+      });
+
+      // Toggle plus minus icon on show hide of collapse element
+      $(".collapse").on('show.bs.collapse', function () {
+        $(this).parent().find(".fas").removeClass("fas fa-chevron-down").addClass("fas fa-chevron-up");
+      }).on('hide.bs.collapse', function () {
+        $(this).parent().find(".fas").removeClass("fas fa-chevron-up").addClass("fas fa-chevron-down");
+      });
+    });
+
+    $('.car_detail_banner').owlCarousel({
+
+      dots: false,
+      nav: true,
+      margin: 0,
+      navText: ["<i class='fas fa-chevron-left'></i>", "<i class='fas fa-chevron-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        1000: {
+          items: 3
+        },
+        1300: {
+          items: 4
+        }
+      }
+    });
+    $('.galary_slider').owlCarousel({
+
+      dots: false,
+      nav: true,
+      margin: 0,
+      navText: ["<i class='fas fa-chevron-left'></i>", "<i class='fas fa-chevron-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        }
+      }
+    });
+
+
+
+    // side bar quries
+
+    $('.heart').on('click', function () {
+      $('.wrapper').toggleClass("moveleft");
+    });
+    $('.heart').on('click', function () {
+      $('.heartslide').toggleClass('showup');
+    });
+    $('.heart').on('click', function () {
+      $('body').toggleClass('seez');
+    });
+
+    $(".overlay").hide();
+
+    $('.heart').on('click', function () {
+      $('.overlay').show();
+    });
+
+    $('.overlay').on('click', function () {
+      $('body').toggleClass('seez');
+      $('.wrapper').toggleClass("moveleft");
+      $('.heartslide').toggleClass('showup');
+      $(".overlay").hide();
+    });
+
+    // side barEnd
+
+
+    //    Heart Checkbox Query
+    jQuery(document).ready(function ($) {
+
+      $(".heart-check").prop("checked", false);
+      $(".heart-check").click(function () {
+
+        if ($(this).is(":checked")) {
+
+          //unchecked
+          $(".hrt").removeClass("far").addClass("fas");
+
+        } else {
+          $(".hrt").removeClass("fas").addClass("far");
+        }
+
+      })
+
+    });
+    //       hrt End
+
+    //       Search bar Queries
+    $(".navbar-form").hide();
+    $('.cross').on('click', function () {
+      $('.navbar-form').hide();
+    });
+    $('.cross').on('click', function () {
+      $('.magnifier').show();
+    });
+    $('.cross').on('click', function () {
+      $('.nav-holder').show();
+    });
+    $('.cross').on('click', function () {
+      $('.magnifier').show();
+    });
+    $('.magnifier').on('click', function () {
+      $('.navbar-form').show();
+    });
+    $('.magnifier').on('click', function () {
+      $('.magnifier').hide();
+    });
+    $('.magnifier').on('click', function () {
+      $('.nav-holder').hide();
+    });
+    //       Search bar Query End
+
+
+
+
+    document.getElementById("imagedest").innerHTML = "<img src='images/gear.png'>";
+    function check_value() {
+      switch (document.test.field.value) {
+        case "one":
+          document.getElementById("imagedest").innerHTML = "<img src='images/gear.png'>";
+          break;
+
+        case "two":
+          document.getElementById("imagedest").innerHTML = "<img src='images/autogear.png'>";
+          break;
+      }
+    }
+    document.getElementById("imagedest1").innerHTML = "<img src='images/gear.png'>";
+    function check_valu() {
+      switch (document.test.field.value) {
+        case "one":
+          document.getElementById("imagedest1").innerHTML = "<img src='images/gear.png'>";
+          break;
+
+        case "two":
+          document.getElementById("imagedest1").innerHTML = "<img src='images/autogear.png'>";
+          break;
+      }
+    }
+
+
+
+  </script>
+
+</body>
+
+</html>

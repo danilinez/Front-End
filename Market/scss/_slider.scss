@@ -1,0 +1,57 @@
+.products-slider
+{
+  position: relative;
+  .item
+  {
+    padding-bottom: 60px;
+    padding-right: 8px;
+    padding-left:8px;
+  }
+  @import "product_item.scss";
+  .owl-nav .owl-next,
+  .owl-nav .owl-prev {
+    top: 50%;
+    margin-top: -50px;
+    position: absolute;
+    background-color: $green;
+    color: #fff;
+    height:40px;
+    width:40px;
+    text-align: center;
+    border-radius: 100%;
+    font-size: 20px;
+  }
+  
+  .owl-nav .owl-next {
+    right: -10px;
+  }
+  
+  .owl-nav .owl-prev {
+    left: -10px;
+  }
+  
+  .owl-nav .owl-prev.disabled,
+  .owl-nav .owl-next.disabled {
+    opacity: .5;
+    &:hover
+    {
+      background-color: $green;
+      cursor: default;
+    }
+  }
+  
+  .owl-nav .owl-prev:hover,
+  .owl-nav .owl-next:hover {
+      background-color: $dgreen;
+  }
+  
+  .owl-nav .owl-prev i
+  {
+    position: relative;
+    left: -2px;
+  }
+  .owl-nav .owl-next i {
+    position: relative;
+    right: -2px;
+  }
+}

@@ -1,0 +1,214 @@
+.listing
+{
+  padding-bottom: 60px;
+  .filter
+  {
+    .filter-box
+    {
+      border:1px solid #ddd;
+      padding: 20px 15px;
+      margin-bottom: 30px;
+      h4
+      {
+        font-family: popsb;
+        color:#333;
+        font-size: 16px;
+        text-transform: uppercase;
+        margin: 0px;
+      }
+      .ct-parent
+      {
+        margin: 20px 0px 0px;
+        li
+        {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          a
+          {
+            font-family: popm;
+            font-size: 14px;
+            padding: 5px 0px;
+            color:#333;
+            &:hover
+            {
+              color:$green;
+            }
+          }
+          i{
+            font-size: 14px;
+            cursor: pointer;
+            padding: 5px 0px;
+            flex-grow: 1;
+            text-align: right;
+            &:hover
+            {
+              color:$green;
+            }
+            &.flip
+            {
+              &::before
+              {
+                content:'\f077';
+              }
+            }
+          }
+          &.active
+          {
+            a, i{
+              color:$green;
+            }
+          }
+        }
+        ul{
+          margin: 0px !important;
+          padding: 5px 0px 5px 15px;
+          li
+          {
+            display: block;
+            a
+            {
+              display: inline-block;
+              width: 100%;
+              font-size: 14px;
+              padding: 5px 0px;
+              color:$gtext;
+              font-family: pop;
+              &:hover
+              {
+                color:$green;
+              }
+            }
+          }
+        }
+      }
+      .filter-checks
+      {
+        margin: 20px 0px 0px;
+        li
+        {
+          display: block;
+          .custom-checkbox
+          {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+          .custom-checkbox, *:focus *:focus::after, *:focus::before
+          {
+            box-shadow: none !important;
+          }
+          .custom-checkbox .custom-control-label {
+            cursor: pointer !important;
+            font-family: "popm" !important;
+            font-weight: 500;
+            font-size: 14px;
+          }
+          .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+            background-color: $green;
+            border-color: $green;
+            box-shadow: none;
+          }
+          .custom-checkbox .custom-control-input ~ .custom-control-label::before {
+            cursor: pointer;
+            border-radius: 2px;
+            top: 1px;
+          }
+          .custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
+            top: -1px;
+            left: -28px;
+            width: 24px;
+            height: 20px;
+          }
+          .custom-checkbox span
+          {
+            text-align: right;
+            font-size: 14px;
+            color: $gtext;
+          }
+        }
+      }
+      .price-ranger
+      {
+        margin: 30px 0px 0px;
+        #slider-range
+        {
+          margin-bottom: 20px
+        }
+        .ui-slider-horizontal
+        {
+          height: 4px;  
+        }
+        .ui-widget.ui-widget-content {
+          border: 0px solid #c5c5c5;
+          background: #eee;
+        }
+        .ui-slider .ui-slider-handle
+        {
+          top: 50%;
+          transform: translateY(-50%);
+          height: 16px;
+          width: 16px;
+          border-radius: 100%;
+          border:none;
+          background: $dgreen;
+          &:hover
+          {
+            cursor: pointer;
+            background: $green;
+          }
+        }
+        
+        .ui-slider .ui-slider-range
+        {
+          border:0px;
+          height: 4px;
+          background: $green;
+        }
+        .text
+        {
+          display: flex;
+          width: 100%;
+          justify-content: flex-start;
+          align-items: center;
+          *
+          {
+            font-size: 14px;
+          }
+          label
+          {
+            margin: 0px 15px 0px 0px;
+          }
+          input
+          {
+            max-width: 120px;
+            color:$green;
+            font-family: popsb;
+          }
+        }
+      }
+    }
+  }
+  .products_listing
+  {
+    padding-bottom: 30px;
+    .ct-title
+    {
+      font-family: popm;
+      font-size: 28px;
+      margin: 0px 0px 30px;
+    }
+    @import 'product_item.scss';
+    .product-card
+    {
+      margin-bottom:30px;
+      &:hover
+      {
+        .buy
+        {
+          box-shadow:0px 8px 8px -5px rgba(0,0,0,0.2);
+        }
+      }
+    }
+  }
+}

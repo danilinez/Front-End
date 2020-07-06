@@ -1,0 +1,84 @@
+footer
+{
+  position: relative;
+  background-color:#fff;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+  padding: 50px 0px 0px;
+  div
+  {
+    position: relative;
+  }
+ .vbar::after
+  {
+    content:'';
+    position: absolute;
+    height: 100%;
+    width:1px;
+    background-color:#ddd;
+    top: 2px;
+    right: 10px;
+    z-index: 10;
+    @media (max-width:767px) {
+      display: none;
+    }
+  }
+  .subscribe
+  {
+    padding-left: 50px;
+    .btn-default
+    {
+      background:$green !important;
+      color:#fff;
+      border-color:$green;
+      &:hover
+      {
+        background-color:$greenb !important;
+        border-color:$greenb;
+      }
+    }
+  }
+  
+  input
+  {
+    border-radius: 0px !important;
+    height: 45px !important;
+    &:focus
+    {
+      box-shadow: none !important;
+    }
+  }
+  p.sub
+  {
+    margin:7px 0px 15px;
+    font-size: 20px;
+  }
+  .footer_links
+  {
+    padding: 10px 0px 40px 35px;
+    ul
+    {
+      li
+      {
+        margin: 0px 0px;
+        a
+        {
+          color:$green;
+          font-family: "rsemi";
+          font-size: 12px;
+          &:hover
+          {
+            border-bottom:1px solid 
+          }
+        }
+      }
+    }
+  }
+  .copyr
+  {
+
+      font-family: 'rsemi';
+      color:#aaa;
+      font-size: 12px;
+      margin: 10px 0px 0px;
+  }
+}

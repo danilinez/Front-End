@@ -1,0 +1,52 @@
+.login
+{
+  .form-control
+  {
+    height: 45px;
+    background: #f9f9f9;
+    border:1px solid #eee;
+  }
+}
+.register
+{
+  padding: 60px 0px;
+  .form-group
+  {
+    margin-bottom: 30px;
+  }
+  h3
+  {
+    padding: 0px 0px 10px;
+    border-bottom:1px solid #ddd;
+  }
+  .user-fields
+  {
+    background: rgb(243, 243, 243);
+    padding: 20px 30px;
+    .form-control
+    {
+      min-height: 46px;
+      background: #f9f9f9;
+      border:1px solid #ddd;
+      &::placeholder
+      {
+        color:#aaa;
+        font-family:light;
+      }
+    }
+    .btn-primary
+    {
+      color:$red;
+      margin: 10px 0px 0px;
+      background: none;
+      border:none;
+      padding: 0px;
+      &:focus
+      {
+        background: none;
+        border:none;
+        color:$red;
+      }
+    }
+  }
+}

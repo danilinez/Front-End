@@ -1,0 +1,29 @@
+.enroll
+{
+  overflow: hidden;
+  padding: 60px 0px 0px;
+  text-align: center;
+  background-image: url(../images/crypto_bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  // background-color:rgb(235, 241, 245);
+  .heading
+  {
+    h1
+    {
+      color:#fff;
+    }
+  }
+  p
+  {
+    color:#fff;
+  }
+  img
+  {
+    width: 100%;
+    max-width: calc(20vw + 10em);
+    margin:0 auto;
+    display: block;
+  }
+}

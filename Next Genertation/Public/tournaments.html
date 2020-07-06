@@ -1,0 +1,1605 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home | Website Name</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/uikit.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/jqueryui.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
+    />
+    <link rel="stylesheet" href="assets/css/master.css" />
+
+    <script src="https://cdn.ckeditor.com/4.11.1/standard/ckeditor.js"></script>
+  </head>
+  <body>
+    <!-- Head links -->
+
+    <div class="head_links">
+      <div class="container">
+        <div class="row">
+          <ul>
+            <li>
+              <a href="javascript:void(0)">DISC GOLF EXPLAINED</a>
+              <a href="javascript:void(0)">DAVE FELDBERG</a>
+              <a href="javascript:void(0)">LATITUDE 64°</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Head links End -->
+
+    <!-- logo -->
+    <div class="logo">
+      <a href="index.html">
+        <img src="assets/images/logo.png" alt="_logo" />
+      </a>
+    </div>
+
+    <div class="container">
+      <!-- navigation -->
+      <div class="row">
+        <div class="navigation">
+          <button class="btn btn-default btn-toggle">
+            <i class="fas fa-bars"></i> Menu
+          </button>
+          <ul>
+            <li>
+              <a href="#">next gen tour</a>
+              <ul class="sub_menu">
+                <li><a href="#">2018 next gen tour</a></li>
+                <li><a href="#">2017 next gen tour</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Sponsors & Partners</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">NEWs</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- navigation End -->
+      <div class="row">
+        <div class="tournaments">
+          <!-- Nav tabs -->
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="pill" href="#tournamentz"
+                >Tournaments</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="pill" href="#players"
+                >Add Players</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="pill" href="#registrants"
+                >Registrants</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="pill" href="#scores"
+                >Scores</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="pill" href="#payout">Payout</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="pill" href="#settings"
+                >Settings</a
+              >
+            </li>
+          </ul>
+
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div class="tab-pane fade" id="tournamentz">
+              <form action="">
+                <div class="row">
+                  <article class="col-sm-6">
+                    <div class="form-group">
+                      <label for="txtTitle">Tournament Name:</label>
+                      <input type="text" id="txtTitle" class="form-control " />
+                    </div>
+                  </article>
+                  <article class="col-lg-3 col-sm-6">
+                    <div class="form-group">
+                      <label for="ddlType">Tournament Type:</label>
+                      <select
+                        name="ctl00$ContentPlaceHolder1$ddlType"
+                        id="ddlType"
+                        class="form-control "
+                      >
+                        <option value=""> -- Select Type -- </option>
+                        <option value="1002">United States</option>
+                        <option value="2002">PDGA C Tier</option>
+                        <option value="2011">Match Play</option>
+                        <option value="2012">Team</option>
+                        <option value="2015">MVP Circuit</option>
+                      </select>
+                    </div>
+                  </article>
+
+                  <article class="col-lg-3 col-sm-6">
+                    <div class="form-group">
+                      <!--
+                        \\WARNING: Dont Change the ID's of the following Date Entities/ inputs it will change the bg color
+                      -->
+                      <!--
+                        \\NOTE: if you change the id of these then also change ids in JS and CSS
+                      -->
+                      <label for="tmntDate">Tournament Date:</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="tmntDate"
+                        style="cursor: pointer"
+                      />
+                    </div>
+                  </article>
+                  <article class="col-lg-3 col-sm-6">
+                    <div class="form-group">
+                      <label for="tmntEndDate">Tournament End Date:</label>
+                      <input
+                        type="text"
+                        class="form-control "
+                        id="tmntEndDate"
+                        style="cursor: pointer"
+                      />
+                    </div>
+                  </article>
+
+                  <article class="col-lg-3 col-sm-6">
+                    <div class="form-group">
+                      <label for="regStartDate">Registration Start Date:</label>
+                      <input
+                        type="text"
+                        id="regStartDate"
+                        class="form-control"
+                        style="cursor: pointer"
+                      />
+                    </div>
+                  </article>
+                  <article class="col-lg-3 col-sm-6">
+                    <div class="form-group">
+                      <label for="regEndDate">Registration End Date:</label>
+                      <input
+                        type="text"
+                        id="regEndDate"
+                        class="form-control "
+                        style="cursor: pointer"
+                      />
+                    </div>
+                  </article>
+
+                  <article class="col-lg-3 col-sm-6">
+                    <div class="form-group">
+                      <label for="late">Late Registration Date:</label>
+                      <input
+                        type="text"
+                        id="late"
+                        class="form-control "
+                        style="cursor: pointer"
+                      />
+                    </div>
+                  </article>
+                  <article class="col-md-3 col-sm-6">
+                    <div class="form-group">
+                      <label for="txtEndDate">Late Registration Fee:</label>
+                      <input type="text" id="txtLateFee" class="form-control" />
+                    </div>
+                  </article>
+                  <article class="col-md-3 col-sm-6">
+                    <div class="form-group">
+                      <label for="txtMaxPlayers">Max No. of players:</label>
+                      <input
+                        type="text"
+                        id="txtMaxPlayers"
+                        class="form-control"
+                      />
+                    </div>
+                  </article>
+                  <div class="col-lg-6 col-sm-12">
+                    <div class="row">
+                      <article class="col-lg-5 col-sm-6">
+                        <div class="form-group">
+                          <label for="txtRounds">No.of Rounds:</label>
+                          <input
+                            type="text"
+                            id="txtRounds"
+                            class="form-control"
+                          />
+                        </div>
+                      </article>
+                      <article class="col-lg-7 col-sm-6">
+                        <div class="form-group">
+                          <label>Tournament Location:</label><br />
+                          <button
+                            type="button"
+                            class="btn btn-primary btn_loc"
+                            id="btnSelLoc"
+                          >
+                            Select Location
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-primary btn_loc"
+                            id="btnSelLoc"
+                          >
+                            Add New Course
+                          </button>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+
+                  <article class="col-sm-6">
+                    <div class="form-group">
+                      <label for="tournaments_loc">Processing Fee (%):</label>
+                      <input
+                        type="text"
+                        id="txtFee"
+                        class="form-control validate[required,custom[number]]"
+                      />
+                    </div>
+                  </article>
+                  <article class="col-xl-3 col-lg-4 col-sm-6">
+                    <div class="form-group">
+                      <label>Add fee for Non PDGA Members:</label>
+                      <div class="radio">
+                        <div
+                          class="custom-control custom-radio custom-control-inline"
+                        >
+                          <input
+                            type="radio"
+                            class="custom-control-input"
+                            id="memberRadio"
+                            name="memb"
+                            value="custom"
+                          />
+                          <label class="custom-control-label" for="memberRadio"
+                            >Yes</label
+                          >
+                        </div>
+                        <div
+                          class="custom-control custom-radio custom-control-inline"
+                        >
+                          <input
+                            type="radio"
+                            class="custom-control-input"
+                            id="memberRadio2"
+                            name="memb"
+                            value="custom"
+                          />
+                          <label class="custom-control-label" for="memberRadio2"
+                            >No</label
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="col-xl-3 col-lg-2 col-sm-12">
+                    <div class="form-group">
+                      <label>Additional Fees:</label><br />
+                      <div id="addFees">
+                        <button
+                          type="button"
+                          class="btn btn-success"
+                          id="addFee"
+                        >
+                          <i class="fa fa-plus-circle"></i>&nbsp;Add
+                        </button>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="col-md-6 col-12">
+                    <div class="form-group">
+                      <label for="txtDescription">Description:</label>
+                      <textarea
+                        id="txtDescription"
+                        class="form-control"
+                        rows="5"
+                      ></textarea>
+                      <script>
+                        CKEDITOR.replace("txtDescription");
+                      </script>
+                    </div>
+                  </article>
+                  <article class="col-md-6 col-12">
+                    <div class="form-group">
+                      <label for="txtSchedule">Schedule:</label>
+                      <textarea
+                        id="txtSchedule"
+                        class="form-control"
+                        rows="5"
+                      ></textarea>
+                      <script>
+                        CKEDITOR.replace("txtSchedule");
+                      </script>
+                    </div>
+                  </article>
+                  <article class="col-sm-12">
+                    <div class="form-group">
+                      <label for="txtSchedule">Choose Divisions:</label>
+                      <div id="division_types">
+                        <div
+                          class="custom-control custom-checkbox custom-control-inline"
+                        >
+                          <input
+                            type="checkbox"
+                            class="custom-control-input"
+                            id="divisionChk1"
+                            name="divisionChk"
+                          />
+                          <label class="custom-control-label" for="divisionChk1"
+                            >General</label
+                          >
+                        </div>
+                        <div
+                          class="custom-control custom-checkbox custom-control-inline"
+                        >
+                          <input
+                            type="checkbox"
+                            class="custom-control-input"
+                            id="divisionChk9"
+                            name="divisionChk"
+                          />
+                          <label class="custom-control-label" for="divisionChk9"
+                            >Junior</label
+                          >
+                        </div>
+                        <div
+                          class="custom-control custom-checkbox custom-control-inline"
+                        >
+                          <input
+                            type="checkbox"
+                            class="custom-control-input"
+                            id="divisionChk2"
+                            name="divisionChk"
+                          />
+                          <label class="custom-control-label" for="divisionChk2"
+                            >Amateur Women</label
+                          >
+                        </div>
+                        <div
+                          class="custom-control custom-checkbox custom-control-inline"
+                        >
+                          <input
+                            type="checkbox"
+                            class="custom-control-input"
+                            id="divisionChk8"
+                            name="divisionChk"
+                          />
+                          <label class="custom-control-label" for="divisionChk8"
+                            >Amateur Men</label
+                          >
+                        </div>
+                        <div
+                          class="custom-control custom-checkbox custom-control-inline"
+                        >
+                          <input
+                            type="checkbox"
+                            class="custom-control-input"
+                            id="divisionChk4"
+                            name="divisionChk"
+                          />
+                          <label class="custom-control-label" for="divisionChk4"
+                            >Men</label
+                          >
+                        </div>
+                        <div
+                          class="custom-control custom-checkbox custom-control-inline"
+                        >
+                          <input
+                            type="checkbox"
+                            class="custom-control-input"
+                            id="divisionChk5"
+                            name="divisionChk"
+                          />
+                          <label class="custom-control-label" for="divisionChk5"
+                            >Women</label
+                          >
+                        </div>
+                        <div
+                          class="custom-control custom-checkbox custom-control-inline"
+                        >
+                          <input
+                            type="checkbox"
+                            class="custom-control-input"
+                            id="divisionChk6"
+                            name="divisionChk"
+                          />
+                          <label class="custom-control-label" for="divisionChk6"
+                            >Pro Men</label
+                          >
+                        </div>
+                        <div
+                          class="custom-control custom-checkbox custom-control-inline"
+                        >
+                          <input
+                            type="checkbox"
+                            class="custom-control-input"
+                            id="divisionChk7"
+                            name="divisionChk"
+                          />
+                          <label class="custom-control-label" for="divisionChk7"
+                            >Pro Women</label
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="col-12">
+                    <div class="table-responsive">
+                      <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th>Division</th>
+                            <th>Payout Type</th>
+                            <th>EGift Card Player Pack</th>
+                            <th>Max Players in Field</th>
+                            <th>Registration Cost</th>
+                            <th>Withhold</th>
+                            <th>Payout per Player</th>
+                            <th>Payout % of Field</th>
+                            <th>Layout</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="General hide">
+                            <td>
+                              <div class="checkbox">
+                                <div
+                                  class="custom-control custom-checkbox custom-control-inline"
+                                >
+                                  <input
+                                    type="checkbox"
+                                    class="custom-control-input"
+                                    id="chkit"
+                                    name="chkit"
+                                  />
+                                  <label
+                                    class="custom-control-label"
+                                    for="chkit"
+                                    >Advanced - General</label
+                                  >
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <select
+                                id="ddl_payout_type_1017"
+                                class="form-control input-sm width-100"
+                              >
+                                <option value="Infinite">Infinite</option>
+                                <option value="Cash">Cash</option>
+                              </select>
+                            </td>
+                            <td>
+                              <div class="input-group" style="width: 130px;">
+                                <span class="input-group-prepend">
+                                  <div class="input-group-text">
+                                    <div
+                                      class="custom-control custom-checkbox custom-control-inline"
+                                    >
+                                      <input
+                                        type="checkbox"
+                                        class="custom-control-input"
+                                        id="Chk"
+                                        name="Chk"
+                                      />
+                                      <label
+                                        class="custom-control-label"
+                                        for="Chk"
+                                      ></label>
+                                    </div>
+                                  </div>
+                                </span>
+                                <input
+                                  type="text"
+                                  class="form-control input-sm width-80 cal_po"
+                                  aria-label="..."
+                                  id="txt_gc_amount_1017"
+                                  data-prompt-position="bottomLeft:0,5"
+                                  placeholder="Amount"
+                                />
+                              </div>
+                            </td>
+                            <td>
+                              <input
+                                type="text"
+                                id="txt_players_1017"
+                                class="form-control input-sm width-100"
+                                data-prompt-position="bottomLeft:-15,5"
+                              />
+                            </td>
+                            <td>
+                              <input
+                                type="text"
+                                id="txt_amount_1017"
+                                class="form-control input-sm width-100 cal_po"
+                                data-prompt-position="bottomLeft:-15,5"
+                              />
+                            </td>
+                            <td>
+                              <input
+                                type="text"
+                                id="txt_charity_1017"
+                                class="form-control input-sm width-80 cal_po"
+                                data-prompt-position="bottomLeft:-15,5"
+                              />
+                            </td>
+                            <td>
+                              <input
+                                type="text"
+                                id="txt_payout_amount_1017"
+                                class="form-control input-sm width-100"
+                                data-prompt-position="bottomLeft:-15,5"
+                              />
+                            </td>
+                            <td>
+                              <select
+                                id="ddl_payout_percentage_1017"
+                                class="form-control input-sm width-100"
+                              >
+                                <option value="0.00">0%</option>
+                                <option value="10.00">10%</option>
+                                <option value="20.00">20%</option>
+                                <option value="30.00">30%</option>
+                                <option value="35.00">35%</option>
+                                <option value="40.00">40%</option>
+                                <option value="45.00">45%</option>
+                                <option value="50.00" selected>50%</option>
+                                <option value="55.00">55%</option>
+                                <option value="60.00">60%</option>
+                                <option value="70.00">70%</option>
+                                <option value="80.00">80%</option>
+                                <option value="90.00">90%</option>
+                                <option value="100.00">100%</option>
+                              </select>
+                            </td>
+                            <td>
+                              <button
+                                class="btn btn-success btn-sm btn_select_layout"
+                                type="button"
+                                id="btn_select_layout_1017"
+                              >
+                                Choose Layout
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </article>
+                </div>
+                <div class="row save_reset">
+                  <div class="col-md-4 offset-md-4">
+                    <button
+                      class="btn btn-success btn-block"
+                      type="button"
+                      id="btnSaveEvent"
+                    >
+                      <i class="fa fa-floppy-o"></i>&nbsp;Save
+                    </button>
+                    <button
+                      class="btn btn-default btn-block"
+                      type="button"
+                      id="btnCancelEvent"
+                    >
+                      <i class="fa fa-eraser"></i>&nbsp;Reset
+                    </button>
+                  </div>
+                </div>
+                <hr />
+                <div class="col-12">
+                  <div class="form-group form-inline float-right">
+                    <label for="srch" class="mr-1"> Search </label>
+                    <input class="form-control" type="text" id="srch" />
+                  </div>
+                  <div class="form-group form-inline float-left">
+                    <label for="chooze_records" class="mr-1">
+                      Record Per Page
+                    </label>
+                    <select class="form-control" id="chooze_records">
+                      <option value="10">10</option>
+                      <option value="25">25</option>
+                      <option value="50">50</option>
+                      <option value="100">100</option>
+                      <option value="200">200</option>
+                      <option value="all">all</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="table-responsive data_table">
+                  <table class="table table-bordered table-striped">
+                    <thead>
+                      <tr role="row">
+                        <th style="width: 80px;" tabindex="1">Action</th>
+                        <th class="sorting">Title</th>
+                        <th class="sorting">Type</th>
+                        <th class="sorting">Director</th>
+                        <th class="sorting">Date</th>
+                        <th class="sorting">Rounds</th>
+                        <th class="sorting">Players</th>
+                        <th class="sorting">Divisions</th>
+                        <th class="sorting">Funds Raised</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr role="row" class="odd">
+                        <td class="sorting_1">
+                          <button
+                            class="btn btn-default btn-sm btn_edt"
+                            type="button"
+                          >
+                            <i
+                              class="fas fa-edit"
+                              aria-hidden="true"
+                            ></i></button
+                          ><button
+                            class="btn btn-danger btn-sm btn_del"
+                            type="button"
+                          >
+                            <i
+                              class="fas fa-trash"
+                              aria-hidden="true"
+                            ></i></button
+                          ><button
+                            title="Calculate Positions"
+                            class="btn btn-info btn-sm btn_calc"
+                            type="button"
+                            id="btn_calc_5109"
+                          >
+                            <i
+                              class="fas fa-calculator"
+                              aria-hidden="true"
+                            ></i></button
+                          ><button
+                            title="Export Registrants"
+                            class="btn btn-success btn-sm btn_exp"
+                            type="button"
+                            id="btn_exp_5109"
+                          >
+                            <i class="fas fa-download" aria-hidden="true"></i>
+                          </button>
+                        </td>
+                        <td>Testing New Features | Don't Join It</td>
+                        <td>United States</td>
+                        <td>John Sena</td>
+                        <td>11/21/2018</td>
+                        <td>10</td>
+                        <td>50</td>
+                        <td>1</td>
+                        <td>
+                          <button
+                            class="btn btn-success btn-sm btn_payment_details"
+                            type="button"
+                            id="btn_payment_details_5109"
+                          >
+                            $0.00&nbsp;<i
+                              class="fa fa-search"
+                              aria-hidden="true"
+                            ></i>
+                          </button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <ul class="pagination justify-content-end">
+                  <li class="page-item">
+                    <a class="page-link" href="javascript:void(0);">Previous</a>
+                  </li>
+                  <li class="page-item active">
+                    <a class="page-link" href="javascript:void(0);">1</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="javascript:void(0);">2</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="javascript:void(0);">Next</a>
+                  </li>
+                </ul>
+              </form>
+            </div>
+
+            <div class="tab-pane fade" id="players">
+              <form action="">
+                <div class="col-12">
+                  <div class="form-group form-inline float-right">
+                    <label for="srch" class="mr-1"> Search </label>
+                    <input class="form-control" type="text" id="srch" />
+                  </div>
+                  <div class="form-group form-inline float-left">
+                    <label for="chooze_records" class="mr-1">
+                      Record Per Page
+                    </label>
+                    <select class="form-control" id="chooze_records">
+                      <option value="10">10</option>
+                      <option value="25">25</option>
+                      <option value="50">50</option>
+                      <option value="100">100</option>
+                      <option value="200">200</option>
+                      <option value="all">all</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="table-responsive data_table">
+                  <table class="table table-bordered table-striped">
+                    <thead>
+                      <tr role="row">
+                        <th class="sorting">Player</th>
+                        <th class="sorting">City</th>
+                        <th class="sorting">State</th>
+                        <th class="sorting">Postcode</th>
+                        <th class="sorting">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr role="row" class="odd">
+                        <td>"Talyn" Christopher Strum</td>
+                        <td>Williamsburg</td>
+                        <td>Verginia</td>
+                        <td>23185</td>
+                        <td>
+                          <button class="btn btn-success btn-sm" type="button">
+                            Add Player
+                          </button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <ul class="pagination justify-content-end">
+                  <li class="page-item">
+                    <a class="page-link" href="javascript:void(0);">Previous</a>
+                  </li>
+                  <li class="page-item active">
+                    <a class="page-link" href="javascript:void(0);">1</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="javascript:void(0);">2</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="javascript:void(0);">Next</a>
+                  </li>
+                </ul>
+                <div class="row">
+                  <article class="col-sm-6">
+                    <div class="form-group">
+                      <label for="ddlEvent2">Tournament:</label>
+                      <select id="ddlEvent2" class="form-control"
+                        ><option value="">Choose Tournament</option
+                        ><option value="5109"
+                          >Testing New Features | Don't Join It</option
+                        ></select
+                      >
+                    </div>
+                  </article>
+                  <article class="col-sm-6">
+                    <div class="form-group">
+                      <label for="ddlDivision2">Division:</label>
+                      <select id="ddlDivision2" class="form-control">
+                        <option value="">Choose Division</option>
+                      </select>
+                    </div>
+                  </article>
+                </div>
+                <hr />
+                <h3 class="form_heading">Registrant Info</h3>
+                <div class="row">
+                  <article class="col-sm-6">
+                    <div class="form-group">
+                      <label for="txt_player_name">Player Name:</label>
+                      <input
+                        type="text"
+                        id="txt_player_name"
+                        class="form-control"
+                      />
+                    </div>
+                  </article>
+                  <article class="col-sm-6">
+                    <div class="form-group">
+                      <label for="txt_player_email">Email Address:</label>
+                      <input
+                        type="text"
+                        id="txt_player_email"
+                        class="form-control validate[required,custom[email]]"
+                      />
+                    </div>
+                  </article>
+                  <article class="col-sm-12">
+                    <div class="form-group">
+                      <label for="txt_player_address">Addresss:</label>
+                      <input
+                        type="text"
+                        id="txt_player_address"
+                        class="form-control"
+                      />
+                    </div>
+                  </article>
+                  <article class="col-sm-6">
+                    <div class="form-group">
+                      <label for="txt_player_city">City:</label>
+                      <input
+                        type="text"
+                        id="txt_player_city"
+                        class="form-control"
+                      />
+                    </div>
+                  </article>
+                  <article class="col-sm-6">
+                    <div class="form-group" id="panelDDLstate">
+                      <label for="ddl_player_state">State:</label>
+                      <select
+                        name="ctl00$ContentPlaceHolder1$ddl_player_state"
+                        id="ddl_player_state"
+                        class="form-control"
+                      >
+                        <option value="">Choose Your State</option>
+                        <option value="Alabama">Alabama</option>
+                        <option value="Alaska">Alaska</option>
+                        <option value="Arizona">Arizona</option>
+                        <option value="Arkansas">Arkansas</option>
+                        <option value="California">California</option>
+                      </select>
+                    </div>
+                  </article>
+                  <article class="col-sm-6">
+                    <div class="form-group">
+                      <label for="txt_player_zip">Post Code:</label>
+                      <input
+                        type="text"
+                        id="txt_player_zip"
+                        class="form-control"
+                      />
+                    </div>
+                  </article>
+                  <article class="col-sm-6">
+                    <div class="form-group">
+                      <label for="ddl_player_country">Country:</label>
+                      <select
+                        name="ctl00$ContentPlaceHolder1$ddl_player_country"
+                        id="ddl_player_country"
+                        class="form-control"
+                      >
+                        <option value="">Choose Your Country</option>
+                        <option value="AUSTRALIA">AUSTRALIA</option>
+                        <option value="AUSTRIA">AUSTRIA</option>
+                        <option selected="selected" value="U.S.A">U.S.A</option>
+                      </select>
+                    </div>
+                  </article>
+                  <article class="col-sm-6">
+                    <div class="form-group">
+                      <label for="txt_player_pgda">PDGA No:</label>
+                      <input
+                        type="text"
+                        id="txt_player_pgda"
+                        class="form-control"
+                      />
+                    </div>
+                  </article>
+                  <article class="col-sm-6">
+                    <div class="form-group">
+                      <label for="txt_player_rating">PDGA Rating:</label>
+                      <input
+                        type="text"
+                        id="txt_player_rating"
+                        class="form-control"
+                      />
+                    </div>
+                  </article>
+                  <article class="col-sm-12">
+                    <div class="form-group">
+                      <label for="txtComment">Comment:</label>
+                      <input type="text" id="txtComment" class="form-control" />
+                    </div>
+                  </article>
+                  <article class="col-sm-4 offset-sm-4">
+                    <button
+                      class="btn btn-success btn-block"
+                      type="button"
+                      id="btnSavePlayer"
+                    >
+                      <i class="fa fa-floppy-o"></i>&nbsp;Save
+                    </button>
+                    <button
+                      class="btn btn-default btn-block"
+                      type="button"
+                      id="btnCancelPlayer"
+                    >
+                      <i class="fa fa-eraser"></i>&nbsp;Reset
+                    </button>
+                  </article>
+                </div>
+              </form>
+            </div>
+            <div class="tab-pane fade" id="registrants">
+              <form action="">
+                <h3 class="form_heading">Registrants List</h3>
+                <div class="row">
+                  <article class="col-sm-6">
+                    <div class="form-group">
+                      <label for="ddlEvent3">Tournament:</label>
+                      <select id="ddlEvent3" class="form-control"
+                        ><option value="">ALL</option
+                        ><option value="5109"
+                          >Testing New Features | Don't Join It</option
+                        ></select
+                      >
+                    </div>
+                  </article>
+                  <article class="col-sm-6">
+                    <div class="form-group">
+                      <label for="ddlDivision3">Division:</label>
+                      <select id="ddlDivision3" class="form-control">
+                        <option value="">All</option>
+                      </select>
+                    </div>
+                  </article>
+                  <article class="col-sm-3 offset-sm-3 mb-4">
+                    <button
+                      class="btn btn-info btn-block"
+                      type="button"
+                      id="btn_export_email_reg"
+                    >
+                      <i
+                        class="fas fa-external-link-square-alt"
+                        aria-hidden="true"
+                      ></i
+                      >&nbsp;Export Email List
+                    </button>
+                  </article>
+                  <article class="col-sm-3">
+                    <button
+                      class="btn btn-info btn-block"
+                      type="button"
+                      id="btn_reg_check_in"
+                    >
+                      <i class="fas fa-check-square" aria-hidden="true"></i
+                      >&nbsp;Online Check In
+                    </button>
+                  </article>
+                </div>
+                <div class="col-12">
+                  <div class="form-group form-inline float-right">
+                    <label for="srch" class="mr-1"> Search </label>
+                    <input class="form-control" type="text" id="srch" />
+                  </div>
+                  <div class="form-group form-inline float-left">
+                    <label for="chooze_records" class="mr-1">
+                      Record Per Page
+                    </label>
+                    <select class="form-control" id="chooze_records">
+                      <option value="10">10</option>
+                      <option value="25">25</option>
+                      <option value="50">50</option>
+                      <option value="100">100</option>
+                      <option value="200">200</option>
+                      <option value="all">all</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="table-responsive data_table">
+                  <table class="table table-bordered table-striped">
+                    <thead>
+                      <tr role="row">
+                        <th style="width: 80px;" tabindex="1">Action</th>
+                        <th class="sorting">Player</th>
+                        <th class="sorting">Email</th>
+                        <th class="sorting">Division</th>
+                        <th class="sorting">Event</th>
+                        <th class="sorting">Amount</th>
+                        <th class="sorting">Comment</th>
+                        <th class="sorting">Ad Ons</th>
+                        <th class="sorting">Admin Notes</th>
+                        <th class="sorting">Status</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr role="row" class="odd">
+                        <td class="sorting_1">
+                          <button
+                            class="btn btn-default btn-sm btn_edt"
+                            type="button"
+                          >
+                            <i
+                              class="fas fa-edit"
+                              aria-hidden="true"
+                            ></i></button
+                          ><button
+                            class="btn btn-danger btn-sm btn_del"
+                            type="button"
+                          >
+                            <i class="fas fa-trash" aria-hidden="true"></i>
+                          </button>
+                        </td>
+                        <td>farhan 1</td>
+                        <td>farhan12@gmail.com</td>
+                        <td>Open</td>
+                        <td>Testing New Features | Don't Join It</td>
+                        <td>50.00</td>
+                        <td>N/A</td>
+                        <td>-</td>
+                        <td>N/A</td>
+                        <td>Paid</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <ul class="pagination justify-content-end">
+                  <li class="page-item">
+                    <a class="page-link" href="javascript:void(0);">Previous</a>
+                  </li>
+                  <li class="page-item active">
+                    <a class="page-link" href="javascript:void(0);">1</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="javascript:void(0);">2</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="javascript:void(0);">Next</a>
+                  </li>
+                </ul>
+              </form>
+            </div>
+            <div class="tab-pane active" id="scores">
+              <form action="">
+                <div class="row">
+                  <article class="col-sm-4">
+                    <div class="form-group">
+                      <label for="ddlEvent">Tournament:</label>
+                      <select
+                        name="ctl00$ContentPlaceHolder1$ddlEvent"
+                        id="ddlEvent"
+                        class="form-control validate[required]"
+                        ><option value="">Choose Tournament</option
+                        ><option value="5109-10"
+                          >Testing New Features | Don't Join It</option
+                        ></select
+                      >
+                    </div>
+                  </article>
+                  <article class="col-sm-4">
+                    <div class="form-group">
+                      <label for="ddlDivision">Division:</label>
+                      <select
+                        name="ctl00$ContentPlaceHolder1$ddlDivision"
+                        id="ddlDivision"
+                        class="form-control"
+                      >
+                        <option value="">Choose Division</option>
+                      </select>
+                    </div>
+                  </article>
+                  <article class="col-sm-4">
+                    <div class="form-group">
+                      <label for="ddlRound">Round:</label>
+                      <select
+                        name="ctl00$ContentPlaceHolder1$ddlRound"
+                        id="ddlRound"
+                        class="form-control validate[required]"
+                      >
+                        <option value="">Choose Round</option>
+                      </select>
+                    </div>
+                  </article>
+                  <article class="col-sm-12">
+                    <div
+                      id="dvPlayers"
+                      class="form-group validationEngineContainer"
+                    >
+                      <h3>Registrants</h3>
+                      <div class="col-12">
+                          <div class="form-group form-inline float-right">
+                            <label for="srch" class="mr-1"> Search </label>
+                            <input class="form-control" type="text" id="srch" />
+                          </div>
+                        </div>
+                      <div class="table-responsive">
+                        <table
+                          class="table table-bordered table-striped table-condensed"
+                          id="playersList"
+                          style="width:100%;min-width:1000px;"
+                        >
+                          <thead>
+                            <tr>
+                              <th style="width: 35%;" rowspan="2">Player</th>
+                              <th style="width: 25%;" rowspan="2">Division</th>
+                              <th style="width: 20%;" rowspan="2">Score</th>
+                              <th
+                                style="width: 20%; text-align: center;"
+                                colspan="2"
+                              >
+                                Verification
+                              </th>
+                            </tr>
+                            <tr>
+                              <th>Player</th>
+                              <th>TD</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Farhan</td>
+                              <td>Open</td>
+                              <td>
+                                <input
+                                  class="form-control"
+                                  type="text"
+                                  value="23.00"
+                                />
+                              </td>
+                              <td>
+                                <label class="badge badge-success">V</label>
+                              </td>
+                              <td>
+                                <div
+                                  class="custom-control custom-checkbox custom-control-inline"
+                                >
+                                  <input
+                                    type="checkbox"
+                                    class="custom-control-input"
+                                    id="verify"
+                                    name="varify"
+                                  />
+                                  <label
+                                    class="custom-control-label"
+                                    for="verify"
+                                  ></label>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                          <tfoot>
+                            <tr>
+                              <td colspan="5" style="text-align: right">
+                                <button
+                                  type="button"
+                                  class="btn btn-link btn-xs"
+                                >
+                                  Verify All
+                                </button>
+                              </td>
+                            </tr>
+                          </tfoot>
+                        </table>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="col-sm-4 offset-sm-4">
+                    <button
+                      class="btn btn-success btn-block"
+                      type="button"
+                      id="btnSubmitScore"
+                    >
+                      <i class="fa fa-paper-plane" aria-hidden="true"></i
+                      >&nbsp;Submit Score
+                    </button>
+                    <button
+                      class="btn btn-default btn-block"
+                      type="button"
+                      id="btnCancelScore"
+                    >
+                      <i class="fa fa-eraser"></i>&nbsp;Reset
+                    </button>
+                  </article>
+                </div>
+                <hr />
+                <div class="row">
+                  <div class="col-12">
+                    <div class="form-group form-inline float-right">
+                      <label for="srch" class="mr-1"> Search </label>
+                      <input class="form-control" type="text" id="srch" />
+                    </div>
+                    <div class="form-group form-inline float-left">
+                      <label for="chooze_records" class="mr-1">
+                        Record Per Page
+                      </label>
+                      <select class="form-control" id="chooze_records">
+                        <option value="10">10</option>
+                        <option value="25">25</option>
+                        <option value="50">50</option>
+                        <option value="100">100</option>
+                        <option value="200">200</option>
+                        <option value="all">all</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="table-responsive">
+                    <div class="col-12">
+                      <table
+                        class="table table-bordered table-hover table-striped data_table"
+                        id="tblScores""
+                        aria-describedby="tblScores_info"
+                        style="width:100%; min-width:1100px"
+                      >
+                        <thead>
+                          <tr role="row">
+                            <th
+                              class="sorting"
+                              tabindex="0"
+                              aria-controls="tblScores"
+                              aria-label="Action: activate to sort column ascending"
+                            >
+                              Action
+                            </th>
+                            <th
+                              class="sorting"
+                              aria-controls="tblScores"
+                              aria-label="Player: activate to sort column ascending"
+                            >
+                              Player
+                            </th>
+                            <th
+                              class="sorting"
+                              aria-controls="tblScores"
+                              aria-label="Tournament: activate to sort column ascending"
+                            >
+                              Tournament
+                            </th>
+                            <th
+                              class="sorting"
+                              aria-controls="tblScores"
+                              aria-label="Round: activate to sort column ascending"
+                            >
+                              Round
+                            </th>
+                            <th
+                              aria-controls="tblScores"
+                              aria-sort="descending"
+                            >
+                              Score
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr role="row" class="odd">
+                            <td>
+                              <button
+                                class="btn btn-default btn-sm"
+                                type="button"
+                              >
+                                <i
+                                  class="fas fa-edit"
+                                  aria-hidden="true"
+                                ></i>
+                              </button>
+                              <button
+                                class="btn btn-danger btn-sm btn_del_scr"
+                                type="button"
+                                id="btn_del_scr_27515"
+                              >
+                                <i class="fas fa-trash" aria-hidden="true"></i>
+                              </button>
+                            </td>
+                            <td>hassan</td>
+                            <td>Testing New Features | Don't Join It</td>
+                            <td>Round 10</td>
+                            <td class="sorting_1">26.00</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <ul class="pagination justify-content-end">
+                  <li class="page-item">
+                    <a class="page-link" href="javascript:void(0);">Previous</a>
+                  </li>
+                  <li class="page-item active">
+                    <a class="page-link" href="javascript:void(0);">1</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="javascript:void(0);">2</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="javascript:void(0);">Next</a>
+                  </li>
+                </ul>
+              </form>
+            </div>
+            <div class="tab-pane fade" id="payout">
+              <h3 class="form_heading mt-4">Tournaments List</h3>
+              <form action="">
+                <div class="col-12">
+                  <div class="form-group form-inline float-right">
+                    <label for="srch" class="mr-1"> Search </label>
+                    <input class="form-control" type="text" id="srch" />
+                  </div>
+                  <div class="form-group form-inline float-left">
+                    <label for="chooze_records" class="mr-1">
+                      Record Per Page
+                    </label>
+                    <select class="form-control" id="chooze_records">
+                      <option value="10">10</option>
+                      <option value="25">25</option>
+                      <option value="50">50</option>
+                      <option value="100">100</option>
+                      <option value="200">200</option>
+                      <option value="all">all</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="table-responsive data_table">
+                  <table class="table table-bordered table-striped">
+                    <thead>
+                      <tr role="row">
+                        <th style="width: 80px;" tabindex="1">Action</th>
+                        <th class="sorting">Title</th>
+                        <th class="sorting">Type</th>
+                        <th class="sorting">Direction</th>
+                        <th class="sorting">Date</th>
+                        <th class="sorting">Round</th>
+                        <th class="sorting">Divisions</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr role="row" class="odd">
+                        <td class="sorting_1">
+                          <button class="btn btn-success py-0" type="button">
+                            <i class="fas fa-money-bill-alt"></i>
+                          </button>
+                        </td>
+                        <td>Testing New Features | Don't Join It</td>
+                        <td>United States</td>
+                        <td>John Sena</td>
+                        <td>11/21/2018</td>
+                        <td>10</td>
+                        <td>1</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <ul class="pagination justify-content-end">
+                  <li class="page-item">
+                    <a class="page-link" href="javascript:void(0);">Previous</a>
+                  </li>
+                  <li class="page-item active">
+                    <a class="page-link" href="javascript:void(0);">1</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="javascript:void(0);">2</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="javascript:void(0);">Next</a>
+                  </li>
+                </ul>
+              </form>
+            </div>
+            <div class="tab-pane fade" id="settings">
+              <div class="row">
+                <article class="col-sm-6">
+                  <div class="form-group">
+                    <label for="collection_method">Collection Method:</label>
+                    <select id="collection_method" class="form-control">
+                      <option value="">Choose Method</option>
+                      <option value="PayPal">PayPal</option>
+                      <option value="Infinite">Infinite Collects</option>
+                    </select>
+                  </div>
+                </article>
+                <article class="col-sm-6" id="dv_paypal_2">
+                  <div class="form-group">
+                    <label for="txt_paypal_account_2">PayPal Account:</label>
+                    <input
+                      type="text"
+                      id="txt_paypal_account_2"
+                      class="form-control"
+                    />
+                  </div>
+                </article>
+              </div>
+              <div class="row">
+                <article class="col-sm-6">
+                  <div class="form-group">
+                    <label for="ddl_method">Paid By:</label>
+                    <select id="ddl_method" class="form-control">
+                      <option value="">Choose Method</option>
+                      <option value="2">PayPal</option>
+                      <option value="1">Check</option>
+                    </select>
+                  </div>
+                </article>
+                <article class="col-sm-6 hide" id="dv_paypal">
+                  <div class="form-group">
+                    <label for="txt_paypal_account">PayPal Account:</label>
+                    <input
+                      type="text"
+                      id="txt_paypal_account"
+                      class="form-control"
+                    />
+                  </div>
+                </article>
+              </div>
+              <div class="row" id="dv_check">
+                <article class="col-sm-3">
+                  <div class="form-group">
+                    <label for="txt_first_name">First Name:</label>
+                    <input
+                      type="text"
+                      id="txt_first_name"
+                      class="form-control"
+                    />
+                  </div>
+                </article>
+                <article class="col-sm-3">
+                  <div class="form-group">
+                    <label for="txt_last_name">Last Name:</label>
+                    <input
+                      type="text"
+                      id="txt_last_name"
+                      class="form-control"
+                    />
+                  </div>
+                </article>
+                <article class="col-sm-6">
+                  <div class="form-group">
+                    <label for="txt_address">Address:</label>
+                    <input type="text" id="txt_address" class="form-control" />
+                  </div>
+                </article>
+                <article class="col-sm-3">
+                  <div class="form-group">
+                    <label for="txt_city">City:</label>
+                    <input type="text" id="txt_city" class="form-control" />
+                  </div>
+                </article>
+                <article class="col-sm-3">
+                  <div class="form-group">
+                    <label for="txt_state">State:</label>
+                    <input type="text" id="txt_state" class="form-control" />
+                  </div>
+                </article>
+                <article class="col-sm-3">
+                  <div class="form-group">
+                    <label for="txt_country">Country:</label>
+                    <input type="text" id="txt_country" class="form-control" />
+                  </div>
+                </article>
+                <article class="col-sm-3">
+                  <div class="form-group">
+                    <label for="txt_postcode">Postcode:</label>
+                    <input type="text" id="txt_postcode" class="form-control" />
+                  </div>
+                </article>
+              </div>
+              <div class="row">
+                <article class="col-sm-4 offset-sm-4 mt-2">
+                  <button
+                    class="btn btn-success btn-block"
+                    type="button"
+                    id="btnSaveSettings"
+                  >
+                    <i class="fa fa-floppy-o"></i>&nbsp;Save
+                  </button>
+                  <button
+                    class="btn btn-default btn-block"
+                    type="button"
+                    id="btnCancelSettings"
+                  >
+                    <i class="fa fa-eraser"></i>&nbsp;Reset
+                  </button>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8">
+              <div class="brandz">
+                <div class="row">
+                  <div class="cols">
+                    <a href="#">
+                      <img class="img-fluid" src="assets/images/f1.png" alt="" />
+                    </a>
+                  </div>
+                  <div class="cols">
+                    <a href="#">
+                      <img class="img-fluid" src="assets/images/f2.png" alt="" />
+                    </a>
+                  </div>
+                  <div class="cols">
+                    <a href="#">
+                      <img class="img-fluid" src="assets/images/f3.png" alt="" />
+                    </a>
+                  </div>
+                  <div class="cols">
+                    <a href="#">
+                      <img class="img-fluid" src="assets/images/f4.png" alt="" />
+                    </a>
+                  </div>
+                  <div class="cols">
+                    <a href="#">
+                      <img class="img-fluid" src="assets/images/f5.png" alt="" />
+                    </a>
+                  </div>
+                  <div class="cols">
+                    <a href="#">
+                      <img class="img-fluid" src="assets/images/f6.png" alt="" />
+                    </a>
+                  </div>
+                  <div class="cols">
+                    <a href="#">
+                      <img class="img-fluid" src="assets/images/f7.png" alt="" />
+                    </a>
+                  </div>
+                  <div class="cols">
+                    <a href="#">
+                      <img class="img-fluid" src="assets/images/f8.png" alt="" />
+                    </a>
+                  </div>
+                  <div class="cols">
+                    <a href="#">
+                      <img class="img-fluid" src="assets/images/f9.png" alt="" />
+                    </a>
+                  </div>
+                  <div class="cols">
+                    <a href="#">
+                      <img class="img-fluid" src="assets/images/f10.png" alt="" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 text-center">
+              <ul class="social_links">
+                <li>
+                  <a class="fb" href="#"> <i class="fab fa-facebook-f"></i> </a>
+                </li>
+                <li>
+                  <a class="twt" href="#"> <i class="fab fa-twitter"></i> </a>
+                </li>
+                <li>
+                  <a class="yt" href="#"> <i class="fab fa-youtube"></i> </a>
+                </li>
+                <li>
+                  <a class="insta" href="#"> <i class="fab fa-instagram"></i> </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <p class="copyright">&copy; 2018 Next Generation Disc Golf, LLC</p>
+        </div>
+      </footer>
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/jqueryui.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/bootstrapbundle.js"></script>
+    <script src="assets/js/uikit.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $("#tmntDate").datepicker();
+
+          $("#tmntEndDate").datepicker();
+
+          $("#regStartDate").datepicker();
+
+          $("#regEndDate").datepicker();
+
+          $("#late").datepicker();
+        });
+        $(".btn-toggle").click(function() {
+          $(".navigation > ul").slideToggle();
+        });
+      });
+    </script>
+  </body>
+</html>

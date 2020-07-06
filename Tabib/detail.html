@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home | Tabeeb</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/owl.css" />
+    <link rel="stylesheet" href="assets/css/jqueryui.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.css" />
+    <link rel="stylesheet" href="assets/css/master.css" />
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-xl">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/images/logo.png" alt="logo">
+        </a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navigation">
+          <i class="fal fa-bars"></i>
+        </button>
+      
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="navigation">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Find a Doctor</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Online Consultations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Hospitals</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Blog</a>
+            </li> 
+          </ul>
+        </div>
+        <div class="profile-section">
+          <a href="#">
+            <div class="profile-img-circle">
+              <img src="assets/images/doc.jpg" class="img-fluid" alt="profile">
+            </div>
+            <h5 class="pname">Bilal Ahmed <i class="fas fa-angle-down"></i></h5>
+          </a>
+          <div class="dropdown-menu">
+            <ul>
+              <li>
+                <a href="#"><i class="far fa-user"></i> Profile Settings</a>
+              </li>
+              <li>
+                <a href="#"><i class="far fa-calendar-check"></i> Appointments</a>
+              </li>
+              <li>
+                <a href="#"><i class="far fa-heart"></i> Favorite Listing</a>
+              </li>
+              <li>
+                <a href="#"><i class="far fa-envelope"></i> Private Messages</a>
+              </li>
+              <li>
+                <a href="#"><i class="far fa-sign-out-alt"></i> Logout</a>
+              </li>
+            </ul>
+          </div>
+        </div> 
+      </div>
+    </nav>
+    <section class="details">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="doctor">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="picture">
+                    <img src="assets/images/doc2.jpg" class="img-fluid" alt="picture">
+                  </div>
+                  <div class="share">
+                    <p>Share on: <a href="#"><img src="assets/images/facebook.svg" alt=""></a> <a href="#"><img src="assets/images/twitter.svg" alt=""></a></p>
+                  </div>
+                </div>
+                <div class="col-md-9">
+                  <div class="bio">
+                    <div class="name-info">
+                      <div class="appoint">
+                        <button class="btn btn-primary">Make an Appointment</button>
+                      </div>
+                      <h4>Dr. Aslam Rasheed</h4>
+                      <p>Neurosurgeon and Brain Specialist</p>
+                      <div class="fee">
+                        <img src="assets/images/fees red.png" alt="fee_hand">
+                        <h3>Rs. 2000 - Rs. 3000</h3>
+                      </div>
+                    </div> 
+                    <div class="rating">
+                      <ul>
+                        <li>
+                          <div class="checkbox">
+                            <label><input type="checkbox" class="hidden favorite"/><i class="far fa-heart"></i></label>
+                          </div>
+                        </li>
+                        <li>
+                          <i class="fas fa-star yellow"></i>
+                          <i class="fas fa-star yellow"></i>
+                          <i class="fas fa-star yellow"></i>
+                          <i class="fas fa-star yellow"></i>
+                          <i class="fas fa-star"></i>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="description">
+                      <p>Consectetur adipisicing fighb elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo conequats aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
+                      <div id="bio" class="collapse">
+                        <p>Consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo conequats aute irure dolor in reprehenderit in voluptate velit esse cillum Consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo conequats aute irure dolor in reprehenderit in voluptate velit esse cillum Consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo conequats aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
+                      </div>
+                      <button data-toggle="collapse" data-target="#bio" class="description-btn">Read more</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <ul class="nav nav-pills">
+                    <li class="nav-item">
+                      <a class="nav-link active" data-toggle="pill" href="#overview">Overview</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" data-toggle="pill" href="#map">Map</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" data-toggle="pill" href="#reviews">Reviews</a>
+                    </li>
+                  </ul>
+                  <div class="tab-content">
+                    <div class="tab-pane container active" id="overview">
+                      <div class="overview">
+                        <div class="feature-box">
+                          <div class="icon-title">
+                            <h3> <i class="far fa-star"></i> Specializations</h3>
+                          </div>
+                          <ul class="features-list ulist">
+                            <li>Consectetu temporr adipisicing</li>
+                            <li>Eiusmod tempor iidunt</li>
+                            <li>Laborei dolore magna</li>
+                            <li>Aminim aicing elit </li>
+                            <li>Eiusmod tempor iidunt </li>
+                            <li>Tempor incididunt </li>
+                            <li>Dolore magna aliqua</li>
+                            <li>Ut enim ad minim </li>
+                            <li>Veniam quis nostrud</li>
+                            <li>Exercitation ullamco</li>
+                            <li>Commodo consequat</li>
+                            <li>Duis aute irureation </li>
+                            <li>Dolor in reprehenderit</li>
+                          </ul>
+                        </div>
+                        <div class="feature-box">
+                          <div class="icon-title">
+                            <h3><i class="fab fa-wpforms"></i> Experience</h3>
+                          </div>
+                          <ul class="features-list">
+                            <li>
+                              <span>June 2015 - Present</span>
+                              <h5>Senior Consultant</h5>
+                              <p>Altrincham Group Of Company</p>
+                            </li>
+                            <li>
+                              <span>Sep 2013 - Sep 2014</span>
+                              <h5>Senior Therapist</h5>
+                              <p>Sydney Trust Hospital</p>
+                            </li>
+                            <li>
+                              <span>Apr 2012 - Apr 2013</span>
+                              <h5>Jr. Osteopathic</h5>
+                              <p>Altrincham Group Company</p>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="feature-box">
+                          <div class="icon-title">
+                            <h3><i class="fal fa-graduation-cap"></i> Education</h3>
+                          </div>
+                          <ul class="features-list">
+                            <li>
+                              <span>June 2015 - Present</span>
+                              <h5>Doctor of Pharmacy</h5>
+                              <p>Manchester University</p>
+                            </li>
+                            <li>
+                              <span>May 2011 - May 2012</span>
+                              <h5>Doctor of Physical Therapy</h5>
+                              <p>Sydney College Of Health</p>
+                            </li>
+                            <li>
+                              <span>Apr 2012 - Apr 2013</span>
+                              <h5>Doctor of Pharmacy</h5>
+                              <p>Manchester University</p>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="feature-box">
+                          <div class="icon-title">
+                            <h3><i class="fal fa-language"></i> Languages</h3>
+                          </div>
+                          <ul class="features-list ulist">
+                            <li>English</li>
+                            <li>Arabic</li>
+                            <li>Russian</li>
+                            <li>Chinese</li>
+                            <li>Portuguese</li>
+                            <li>Japanese</li>
+                            <li>Spanish</li>
+                          </ul>
+                        </div>
+                        <div class="feature-box">
+                          <div class="icon-title">
+                            <h3><i class="far fa-trophy"></i> Awards & Recognitions</h3>
+                          </div>
+                          <ul class="features-list">
+                            <li>
+                              <span>June 2013</span>
+                              <h5>Best Paper Presentation</h5>
+                              <p>Manchester University</p>
+                            </li>
+                            <li>
+                              <span>May 2012</span>
+                              <h5>Best Young Dentist Award</h5>
+                              <p>Sydney College Of Health</p>
+                            </li>
+                            <li>
+                              <span>Apr 2011</span>
+                              <h5>Fellowship and Certification</h5>
+                              <p>Manchester University</p>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane container fade" id="map">
+                      <h3 class="h3">Available Location</h3>
+                      <div class="map-frame">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1701.4523826010447!2d74.25942717933327!3d31.471805833370684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919022c4aea8931%3A0xb0d8d78296b500e4!2sMughal+Eye+Hospital!5e0!3m2!1sen!2s!4v1553541470099" frameborder="0" style="border:0" allowfullscreen></iframe>
+                      </div>
+                    </div>
+                    <div class="tab-pane container fade" id="reviews">
+                      <div class="reviews">
+                        <h3 class="h3"><i class="far fa-star"></i> Review & Rating</h3>
+                        <hr>
+                        <ul class="commentlist">
+                          <li class="review-holder">
+                            <div class="review">
+                              <div class="img-holder">
+                                <img src="assets/images/doc.jpg" class="img-fluid" alt="pic">
+                              </div>
+                              <div class="comment">
+                                <a class="name" href="#">Adel Alsaeed</a>
+                                <span class="date">Date :  <a href="#" class="text-main-color">July 15, 2016</a></span>
+                                <div class="rating">
+                                  <ul>
+                                    <li>
+                                      <i class="fas fa-star yellow"></i>
+                                      <i class="fas fa-star yellow"></i>
+                                      <i class="fas fa-star yellow"></i>
+                                      <i class="fas fa-star yellow"></i>
+                                      <i class="fas fa-star"></i>
+                                    </li>
+                                  </ul>
+                                </div>
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+                              </div>
+                            </div>
+                            <div class="review review-reply">
+                              <div class="img-holder">
+                                <img src="assets/images/doc2.jpg" class="img-fluid" alt="pic">
+                              </div>
+                              <div class="comment">
+                                <a class="name" href="#">Dr. Aslam Rasheed</a>
+                                <span class="date">Date :  <a href="#" class="text-main-color">July 15, 2016</a></span>
+                                <div class="rating">
+                                  <ul>
+                                    <li>
+                                      <i class="fas fa-star yellow"></i>
+                                      <i class="fas fa-star yellow"></i>
+                                      <i class="fas fa-star yellow"></i>
+                                      <i class="fas fa-star yellow"></i>
+                                      <i class="fas fa-star"></i>
+                                    </li>
+                                  </ul>
+                                </div>
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="review-holder">
+                            <div class="review">
+                              <div class="img-holder">
+                                <img src="assets/images/doc.jpg" class="img-fluid" alt="pic">
+                              </div>
+                              <div class="comment">
+                                <a class="name" href="#">Adel Alsaeed</a>
+                                <span class="date">Date :  <a href="#" class="text-main-color">July 15, 2016</a></span>
+                                <div class="rating">
+                                  <ul>
+                                    <li>
+                                      <i class="fas fa-star yellow"></i>
+                                      <i class="fas fa-star yellow"></i>
+                                      <i class="fas fa-star yellow"></i>
+                                      <i class="fas fa-star yellow"></i>
+                                      <i class="fas fa-star"></i>
+                                    </li>
+                                  </ul>
+                                </div>
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="review-holder">
+                            <div class="review">
+                              <div class="img-holder">
+                                <img src="assets/images/doc.jpg" class="img-fluid" alt="pic">
+                              </div>
+                              <div class="comment">
+                                <a class="name" href="#">Adel Alsaeed</a>
+                                <span class="date">Date :  <a href="#" class="text-main-color">July 15, 2016</a></span>
+                                <div class="rating">
+                                  <ul>
+                                    <li>
+                                      <i class="fas fa-star yellow"></i>
+                                      <i class="fas fa-star yellow"></i>
+                                      <i class="fas fa-star yellow"></i>
+                                      <i class="fas fa-star yellow"></i>
+                                      <i class="fas fa-star"></i>
+                                    </li>
+                                  </ul>
+                                </div>
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                        <div class="padding-30px background-white">
+                          <h3 class="h3"><i class="far fa-star margin-right-10px text-main-color"></i> Add Review </h3>
+                          <hr>
+                          <div class="add-review-form">
+                            <div class="form-row">
+                              <div class="form-group col-md-6">
+                                <input type="text" class="form-control" placeholder="Name">
+                              </div>
+                              <div class="form-group col-md-6">
+                                <input type="email" class="form-control" placeholder="Email">
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <textarea class="form-control" id="textarea" rows="4" placeholder="Comment"></textarea>
+                            </div>
+                            <div class="recommend">
+                              <p>Recommend this Doctor</p>
+                              <div class="form-check-inline">
+                                <label class="form-check-label">
+                                  <input type="radio" class="form-check-input hidden rec" name="optrad"><i class="far fa-thumbs-up"></i>
+                                </label>
+                              </div>
+                              <div class="form-check-inline">
+                                <label class="form-check-label">
+                                  <input type="radio" class="form-check-input hidden notrec" name="optrad"><i class="far fa-thumbs-down"></i>
+                                </label>
+                              </div>
+                            </div>
+                            <a href="#" class="btn btn-primary">Add Review</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="work-box">
+              <h3> <i class="far fa-clock margin-right-10px"></i> Work Time</h3>
+              <ul>
+                <li>Monday <span class="float-right">10:00 AM - 5:00 PM</span></li>
+                <li>Tuesday <span class="float-right">10:00 AM - 5:00 PM</span></li>
+                <li>Wednesday <span class="float-right">10:00 AM - 5:00 PM</span></li>
+                <li>Thursday <span class="float-right">10:00 AM - 5:00 PM</span></li>
+                <li>Friday <span class="float-right">10:00 AM - 5:00 PM</span></li>
+                <li>Saturday <span class="float-right">10:00 AM - 5:00 PM</span></li>
+                <li>Sunday <span class="float-right">Closed</span></li>
+              </ul>
+            </div>
+            <h2 class="hh">Related Professional</h2>
+            <ul class="related-professionals">
+              <li>
+                <a href="#">
+                  <div class="img-box">
+                    <img src="assets/images/doc2.jpg" class="img-fluid" alt="pic">
+                  </div>
+                  <div class="text">
+                    <h5>Dr. Akbar Ghazi</h5>
+                    <p>Heart Specialist and Lungs Sergion</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="img-box">
+                    <img src="assets/images/doc.jpg" class="img-fluid" alt="pic">
+                  </div>
+                  <div class="text">
+                    <h5>Dr. Akbar Ghazi</h5>
+                    <p>Heart Specialist and Lungs Sergion</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="img-box">
+                    <img src="assets/images/doc2.jpg" class="img-fluid" alt="pic">
+                  </div>
+                  <div class="text">
+                    <h5>Dr. Akbar Ghazi</h5>
+                    <p>Heart Specialist and Lungs Sergion</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="img-box">
+                    <img src="assets/images/doc.jpg" class="img-fluid" alt="pic">
+                  </div>
+                  <div class="text">
+                    <h5>Dr. Akbar Ghazi</h5>
+                    <p>Heart Specialist and Lungs Sergion</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="content leftin">
+              <h1>Quick Links</h1>
+              <ul class="links">
+                <li>
+                  <a href="#"><i class="fas fa-angle-right"></i> Find a Doctor</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-angle-right"></i> Join as Doctor</a>
+                </li>
+                <li>
+                  <a href="#"> <i class="fas fa-angle-right"></i> Online Consultations</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-angle-right"></i> Hospitals</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-angle-right"></i> About Us</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-angle-right"></i> Forum</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-angle-right"></i> Our Blogs</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-angle-right"></i> Contact Us</a>
+                </li>
+              </ul>
+            </div> 
+          </div>
+          <div class="col-lg-4">
+            <div class="content">
+              <h1 class="leftin">Facebook Feeds</h1>
+              <ul class="feeds fadeup-c">
+                <li>
+                  <a href="#">
+                    <div class="img">
+                      <img src="assets/images/doc.jpg" class="img-fluid" alt="doc">
+                    </div>
+                    <h2>Dr. Steve Northrop</h2>
+                    <p>MDS - Paedodontics & Preventive Dentistry</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="img">
+                      <img src="assets/images/doc.jpg" class="img-fluid" alt="doc">
+                    </div>
+                    <h2>Dr. Steve Northrop</h2>
+                    <p>MDS - Paedodontics & Preventive Dentistry</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="img">
+                      <img src="assets/images/doc.jpg" class="img-fluid" alt="doc">
+                    </div>
+                    <h2>Dr. Steve Northrop</h2>
+                    <p>MDS - Paedodontics & Preventive Dentistry</p>
+                  </a>
+                </li>
+                <a href="#" class="link">view more</a>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="content">
+              <h1 class="leftin">Twitter Feeds</h1>
+              <ul class="feeds fadeup-d">
+                <li>
+                  <a href="#">
+                    <div class="img">
+                      <img src="assets/images/doc.jpg" class="img-fluid" alt="doc">
+                    </div>
+                    <h2>Dr. Steve Northrop</h2>
+                    <p>MDS - Paedodontics & Preventive Dentistry</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="img">
+                      <img src="assets/images/doc.jpg" class="img-fluid" alt="doc">
+                    </div>
+                    <h2>Dr. Steve Northrop</h2>
+                    <p>MDS - Paedodontics & Preventive Dentistry</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="img">
+                      <img src="assets/images/doc.jpg" class="img-fluid" alt="doc">
+                    </div>
+                    <h2>Dr. Steve Northrop</h2>
+                    <p>MDS - Paedodontics & Preventive Dentistry</p>
+                  </a>
+                </li>
+                <a href="#" class="link">view more</a>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="copy">
+      <div class="container">
+        <div class="col-12">
+          <p>&copy; Tabib 2019 - 2020 All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+    <div class="call-us">
+      <a href="tel:03224311887">
+        <div class="phone-holder">
+          <img src="assets/images/call.svg" alt="call">
+          <p>Call Us</p>
+        </div>
+      </a>
+    </div>
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/bootstrapbundle.js"></script>
+    <script src="assets/js/owl.js"></script>
+    <script src="assets/js/nicescroll.js"></script>
+    <script src="assets/js/jqueryui.js"></script>
+    <script src="assets/js/custom.js"></script>
+  
+    <script>
+      jQuery(document).ready(function() {
+        $("body").niceScroll({
+          cursorcolor: "#007cff",
+          cursorwidth: "12px",
+          cursorborderradius: "0px",
+          cursorborder: "0px solid transparent",
+          hidecursordelay: 1000, 
+          autohidemode: false,
+          scrollspeed: 120
+          // bouncescroll: true
+        });
+        // $("body").getNiceScroll(0).doScrollTop(y, 10000);
+        $('.navbar-toggler').click(function(){
+          $('.nav-btns').slideToggle(200);
+        });
+        
+        $(".favorite").click(function() {
+          if ($(this).is(":checked")) {
+            $(".fa-heart")
+              .removeClass("far")
+              .addClass("fas");
+          } else {
+            $(".fa-heart")
+              .removeClass("fas")
+              .addClass("far");
+          }
+        });
+        // recommend Checks
+        $(".rec").click(function() {
+          if ($(this).is(":checked")) {
+            $(".fa-thumbs-up")
+              .removeClass("far")
+              .addClass("fas");
+            $(".fa-thumbs-down")
+              .removeClass("fas")
+              .addClass("far");
+          }
+        });
+        $(".notrec").click(function() {
+          if ($(this).is(":checked")) {
+            $(".fa-thumbs-down")
+              .removeClass("far")
+              .addClass("fas");
+            $(".fa-thumbs-up")
+              .removeClass("fas")
+              .addClass("far");
+          }
+        });
+        // recommend Checks End
+        
+        $('[data-toggle="tooltip"]').tooltip();   
+      
+      });
+      $(function () {
+        $(document).scroll(function () {
+          var $nav = $(".navbar");
+          $nav.toggleClass('scrolled', $(this).scrollTop() > 1 );
+        });
+
+        $('.description-btn').on('click', function(){
+            $(this).html() == "Read more" ? $(this).html('Read less') : $(this).html('Read more');
+        });
+
+        
+      });
+    </script>
+  </body>
+</html>

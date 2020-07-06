@@ -1,0 +1,129 @@
+$blue:#00ace7;
+$darkblue:#0074a8;
+$lightblue:#00ace7;
+$yellow:#d6d800;
+$text:#586975;
+.gradient_bg
+{
+  background: linear-gradient(to bottom, $darkblue 0%, $lightblue 100%)!important;
+}
+@font-face {
+  font-family: telenor;
+  src: url('fonts/telenor.otf');
+}
+@font-face {
+  font-family: tlight;
+  src: url('fonts/tlight.otf');
+}
+@font-face {
+  font-family: tbold;
+  src: url('fonts/tbold.otf');
+}
+@font-face {
+  font-family: source;
+  src: url('fonts/source.ttf');
+}
+@font-face {
+  font-family: slight;
+  src: url('fonts/slight.ttf');
+}
+
+@media (max-width:420px)
+{
+  .col-xs-12
+  {
+    max-width: 100% !important;
+    flex: 0 0 100%;
+  }
+}
+h1, h2, h3, h4, h5, h6, a
+{
+  font-family: 'telenor', sans-serif;
+}
+p, span, li 
+{
+  font-family: 'source', sans-serif;
+}
+.m-less
+{
+  margin: 0px -15px 0px -15px;
+}
+.hidden
+{
+  display: none;
+}
+*
+{
+  box-sizing: border-box;
+  font-family: 'oswald', sans-serif;
+}
+.btn-info
+{
+  font-family: telenor;
+  color:$text;
+  font-size: 14px;
+  padding: 10px 35px;
+  background-color: $yellow;
+  border:none;
+  border-radius: 2px;
+  transition: .2s ease;
+  &:hover
+  {
+    background: $lightblue;
+    color:#fff;
+  }
+}
+ul
+{
+  margin: 0px;
+  padding: 0px;
+  li
+  {
+    list-style-type: none;
+    display: block;
+    a
+    {
+      text-decoration: none !important;
+    }
+  }
+}
+.link
+{
+  text-decoration: none !important;
+  color:$blue;
+  &:hover
+  {
+    color:$blue;
+  }
+}
+html
+{
+  overflow-x: hidden !important;
+}
+
+body
+{
+  background-color: #eee;
+  margin: 0px;
+  position: relative;
+  padding: 0px;
+  width: 100%;
+}
+.fluid
+{
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+}
+
+button:active
+{
+  transform: scale(.97);
+}
+button:focus
+{
+  box-shadow: none !important;
+}
+@import 'header.scss';
+@import 'footer.scss';
+@import 'home.scss';
+@import 'animations.scss';

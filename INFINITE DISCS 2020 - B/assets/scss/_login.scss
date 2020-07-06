@@ -1,0 +1,96 @@
+.login {
+    background-color: #fff;
+
+    h1
+    {
+        font-family: bold;
+    }
+    .img-holder {
+        height  : calc(100vh - 50px);
+        position: relative;
+
+        img {
+            position       : absolute;
+            top            : 0px;
+            left           : 0px;
+            height         : 100%;
+            width          : 100%;
+            object-fit     : cover;
+            object-position: center 100%;
+        }
+    }
+
+    .form {
+        max-width    : 500px;
+        display      : block;
+        margin       : 0 auto;
+        background   : #fff;
+        border-radius: 10px;
+        padding:0px 30px;
+    }
+
+    .flex-box {
+        height         : calc(100vh - 80px);
+        display        : flex;
+        align-items    : center;
+        justify-content: center;
+        @media (max-width:991px) {
+            background-image: url('../images/login.jpg');
+            background-size: cover;
+            background-position: center 100%;
+        }
+
+        .f-wrap {
+            width: 100%;
+            background-color: #fff;
+            @media (max-width:991px) {
+               max-width: 400px; 
+               padding:30px 0px;
+               border-radius: 10px;
+            }
+        }
+    }
+
+    .btn-default {
+        display         : inline-block;
+        font-family     : textbold;
+        font-size       : 14px;
+        text-transform  : uppercase;
+        border-radius   : 50px;
+        padding         : 10px 35px;
+        background-color: #333;
+        color           : #fff;
+        transition      : .15s linear;
+        min-width: 150px;
+        margin:12px auto;
+        display: block;
+
+        &:hover {
+            color           : #fff;
+            background-color: #000;
+        }
+    }
+
+    .form-control
+    {
+        background-color: #f5f5f5;
+        border-color:#ddd;
+    }
+
+    p
+    {
+        font-size: 14px;
+        font-family: text;
+        color:#7b7b7b;
+        margin:0px 0px 0px;
+        text-align: center;
+        a
+        {
+            font-family: textbold;
+            color:#000;
+            &:hover{
+                color:$pink;
+            }
+        }
+    }
+}

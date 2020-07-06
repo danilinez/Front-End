@@ -1,0 +1,203 @@
+.contact_bar {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+  width: 100%;
+  background-color: #111;
+  color: #fff;
+  ul {
+    padding: 10px 0px;
+    li {
+      display: inline-block;
+      margin-right: 10px;
+      font-family: "rbold", sans-serif;
+      font-size: 13px;
+      i {
+        margin-right: 5px;
+      }
+      a {
+        color: #fff;
+        font-family: "rbold";
+        &:hover {
+          color: #fff;
+          text-decoration: underline !important;
+        }
+      }
+    }
+  }
+  .account_links {
+    float: right;
+  }
+}
+.navbar {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+  width: 100%;
+  margin-top: 60px;
+  background-color: transparent;
+  padding: 0px 10px;
+  .navbar-toggler {
+    color: #fff;
+    &:focus {
+      outline-color: transparent;
+    }
+  }
+  .navbar-nav {
+    .nav-item {
+      margin: 0px 10px;
+      text-transform: uppercase;
+      position: relative;
+      @media (max-width: 1199px) {
+        margin: 0px 7px;
+      }
+      >.nav-link {
+        padding: 13px 0px;
+        font-size: 16px;
+        color: #fff;
+        position: relative;
+        &::after
+        {
+          content:"";
+          height: 2.5px;
+          width:0px;
+          background: $yellow;
+          left: 0px;
+          bottom: 10px;
+          position: absolute;
+          z-index: 5;
+          visibility: hidden;
+          transition: width .35s ease-out;
+          @media (max-width: 1199px) {
+            bottom: 5px;
+          }
+        }
+        &:hover::after
+        {
+          visibility: visible;
+          width:100%;
+        }
+        @media (max-width: 1199px) {
+          font-size: 14px;
+          font-family: "roboto" !important;
+          padding: 10px 0px;
+        }
+        @media (max-width: 991px) {
+          font-size: 12px;
+        }
+        img {
+          max-width: 10px;
+          margin-left: 3px;
+        }
+        &:hover ~ .submenu,
+        & ~ .submenu:hover
+        {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+  }
+}
+
+
+.submenu {
+  visibility: hidden;
+  transition: 0.2s linear;
+  width:auto;
+  left: 50px;
+  transform: translateX(-50%);
+  top: 50px;
+  opacity: 0;
+  position: absolute;
+  background: #fff;
+  padding: 20px 10px;
+  display: inline-flex;
+  &::after
+  {
+    content:"";
+    position:absolute;
+    z-index: 100;
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 8px solid #fff;
+    top: -7px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  @media(max-width:991px)
+  {
+    transform: translateX(-45%);
+  }
+  ul
+  {
+    position: relative;
+    margin: 0px;
+    padding: 0px 40px 0px 20px;
+    width:auto;
+    margin: 0px 10px;
+    @media(max-width:1199px)
+    {
+      padding: 0px 30px 0px 10px;
+    }
+    @media(max-width:991px)
+    {
+      padding: 0px 20px 0px 5px;
+    }
+    &:after
+    {
+      content: "";
+      width: 1px;
+      height: 100%;
+      background-color:rgb(228, 228, 228);
+      position: absolute;
+      right: -1px;
+      top:0px;
+    }
+    &:last-child::after{
+      display: none;
+    }
+  }
+  li {
+    position: relative;
+    height: auto;
+    display: block;
+    a {
+      padding: 7px 0px!important;
+      color: #555 !important;
+      font-family: 'roboto';
+      font-size: 14px;
+      white-space: nowrap;
+      &::after
+      {
+        content:"";
+        height: 2px;
+        width:0px;
+        background: $yellow;
+        left: 0px;
+        bottom: 2px;
+        position: absolute;
+        z-index: 5;
+        visibility: hidden;
+        transition: width .35s ease-out;
+      }
+      &:hover::after
+      {
+        visibility: visible;
+        width:30px;
+      }
+      &:hover {
+        color: $yellow !important;
+        @media (max-width: 767px) {
+          color: #111 !important;
+        }
+      }
+    }
+  }
+}
+
+

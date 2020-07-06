@@ -1,0 +1,64 @@
+footer
+{
+  padding: 75px 0px 50px;
+  background-color: #0091d2;
+  ul
+  {
+    li{
+      margin-bottom: 15px;
+      ul
+      {
+        li
+        {
+          margin: 0px;
+        }
+      }
+      a{
+        font-size: 20px;
+        line-height: 20px;
+        color:#d3f1ff;
+        &:hover
+        {
+          text-decoration: underline !important;
+          color:#fff !important;
+          small
+          {
+            color:#fff !important;
+            margin-top: 5px;
+          }
+        }
+        small
+        {
+          font-size: 16px;
+          line-height: 18px;
+          color: #b7e8ff;
+          font-family: tlight;
+        }
+      }
+    }
+  }
+}
+.social_links
+{
+  background:$darkblue;
+  ul{
+    padding: 10px 0px 8px;
+    li{
+      margin-right: 10px;
+      display: inline-block;
+      a
+      {
+        font-size: 24px;
+        color:#fff;
+        i{transition:.2s linear}
+        &:hover
+        {
+          i
+          {
+            transform: scale(1.2);
+          }
+        }
+      }
+    }
+  }
+}

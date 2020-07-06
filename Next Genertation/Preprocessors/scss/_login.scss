@@ -1,0 +1,61 @@
+.login
+{
+  background-color:#fff;
+  border-bottom:3px solid $red;
+  .common_title
+  {
+    text-align: center;
+    margin: 30px 0px;
+    & ~ p{
+      text-align: center;
+      font-size: 18px;
+    }
+    & ~ p strong
+    {
+      font-family: sbold;
+      text-transform: uppercase;
+    }
+  }
+  .form
+  {
+    margin: 30px 0px 50px;
+    a
+    {
+      font-family: source;
+    }
+    label
+    {
+      font-size: 20px;
+      margin: 0px 0px 5px 0px;
+      display: inline-block;
+      font-family: source;
+    }
+    .forgot_link
+    {
+      margin: 0px;
+      float: right;
+    }
+    .form-control
+    {
+      box-shadow: none;
+    }
+    .btn-danger
+    {
+      border:none;
+      background-color:rgb(223, 4, 4);
+      font-family: sbold !important;
+      text-transform: uppercase;
+      font-size: 18px;
+    }
+  }
+  .text-center.py-2 p
+  {
+    margin: 0px;
+    
+  }
+  .text-center.py-2 a
+  {
+    display: block;
+    width: 100%;
+  }
+}

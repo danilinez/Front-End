@@ -1,0 +1,1216 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Wizard</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body class="background-color:#eee !important">
+
+    <style>
+        /* DRAG DROP FORM STYLES START */
+
+
+        .wizardbox .wizard-form .fm-view {
+            background-color: #f6f7fc;
+        }
+
+        .wizardbox .wizard-form .fm-view .fm-view-slide {
+            background-color: #fff;
+            border: 1px solid #88a9c2;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            padding: 30px 20px;
+        }
+
+        .wizardbox .wizard-form .fm-view .fm-view-slide .left-text h5 {
+            margin: 0px 0px 10px;
+        }
+
+        .wizardbox .wizard-form .fm-view .fm-view-slide .left-text h5 a {
+            color: #5c8eb7;
+            font-size: 20px;
+        }
+
+        .wizardbox .wizard-form .fm-view .fm-view-slide .left-text h5 a:hover {
+            color: #59caaa
+        }
+
+        .wizardbox .wizard-form .fm-view .fm-view-slide .left-text .frow {
+            display: inline-flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .wizardbox .wizard-form .fm-view .fm-view-slide .left-text .frow .tag {
+            color: #42494f;
+            border-radius: 20px;
+            padding: 1px 8px;
+            font-size: 12px;
+            background-color: #e7e8ee;
+            display: inline-block;
+            margin-right: 10px;
+            font-weight: 600;
+            text-transform: uppercase
+        }
+
+        .wizardbox .wizard-form .fm-view .fm-view-slide .left-text .frow .tag i {
+            margin-right: 10px;
+        }
+
+        .wizardbox .wizard-form .fm-view .fm-view-slide .left-text .frow .tag-green {
+            color: #fff !important;
+            background-color: #59caaa !important;
+            font-weight: 500;
+        }
+
+        .wizardbox .wizard-form .fm-view .fm-view-slide .left-text .frow .date {
+            font-size: 12px;
+            margin: 0px;
+            color: #42494f;
+            font-weight: 500;
+        }
+
+        .wizardbox .wizard-form .fm-view .fm-view-slide .left-text .frow .date span {
+            padding: 0px 10px;
+        }
+
+
+        .wizardbox .wizard-form .fm-view .fm-view-slide .right-actions {
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .wizardbox .wizard-form .fm-view .fm-view-slide .right-actions a {
+            display: inline-block;
+            border: 1px solid #9a9a9a;
+            margin-right: 1vw;
+            border-radius: 50%;
+            color: #9a9a9a;
+            width: 35px;
+            height: 35px;
+            font-size: 18px;
+            text-align: center;
+            padding: 4px 0px;
+        }
+
+        .wizardbox .wizard-form .fm-view .fm-view-slide .right-actions a:hover {
+            color: #fff;
+            border-color: #59caaa;
+            background-color: #59caaa;
+        }
+
+        @media(max-width:1199px) {
+            .wizardbox .wizard-form .fm-view .fm-view-slide {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 20px 20px;
+            }
+
+            .wizardbox .wizard-form .fm-view .fm-view-slide .right-actions {
+                margin-top: 20px;
+            }
+
+            .wizardbox .wizard-form .fm-view .fm-view-slide .left-text p {
+                flex-grow: 1;
+                margin-top: 10px !important;
+                width: 100%;
+            }
+        }
+
+        .wizardbox .wizard-form .fm-add {
+            background-color: #fff;
+        }
+
+        .wizardbox .wizard-form .fm-add .button-assets {
+            border-right: 2px solid #ddd;
+            position: sticky;
+            top: 10px;
+        }
+
+        .wizardbox .wizard-form .fm-add .button-assets textarea {
+            margin-bottom: 20px !important;
+        }
+
+        .wizardbox .wizard-form .fm-add .buttons {
+            padding-right: 5px;
+        }
+
+        .wizardbox .wizard-form .fm-add .button-assets .form-control {
+            width: calc(100% - 20px) !important;
+            border-radius: 0px;
+            text-align: center;
+            min-height: 40px;
+            margin-bottom: 30px;
+            font-size: 15px;
+            border: 1px solid #ccc;
+            box-shadow: none !important;
+            font-weight: 500;
+        }
+
+        .wizardbox .wizard-form .fm-add .button-assets .btn {
+            display: inline-block;
+            width: calc(50% - 15px);
+            border: 1px solid #ccc;
+            background: transparent;
+            color: #111;
+            font-size: 15px;
+            padding: 10px 10px;
+            border-radius: 0px;
+            box-shadow: none;
+            outline: none;
+            font-weight: 500;
+            margin-bottom: 10px;
+            margin-right: 10px;
+        }
+
+        .wizardbox .wizard-form .fm-add .button-assets .btn:hover {
+            background-color: #59caaa;
+            border-color: #59caaa;
+            color: #fff;
+        }
+
+        .wizardbox .wizard-form .fm-add .button-assets h4 {
+            color: #59caaa;
+            margin: 10px 0px;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .wizardbox .wizard-form .fm-add .form-display {
+            min-height: 600px;
+            padding-left: 15px;
+        }
+
+        .wizardbox .wizard-form .fm-add .form-display h2 {
+            font-size: 26px;
+            font-weight: 600;
+            margin: 0px 0px;
+            padding-left: 3px;
+        }
+
+        .wizardbox .wizard-form .fm-add .form-display>p {
+            color: #7b7b7b;
+            font-size: 14px;
+            font-weight: 500;
+            margin: 0px 0px 30px;
+            padding-left: 3px;
+        }
+
+        .wizardbox .wizard-form .fm-add .form-display .no-gutters {
+            margin: 0px !important;
+        }
+
+        .wizardbox .wizard-form .fm-add .form-display .no-gutters>div {
+            padding: 0px !important;
+        }
+
+        .wizardbox .wizard-form .fm-add .form-display .form-control {
+            border-radius: 0px !important;
+            width: calc(100% - 20px);
+            box-shadow: none !important;
+            font-size: 14px;
+        }
+
+        .wizardbox .wizard-form .fm-add .form-display .form-group {
+            margin-bottom: 10px !important;
+            padding: 5px 5px 10px !important;
+            border: 1px dashed #fff;
+            cursor: grab;
+            position: relative;
+        }
+
+        .wizardbox .wizard-form .fm-add .form-display .form-group:active {
+            cursor: grabbing;
+        }
+
+        .wizardbox .wizard-form .fm-add .form-display .form-group:hover {
+            background-color: #f8f8f8;
+            border: 1px dashed #ddd;
+        }
+
+        .wizardbox .wizard-form .fm-add .form-display .form-group .actions {
+            position: absolute;
+            right: 3px;
+            bottom: 3px;
+            z-index: 5;
+            display: none;
+            opacity: 0;
+        }
+
+        .wizardbox .wizard-form .fm-add .form-display .form-group .actions a {
+            display: inline-block;
+            border-radius: 3px;
+            border: 1px solid #ddd;
+            color: #333;
+            width: 21px;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        .wizardbox .wizard-form .fm-add .form-display .form-group .actions a:hover {
+            background-color: #59caaa;
+            color: #fff;
+            border-color: #59caaa;
+        }
+
+        .wizardbox .wizard-form .fm-add .form-display .form-group:hover .actions {
+            display: block;
+            opacity: 1;
+        }
+
+        .wizardbox .wizard-form .fm-add .form-display .form-group label {
+            font-size: 14px;
+            font-weight: 600;
+            color: #111;
+        }
+
+        .wizardbox .wizard-form .fm-add .form-display .form-group span {
+            font-size: 12px;
+            font-weight: 500;
+            color: #7b7b7b;
+        }
+
+        .wizardbox .wizard-form .fm-add .button-flex {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-left: 20px;
+        }
+
+        .wizardbox .wizard-form .fm-add .button-flex .btn {
+            display: inline-block;
+            width: 120px;
+            border: 1px solid #ddd;
+            color: #111;
+            font-size: 15px;
+            padding: 10px 10px;
+            border-radius: 3px;
+            box-shadow: none;
+            outline: none;
+            font-weight: 500;
+            margin-right: 10px;
+        }
+
+        .wizardbox .wizard-form .fm-add .button-flex .btn-share {
+            background-color: #59caaa;
+            border-color: #59caaa;
+            color: #fff;
+        }
+
+        .wizardbox .wizard-form .fm-add .button-flex .btn:hover {
+            background-color: #59caaa;
+            border-color: #59caaa;
+            color: #fff;
+        }
+
+        .edit-form table {
+            margin-bottom: 5px;
+            border: none !important;
+        }
+
+        .edit-form table tr td,
+        .edit-form table tr th {
+            border: none !important;
+            padding: 10px 10px;
+            vertical-align: top;
+        }
+
+        .edit-form table tr td {
+            padding: 4px 10px 16px;
+        }
+
+        .edit-form table tr td a {
+            min-width: 28px;
+            border: 1px solid #fff;
+            color: #fff;
+            border-radius: 50%;
+            margin: 0px 1px;
+            text-align: center;
+            display: inline-block;
+        }
+
+        .edit-form table tr td input[type='checkbox'] {
+            margin: 10px 0px;
+        }
+
+        .edit-form table tr td:last-child {
+            text-align: center
+        }
+
+        .edit-form table tr td .add-field {
+            background-color: #5cb85c;
+            padding: 4px 0px 3px;
+        }
+
+        .edit-form table tr td .remove-field {
+            background-color: #d2322d;
+            padding: 4px 0px 4px;
+        }
+
+        .edit-form table tr td input.form-control {
+            border-radius: 0px !important;
+            box-shadow: none !important;
+            font-size: 14px;
+        }
+
+        .edit-form .modal-footer .btn-success {
+            background-color: #59caaa;
+            border-color: #59caaa;
+            border-radius: 3px;
+        }
+
+        @media(max-width:767px) {
+            .wizardbox .wizard-form .fm-add .form-display {
+                padding-left: 0px;
+            }
+
+            .wizardbox .wizard-form .fm-add .button-assets {
+                border-right: none !important;
+            }
+        }
+
+        .form-check label {
+            font-weight: 400 !important;
+        }
+
+        div[data-required="Y"] label:after {
+            content: '*';
+            color: red;
+            margin-left: 5px;
+        }
+
+        /* DRAG DROP FORM STYLES END */
+
+        .wizardbox {
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+        }
+
+        .wiz-controls {
+            background-color: #dcdcdc;
+        }
+
+        .btn-white {
+            display: inline-block;
+            padding: 5px 14px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 15px;
+            font-size: 14px;
+            box-shadow: none !important;
+        }
+        
+        .btn-save {
+            box-shadow: none !important;
+            display: inline-block;
+            padding: 5px 14px;
+            background-color: #0070ba;
+            border: 1px solid #ddd;
+            color: #fff;
+            border-radius: 15px;
+            font-size: 14px;
+        }
+        
+        .btn-save:hover {
+            background-color: #0064a7;
+            color: #fff;
+        }
+        .btn-white:hover {
+            background-color: #f1f1f1;
+        }
+
+        .steps {
+            position: relative;
+            padding: 60px 100px 40px;
+            margin-bottom: 30px;
+            display: inline-block;
+            width: 100%;
+        }
+
+        .steps .frow {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .step-bolt {
+            height: 30px;
+            width: 30px;
+            background-color: #eee;
+            border-radius: 100%;
+            z-index: 10;
+            position: relative;
+        }
+
+        .step-bolt span {
+            position: absolute;
+            font-size: 14px;
+            color: #333;
+            left: 50%;
+            transform: translateX(-50%);
+            white-space: nowrap;
+        }
+
+        .step-bolt .sb-number {
+            top: -30px;
+        }
+
+        .step-bolt .sb-name {
+            bottom: -25px;
+            color: #999;
+            font-size: 12px;
+        }
+
+        .step-bolt.active,
+        .step-bolt.completed {
+            background-color: #fbe8aa;
+        }
+
+        .step-bolt.active::after,
+        .step-bolt.completed::after {
+            content: ' ';
+            width: 14px;
+            height: 14px;
+            background: #fbbd19;
+            border-radius: 50px;
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            z-index: 20;
+        }
+
+        .progressBar {
+            position: relative;
+            height: 8px;
+            width: 100%;
+            background-color: #eee;
+            z-index: 5;
+            margin-top: -19px;
+            border-radius: 10px;
+            overflow: hidden;
+            padding: 0px 2px;
+        }
+
+        .progressBar::after {
+            content: "";
+            position: absolute;
+            background-color: #fbe8aa;
+            left: 0px;
+            width: 0%;
+            height: 100%;
+            transition: .25s linear;
+        }
+
+        .progressBar.atsecond::after {
+            width: 0%;
+        }
+
+        .progressBar.atsecond::after {
+            width: 33.3334%;
+        }
+
+        .progressBar.atthird::after {
+            width: 66.66667%;
+        }
+
+        .progressBar.atfourth::after {
+            width: 100%;
+        }
+
+        .active-wizard {
+            overflow: hidden;
+        }
+
+        .active-wizard .flex-box {
+            display: flex;
+            align-self: flex-start;
+            flex-wrap: nowrap;
+            position: relative;
+            left: 0%;
+            transition: .25s linear;
+        }
+
+        .active-wizard .wizard-form {
+            padding: 30px;
+            min-width: 100%;
+            position: relative;
+        }
+        .active-wizard .wizard-form .control-label{
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .active-wizard .wizard-form .btn-group
+        {
+            margin-bottom: 30px;
+        }
+        .active-wizard .wizard-form .btn-group .btn
+        {
+            background-color: transparent !important;
+            color:#333 !important;
+            border-color:#aaa !important;
+            font-size:14px;
+        }
+        .active-wizard .wizard-form .btn-group .btn:hover
+        {
+            background-color: #f5f5f5 !important;
+        }
+
+        .sign-display {
+            padding: 15px;
+            font-size: calc(1vw + 1em);
+            background-color: #eee;
+            text-align: center;
+            color: #aeaeae;
+        }
+
+    </style>
+
+    <div class="wizard-wrapper">
+        <div class="container">
+            <div class="wizardbox">
+                <div class="wiz-controls p-2 d-flex align-items-center justify-content-between">
+                    <div class="left-align">
+                        <button class="btn btn-save">Save Template</button>
+                        <button class="btn btn-white">Preview</button>
+                    </div>
+                    <div class="right-align">
+                        <button data-id="" class="btn btn-white back-step"><i class="fa fa-long-arrow-left"></i>
+                            Previous Step</button>
+                        <button class="btn btn-white next-step">Next Step <i
+                                class="fas fa-long-arrow-right"></i></button>
+                    </div>
+                </div>
+                <div class="wiz-body">
+                    <div class="steps">
+                        <div class="frow">
+                            <div class="step-bolt active" id="atfirst" data-div="1">
+                                <span class="sb-number">Step 1</span>
+                                <span class="sb-name">Header Information</span>
+                            </div>
+                            <div class="step-bolt" id="atsecond" data-div="2">
+                                <span class="sb-number">Step 2</span>
+                                <span class="sb-name">Waiver Body</span>
+                            </div>
+                            <div class="step-bolt" id="atthird" data-div="3">
+                                <span class="sb-number">Step 3</span>
+                                <span class="sb-name">Settings</span>
+                            </div>
+                            <div class="step-bolt" id="atfourth" data-div="4">
+                                <span class="sb-number">Step 4</span>
+                                <span class="sb-name">Waiver Signature and Content</span>
+                            </div>
+                        </div>
+                        <div id="progress" class="progressBar atfirst"></div>
+                    </div>
+
+                    <div class="active-wizard">
+                        <div class="flex-box">
+                            <div class="wizard-form first-form">
+                                <div class="form-group row">
+                                    <div class="col-lg-2">
+                                        <label for="title">Title</label>
+                                    </div>
+                                    <div class="col-lg-10">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-lg-2">
+                                        <label for="logo">Head Logo</label>
+                                    </div>
+                                    <div class="col-lg-10">
+                                        <input type="file" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-lg-2">
+                                        <label for="txt_content">Header Text</label>
+                                    </div>
+                                    <div class="col-lg-10">
+                                        <textarea id="txt_content"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wizard-form second-from">
+
+                                <form class="form-horizontal" enctype="multipart/form-data" role="form" method="POST"
+                                    action="<?= $_SERVER['PHP_SELF'] ?>?page=<?= $page ?>&id=<?= $id ?>">
+
+                                    <script>
+                                        function Generator() { }
+
+                                        function form_name() {
+                                            $('#form_name_show').html($('#form_name_input').val());
+                                            $('#form_desc_show').html($('#form_desc_input').val());
+                                        }
+
+                                        function remove_item(form_id) {
+                                            $('#form_wrapper_' + form_id).remove();
+                                            $("#sort_fields").sortable();
+                                        }
+
+                                        function copy_item(form_id) {
+                                            form_add($('#form_wrapper_' + form_id).attr('data-type'), form_id)
+                                        }
+
+                                        function edit_item(form_id, form_type) {
+                                            var labeltext = $('#form_wrapper_' + form_id).find('label').html()
+                                            $('#form-modal .modal-title').html(labeltext)
+                                            $('#form-modal').attr('data-id', form_id)
+                                            $('#form-modal').attr('data-type', form_type)
+                                            $('#form-modal-label').val(labeltext);
+                                            if ($('#form_wrapper_' + form_id).attr('data-required') == 'Y') {
+                                                $('#form-modal-required').prop('checked', true)
+                                            } else {
+                                                $('#form-modal-required').prop('checked', false)
+                                            }
+                                            $('#form-modal-length').val($('#form_wrapper_' + form_id).attr('data-length'))
+                                            $('#form-modal-selected').val($('#form_selected_' + form_id).attr('data-selected'))
+                                            if ($('#form_wrapper_' + form_id).attr('data-type') == 'DROPDOWN' || $('#form_wrapper_' + form_id).attr('data-type') == 'CHECKBOX' || $('#form_wrapper_' + form_id).attr('data-type') == 'RADIO') {
+                                                $("#field_length").hide()
+                                                $("#dropdown-values").show()
+                                                $('#dropdown-values tbody').html('')
+                                                $('#form_wrapper_' + form_id).find('select option').each(function () {
+                                                    var vakk = $(this).val();
+                                                    var chjeck = '';
+                                                    var attr = $(this).attr('selected');
+
+                                                    if (typeof attr !== typeof undefined && attr !== false) {
+
+                                                        chjeck = 'checked';
+                                                    } else {
+                                                        chjeck = '';
+                                                    }
+                                                    $('#dropdown-values tbody').append('<tr> <td><input type="text" class="form-control" value="' + vakk + '"></td> <td> <a href="#none" onclick="new_dropdown()" class="add-field"> <i class="icon-plus"></i> </a> <a onclick="remove_dropdown($(this))" href="#none" class="remove-field"><i class="icon-remove"></i> </a> </td> <td><input value="' + vakk + '" type="radio" ' + chjeck + ' name="defaultcheck"></td> </tr>')
+                                                });
+                                                // checkbox
+                                                $('#form_wrapper_' + form_id).find('.form-check').each(function () {
+                                                    var vakk = $(this).find('.form-check-label').html();
+                                                    var chjeck = '';
+                                                    var attr = $(this).find('input').attr('checked');
+
+                                                    if (typeof attr !== typeof undefined && attr !== false) {
+
+                                                        chjeck = 'checked';
+                                                    } else {
+                                                        chjeck = '';
+                                                    }
+                                                    $('#dropdown-values tbody').append('<tr> <td><input type="text" class="form-control" value="' + vakk + '"></td> <td> <a href="#none" onclick="new_dropdown()" class="add-field"> <i class="icon-plus"></i> </a> <a onclick="remove_dropdown($(this))" href="#none" class="remove-field"><i class="icon-remove"></i> </a> </td> <td><input type="radio" ' + chjeck + ' name="defaultcheck"></td> </tr>')
+                                                });
+                                            } else {
+                                                $("#dropdown-values").hide()
+                                                $("#field_length").show()
+                                            }
+
+                                        }
+
+                                        function form_add(form_type, copy_id) {
+
+                                            Generator.prototype.rand = Math.floor(Math.random() * 26) + Date.now();
+
+                                            Generator.prototype.getId = function () {
+                                                return this.rand++;
+                                            };
+                                            var idGen = new Generator();
+                                            idGen = idGen.getId();
+
+                                            var append;
+                                            var label;
+                                            var idl;
+                                            if (form_type == 'NAME') {
+                                                label = 'Name';
+                                                idl = 513;
+                                                append = ' <div class="col-12"> <label for="form_input_' + idGen + '_1">' + label + '</label> </div> <div class="col-lg-4"> <input class="form-control" type="text" id="form_input_' + idGen + '_1" name="form_input_' + idGen + '_1"> <span>First</label> </div> <div class="col-lg-4"> <input class="form-control" type="text" id="form_input_' + idGen + '_2" name="form_input_' + idGen + '_2"> <span>Last</label> </div><input type="hidden" value="" id="form_value_' + idGen + '" name="options[]"/>';
+                                            } else if (form_type == 'EMAIL ADDRESS') {
+                                                label = 'Email';
+                                                idl = 514;
+                                                append = '<div class="col-lg-12"><label for="form_input_' + idGen + '">' + label + '</label></div><div class="col-lg-8"> <input class="form-control" type="email" id="form_input_' + idGen + '" name="form_input_' + idGen + '">  </div><input type="hidden" value="" id="form_value_' + idGen + '" name="options[]"/> ';
+                                            } else if (form_type == 'MOBILE') {
+                                                label = 'Mobile';
+                                                idl = 515;
+                                                append = '<div class="col-lg-12"><label for="form_input_' + idGen + '">' + label + '</label></div><div class="col-lg-8"> <input class="form-control" type="text" id="form_input_' + idGen + '" name="form_input_' + idGen + '">  </div> <input type="hidden" value="" id="form_value_' + idGen + '" name="options[]"/>';
+                                            } else if (form_type == 'DATE OF BIRTH') {
+                                                label = 'DOB';
+                                                idl = 519;
+                                                append = '<div class="col-lg-12"><label for="form_input_' + idGen + '">' + label + '</label> </div><div class="col-lg-8"><input class="form-control datepicker" type="text" id="form_input_' + idGen + '" name="form_input_' + idGen + '">  </div> <input type="hidden" value="" id="form_value_' + idGen + '" name="options[]"/>';
+                                            } else if (form_type == 'ADDRESS') {
+                                                label = 'Address';
+                                                idl = 516;
+                                                append = '<div class="col-lg-12"><label for="form_input_' + idGen + '">' + label + '</label> </div><div class="col-lg-8"><textarea class="form-control" id="form_input_' + idGen + '" name="form_input_' + idGen + '"></textarea>  </div><input type="hidden" value="" id="form_value_' + idGen + '" name="options[]"/> ';
+                                            } else if (form_type == 'CITY') {
+                                                label = 'City';
+                                                idl = 517;
+                                                append = '<div class="col-lg-12"><label for="form_input_' + idGen + '">' + label + '</label></div><div class="col-lg-8"> <input class="form-control" type="text" id="form_input_' + idGen + '" name="form_input_' + idGen + '">  </div> <input type="hidden" value="" id="form_value_' + idGen + '" name="options[]"/>';
+                                            } else if (form_type == 'POSTAL') {
+                                                label = 'Postal Code';
+                                                idl = 520;
+                                                append = '<div class="col-lg-12"><label for="form_input_' + idGen + '">' + label + '</label></div><div class="col-lg-8"> <input class="form-control" type="text" id="form_input_' + idGen + '" name="form_input_' + idGen + '">  </div> <input type="hidden" value="" id="form_value_' + idGen + '" name="options[]"/>';
+                                            } else if (form_type == 'STATE') {
+                                                label = 'State';
+                                                idl = 518;
+                                                append = '<div class="col-lg-12"><label for="form_input_' + idGen + '">' + label + '</label></div><div class="col-lg-8"> <select class="form-control" id="form_input_' + idGen + '" name="form_input_' + idGen + '"><option>-Select-</option><option>State 1</option><option>State 2</option></select>  </div><input type="hidden" value="" id="form_value_' + idGen + '" name="options[]"/> ';
+                                            } else if (form_type == 'SINGLE TEXT') {
+                                                label = 'Text Field';
+                                                idl = 507;
+                                                append = '<div class="col-lg-12"><label for="form_input_' + idGen + '">' + label + '</label></div><div class="col-lg-8"> <input class="form-control" type="text" id="form_input_' + idGen + '" name="form_input_' + idGen + '">  </div> <input type="hidden" value="" id="form_value_' + idGen + '" name="options[]"/>';
+                                            } else if (form_type == 'PARAGRAPH') {
+                                                label = 'Text Area';
+                                                idl = 508;
+                                                append = '<div class="col-lg-12"><label for="form_input_' + idGen + '">' + label + '</label> </div><div class="col-lg-8"><textarea class="form-control" id="form_input_' + idGen + '" name="form_input_' + idGen + '"></textarea>  </div><input type="hidden" value="" id="form_value_' + idGen + '" name="options[]"/> ';
+                                            } else if (form_type == 'DROPDOWN') {
+                                                label = 'Dropdown';
+                                                idl = 509;
+                                                append = '<div class="col-lg-12"><label for="form_input_' + idGen + '">' + label + '</label></div><div class="col-lg-8"> <select class="form-control" id="form_input_' + idGen + '" name="form_input_' + idGen + '"><option>-Select-</option><option>Option 1</option><option>Option 2</option></select><input type="hidden" value="-Select-|Option 1|Option 2" id="form_value_' + idGen + '" name="options[]"/>  </div> ';
+                                            } else if (form_type == 'NUMBER') {
+                                                label = 'Number Field';
+                                                idl = 511;
+                                                append = '<div class="col-lg-12"><label for="form_input_' + idGen + '">' + label + '</label></div><div class="col-lg-8"> <input class="form-control" type="text" id="form_input_' + idGen + '" name="form_input_' + idGen + '">  </div><input type="hidden" value="" id="form_value_' + idGen + '" name="options[]"/> ';
+                                            } else if (form_type == 'CHECKBOX') {
+                                                label = 'Checkboxes';
+                                                idl = 510;
+                                                append = '<div class="col-lg-12"><label for="form_input_' + idGen + '">' + label + '</label></div><div class="col-lg-8"><div class="form-check"> <input class="form-check-input" checked type="checkbox" value="Default checkbox" id="form_input_' + idGen + '-1"> <label class="form-check-label" for="form_input_' + idGen + '-1"> Default checkbox </label></div> <div class="form-check"> <input class="form-check-input" type="checkbox" value="Default checkbox 2" id="form_input_' + idGen + '-2"> <label class="form-check-label" for="form_input_' + idGen + '-2"> Default checkbox 2 </label></div> </div><input type="hidden" value="Default checkbox|Default checkbox 2" id="form_value_' + idGen + '" name="options[]"/> ';
+                                            } else if (form_type == 'RADIO') {
+                                                label = 'Radioboxes';
+                                                idl = 512;
+                                                append = '<div class="col-lg-12"><label for="form_input_' + idGen + '">' + label + '</label></div><div class="col-lg-8"><div class="form-check"> <input class="form-check-input" checked type="radio" name="form_input_' + idGen + '" value="Default radiobox" id="form_input_' + idGen + '-1"> <label class="form-check-label" for="form_input_' + idGen + '-1"> Default radiobox </label></div> <div class="form-check"> <input class="form-check-input" type="radio" name="form_input_' + idGen + '" value="Default radiobox 2" id="form_input_' + idGen + '-2"> <label class="form-check-label" for="form_input_' + idGen + '-2"> Default radiobox 2 </label></div> </div><input type="hidden" value="Default radiobox|Default radiobox 2" id="form_value_' + idGen + '" name="options[]"/> ';
+                                            }
+                                            var inner = '<div data-required="N" data-length="255" data-selected="" class="form-group row no-gutters" data-type="' + form_type + '" data-id="' + idGen + '" id="form_wrapper_' + idGen + '"> <div class="actions"> <a href="#none" onclick="remove_item(\'' + idGen + '\')"><i class="icon-remove"></i></a> <a href="#none"  onclick="copy_item(\'' + idGen + '\')"><i class="icon-copy"></i></a> <a data-toggle="modal" href="#form-modal"  onclick="edit_item(\'' + idGen + '\',\'' + form_type + '\')"><i class="icon-edit"></i></a> </div>' + append + '<input type="hidden" name="field[]" value="' + idl + '"/><input type="hidden" name="label[]" class="field_name_hidden" value="' + label + '"/><input type="hidden" name="length[]" class="field_length_hidden" value="255"/><input type="hidden" name="selected[]" class="field_selected_hidden" value=""/> <input type="hidden" name="required[]" class="field_required_hidden" value="N"/> </div>';
+                                            $('#sort_fields').append(inner);
+                                            $(".datepicker").datepicker({
+                                                yearRange: "-57:-12",
+                                                changeMonth: true,
+                                                defaultDate: new Date(1985, 00, 01),
+                                                changeYear: true,
+                                                dateFormat: 'mm/dd/yy',
+                                                startDate: '0d',
+                                                autoclose: true,
+                                                todayHighlight: true
+                                            });
+                                            $("#sort_fields").sortable();
+                                            if (copy_id != undefined) {
+                                                copy_ids(copy_id, idGen);
+                                            }
+                                        }
+
+                                        function copy_ids(copy_id, idGen) {
+                                            var oldtext = $('#form_wrapper_' + copy_id).find('label').html()
+                                            $('#form_wrapper_' + idGen).find('label').html(oldtext)
+                                            if ($('#form_wrapper_' + copy_id).attr('data-required') == 'Y') {
+                                                $('#form_wrapper_' + idGen).attr('data-required', 'Y')
+                                            } else {
+                                                $('#form_wrapper_' + idGen).attr('data-required', 'N')
+                                            }
+                                            $('#form_wrapper_' + idGen).attr('data-length', $('#form_wrapper_' + copy_id).attr('data-length'))
+                                            $('#form_wrapper_' + idGen).attr('data-selected', $('#form_wrapper_' + copy_id).attr('data-selected'))
+                                            var form_type = $('#form_wrapper_' + copy_id).attr('data-type');
+                                            $('#form_wrapper_' + idGen).find('select').html('')
+                                            var valueofinput = '';
+                                            if (form_type == 'RADIO' || form_type == 'CHECKBOX') {
+                                                $('#form_wrapper_' + idGen).find('.col-lg-8').html('');
+                                            }
+                                            var xx = 1;
+                                            $('#form_wrapper_' + copy_id).find('select option').each(function () {
+                                                var vakk = $(this).val();
+                                                var chjeck = '';
+                                                var attr = $(this).attr('selected');
+
+                                                if (typeof attr !== typeof undefined && attr !== false) {
+
+                                                    chjeck = 'selected';
+                                                } else {
+                                                    chjeck = '';
+                                                }
+                                                $('#form_wrapper_' + idGen).find('select').append('<option ' + chjeck + ' value="' + vakk + '">' + vakk + '</option>')
+                                                valueofinput += vakk + '|';
+                                            });
+                                            $('#form_value_' + idGen).val(valueofinput)
+                                            var valueofinput = '';
+                                            $('#form_wrapper_' + copy_id).find('.col-lg-8 .form-check').each(function () {
+                                                var vakk = $(this).find('.form-check-label').html();
+                                                var chjeck = '';
+                                                var chjeck2 = '';
+                                                if ($(this).find('.form-check-input').prop('checked') == true) {
+                                                    chjeck = ' selected';
+                                                    chjeck2 = ' checked';
+                                                } else {
+                                                    chjeck = ' ';
+                                                    chjeck2 = ' ';
+                                                }
+                                                if (form_type == 'RADIO' || form_type == 'CHECKBOX') {
+                                                    if (form_type == 'RADIO') {
+                                                        $('#form_wrapper_' + idGen).find('.col-lg-8').append('<div class="form-check"> <input class="form-check-input" ' + chjeck2 + ' type="radio" name="form_input_' + idGen + '" value="' + vakk + '" id="form_input_' + idGen + '-' + xx + '"> <label class="form-check-label" for="form_input_' + idGen + '-' + xx + '"> ' + vakk + ' </label></div>')
+                                                    } else {
+                                                        $('#form_wrapper_' + idGen).find('.col-lg-8').append('<div class="form-check"> <input class="form-check-input" ' + chjeck2 + ' type="checkbox" name="form_input_' + idGen + '-' + xx + '" value="' + vakk + '" id="form_input_' + idGen + '-' + xx + '"> <label class="form-check-label" for="form_input_' + idGen + '-' + xx + '"> ' + vakk + ' </label></div>')
+                                                    }
+
+                                                }
+                                                valueofinput += vakk + '|';
+                                                xx++;
+                                            });
+                                            $('#form_value_' + idGen).val(valueofinput)
+                                        }
+
+                                        function update_form() {
+                                            var form_id = $('#form-modal').attr('data-id')
+                                            var form_type = $('#form-modal').attr('data-type')
+                                            var oldtext = $('#form-modal-label').val()
+                                            $('#form_wrapper_' + form_id).find('label').html(oldtext)
+                                            $('#form_wrapper_' + form_id).find('.field_name_hidden').val(oldtext)
+                                            $('#form_wrapper_' + form_id).find('.field_length_hidden').val($('#form-modal-length').val())
+                                            if ($('#form-modal-required').prop('checked') == true) {
+                                                $('#form_wrapper_' + form_id).attr('data-required', 'Y')
+                                                $('#form_wrapper_' + form_id).find('.field_required_hidden').val('Y')
+                                            } else {
+                                                $('#form_wrapper_' + form_id).attr('data-required', 'N')
+                                                $('#form_wrapper_' + form_id).find('.field_required_hidden').val('N')
+                                            }
+                                            $('#form_wrapper_' + form_id).attr('data-length', $('#form-modal-length').val())
+
+                                            $('#form_wrapper_' + form_id).find('select').html('')
+                                            $('#form_value_' + form_id).val('')
+
+                                            if (form_type == 'RADIO' || form_type == 'CHECKBOX') {
+                                                $('#form_wrapper_' + form_id).find('.col-lg-8').html('');
+                                            }
+                                            var xx = 1;
+                                            var valueofinput = '';
+                                            $('#dropdown-values tbody tr').each(function () {
+                                                var vakk = $(this).find('.form-control').val();
+                                                var chjeck = '';
+                                                var chjeck2 = '';
+                                                if ($(this).find('input[type=radio]').prop('checked') == true) {
+                                                    chjeck = ' selected';
+                                                    chjeck2 = ' checked';
+                                                    $('#form_wrapper_' + form_id).attr('data-selected', vakk)
+                                                    $('#form_wrapper_' + form_id).find('.field_selected_hidden').val(vakk)
+                                                } else {
+                                                    chjeck = ' ';
+                                                    chjeck2 = ' ';
+                                                }
+                                                if (form_type == 'DROPDOWN') {
+                                                    $('#form_wrapper_' + form_id).find('select').append('<option ' + chjeck + ' value="' + vakk + '">' + vakk + '</option>')
+                                                }
+                                                if (form_type == 'RADIO' || form_type == 'CHECKBOX') {
+                                                    if (form_type == 'RADIO') {
+                                                        $('#form_wrapper_' + form_id).find('.col-lg-8').append('<div class="form-check"> <input class="form-check-input" ' + chjeck2 + ' type="radio" name="form_input_' + form_id + '" value="" id="form_input_' + form_id + '-' + xx + '"> <label class="form-check-label" for="form_input_' + form_id + '-' + xx + '"> ' + vakk + ' </label></div>')
+                                                    } else {
+                                                        $('#form_wrapper_' + form_id).find('.col-lg-8').append('<div class="form-check"> <input class="form-check-input" ' + chjeck2 + ' type="checkbox" name="form_input_' + form_id + '-' + xx + '" value="" id="form_input_' + form_id + '-' + xx + '"> <label class="form-check-label" for="form_input_' + form_id + '-' + xx + '"> ' + vakk + ' </label></div>')
+                                                    }
+
+                                                }
+                                                valueofinput += vakk + '|';
+                                                xx++;
+                                            });
+                                            $('#form_value_' + form_id).val(valueofinput)
+
+
+                                        }
+                                    </script>
+
+                                    <div class="fm-add">
+                                        <div class="row">
+                                            <div class="col-lg-4">
+                                                <div class="button-assets">
+                                                    <h4>Form Name</h4>
+                                                    <input type="text" onclick="$(this).select()" onkeyup="form_name()"
+                                                        class="form-control" value="<?= $FORM_NAME ?>"
+                                                        id="form_name_input" name="FORM_NAME" style="margin: 10px 0;">
+                                                    <textarea onclick="$(this).select()" type="text"
+                                                        onkeyup="form_name()" class="form-control" id="form_desc_input"
+                                                        name="FORM_DESCRIPTION"
+                                                        style="margin: 10px 0;"><?= $FORM_DESCRIPTION ?></textarea>
+                                                    <h4>Standard Form</h4>
+                                                    <div class="buttons">
+                                                        <button type="button" class="btn"
+                                                            onclick="form_add('NAME')">Name</button>
+                                                        <button type="button" class="btn"
+                                                            onclick="form_add('EMAIL ADDRESS')">Email Address</button>
+                                                        <button type="button" class="btn"
+                                                            onclick="form_add('MOBILE')">Mobile</button>
+                                                        <button type="button" class="btn"
+                                                            onclick="form_add('DATE OF BIRTH')">Date of Birth</button>
+                                                        <button type="button" class="btn"
+                                                            onclick="form_add('ADDRESS')">Address</button>
+                                                        <button type="button" class="btn"
+                                                            onclick="form_add('CITY')">City</button>
+                                                        <button type="button" class="btn"
+                                                            onclick="form_add('POSTAL')">Postal</button>
+                                                        <button type="button" class="btn"
+                                                            onclick="form_add('STATE')">State</button>
+                                                    </div>
+                                                    <h4>Custom Fields</h4>
+                                                    <div class="buttons">
+                                                        <button type="button" class="btn"
+                                                            onclick="form_add('SINGLE TEXT')">Single Line Text</button>
+                                                        <button type="button" class="btn"
+                                                            onclick="form_add('PARAGRAPH')">Paragraph Text</button>
+                                                        <button type="button" class="btn"
+                                                            onclick="form_add('DROPDOWN')">Dropdown</button>
+                                                        <button type="button" class="btn"
+                                                            onclick="form_add('CHECKBOX')">Checkbox</button>
+                                                        <button type="button" class="btn"
+                                                            onclick="form_add('RADIO')">Radio</button>
+                                                        <button type="button" class="btn"
+                                                            onclick="form_add('NUMBER')">Number</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-8">
+                                                <div class="form-display">
+                                                    <h2 id="form_name_show"><?= $FORM_NAME ?></h2>
+                                                    <p id="form_desc_show"><?= $FORM_DESCRIPTION ?></p>
+                                                </div>
+                                                <div class="button-flex">
+                                                    <div class="form-group <?if($page=='add') echo 'hidden';?>" style="    margin-right: 15px;width: 100px;
+                                    margin-top: 0;">
+                                                        <label for="ACTIVE" class="control-label"
+                                                            style="    margin-bottom: 1px;">Active</label>
+                                                        <div>
+                                                            <select class="form-control validate[required] ACTIVE"
+                                                                id="ACTIVE" name="ACTIVE"
+                                                                style="padding: 5px;    height: auto;">
+                                                                <?
+                                                        if ($ACTIVE == 'Y') {
+                                                            $selected1 = ' selected';
+                                                            $selected2 = ' ';
+                                                        } else {
+                                                            $selected1 = ' ';
+                                                            $selected2 = ' selected';
+                                                        }
+                                                        ?>
+                                                                <option value="">-Select-</option>
+                                                                <option value="Y" <?= $selected1 ?>>Yes</option>
+                                                                <option value="N" <?= $selected2 ?>>No</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="btn-groups">
+                                                        <button class="btn">View Form</button>
+                                                        <button class="btn btn-share" type="submit" name="update_form"
+                                                            id="update_form">Save Form</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="wizard-form third-from">
+                                <form class="form-horizontal">
+                                    <div class="form-group row">
+                                        <label class="col-lg-3 control-label">Your Waiver Includes Minors?</label>
+                                        <div class="radio col-lg-9">
+                                            <label class="form-check-label" style="margin-right: 30px"><input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="true"> Maybe (Select Adult or Minors)</label>
+                                            <label class="form-check-label" style="margin-right: 30px"><input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="either"> Absolutely</label>
+                                            <label class="form-check-label"><input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="false" checked=""> No</label>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="form-group row">
+                                        <label class="col-lg-3 control-label">Enable renew feature for returning customers?<span class="fas fa-question-sign"></span></label>
+                                        <div class="radio col-lg-9">
+                                            <label class="form-check-label" style="margin-right: 30px"><input type="radio" class="form-check-input" name="renewRadios" value="name"> Renew by Name</label>
+                                            <label class="form-check-label" style="margin-right: 30px"><input type="radio" class="form-check-input" name="renewRadios" value="phoneOrEmail"> Renew by Phone Number or Email</label>
+                                            <label class="form-check-label" style="margin-right: 30px"><input type="radio" class="form-check-input" name="renewRadios" value="all"> Renew by name, phone or email</label>
+                                            <label class="form-check-label"><input type="radio" class="form-check-input" name="renewRadios" value="false" checked=""> No</label>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="form-group row">
+                                        <label class="col-lg-3 control-label">Send customer an email with a copy of your waiver after signing?</label>
+                                        <div class="radio col-lg-9">
+                                            <label class="form-check-label" style="margin-right: 30px"><input type="radio" class="form-check-input" name="emailCusRadios" value="true"> Default</label>
+                                            <label class="form-check-label" style="margin-right: 30px"><input type="radio" class="form-check-input" name="emailCusRadios" value="custom">Custom</label>
+                                            <label class="form-check-label"><input type="radio" class="form-check-input" name="emailCusRadios" value="false" checked="">No</label>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="form-group row">
+                                        <label class="col-lg-3 control-label">Use custom waiver confirmation page?</label>
+                                        <div class="radio col-lg-9">
+                                            <label class="form-check-label" style="margin-right: 30px"><input type="radio" class="form-check-input" name="useConfirmation" value="true"> Yes</label>
+                                            <label class="form-check-label"><input type="radio" class="form-check-input" name="useConfirmation" value="false"> No</label>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="form-group">
+                                        <label class="control-label">Redirect URL: After a waiver is submited, send participant to the alternative website. Default or leaving it empty will refresh the page. (website version only)</label>
+                                        <input class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label">Send an email notifying me when a waiver signed</label>
+                                        <input class="form-control" placeholder="Your email address">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="wizard-form fourth-from">
+                                <label class="control-label d-block">Please Click the button below to add additional signature as you need.</label>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-secondary">Add Signature</button> 
+                                    <button type="button" class="btn btn-secondary">Add Print Name</button> 
+                                    <button type="button" class="btn btn-secondary">Add Signed Date</button>
+                                </div>
+
+                                <div class="d-none">
+                                    <div class="card mb-3 date-card">
+                                        <div class="card-header">
+                                            <i class="fas fa-trash removeCard"></i>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="form-group row">
+                                                <div class="col-lg-5">
+                                                    <input class="form-control" id="dob" type="text" value="">
+                                                </div>
+                                                <div class="col-lg-7">
+                                                    <input type="text" class="form-control" disabled>
+                                                </div>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label class="d-block"><input type="checkbox"> Optional Field</label>
+                                                <label class="d-block"><input type="checkbox"> Renewable</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-3 name-card">
+                                        <div class="card-header">
+                                            <i class="fas fa-trash removeCard"></i>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="form-group row">
+                                                <div class="col-lg-5">
+                                                    <input class="form-control" id="name" type="text" value="">
+                                                </div>
+                                                <div class="col-lg-7">
+                                                    <input type="text" class="form-control" disabled>
+                                                </div>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label class="d-block"><input type="checkbox"> Optional Field</label>
+                                                <label class="d-block"><input type="checkbox"> Renewable</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-3 sign-card">
+                                        <div class="card-header">
+                                            <i class="fas fa-trash removeCard"></i>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="form-group row">
+                                                <div class="col-lg-3">
+                                                    <label for="sign">Signature Text</label>
+                                                </div>
+                                                <div class="col-lg-9">
+                                                    <input id="sign" type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-8">
+                                                    <div class="sign-display">
+                                                        Signature Here
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <div class="checkbox">
+                                                        <label class="d-block"><input type="checkbox"> Optional Field</label>
+                                                        <label class="d-block"><input type="checkbox"> Renewable</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="signs-sortable">
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="ckeditor/ckeditor.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.back-step').hide();
+            $('.next-step').on('click', function () {
+
+                $('.step-bolt.active').next().addClass('active');
+                $('.step-bolt.active').prev().removeClass('active').addClass('completed');
+                $(".back-step").attr('data-id', $('.step-bolt.active').attr('id'));
+                $('#progress').attr('class', '');
+                $('#progress').addClass('progressBar ' + $('.step-bolt.active').attr('id'));
+                $('.progressBar').addClass($('.step-bolt.active').attr('id'));
+                if ($('.step-bolt:last-child').hasClass('active')) {
+                    $(this).hide();
+                }
+                else {
+                    $('.back-step').show();
+                }
+                $(".flex-box").css('left', '-' + ($("#" + $(".back-step").attr('data-id')).attr('data-div') - 1) * 100 + '%');
+            });
+            $('.back-step').on('click', function () {
+
+                $('.step-bolt.active').prev().addClass('active').removeClass('completed');
+                $('#progress').attr('class', '');
+                $('#progress').addClass('progressBar ' + $('.step-bolt.active').attr('id'));
+                $(".back-step").attr('data-id', $('.step-bolt.active').attr('id'));
+                $("#" + $(this).attr('data-id')).next().removeClass('active');
+                if ($('.step-bolt:last-child').hasClass('active')) { } else {
+                    $('.next-step').show();
+                }
+                if ($('.step-bolt:first-child').hasClass('active')) {
+                    $(this).hide();
+                } else {
+
+                }
+                $(".flex-box").css('left', '-' + ($("#" + $(".back-step").attr('data-id')).attr('data-div') - 1) * 100 + '%');
+            });
+
+            var initEditor = (function () {
+                var wysiwygareaAvailable = isWysiwygareaAvailable(),
+                    isBBCodeBuiltIn = !!CKEDITOR.plugins.get('bbcode');
+                return function () {
+                    var editorElement = CKEDITOR.document.getById('txt_content');
+                    if (wysiwygareaAvailable) {
+                        CKEDITOR.replace('txt_content');
+                    }
+                    else {
+                        editorElement.setAttribute('contenteditable', 'true');
+                        CKEDITOR.inline('txt_content');
+                    }
+                };
+
+                function isWysiwygareaAvailable() {
+                    if (CKEDITOR.revision == ('%RE' + 'V%')) {
+                        return true;
+                    }
+
+                    return !!CKEDITOR.plugins.get('wysiwygarea');
+                }
+            })();
+            initEditor();
+
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+.footer
+  .contact_form.blue-bg
+    .container
+      #footer_accordion.panel-group.row
+        .col-md-12.text-center
+          .panel.panel-default
+            a(data-toggle='collapse', data-parent='#footer_accordion', href='#form')
+              .panel-heading
+                h4.panel-title(style='color:#fff')
+                  | Contact Us for more information 
+                  i.fa.fa-chevron-down
+            #form.panel-collapse.collapse
+              .panel-body
+                h2.text-center.text-light Get in Touch...
+                form.row.text-left
+                  .col-lg-6.col-md-12
+                    .row
+                      .form-group.col-md-6
+                        input#your_name.form-control(type='text', placeholder='First Name*')
+                      .form-group.col-md-6
+                        input#your_name.form-control(type='text', placeholder='Last Name*')
+                      .form-group.col-md-6
+                        input#your_name.form-control(type='text', placeholder='Telephone*')
+                      .form-group.col-md-6
+                        input#your_name.form-control(type='text', placeholder='Email Adress*')
+                      .form-group.col-md-12
+                        p
+                          | I would like to opt in recieve marketing from ICarryIt via:
+                          .form-check-inline
+                            input#one.form-check-input(type='radio', name='optradio')
+                            label.form-check-label(for='one')
+                              | Email
+                          .form-check-inline
+                            input#two.form-check-input(type='radio', name='optradio')
+                            label.form-check-label(for='two')
+                              | Telephone
+                          .form-check-inline
+                            input#three.form-check-input(type='radio', name='optradio')
+                            label.form-check-label(for='three')
+                              | Post
+                  .col-lg-6.col-md-12
+                    .form-group
+                      textarea#comment.form-control(rows='6', placeholder='Message')
+                  button.btn.btn-primary.submit.yellow-bg(type='submit') Submit Enquirey
+  .footer_detailz.teal-bg
+    .container
+      .row
+        .col-md-5
+          .left-text
+            img.footer-logo(src='assets/images/footer_logo.png', alt='google_play')
+            span
+              | &copy; Copyright Jack Wassiliauskas 2018
+        .col-md-3
+          .social_links.text-center
+            ul.list-inline
+              li.list-inline-item
+                a.blue-bg.text-light.fb(href='')
+                  i.fab.fa-facebook-f
+              li.list-inline-item
+                a.blue-bg.text-light.twtr(href='javascript:void(0)')
+                  i.fab.fa-twitter
+              li.list-inline-item
+                a.blue-bg.text-light.lin(href='javascript:void(0)')
+                  i.fab.fa-linkedin-in
+        .col-md-4
+          .text-right
+            p
+              | For more information, please contact us at 
+              strong info@icarryit.com

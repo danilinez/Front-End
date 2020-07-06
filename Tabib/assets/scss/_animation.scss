@@ -1,0 +1,202 @@
+@keyframes pulse
+{
+  0% { box-shadow: 0px 0px 0px 1px #007bfede; }
+  100% { box-shadow: 0px 0px 0px 10px #007bfe00; }
+}
+
+
+.fadeup-a {
+  opacity: 0;
+  position: relative;
+  top: 40px;
+}
+
+.rise-a {
+  opacity: 1;
+  animation-name: rise-a;
+  animation-duration: 1.5s;
+  top: 0px;
+}
+
+@keyframes rise-a {
+  from {
+    top: 40px;
+    opacity: 0;
+  }
+  to {
+    top: 0px;
+    opacity: 1;
+  }
+}
+.fadeup-b {
+  opacity: 0;
+  position: relative;
+  top: 40px;
+}
+
+.rise-b {
+  opacity: 1;
+  animation-name: rise-b;
+  animation-duration: 1.55s;
+  top: 0px;
+}
+
+@keyframes rise-b {
+  0% {
+    top: 40px;
+    opacity: 0;
+  }
+  20% {
+    top: 40px;
+    opacity: 0;
+  }
+  100% {
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+.fadeup-c {
+  opacity: 0;
+  position: relative;
+  top: 40px;
+}
+
+.rise-c {
+  opacity: 1;
+  animation-name: rise-c;
+  animation-duration: 1.60s;
+  top: 0px;
+}
+
+@keyframes rise-c {
+  0% {
+    top: 40px;
+    opacity: 0;
+  }
+  40% {
+    top: 40px;
+    opacity: 0;
+  }
+  100% {
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+.fadeup-d {
+  opacity: 0;
+  position: relative;
+  top: 40px;
+}
+
+.rise-d {
+  opacity: 1;
+  animation-name: rise-d;
+  animation-duration: 1.65s;
+  top: 0px;
+}
+
+@keyframes rise-d {
+  0% {
+    top: 40px;
+    opacity: 0;
+  }
+  60% {
+    top: 40px;
+    opacity: 0;
+  }
+  100% {
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+.scaleup {
+  opacity: 0;
+  position: relative;
+  transform: scale(0.6);
+}
+@media(max-width:767px)
+{
+  .scaleup.pad.zoom
+  {
+    opacity: 1 !important;
+    transform: scale(1)!important;
+    animation-name: none !important;
+  }
+}
+.zoom {
+  opacity: 1;
+  animation-name: zooom;
+  animation-duration: 1.5s;
+  transform: scale(1);
+}
+
+
+@keyframes zooom {
+  0% {
+    transform: scale(0.6);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(0.6);
+    opacity: 0;
+  }
+  85% {
+    transform: scale(1.1);
+    opacity: .8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.fadein {
+  opacity: 0;
+}
+
+.invade {
+  opacity: 1;
+  animation-name: fadein;
+  animation-duration: 1.6s;
+}
+
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.leftin {
+  opacity: 0;
+  position: relative;
+  left: 50px;
+}
+
+.fadeleft {
+  opacity: 1;
+  animation-name: leftin;
+  animation-duration: 2s;
+  left: 0px;
+}
+
+
+@keyframes leftin {
+  from {
+    left: 50px;
+    opacity: 0;
+  }
+  to {
+    left: 0px;
+    opacity: 1;
+  }
+}

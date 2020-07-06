@@ -1,0 +1,108 @@
+.about {
+  margin: 0px;
+  padding: 0px;
+  .container-fluid {
+    padding: 0px;
+  }
+  .banner
+  {
+    background-image: url('images/slide2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    padding: 100px 0px 50px;
+    text-align: center;
+    h1
+    {
+      color: #fff;
+      font-size: 54px;
+      font-family: 'tbold';
+      margin: 70px 0px 0px;
+    }
+  }
+  h2
+  {
+    color:$blue;
+    font-size: 38px;
+    font-family: 'tbold';
+    margin: 20px 0px 20px;
+  }
+  h3
+  {
+    color:$pinkfaded;
+    font-size: 24px;
+    font-family: 'tbold';
+    margin: 20px 0px 20px;
+  }
+  h4
+  {
+    color:$pinkfaded;
+    font-family: 'tbold' !important;
+    font-size: 20px;
+    margin: 30px 0px;
+    a
+    {
+      color:$pinkfaded;
+      text-decoration: none !important;
+      &:hover{
+        color:$pink;
+        text-decoration: underline !important;
+      }
+    }
+  }
+  p.p
+  {
+    font-size: 18px;
+    color:#333;
+    margin: 0px 0px 10px;
+  }
+  p
+  {
+    font-size: 16px;
+    color:$text;
+    margin: 0px 0px 10px;
+  }
+  .why
+  {
+    background-color:#f1f5fa;
+    padding: 40px 0px 60px;
+  }
+  label{
+    color:$pinkfaded;
+    font-size: 18px;
+  }
+  .form-control
+  {
+    border:1px solid #b8d2f6;
+    border-radius: 0px;
+    background-color:#f6faff;
+    &:focus
+    {
+      box-shadow: none !important;
+    }
+  }
+  label, .form-control, option
+  {
+    font-family:'source' !important;
+  }
+  .form
+  {
+    margin: 50px 0px 30px;
+  }
+  .form-group
+  {
+    text-align: left !important;
+  }
+  textarea
+  {
+    width: 100%;
+  }
+}
+.why
+{
+  .iotsolution
+  {
+    padding: 20px 0px 0px;
+    background-color:#f1f5fa;
+  }
+}

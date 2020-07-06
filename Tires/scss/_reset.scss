@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+  font-family: "saira", sans-serif;
+}
+*::selection
+{
+  background-color: transparent;
+}
+.form-control::selection
+{
+  background: rgb(64, 169, 255);
+  color:#fff;
+}
+ul {
+  margin: 0px;
+  padding: 0px;
+  li {
+    list-style-type: none;
+    display: inline-block;
+  }
+}
+a {
+  text-decoration: none !important;
+  color:$text;
+  &:hover
+  {
+    color:$red;
+  }
+}
+.link {
+  text-decoration: none !important;
+}
+html {
+  overflow-x: hidden !important;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fff;
+  margin: 0px;
+  position: relative;
+  padding: 0px;
+  width: 100%;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+  background-color: transparent;
+  position: absolute;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color:$ddark;
+}
+body::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.fluid {
+  padding-left: 7px !important;
+  padding-right: 7px !important;
+}
+// Margin Y axis Remover from row
+.mx-none{
+  margin: 0px -15px 0px -15px;
+}
+.mx-7p{
+  margin: 0px -7px 0px -7px;
+}
+.hidden {
+  display: none;
+}
+.btn-primary:active {
+  transform: scale(0.97);
+}
+button:focus {
+  box-shadow: none !important;
+}
+*:focus {
+  outline-color: transparent !important;
+}
+
+.btn:focus,
+.form-control:focus {
+  box-shadow:none !important;
+}
+.form-control
+{
+  border-radius: 0px;
+}
+.btn-default
+{
+  background: #fff;
+  color:$text;
+  text-transform: uppercase;
+  border:1px solid $text;
+  border-radius:0px;
+  border-radius: 0px;
+  font-size: saira;
+  font-size: 16px;
+  padding: 7px 25px 6px;
+  transition: .1s linear;
+  &.solid
+  {
+    background: $red;
+    color:#fff;
+    border:1px solid $red;
+  }
+  &:hover
+  {
+    background: $red;
+    color:#fff;
+    border:1px solid $red;
+  }
+  &:active
+  {
+    transform: scale(.97);
+  }
+}
+.common-title
+{
+  font-size: 30px;
+  text-transform: uppercase;
+  margin: 0px 0px 50px;
+  position: relative;
+  font-family: bold; 
+  color:$text;
+  text-align: center;
+  @media (max-width:991px) {
+    font-size: 28px;
+  }
+  @media (max-width:767px) {
+    font-size: 26px;
+  }
+  @media (max-width:576px) {
+    font-size: 24px;
+  }
+  span
+  {
+    font-family: bold; 
+    color:$red;
+  }
+}
+.link
+{
+  color:$red;
+  text-decoration: none;
+  &:hover
+  {
+    color:$red;
+  }
+}
+
+@media (max-width:420px){
+  .col-xs-12
+  {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+img
+{
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}

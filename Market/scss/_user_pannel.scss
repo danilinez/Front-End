@@ -1,0 +1,440 @@
+.user-pannel
+{
+  padding: 0px 0px 60px;
+  position: relative;
+  .manage
+  {
+    height: 100%;
+    .manage-box
+    {
+      border:1px solid #ddd;
+      padding: 20px 15px;
+      @media (min-width:992px) {
+        position: sticky;
+        top: 15px;
+      }
+      @media (max-width:991px) {
+        margin-bottom:30px
+      }
+      h4
+      {
+        font-family: pop;
+        color:#333;
+        font-size: 16px;
+        margin: 0px;
+        strong
+        {
+          font-family: popb;
+          text-transform: uppercase;
+        }
+      }
+      .up-parent
+      {
+        margin: 20px 0px 0px;
+        li
+        {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          a
+          {
+            font-family: popm;
+            font-size: 16px;
+            padding: 5px 0px;
+            color:#333;
+            &:hover
+            {
+              color:$green;
+            }
+          }
+          i{
+            font-size: 14px;
+            cursor: pointer;
+            padding: 5px 0px;
+            flex-grow: 1;
+            text-align: right;
+            &:hover
+            {
+              color:$green;
+            }
+            &.flip
+            {
+              &::before
+              {
+                content:'\f077';
+              }
+            }
+          }
+          &.active
+          {
+            a, i{
+              color:$green;
+            }
+          }
+        }
+        ul{
+          margin: 0px !important;
+          padding: 5px 0px 5px 5px;
+          li
+          {
+            display: block;
+            a
+            {
+              display: inline-block;
+              width: 100%;
+              font-size: 13px;
+              padding: 3px 0px;
+              color:$gtext;
+              font-family: pop;
+              &:hover
+              {
+                color:$green;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .pannel
+  {
+    h3
+    {
+      font-family: popm;
+      margin: 0px 0px 30px;
+    }
+    .box
+    {
+      background: #f8f8f8;
+      padding: 15px;
+      border: 1px solid #e6e6e6;
+      height: 100%;
+      @media (max-width:991px) {
+        margin-top: 20px;
+      }
+      h5
+      {
+        font-size: 16px;
+        font-family: popm;
+        margin: 0px 0px 16px;
+        a
+        {
+          margin-left: 10px;
+          font-family: popm;
+          color:$green;
+          &:hover
+          {
+            color:$dgreen;
+          }
+        }
+      }
+      h6
+      {
+        color:$gtext;
+        font-size: 13px;
+        margin: 0px 0px 10px;
+        font-family: pop;
+        text-transform: uppercase;
+      }
+      p
+      {
+        margin: 0px 0px 5px;
+        font-family: pop;
+        font-size: 13px;
+        &:first-child
+        {
+          padding-top: 0px;
+        }
+      }
+      .flex
+      {
+        display: flex;
+        @media (max-width:767px) {
+          flex-direction:column;
+        }
+        .colunm
+        {
+          flex-grow: 1;
+          @media (max-width:767px) {
+            & ~ .colunm{
+              margin-top: 15px;
+            }  
+          }
+        }
+      }
+      .table-responsive
+      {
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        .table
+        {
+          min-width: 600px;
+          background: #fff;
+          margin-bottom: 0px;
+          thead
+          {
+            tr
+            {
+              th
+              {
+                border-top:none;
+                border-bottom:none;
+                font-size: 14px;
+                font-family: popl;
+                letter-spacing: .5px;
+                text-align: center;
+                &:first-child
+                {
+                  text-align: left;
+                }
+              }
+            }
+          }
+          tbody
+          {
+            tr
+            {
+              td
+              {
+                border-top:1px solid #eee;
+                &:first-child
+                {
+                  text-align: left;
+                  max-width:200px;
+                }
+                padding: 5px 15px;
+                font-size: 14px;
+                text-align: center;
+                vertical-align: middle;
+                img
+                {
+                  max-height: 50px;
+                }
+                &:last-child
+                {
+                  width: 100px;
+                  a
+                  {
+                    font-size: 14px;
+                    color:$green;
+                    font-family: popm;
+                  }
+                }
+              }
+            }
+          }
+          &.address-table
+          {
+            min-width: 800px;
+            thead, tbody{
+              tr{
+                td, th{
+                  text-align: left !important;
+                  padding: 10px;
+                }
+                td{
+                  padding: 16px 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+      label
+      {
+        font-family: popm;
+        font-size: 14px;
+      }
+      .form-control
+      {
+        border-radius: 0px;
+        font-size: 14px;
+        height: 45px;
+      }
+      .btn-default
+      {
+        font-family: pop;
+        padding: 10px 30px;
+        font-size: 14px;
+        margin: 0px 0px 0px 10px;
+      }
+      .btn-inverse
+      {
+        font-size: 14px;
+        font-family: pop;
+        background: #555;
+        &:hover
+        {
+          background: #333;
+        }
+      }
+    }
+  }
+  .orders-details-table
+  {
+    .p-item
+    {
+      display:flex;
+      align-items: flex-start;
+      img
+      {
+        object-position: center;
+        object-fit: contain;
+        min-height: 70px;
+        max-height: 70px;
+        min-width: 70px;
+        max-width: 70px;
+      }
+      .text
+      {
+        padding: 5px 10px 5px 15px;
+        flex-grow: 1;
+        h6
+        {
+          margin:4px 0px;
+          color:#999;
+          font-family: popm;
+          a
+          {
+            font-family: popm;
+            color:$green;
+            text-transform: none;
+          }
+        }
+        .cld
+        {
+          color:rgb(197, 42, 42);
+        }
+      }
+    }
+  }
+  .order-id-list
+  {
+    li
+    {
+      background: #f8f8f8;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border:1px solid #eee;
+      padding: 10px;
+      & ~ li
+      {
+        margin-top: 10px;
+      }
+      p, h5
+      {
+        margin: 0px;
+        font-size: 18px;
+        font-family: pop;
+        @media (max-w) {
+          
+        }
+      }
+      h5 span
+      {
+        font-family: popsb;
+        color:$green;
+      }
+    }
+  }
+  .total-summary
+  {
+    margin-top: 30px;
+    .adr-box
+    {
+      height: auto !important;
+      & ~ .adr-box
+      {
+        margin-top: 30px;
+      }
+    }
+    .table
+    {
+      tr
+      {
+        td:last-child
+        {
+          text-align: right;
+        }
+        td
+        {
+          font-size: 14px;
+          border:none;
+          padding: 3px 0px;
+          vertical-align: middle;
+          strong
+          {
+            font-size: 18px;
+          }
+        }
+      }
+      tbody
+      {
+        tr:last-child
+        {
+          td
+          {
+            padding-bottom: 15px;
+          }
+        }
+      }
+      tfoot
+      {
+        border-top:1px solid #ddd !important;
+        tr:first-child
+        {
+          td
+          {
+            padding-top: 15px !important;
+          }
+        }
+      }
+    }
+  }
+  .c-orders
+  {
+    .f-row
+    {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 15px;
+      h5
+      {
+        margin: 0px 0px 5px;
+      }
+      h6
+      {
+        margin: 0px;
+        span
+        {
+          font-family: popm;
+          color:$green;
+        }
+      }
+      .more
+      {
+        a
+        {
+          color:rgb(206, 54, 54);
+          font-family: pop;
+          font-size: 14px;
+        }
+      }
+    }
+    .table
+    {
+      td
+      {
+        .badge-default
+        {
+          color: #111;
+          background-color:#eee;
+          font-family: pop;
+          padding: 5px;
+        }
+      }
+    }
+  }
+}

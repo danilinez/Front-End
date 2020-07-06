@@ -1,0 +1,112 @@
+.solutions {
+  margin: 0px;
+  padding: 0px;
+  .container-fluid {
+    padding: 0px;
+  }
+  .banner
+  {
+    background-image: url('images/slide3.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    padding: 100px 0px 50px;
+    text-align: center;
+    h1
+    {
+      color: #fff;
+      font-size: 54px;
+      font-family: 'tbold';
+      margin: 70px 0px 0px;
+    }
+  }
+  h2
+  {
+    color:$pink;
+    font-size: 38px;
+    font-family: 'tbold';
+    margin: 20px 0px 20px;
+  }
+  h3
+  {
+    color:$pink;
+    font-size: 24px;
+    font-family: 'tbold';
+    margin: 20px 0px 20px;
+  }
+  h4
+  {
+    color:$pink;
+    font-family: 'tbold' !important;
+    font-size: 20px;
+    margin: 30px 0px;
+    a
+    {
+      color:$pink;
+      text-decoration: none !important;
+      &:hover{
+        color:$pink;
+        text-decoration: underline !important;
+      }
+    }
+  }
+}
+
+.iotsolz {
+  padding: 100px 0px;
+  background-color:#faf8f5;
+  .title
+  {
+    margin: 10px 0px;
+  }
+  .p
+  {
+    font-size: 20px;
+    color:$text;
+    margin: 0px 0px 30px;
+  }
+  .pannel
+  {
+    margin-bottom: 25px;
+    background: #fff;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    &:nth-child(1) .content,
+    &:nth-child(3) .content,
+    &:nth-child(5) .content
+    {
+      padding:20px 35px;
+    }
+  }
+  .content
+  {
+    padding:30px 45px;
+    @media(max-width:1199px){
+      padding:20px 35px;
+    }
+  }
+  .btn-info 
+  {
+    @media(max-width:1199px)
+    {
+      margin: 0px;
+    }
+  }
+  .common-h a
+  {
+    font-family: tbold !important;
+    color:$blue !important;
+    &:hover
+    {
+      color:$pink !important;
+    }
+  }
+  .card {
+    border: none;
+    margin-bottom: 20px;
+    min-height: 600px;
+  }
+  .px-2 {
+    padding: 0px 10px !important;
+  }
+}

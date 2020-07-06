@@ -1,0 +1,105 @@
+.why_icarry
+{
+  position: relative;
+  padding-bottom: 75px;
+  text-align: center;
+  .whyicarry_img
+  {
+    width: 95%;
+    margin: 0 auto;
+    position: relative;
+    opacity: 0;
+  }
+  .phone-holder
+  {
+    position: relative;
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto;
+    .leftcurve
+    {
+      position: absolute;
+      width: 85px;
+      left: -8.5pc;
+      top: 6pc;
+    }
+    .rightcurve
+    {
+      position: absolute;
+      width: 85px;
+      right: -8.5pc;
+      top: 6pc;
+    }
+    .left-list
+    {
+      position: absolute;
+      left: -8pc;
+      top: 8pc;
+      margin: 0px;
+      padding: 0px;
+      z-index: 10;
+      li
+      {
+        position: relative;
+        list-style-type: none;
+        margin-bottom: 5pc;
+        span
+        {
+          position: absolute;
+          top: 15px;
+          right: 5.2pc;
+          font-size: 18px;
+          color: $text;
+          white-space: nowrap;
+        }
+        img
+        {
+          max-width: 60px;
+        }
+      }
+      .mid_item
+      {
+        left: -35px;
+      }
+    }
+    .right-list
+    {
+      position: absolute;
+      right: -8pc;
+      top: 8pc;
+      margin: 0px;
+      padding: 0px;
+      z-index: 10;
+      li
+      {
+        position: relative;
+        list-style-type: none;
+        margin-bottom: 5pc;
+        span
+        {
+          top: 15px;
+          left: 5.2pc;
+          white-space: nowrap;
+          font-size: 18px;
+          color: $text;
+          position: absolute;
+        }
+        img
+        {
+          max-width: 60px;
+        }
+      }
+      .mid_item
+      {
+        right: -35px;
+      }
+    }
+  }
+  // bumpin for animation
+  .bumpin
+  {
+    animation-name: bumpin !important;
+    animation-duration: 1.5s;
+    opacity: 1;
+  }
+}

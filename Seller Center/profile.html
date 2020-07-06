@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home | Market</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="fontawesome/css/all.css" />
+    <link rel="stylesheet" href="css/select.css" />
+    <link rel="stylesheet" href="css/datetimepicker.css" />
+    <link rel="stylesheet" href="css/datatables.css" />
+    <link rel="stylesheet" href="css/master.css" />
+
+    <script src="https://cdn.ckeditor.com/4.11.1/standard/ckeditor.js"></script>
+    
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.png" alt="logo">
+        </a>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="products" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Products <i class="far fa-angle-down"></i></a>
+            <div class="dropdown-menu" aria-labelledby="products">
+              <a class="dropdown-item" href="add product.html">Add Products</a>
+              <a class="dropdown-item" href="product manage.html">Manage Products</a>
+              <a class="dropdown-item" href="#">Media Center</a>
+              <a class="dropdown-item" href="#">Manage Image</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="orders" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Orders <i class="far fa-angle-down"></i></a>
+            <div class="dropdown-menu" aria-labelledby="orders">
+              <a class="dropdown-item" href="#">Manage Orders</a>
+              <a class="dropdown-item" href="#">Manage Reviews</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="proms" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Promotions <i class="far fa-angle-down"></i></a>
+            <div class="dropdown-menu" aria-labelledby="proms">
+              <a class="dropdown-item" href="#">Seller Voucher</a>
+              <a class="dropdown-item" href="#">Free Shipping</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="store.html" class="nav-link">Store</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="profile-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user-circle"></i> Mr. Shop Name <i class="far fa-angle-down"></i></a>
+            <div class="dropdown-menu porfile-menu" aria-labelledby="profile-menu">
+              <h5>My Account</h5>
+              <a class="dropdown-item" href="profile-html">Profile</a>
+              <a class="dropdown-item" href="#">User Management</a>
+              <a class="dropdown-item" href="#">Account Settings</a>
+              <hr>
+              <h5>Seller Support</h5>
+              <a class="dropdown-item" href="#">Conenct with Market</a>
+              <a class="dropdown-item" href="#">Market University</a>
+              <a class="dropdown-item" href="#">Help Center</a>
+              <hr>
+              <a class="dropdown-item" href="#">Logout</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+
+    <section class="profile">
+      <div class="container-fluid">
+        <nav class="breadcrumb">
+          <a class="breadcrumb-item" href="#">Home</a>
+          <span class="breadcrumb-item active">Profile</span>
+        </nav>
+        <h3 class="mb-4">Profile</h3>
+        <!-- Nav pills -->
+        <ul class="nav nav-pills master-pills">
+          <li class="nav-item">
+            <a class="nav-link active" data-toggle="pill" href="#general">General</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="pill" href="#sellerlogo">Seler Logo</a>
+          </li>
+        </ul>
+        
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div class="tab-pane active" id="general">
+              <!-- Nav pills -->
+            <ul class="nav nav-pills sub-pills">
+              <li class="nav-item">
+                <a class="nav-link active" data-toggle="pill" href="#accinfo">Account Information</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#bsinfo">Bussiness Information</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#bankacc">Bank Account</a>
+              </li>
+            </ul>
+            
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div class="tab-pane active" id="accinfo">
+                <div class="pannel">
+                  <div class="pheader">
+                    <h5>Seller Account Infrotmation</h5>
+                  </div>
+                  <div class="pbody">
+                    <div class="form-group">
+                      <div class="row">
+                        <div class="col-2">
+                          <label for="any">ID Seller</label>
+                        </div>
+                        <div class="col-10">
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="row">
+                        <div class="col-2">
+                          <label for="any">Name on ID</label>
+                        </div>
+                        <div class="col-10">
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="row">
+                        <div class="col-2">
+                          <label for="any">Email Address</label>
+                        </div>
+                        <div class="col-10">
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="row">
+                        <div class="col-2">
+                          <label for="any">Phone Number</label>
+                        </div>
+                        <div class="col-10">
+                          <input type="file" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="btn-col text-right">
+                          <button class="btn btn-primary">Submit</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="bsinfo">
+                <div class="pannel">
+                  <div class="pheader">
+                    <h5>Seller Account Infrotmation</h5>
+                  </div>
+                  <div class="pbody">
+                    <div class="form-group">
+                      <div class="row">
+                        <div class="col-2">
+                          <label for="any">ID Seller</label>
+                        </div>
+                        <div class="col-10">
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="row">
+                        <div class="col-2">
+                          <label for="any">Name on ID</label>
+                        </div>
+                        <div class="col-10">
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="row">
+                        <div class="col-2">
+                          <label for="any">Email Address</label>
+                        </div>
+                        <div class="col-10">
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="row">
+                        <div class="col-2">
+                          <label for="any">Phone Number</label>
+                        </div>
+                        <div class="col-10">
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="btn-col text-right">
+                          <button class="btn btn-primary">Submit</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="bankacc">
+                <div class="pannel">
+                  <div class="pheader">
+                    <h5>Seller Account Infrotmation</h5>
+                  </div>
+                  <div class="pbody">
+                    <div class="form-group">
+                      <div class="row">
+                        <div class="col-2">
+                          <label for="any">ID Seller</label>
+                        </div>
+                        <div class="col-10">
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="row">
+                        <div class="col-2">
+                          <label for="any">Name on ID</label>
+                        </div>
+                        <div class="col-10">
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="row">
+                        <div class="col-2">
+                          <label for="any">Email Address</label>
+                        </div>
+                        <div class="col-10">
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="row">
+                        <div class="col-2">
+                          <label for="any">Phone Number</label>
+                        </div>
+                        <div class="col-10">
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="btn-col text-right">
+                          <button class="btn btn-primary">Submit</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="sellerlogo">
+            <div class="pannel">
+              <div class="pheader">
+                <h5>Seller Account Infrotmation</h5>
+              </div>
+              <div class="pbody">
+                <div class="frow">
+                  <button class="logo-upload-btn">upload</button>
+                  <input type='file' onchange="readURL(this);" />
+                  <div class="simg-holder">
+                    <img id="slogo" src="" alt="your image" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    
+    
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrapbundle.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/select.js"></script>
+    <script src="js/datatables.js"></script>
+    <script src="js/dropzone.js"></script>
+    <script src="js/datetimepicker.js"></script>
+    <script src="js/custom.js"></script>
+   <script>
+    
+        $(".logo-upload-btn").on( "click", function() {
+          $('.logo-upload-btn ~ input').click();
+        });
+
+    </script>
+</body>
+</html> 
+  

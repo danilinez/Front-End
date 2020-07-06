@@ -1,0 +1,88 @@
+.faqs
+{
+  padding: 60px 0px;
+  .common-title
+  {
+    margin-bottom: 0px;
+  }
+  .p
+  {
+    text-align: center;
+    font-family: light;
+    font-size: 20px;
+    margin: 0px 0px 50px;
+  }
+  .faqs-wrap
+  {
+    .sidebar
+    {
+      background: #f6f6f6;
+      border-bottom: #e7e7e7 2px solid;
+      @media (max-width:991px) {
+        margin-bottom:30px;
+      }
+      .stitle
+      {
+        background: #e7e7e7;
+        padding: 18px 20px;
+        font-size:20px;
+        font-weight: 500;
+        color: $text;
+        margin-bottom: 5px;
+        border-bottom:1px solid #ddd;
+      }
+      .sbody
+      {
+        padding:0px 2px;
+        ul
+        {
+          li
+          {
+            display: block;
+            a
+            {
+              display: inline-block;
+              width: 100%;
+              padding: 10px 15px;
+              font-size: 14px;
+              font-family: medium;
+              &:hover
+              {
+                background: #fff;
+                color:$red;
+              }
+            }
+          }
+        }
+      }
+    }
+    .card
+    {
+      margin-bottom: 20px;
+      .card-header
+      {
+        padding: 0px;
+        .card-link
+        {
+          display: inline-block;
+          width:100%;
+          padding: 12px 15px;
+          font-size: 18px;
+          font-family: medium;
+          background:$light;
+          color:$red;
+          &.collapsed
+          {
+            background: $ldark;
+            color:#fff;
+          }
+          &:hover
+          {
+            background:$light;
+            color:$red;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,84 @@
+.contact
+{
+  padding: 0px 0px 60px 0px;
+  .map
+  {
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+    padding-top: 30%;
+    @media (max-width:1199px) {
+      padding-top: 35%;
+    }
+    @media (max-width:991px) {
+      padding-top: 40%;
+    }
+    @media (max-width:767px) {
+      padding-top: 50%;
+    }
+    @media (max-width:576px) {
+      padding-top: 60%;
+    }
+    iframe
+    {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .contact-form
+  {
+    .form-group{
+      .form-control{
+        border-radius: 10px;
+        min-height: 45px;
+      }
+    }
+  }
+  h2
+  {
+    margin: 0px 0px 30px;
+    font-size: 24px;
+    font-family: montmd;
+  }
+  .locations
+  {
+    @media (max-width:1199px) {
+      margin-top:50px;
+    }
+    ul
+    {
+      li
+      {
+        display: block;
+        padding: 15px 0px;
+        &:first-child{
+          padding-top: 0px;
+        }
+        & ~ li 
+        {
+          border-top : 1px solid #eee;
+        }
+        h3
+        {
+          font-family: montb;
+          font-size: 18px;
+          margin: 0px 0px 10px;
+          color:$tpink;
+        }
+        p
+        {
+          margin: 0px;
+          strong
+          {
+            font-family: montb;
+          }
+          font-size: 14px;
+          color:$dark;
+        }
+      }
+    }
+  }
+}

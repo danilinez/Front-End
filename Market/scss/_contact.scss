@@ -1,0 +1,84 @@
+.contact{
+  position: relative;
+ .map-holder
+ {
+   height: 100vh;
+   @media (max-width:991px) {
+    height:auto;
+  }
+  iframe
+  {
+    width:100%;
+    height: 100%;
+      @media (max-width:991px) {
+        height:500px;
+      }
+      @media (max-width:767px) {
+        height:400px;
+      }
+    }
+    .form
+    {
+      min-width: 400px;
+      position: absolute;
+      top: 50%;
+      right:100px;
+      transform: translateY(-50%);
+      background: #fff;
+      padding: 50px;
+      box-shadow:0px 0px 20px 0px rgba(0,0,0,0.3);
+      @media (max-width:1199px) {
+        height:100vh;
+        right:0px;
+        box-shadow:-10px 0px 20px -10px rgba(0,0,0,0.3);
+      }
+      @media (max-width:991px) {
+        height:auto;
+        right:auto;
+        top: auto;
+        transform: translateY(0%);
+        box-shadow:0px 0px 0px 0px transparent;
+        position: relative !important;
+      }
+      p
+      {
+        font-size: 16px;
+        text-transform: uppercase;
+        margin: 0px;
+        color:#999;
+        font-family: popm;
+        word-spacing: 2px;
+      }
+      h1
+      {
+        font-size: 36px;
+        color:#111;
+        font-family: popsb;
+        margin: 5px 0px 30px;
+      }
+      .form-group
+      {
+        margin-bottom: 20px;
+        label
+        {
+          font-size: 15px;
+          color:#444;
+          font-family: popsb;
+        }
+        .form-control{
+          border-radius: 0px;
+        }
+        input.form-control{
+          height: 45px;;          
+        }
+      }
+      .btn-default
+      {
+        font-size: 16px;
+        font-family: popm;
+        width: 100%;
+        margin: 10px 0px 0px;
+      }
+    }
+  } 
+}

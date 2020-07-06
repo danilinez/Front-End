@@ -1,0 +1,662 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <!-- Meta Tags -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!--  <link rel="shortcut icon" type="image/ico" href="img/favicon.ico"/>-->
+    <!-- Styles -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
+    <!-- Image hover Mosiac -->
+    <link href="css/mosaic.css" rel="stylesheet" media="screen" />
+    <!-- Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Merienda" rel="stylesheet" />
+    <!--  custom styles-->
+    <link href="css/boxes-banner.css" rel="stylesheet" media="screen" />
+    <link href="css/global.css" rel="stylesheet" media="screen" />
+    <link href="css/style.css" rel="stylesheet" media="screen" />
+    <link rel="stylesheet" href="css/unsemantic-grid-responsive.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <script type="text/javascript">
+        window.onload = function () {
+            $.ajax({
+                type: "POST",
+                url: "LinezWS_WHCS.asmx/FnDeafultMedicalList",
+                data: "{}",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (response) {
+
+                    var result = response.d;
+                    var josonProductsData = jQuery.parseJSON("[" + result + "]");
+                    //var josonProductsData = response;
+                    var myHTML = '';
+
+                    for (var row = 0; row < Math.floor(josonProductsData[0].length); row++) {
+
+                        myHTML += '<li>' + josonProductsData[0][row].sName + '</li>'
+                    }
+
+                    document.getElementById("medicines").innerHTML = myHTML;
+
+                },
+                failure: function (msg) { alert(msg); }
+            });
+
+            $.ajax({
+                type: "POST",
+                url: "LinezWS_WHCS.asmx/FnLoadPartnerLogos",
+                data: "{}",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (response1) {
+
+                    var result = response1.d;
+                    var jsonPartnerData = jQuery.parseJSON("[" + result + "]");
+                    //var josonProductsData = response;
+                    var myHTML = '';
+                    var myHTML2 = '';
+                    var DivHtml1 = '<div class="active item">' + '<div class="row">'
+                    var DivHtml2 = '</div>' + '</div>'
+
+                    if (jsonPartnerData[0].length != 0) {
+
+                        for (var row = 0; row < Math.floor(jsonPartnerData[0].length); row++) {
+                            myHTML += '<div  class="grid-20 text-center">' + '<a href="' + jsonPartnerData[0][row].sWebsite + '" target="_blank">' + '<img src="UploadedFiles/' + jsonPartnerData[0][row].sImageLink + '" class="space50" alt="' + jsonPartnerData[0][row].sPartnerName + '" title="' + jsonPartnerData[0][row].sPartnerName + '" />' + '</a>' + '</div>'
+                            if (row == 4) {
+                                break;
+                            }
+                        }
+                    }
+
+                    if (jsonPartnerData[0].length - 5 > 0) {
+                        var row2 = 5;
+                        for (var loopCount = Math.ceil((jsonPartnerData[0].length - 5) / 5); loopCount > 0; loopCount--) {
+                            if (jsonPartnerData[0].length > 5) {
+                                var DivHtml21 = '<div class="item">' + '<div class="row">'
+                                var DivHtml22 = '</div>' + '</div>'
+                                var tmpRow = row2 + 5;
+                                myHTML2 = "";
+                                for (row2; row2 < tmpRow; row2++) {
+                                    if (row2 >= jsonPartnerData[0].length)
+                                        break;
+
+                                    myHTML2 += '<div  class="grid-20 text-center">' + '<a href="' + jsonPartnerData[0][row2].sWebsite + '" target="_blank">' + '<img src="UploadedFiles/' + jsonPartnerData[0][row2].sImageLink + '" class="space50" alt="' + jsonPartnerData[0][row2].sPartnerName + '" title="' + jsonPartnerData[0][row2].sPartnerName + '" />' + '</a>' + '</div>'
+
+                                }
+                                document.getElementById("crousalAdd").innerHTML += DivHtml21 + myHTML2 + DivHtml22;
+                            }
+
+                        }
+                        document.getElementById("crousalAdd").innerHTML = DivHtml1 + myHTML + DivHtml2 + document.getElementById("crousalAdd").innerHTML;
+                    }
+                    else {
+                        document.getElementById("crousalAdd").innerHTML = DivHtml1 + myHTML + DivHtml2;
+                    }
+
+
+
+
+
+                    //'<div class="active item">'+ '<div class="row">'+'<div  class="grid-20 text-center">'+ '</div>'+ '</div>'+'</div>'
+
+                },
+                failure: function (msg) { alert(msg); }
+            });
+
+
+        }
+  
+
+
+        function Medicine(HrefValue) {
+
+            var href = HrefValue;
+            $.ajax({
+                type: "POST",
+                url: "LinezWS_WHCS.asmx/fnMedicinesList",
+                data: "{'sHref':'" + href + "'}",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (response) {
+
+                    var result = response.d;
+                    var josonProductsData = jQuery.parseJSON("[" + result + "]");
+                    //var josonProductsData = response;
+                    var myHTML = '';
+
+                    for (var row = 0; row < Math.floor(josonProductsData[0].length); row++) {
+
+                        myHTML += '<li>' + josonProductsData[0][row].sName + '</li>'
+                    }
+
+
+                    document.getElementById("medicines").innerHTML = myHTML;
+
+                },
+                failure: function (msg) { alert(msg); }
+            });
+
+        }
+
+  
+
+        function submitForm() {
+            var strName = document.getElementById("txtUsername");
+
+            var strPassword = document.getElementById("txtPassword");
+
+
+
+            if (strName.value.length < 1) {
+
+                strName.focus();
+
+                alert('Please enter username');
+
+                return false;
+
+            }
+
+            if (strPassword.value.length < 1) {
+
+                strPassword.focus();
+
+                alert('Please enter password');
+
+                return false;
+
+            }
+
+
+            fnValidateUser();
+          
+        }
+
+        function fnValidateUser() {
+
+            var param = new Object();
+
+//            txtUsername txtPassword
+            param.sUsername = $('#txtUsername').val();
+            param.sPassword = $('#txtPassword').val();
+            return $.ajax({
+                type: "POST",
+                url: "LinezWS_WHCS.asmx/fnValidateUser",
+                data: JSON.stringify(param),
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (msg) {
+                    if (msg.d == "1") {
+                        document.WHCSLive.submit();
+                    }
+                    else {
+                        alert("Invalid Email/Password! Please Try Again.");
+                    }
+
+                },
+                failure: function (msg) { alert(msg); }
+            });
+        
+        }
+    </script>
+</head>
+<body>
+    <div id="signin_form" class="display-none">
+        <form class="form-inline margin0" method="post" action="LoginAuthentication.aspx?process=whcslogin">
+        <input type="text" class="input-small" name="username" runat="server" />
+        <div class="space2">
+        </div>
+        <input type="password" class="input-small" name="password" runat="server" />
+        <div class="space2">
+        </div>
+        <button type="submit" class="btn btn-success">
+            Sign in</button>
+        </form>
+        <div class="space2">
+        </div>
+        <a href="#none" class="font-size-12">Forgot password?</a>
+    </div>
+    
+
+ <!--My Header Rearange - Start-->
+  <!--My Header Rearange - Start-->
+    <div class="main-header">
+
+   <div class="top_menu_bg padding0-top padding0-bottom">
+    <div class="grid-container">
+
+     <div class="grid-35">
+      <a href="index.html" title="Wheel HC"><img src="img/logowheel.png" alt="Wheel HC" class="margin-top" title="Wheel HC" /></a>
+     </div>
+     
+     <ul class="nav inline list-style-none pull-right margin0 font-size-11 line-height-13 top-links">
+       <li><a href="login.html" title="Member Login"><i class="icon-user"></i> Member Login</a></li>
+       <li>·</li>
+       <li><a href="choose_rergistration.html" title="Choose Registeration Type"><i class="icon-group"></i> Register</a></li>
+      </ul>
+     
+     <div class="header_bg padding10-top padding2-bottom">
+    <div class="grid-container">
+    
+     <div class="grid-65 padding0">
+
+      <div class="navbar border-radius-5 pull-right margin0" id="site-menu">
+       <div class="navbar-inner padding0-left padding0-right border-none">
+        <div class="container">
+         <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      
+     
+         <div class="nav-collapse collapse">
+                                    <ul class="nav margin0-right font-size-12">
+                                        <li><a href="index.html" class="first-link active" title="Home">Home</a></li>
+                                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#none"
+                                            title="Products &amp; Services">Products &amp; Services<b class="caret"></b> </a>
+                                            <ul class="dropdown-menu border-radius-5 margin10-top">
+                                                <div class="grid-33">
+                                                    <li class="nav-header">Products</li>
+                                                    <li><a href="prescription_and_non-prescription_medicine.html" title="Prescription &amp; Non-Prescription Medicine">
+                                                        Prescription &amp; Non-Prescription Medicine</a></li>
+                                                    <li><a href="90_day_prescription_drug_program.html" title="90 Day Prescription Drug Program">
+                                                        90 Day Prescription Drug Program</a></li>
+                                                    <li><a href="dme_and_supplies.html" title="Durable Medical Equipment (DME) and Supplies">
+                                                        Durable Medical Equipment (DME) and Supplies</a></li>
+                                                    <li><a href="compounding.html" title="Compounding">Compounding</a></li>
+                                                </div>
+                                                <div class="grid-33">
+                                                    <li class="nav-header">Services</li>
+                                                    <li><a href="integrated_healthcare_cloud_technologies.html" title="Integrated Healthcare Cloud Technologies">
+                                                        Integrated Healthcare Cloud Technologies</a></li>
+                                                    <li><a href="personalized_healthcare_for_all.html" title="Personalized Healthcare For All">
+                                                        Personalized Healthcare For All</a></li>
+                                                    <li><a href="diabetes_education.html" title="Diabetes Education">Diabetes Education</a></li>
+                                                    <li><a href="disease_management.html" title="Disease Management">Disease Management</a></li>
+                                                    <li><a href="workers_compensation_pharmacy_solution.html" title="Workers compensation pharmacy solution">
+                                                        Workers Compensation Pharmacy solution</a></li>
+                                                </div>
+                                                <div class="grid-33">
+                                                    <li class="nav-header"><a href="promotional_products.html" title="Promotional Products">
+                                                        Promotional Products</a></li>
+                                                    
+                                                    
+<li><a href="weight_loss_kit.html" title=" Weight Loss Kit">Weight Loss Kit - $399</a></li>
+
+<li><a href="vitamins_for_life.html" title="Vitamins for life">Vitamins for life - $399</a></li>
+<li><a href="diaetic_kit.html" title=" Diabetic Kit">Diabetic Kit - $399</a></li>                                                    <li><a href="smart_home_health_care_kit.html" title=" Smart Home Health Care Kit">Smart
+                                                        Home Health Care Kit - $399</a></li>
+                                                    
+                                                    
+<li><a href="energy_saving_kit.html" title="Energy Saving Kit">Energy Saving Kit - $399</a></li>                                                </div>
+                                            </ul>
+                                        </li>
+                                        <li><a href="how_it_works.html" title="How It Works">How It Works</a></li>
+                                        <li class="active"><a href="login.html" class="last-link" title="Sign In" id="signin">
+                                            My Account</a></li>
+                                    </ul>
+                                </div>
+        </div>
+       </div>
+      </div>
+
+     </div>
+    </div>
+   </div>
+    
+    </div>
+   </div>
+
+   
+  </div>
+ 	<!--My Header Rearange - End--> 
+<!--My Header Rearange - End--> 
+    
+    
+<div class="grid-container">
+            <div class="grid-100">
+      <img src="img/about1.png" class="full-width"></div>
+    
+</div>
+       
+  <div class="space10"></div>
+   <div class="bg-white">
+        <div class="grid-container">
+            <div class="grid-100">
+                <div class="space20">
+                </div>
+                <div class="grid-33 padding0">
+                    <div class="mosaic-block bar">
+                        <a href="workers_compensation_pharmacy_solution.html" title="Home Delivery" class="mosaic-overlay">
+                            <div class="caption">
+                                <h4 class="text-white font-size-18">
+                                    Home Delivery</h4>
+                                <p class="text-white text-justify font-size-11">
+                                    At <abbr title="WheelHeathCare">WHC</abbr>, we offer unparalleled client service. This includes facilitating prescription
+                                    medication and expediting home medication delivery for patients as well as managing
+                                    the claims process for patients, attorneys and doctors.</p>
+                            </div>
+                        </a>
+                        <div class="mosaic-backdrop">
+                            <img src="img/products_services/delivery.png" alt="Home Delivery" title="Home Delivery" /></div>
+                    </div>
+                </div>
+                <div class="grid-33">
+                    <div class="mosaic-block bar">
+                        <a href="about_us.html" title="Our Company" class="mosaic-overlay">
+                            <div class="caption">
+                                <h4 class="text-white font-size-18">
+                                    Our Company</h4>
+                                <p class="text-white text-justify font-size-11">
+                                    Established in 2007, Wheel HealthCare Services, Inc. is one of the largest global healthcare
+                                    service and technology provider.</p>
+                            </div>
+                        </a>
+                        <div class="mosaic-backdrop">
+                            <img src="img/products_services/22-copy1.png" alt="Our Company" title="Our Company" /></div>
+                    </div>
+                </div>
+                <div class="grid-33 padding0">
+                    <div class="mosaic-block bar">
+                        <a href="promotional_products.html" title="Promotional Products" class="mosaic-overlay">
+                            <div class="caption">
+                                <h4 class="text-white font-size-18">
+                                    Promotional Products</h4>
+                                <p class="text-white text-justify font-size-11">
+                                    Our promotional packages are specifically designed for individuals and families
+                                    to save money.</p>
+                            </div>
+                        </a>
+                        <div class="mosaic-backdrop">
+                            <img src="img/products_services/EL_LB_Promo_Img_C.png" alt="Promotional Products"
+                                title="Promotional Products" /></div>
+                    </div>
+                </div>
+            </div>
+            <div class="space20">
+            </div>
+        </div>
+    </div>         
+           
+        </div>
+    </div>
+    <div class="bg-white">
+        <div class="grid-container">
+            
+            
+            
+            <!--Site Map Start
+            <div class="grid-100">
+            <div class="bg-white">
+        <div class="grid-container">
+            <div class="space10"></div>
+                        <h3 class="text-center">Sitemap</h3>
+            <div class="grid-33 padding0-left">
+                <div class="thumbnail">
+                    <ul class="nav nav-list">
+                        <li><a href="90_day_prescription_drug_program.html"><i class="icon-hand-right"></i> 90 Day Prescription Drug Program</a></li>
+
+                        <li>
+                            <a href="about_us.html"><i class="icon-hand-right"></i> About Us</a>
+                        </li>
+                        <li>
+                            <a href="affiliates.html"><i class="icon-hand-right"></i> Affiliates</a>
+                        </li>
+                        <li>
+                            <a href="careers.html"><i class="icon-hand-right"></i> Careers</a>
+                        </li>
+                        <li>
+                            <a href="cfls.html"><i class="icon-hand-right"></i> Compact fluorescent light bulbs (CFLs)</a>
+                        </li>
+                        <li>
+                            <a href="choose_rergistration.html"><i class="icon-hand-right"></i> Register</a>
+                        </li>
+                        <li>
+                            <a href="compounding.html"><i class="icon-hand-right"></i> Compounding</a>
+                        </li>
+                        <li>
+                            <a href="contact_us.html"><i class="icon-hand-right"></i> Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="corporate_and_social_initiatives.html"><i class="icon-hand-right"></i> Corporate and Social Initiatives</a>
+                        </li>
+                        <li>
+                            <a href="corporate_site.html"><i class="icon-hand-right"></i> Welcome</a>
+                        </li>
+                        <li>
+                            <a href="diabetes_education.html"><i class="icon-hand-right"></i> Diabetes Education</a>
+                        </li>
+                        <li>
+                            <a href="diabetic_support_pack.html"><i class="icon-hand-right"></i> Diabetic Support Pack</a>
+                        </li>
+                        <li>
+                            <a href="diaetic_kit.html"><i class="icon-hand-right"></i> Diaetic Kit</a>
+                        </li>
+                        
+                        
+                       
+                    </ul>
+                </div>
+                <div class="space10"></div>
+            </div>
+            <div class="grid-33 padding0-right">
+                <div class="thumbnail">
+                    <ul class="nav nav-list">
+                        <li>
+    <a href="diversity.html"><i class="icon-hand-right"></i> Diversity</a>
+</li>
+                        <li>
+                            <a href="disease_management.html"><i class="icon-hand-right"></i> Disease Management</a>
+                        </li>
+                        <li>
+                            <a href="dme_and_supplies.html"><i class="icon-hand-right"></i> DME and Supplies</a>
+                        </li>
+                        <li>
+                            <a href="electric_slimming_belt.html"><i class="icon-hand-right"></i> Electric Slimming Belt</a>
+                        </li>
+                        <li>
+                            <a href="energy_saving_kit.html"><i class="icon-hand-right"></i> Energy Saving Kit</a>
+                        </li>
+                        <li>
+                            <a href="exercise_watch.html"><i class="icon-hand-right"></i> Exercise Watch</a>
+                        </li>
+                        <li>
+                            <a href="home_electric_energy_saving_device.html"><i class="icon-hand-right"></i> Home Electric Energy Saving Device</a>
+                        </li>
+                        <li>
+                            <a href="how_it_works.html"><i class="icon-hand-right"></i> How it Works</a>
+                        </li>
+                        <li>
+                            <a href="index.html"><i class="icon-hand-right"></i> Homepage</a>
+                        </li>
+                        <li>
+                            <a href="integrated_healthcare_cloud_technologies.html"><i class="icon-hand-right"></i> Integrated Healthcare Cloud Technologies</a>
+                        </li>
+                        <li>
+                            <a href="mission_statement.html"><i class="icon-hand-right"></i> Mission Statement </a>
+                        </li>
+                        <li>
+                            <a href="partners.html"><i class="icon-hand-right"></i> Partners</a>
+                        </li>
+                        <li>
+                            <a href="personalized_healthcare_for_all.html"><i class="icon-hand-right"></i> Personalized Healthcare for All</a>
+                        </li>
+                       
+                    </ul>
+                </div>
+                <div class="space10"></div>
+            </div>
+            <div class="grid-33 padding0-right">
+                <div class="thumbnail">
+                    <ul class="nav nav-list">
+                        <li>
+                            <a href="prescription_and_non-prescription_medicine.html"><i class="icon-hand-right"></i> Prescription And Non-Prescription Medicine</a>
+                        </li>
+                        <li>
+                            <a href="privacy.html"><i class="icon-hand-right"></i> Privacy</a>
+                        </li>
+                        <li>
+                            <a href="promotional_products.html"><i class="icon-hand-right"></i> Promotional Products</a>
+                        </li>
+                        <li>
+                            <a href="smart_auto_fuel_saver.html"><i class="icon-hand-right"></i> Smart Auto Fuel Saver</a>
+                        </li>
+                        <li>
+                            <a href="smart_home_air_purifier.html"><i class="icon-hand-right"></i> Smart Home Air Purifier</a>
+                        </li>
+                        <li>
+                            <a href="smart_home_health_care_kit.html"><i class="icon-hand-right"></i> Smart Home Health Care Kit</a>
+                        </li>
+                        <li>
+                            <a href="tablet_pc_phone.html"><i class="icon-hand-right"></i> Tablet PC Phone</a>
+                        </li>
+                        <li>
+                            <a href="terms.html"><i class="icon-hand-right"></i> Terms</a>
+                        </li>
+                        <li>
+                            <a href="vitamins_for_life.html"><i class="icon-hand-right"></i> Vitamins For Life</a>
+                        </li>
+                        <li>
+                            <a href="vitamins_pack.html"><i class="icon-hand-right"></i> Vitamins Pack</a>
+                        </li>
+                        <li>
+                            <a href="weight_loss_kit.html"><i class="icon-hand-right"></i> Weight Loss Kit</a>
+                        </li>
+                        <li>
+                            <a href="weight_management_pack.html"><i class="icon-hand-right"></i> Weight Management Pack</a>
+                        </li>
+                        <li>
+                            <a href="workers_compensation_pharmacy_solution.html"><i class="icon-hand-right"></i> Workers Compensation Pharmacy Solution</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="space10"></div>
+            </div>
+        </div>
+    </div>
+            </div>
+            
+            Site Map End-->
+            
+            
+            
+            
+            
+            
+            
+            <!--   partners grid start -->
+            <div class="grid-100">
+                <div class="space10">
+                </div>
+                <h3>
+                    Explore Our Partners</h3>
+                <div class="space5">
+                </div>
+                <div id="myCarousel2" class="carousel slide">
+                    <!-- Carousel items  -->
+                    <div class="carousel-inner" id="crousalAdd">
+                    </div>
+                    <!-- Carousel nav -->
+                    <a class="carousel-control left" href="#myCarousel2" data-slide="prev" title="Previous">
+                        &#171;</a> <a class="carousel-control right" href="#myCarousel2" data-slide="next"
+                            title="Next">&#187;</a>
+                </div>
+            </div>
+     
+        </div>
+       <!--
+        <div class="item">
+                            <div class="row">
+                                <div class="grid-20 text-center">
+                                    <img src="img/clients/366The-Medical-Center-logo.jpg" class="space50" alt="" title="" />
+                                </div>
+                                <div class="grid-20 text-center">
+                                    <img src="img/clients/BMC-logo-RGB.jpg" class="space50" alt="" title="" />
+                                </div>
+                                <div class="grid-20 text-center">
+                                    <img src="img/clients/Lutheran_Medical_Center_(logo).png" class="space50" alt=""
+                                        title="" />
+                                </div>
+                                <div class="grid-20 text-center">
+                                    <img src="img/clients/Northwest-Medical-Center-three-line-RGB.jpg" class="space50"
+                                        alt="" title="" />
+                                </div>
+                                <div class="grid-20 text-center">
+                                    <img src="img/clients/lane-medical-logo-in-color.jpg" class="space50" alt="" title="" />
+                                </div>
+                            </div>
+                        </div>
+    </div>
+ </div> </div>
+    <!--partners grid end-->
+    </div>
+    <div class="space20">
+    </div>
+    
+ 
+
+     <!--footer Start-->
+  <div class="footer_bg">
+   <div class="grid-container">
+       <!-- coprate site links start-->
+    <div class="grid-60">
+                <div>
+                    <ul class="inline">
+                        <li class="padding5-left"><a href="about_us.html"><u>About Us</u></a></li>
+                        <li class="padding5-left"><a href="affiliates.html"><u>Affiliates</u></a></li>
+                        <li class="padding5-left"><a href="partners.html"><u>Partners</u></a></li>
+                        <li class="padding5-left"><a href="careers.html"><u>Careers</u></a></li>
+                        <li class="padding5-left"><a href="privacy.html"><u>Privacy</u></a></li>
+                        <li class="padding5-left"><a href="terms.html"><u>Terms of Use</u></a>
+<li class="padding5-left"><a href="contact_us.html" title="Contact Us"><u>Contact Us</u></a></li>
+<li class="padding5-left"><a href="sitemap.html"><u>Site Map</u></a></li>
+                    </ul>
+                </div>
+            </div>
+                  <!--My Logos of Social Media- Start-->
+                 <div class="grid-40">
+     <ul class="inline pull-right font-size-20">
+      <strong><em><font size="+1" color="Black">Follow Us : </font></em></strong><li>
+      
+      <a href="#none" class="text-decoration-none"><i class="icon-facebook-sign"></i></a></li>
+            <li><a href="#none" class="text-decoration-none"><i class="icon-google-plus-sign"></i></a></li>
+      <li><a href="#none" class="text-decoration-none"><i class="icon-twitter-sign"></i></a></li>
+      <li><a href="#none" class="text-decoration-none"><i class="icon-youtube-sign"></i></a></li>
+     </ul>
+    </div>
+        <!--My Logos of Social Media- End-->
+            <!--coprate Site links end-->
+     
+   </div>
+  </div>
+  <!--footer end-->
+    
+    
+    
+   
+          
+        </div>
+    </div>
+    <!-- Scripts -->
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script src='js/jquery.html5-placeholder-shim.js'></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/mosaic.min.js"></script>
+    <script src="js/jquery.blockUI.js"></script>
+    <script src="js/boxes_banner.js"></script>
+    <script src="js/functions.js"></script>
+    <script>
+        jQuery(function ($) {
+            $('.bar').mosaic({
+                animation: 'slide'
+            });
+        });
+        $('#myTab a').click(function (e) {
+            e.preventDefault();
+            $(this).tab('show');
+        })
+
+    </script>
+</body>
+</html>

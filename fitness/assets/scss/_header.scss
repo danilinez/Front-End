@@ -1,0 +1,70 @@
+body
+{
+    background-color: #eee;
+}
+.navigation
+{
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+    background-color: #fff;
+    .navs-wrap
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .brand
+        {
+            a
+            {
+                display: inline-block;
+                padding:5px 0px;
+                img
+                {
+                    height: 74px;
+                    width: auto;
+                }
+            }
+        }
+        .cposed
+        {
+            overflow: hidden;
+            height: 75px;
+            img
+            {
+                position: relative;
+                top: 5px;
+                height: 74px !important;
+            }
+        }
+    }
+    .nav-links
+    {
+        > ul
+        {
+            > li
+            {
+                > a
+                {
+                    color:#7b7b7b;
+                    font-size: 28px;
+                    padding:14px 15px;
+                    i
+                    {
+                        font-size: 16px;
+                        position: relative;
+                        left: -5px;
+                    }
+                    &۔active,
+                    &:hover
+                    {
+                        background-color: $green;
+                        color:#fff;
+                    }
+                }
+                .mega-menu
+                {
+                    display: none;
+                }
+            }
+        }
+    }
+}

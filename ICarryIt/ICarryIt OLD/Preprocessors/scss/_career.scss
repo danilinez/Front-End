@@ -1,0 +1,72 @@
+.fluid_bcrumb
+{
+  border-top: 1px solid #ffffff5c;
+  position: relative;
+  margin: 0px;
+  .breadcrumb
+  {
+    position: relative;
+    margin: 0px;
+    border-bottom: none;
+  }
+}
+a.text-light:hover
+{
+  color: #fff !important;
+}
+.join_team
+{
+  position: relative;
+}
+.content_slides
+{
+  padding: 60px 0px;
+}
+.about_job
+{
+  border-radius: 10px;
+  box-shadow: 0px 0px 25px 1px rgba(0,0,0,0.2);
+  margin-bottom: 30px;
+  .job_title
+  {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: $yellow;
+    color: $text;
+    padding: 15px 15px 12px;
+    h4
+    {
+      margin: 0px;
+      font-size: 20px;
+      font-weight: 700;
+    }
+  }
+  .job_descript
+  {
+    p
+    {
+      margin: 0px;
+      font-size: 16px;
+    }
+    padding: 15px;
+    background: #fff !important;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    a
+    {
+      text-decoration: none;
+      font-weight: 700;
+      i{
+        font-size: 14px;
+      }
+      &:hover
+      {
+        color: $text !important;
+      }
+    }
+  }
+}
+.team_testimonials
+{
+  padding: 90px 0px !important;
+}

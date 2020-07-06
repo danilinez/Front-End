@@ -1,0 +1,260 @@
+/*
+    Document   : global
+    Created on : Jul 6, 2013, 11:20:29 AM
+    Author     : Linez Technologies
+    Description: Global Stylesheet
+*/
+
+/* My Modification for homepage End*/
+
+.bg-heading-promotion {background: #56CCD9; /* Old browsers */
+             background: -moz-linear-gradient(left,  #56CCD9 0%, #56CCD9 0%, #56CCD9 50%, #56CCD9  100%); /* FF3.6+ */
+             background: -webkit-gradient(linear, left top, right top, color-stop(0%,#56CCD9 ), color-stop(0%,#1B1D5A ), color-stop(50%,#56CCD9 ), color-stop(100%,#56CCD9 )); } /* Chrome,Safari4+ */
+
+.bg-heading-ourcompany {background: #FF0404; /* Old browsers */
+             background: -moz-linear-gradient(left,  #FF0404 0%, #FF0404 0%, #FF0404 50%, #FF0404  100%); /* FF3.6+ */
+             background: -webkit-gradient(linear, left top, right top, color-stop(0%,#FF0404 ), color-stop(0%,#FF0404 ), color-stop(50%,#FF0404 ), color-stop(100%,#FF0404 )); } /* Chrome,Safari4+ */
+			 
+.bg-heading-Homedelivery {background: #FFFC04; /* Old browsers */
+             background: -moz-linear-gradient(left,  #FFFC04 0%, #FFFC04 0%, #FFFC04 50%, #FFFC04  100%); /* FF3.6+ */
+             background: -webkit-gradient(linear, left top, right top, color-stop(0%,#FFFC04 ), color-stop(0%,#FFFC04 ), color-stop(50%,#FFFC04 ), color-stop(100%,#FFFC04 )); } /* Chrome,Safari4+ */
+			 
+
+
+/* My Modification for homepage sample1 Start*/
+.bg-heading-home1 {background: #1B1D5A; /* Old browsers */
+             background: -moz-linear-gradient(left,  #1B1D5A 0%, #1B1D5A 0%, #1B1D5A 50%, #1B1D5A  100%); /* FF3.6+ */
+             background: -webkit-gradient(linear, left top, right top, color-stop(0%,#1B1D5A ), color-stop(0%,#1B1D5A ), color-stop(50%,#1B1D5A ), color-stop(100%,#1B1D5A )); } /* Chrome,Safari4+ */
+
+
+
+
+/* My Modification for homepage sample2 start*/
+.bg-heading-home2 {background: #1B1D5A; /* Old browsers */
+             background: -moz-linear-gradient(left,  #1B1D5A 0%, #1B1D5A 0%, #1B1D5A 50%, #1B1D5A  100%); /* FF3.6+ */
+             background: -webkit-gradient(linear, left top, right top, color-stop(0%,#1B1D5A ), color-stop(0%,#1B1D5A ), color-stop(50%,#1B1D5A ), color-stop(100%,#1B1D5A )); } /* Chrome,Safari4+ */
+/* My Modification for homepage sample2 End*/
+
+/* My Modification for homepage End*/
+
+
+/*backgrounds*/
+.bg-white { background-color: #fff; }
+.bg-light-black { background-color: #2d2d2d; }
+.bg-light-grey { background-color: #f2f2f2; }
+.bg-heading {background: #1e69de; /* Old browsers */
+             background: -moz-linear-gradient(left,  #1e69de 0%, #3690f0 0%, #54a3ee 50%, #6db3f2 100%); /* FF3.6+ */
+             background: -webkit-gradient(linear, left top, right top, color-stop(0%,#1e69de), color-stop(0%,#3690f0), color-stop(50%,#54a3ee), color-stop(100%,#6db3f2)); /* Chrome,Safari4+ */
+             background: -webkit-linear-gradient(left,  #1e69de 0%,#3690f0 0%,#54a3ee 50%,#6db3f2 100%); /* Chrome10+,Safari5.1+ */
+             background: -o-linear-gradient(left,  #1e69de 0%,#3690f0 0%,#54a3ee 50%,#6db3f2 100%); /* Opera 11.10+ */
+             background: -ms-linear-gradient(left,  #1e69de 0%,#3690f0 0%,#54a3ee 50%,#6db3f2 100%); /* IE10+ */
+             background: linear-gradient(to right,  #1e69de 0%,#3690f0 0%,#54a3ee 50%,#6db3f2 100%); /* W3C */
+             filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e69de', endColorstr='#6db3f2',GradientType=1 ); /* IE6-9 */
+             border-bottom: 3px solid #3690f0;
+}
+/*font sizes*/
+.font-size-10 { font-size: 10px }
+.font-size-11 { font-size: 11px }
+.font-size-12 { font-size: 12px }
+.font-size-13 { font-size: 13px }
+.font-size-14 { font-size: 14px }
+.font-size-15 { font-size: 15px }
+.font-size-16 { font-size: 16px }
+.font-size-17 { font-size: 17px }
+.font-size-18 { font-size: 18px }
+.font-size-19 { font-size: 19px }
+.font-size-20 { font-size: 20px }
+/*line height*/
+.line-height-10 { line-height: 10px }
+.line-height-11 { line-height: 11px }
+.line-height-12 { line-height: 12px }
+.line-height-13 { line-height: 13px }
+.line-height-14 { line-height: 14px }
+.line-height-15 { line-height: 15px }
+.line-height-16 { line-height: 16px }
+.line-height-17 { line-height: 17px }
+.line-height-18 { line-height: 18px }
+.line-height-19 { line-height: 19px }
+.line-height-20 { line-height: 20px }
+.line-height-22 { line-height: 22px }
+.line-height-25 { line-height: 25px }
+/* text colors*/
+.text-white { color: #fff; }
+.text-justify {text-align: justify;}
+.text-light-black { color: #2c2c2c; }
+.text-black { color: #000; }
+.text-dark-black { color: #494949 }
+.text-light-grey { color: #979797; }
+.text-dark-grey { color: rgb(167, 166, 166) }
+/*text-shadow*/
+.text-shadow-black { text-shadow: #797676 0 1px 2px; }
+/*paddings*/
+.padding0 { padding: 0 !important }
+.padding0-left { padding-left: 0 !important }
+.padding0-right { padding-right: 0 !important }
+.padding0-top { padding-top: 0 !important }
+.padding0-bottom { padding-bottom: 0 !important }
+.padding2 { padding: 2px !important }
+.padding2-left { padding-left: 2px !important }
+.padding2-right { padding-right: 2px !important }
+.padding2-top { padding-top: 2px !important }
+.padding2-bottom { padding-bottom: 2px !important }
+.padding5 { padding: 5px !important }
+.padding5-left { padding-left: 5px !important }
+.padding5-right { padding-right: 5px !important }
+.padding5-top { padding-top: 5px !important }
+.padding5-bottom { padding-bottom: 5px !important }
+.padding7 { padding: 7px !important }
+.padding7-left { padding-left: 7px !important }
+.padding7-right { padding-right: 7px !important }
+.padding7-top { padding-top: 7px !important }
+.padding7-bottom { padding-bottom: 7px !important }
+.padding10 { padding: 10px !important }
+.padding10-left { padding-left: 10px !important }
+.padding10-right { padding-right: 10px !important }
+.padding10-top { padding-top: 10px !important }
+.padding10-bottom { padding-bottom: 10px !important }
+.padding12 { padding: 12px !important }
+.padding12-left { padding-left: 12px !important }
+.padding12-right { padding-right: 12px !important }
+.padding12-top { padding-top: 12px !important }
+.padding12-bottom { padding-bottom: 12px !important }
+.padding15 { padding: 15px !important }
+.padding15-left { padding-left: 15px !important }
+.padding15-right { padding-right: 15px !important }
+.padding15-top { padding-top: 15px !important }
+.padding15-bottom { padding-bottom: 15px !important }
+.padding20 { padding: 20px !important }
+.padding20-left { padding-left: 20px !important }
+.padding20-right { padding-right: 20px !important }
+.padding20-top { padding-top: 20px !important }
+.padding20-bottom { padding-bottom: 20px !important }
+.padding25 { padding: 25px !important }
+.padding25-left { padding-left: 25px !important }
+.padding25-right { padding-right: 25px !important }
+.padding25-top { padding-top: 25px !important }
+.padding25-bottom { padding-bottom: 25px !important }
+.padding50 { padding: 50px !important }
+.padding50-left { padding-left: 50px !important }
+.padding50-right { padding-right: 50px !important }
+.padding50-top { padding-top: 50px !important }
+.padding50-bottom { padding-bottom: 50px !important }
+.padding75 { padding: 75px !important }
+.padding75-left { padding-left: 75px !important }
+.padding75-right { padding-right: 75px !important }
+.padding75-top { padding-top: 75px !important }
+.padding75-bottom { padding-bottom: 75px !important }
+.padding100 { padding: 100px !important }
+.padding100-left { padding-left: 100px !important }
+.padding100-right { padding-right: 100px !important }
+.padding100-top { padding-top: 100px !important }
+.padding100-bottom { padding-bottom: 100px !important }
+/*margins*/
+.margin0 { margin: 0 !important }
+.margin0-left { margin-left: 0 !important }
+.margin0-right { margin-right: 0 !important }
+.margin0-top { margin-top: 0 !important }
+.margin0-bottom { margin-bottom: 0px !important }
+.margin2 { margin: 2px !important }
+.margin2-left { margin-left: 2px !important }
+.margin2-right { margin-right: 2px !important }
+.margin2-top { margin-top: 2px !important }
+.margin2-bottom { margin-bottom: 2px !important }
+.margin5 { margin: 5px !important }
+.margin5-left { margin-left: 5px !important }
+.margin5-right { margin-right: 5px !important }
+.margin5-top { margin-top: 5px !important }
+.margin5-bottom { margin-bottom: 12px !important }
+.margin7 { margin: 7px !important }
+.margin7-left { margin-left: 7px !important }
+.margin7-right { margin-right: 7px !important }
+.margin7-top { margin-top: 7px !important }
+.margin7-bottom { margin-bottom: 7px !important }
+.margin10 { margin: 10px !important }
+.margin10-left { margin-left: 10px !important }
+.margin10-right { margin-right: 10px !important }
+.margin10-top { margin-top: 10px !important }
+.margin10-bottom { margin-bottom: 10px !important }
+.margin12 { margin: 12px !important }
+.margin12-left { margin-left: 12px !important }
+.margin12-right { margin-right: 12px !important }
+.margin12-top { margin-top: 12px !important }
+.margin12-bottom { margin-bottom: 12px !important }
+.margin15 { margin: 15px !important }
+.margin15-left { margin-left: 15px !important }
+.margin15-right { margin-right: 15px !important }
+.margin15-top { margin-top: 15px !important }
+.margin15-bottom { margin-bottom: 15px !important }
+.margin20 { margin: 20px !important }
+.margin20-left { margin-left: 20px !important }
+.margin20-right { margin-right: 20px !important }
+.margin20-top { margin-top: 20px !important }
+.margin20-bottom { margin-bottom: 20px !important }
+.margin50 { margin: 50px !important }
+.margin50-left { margin-left: 50px !important }
+.margin50-right { margin-right: 50px !important }
+.margin50-top { margin-top: 50px !important }
+.margin50-bottom { margin-bottom: 50px !important }
+.margin100 { margin: 100px !important }
+.margin100-left { margin-left: 100px !important }
+.margin100-right { margin-right: 100px !important }
+.margin100-top { margin-top: 100px !important }
+.margin100-bottom { margin-bottom: 100px !important }
+/*spaces*/
+.space2 { height: 2px }
+.space5 { height: 5px }
+.space10 { height: 10px }
+.space20 { height: 20px }
+.space30 { height: 30px; }
+.space50 { height: 50px }
+/*text styles*/
+.text-bold { font-weight: bold; }
+.text-italic { font-style: italic; }
+.text-normal { font-weight: normal }
+/*links style*/
+a.dark-black { color: rgb(167, 166, 166); }
+a.dark-black:hover { color: rgb(167, 166, 166); }
+a.white { color: #fff }
+a.white:hover { color: #fff; }
+a.text-decoration-none:hover, button.text-decoration-none:hover, button.text-decoration-none:active, button.text-decoration-none:focus { text-decoration: none }
+a.text-decoration-underline:hover { text-decoration: underline }
+/*displays*/
+.display-none { display: none }
+.display-block { display: block }
+.display-inline { display: inline }
+/*positions*/
+.position-relative { position: relative }
+.position-absolute { position: absolute; }
+.position-fixed { position: fixed; }
+/*list styles*/
+ul.list-style-none { list-style-type: none }
+ul.list-inline li{ float: left }
+ul.list-style-square { list-style-type: square }
+.list-style-upper-roman {list-style-type: upper-roman;}
+/*borders-raduis*/
+.border-radius-0 { -webkit-border-radius: 0 !important; -moz-border-radius: 0 !important; border-radius: 0 !important; }
+.border-radius-2 { -webkit-border-radius: 2px !important; -moz-border-radius: 2px !important; border-radius: 2px !important; }
+.border-radius-5 { -webkit-border-radius: 5px !important; -moz-border-radius: 5px !important; border-radius: 5px !important; }
+.border-none { border: none }
+.border-left-0 { border-left: 0  !important}
+.border-right-0 { border-right: 0  !important}
+.border-top-0 { border-top: 0  !important}
+.border-bottom-0 { border-bottom: 0  !important}
+/*border colors*/
+.border-color-dark-black { border: 1px solid #545454  !important}
+.border-color-light-grey { border: 1px solid #edeff4  !important}
+.border-color-post { border: 1px solid #edeff4 }
+.border-color-ad { border: 1px solid #edeff4; border-top: none }
+.border-color-section { border-right: 1px solid #ccc }
+.border-color-section-left { border-left: 1px solid #ccc }
+/*hr */
+hr { margin: 0 }
+/*textarea*/
+.resize-none { resize: none }
+/*vertical-align*/
+.vertical-align-middle { vertical-align: middle }
+.vertical-align-top { vertical-align: top }
+.vertical-align-bottom { vertical-align: bottom }
+/*full width*/
+.full-width { width: 100% }
+.one-third-width { width: 75% }

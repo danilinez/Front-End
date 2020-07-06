@@ -1,0 +1,210 @@
+$red:#ff0000;
+$black:#000000;
+$grey:#eeeeee;
+$dark:#444;
+
+@font-face {
+  font-family: oswald;
+  src: url('fonts/OswaldRegular.ttf');
+}
+@font-face {
+  font-family: olight;
+  src: url('fonts/OswaldLight.ttf');
+}
+@font-face {
+  font-family: othin;
+  src: url('fonts/OswaldThin.ttf');
+}
+@font-face {
+  font-family: omedium;
+  src: url('fonts/OswaldMedium.ttf');
+}
+@font-face {
+  font-family: obold;
+  src: url('fonts/OswaldBold.ttf');
+}
+@font-face {
+  font-family: osbold;
+  src: url('fonts/OswaldDemiBold.ttf');
+}
+@font-face {
+  font-family: oheavy;
+  src: url('fonts/OswaldHeavy.ttf');
+}
+@font-face {
+  font-family: source;
+  src: url('fonts/SourceSansProRegular.ttf');
+}
+@font-face {
+  font-family: slight;
+  src: url('fonts/SourceSansProLight.ttf');
+}
+@font-face {
+  font-family: sbold;
+  src: url('fonts/SourceSansProBold.ttf');
+}
+@media (max-width:420px)
+{
+  .col-xs-12
+  {
+    max-width: 100% !important;
+    flex: 0 0 100%;
+  }
+}
+.m-less
+{
+  margin: 0px -15px 0px -15px;
+}
+.hidden
+{
+  display: none !important;
+}
+.hide {
+  display:none !important;
+}
+*
+{
+  box-sizing: border-box;
+  font-family: 'oswald', sans-serif;
+}
+body
+{
+  min-height: 100vh !important;
+}
+p, .btn
+{
+  font-family: 'source' !important;
+}
+ul
+{
+  margin: 0px;
+  padding: 0px;
+  li
+  {
+    list-style-type: none;
+    display: block;
+    a
+    {
+      text-decoration: none !important;
+    }
+  }
+}
+.link
+{
+  color:$red;
+  text-decoration: none;
+  font-family: 'source';
+  font-size: 16px;
+  &:hover
+  {
+    color: $red;
+  }
+}
+html
+{
+  overflow-x: hidden !important;
+}
+
+body
+{
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  background-image: url('../images/bg-pattern.jpg');
+  margin: 0px;
+  position: relative;
+  padding: 0px;
+  width: 100%;
+}
+.fluid
+{
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+}
+.common_title
+{
+  text-transform: uppercase;
+  font-family: 'obold';
+  font-size: 50px;
+  line-height: 48px;
+
+  @media (max-width:1366px)
+  {
+    font-size: 46px;
+    line-height: 44px;
+  }
+  @media (max-width:1199px)
+  {
+    font-size: 42px;
+    line-height: 41px;
+  }
+  @media (max-width:991px)
+  {
+    font-size: 36px;
+    line-height: 34px;
+  }
+  @media (max-width:767px)
+  {
+    font-size: 28px;
+    line-height: 26px;
+  }
+  @media (max-width:574px)
+  {
+    font-size: 24px;
+    line-height: 23px;
+  }
+}
+.common_h
+{
+  margin: 20px 0px 10px;
+  width: 100%;
+  display: block;
+  padding:10px;
+  background-color: $black;
+  color:#fff;
+  font-family: obold;
+  font-size: 30px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  @media (max-width:1366px)
+  {
+    font-size: 28px;
+    padding: 8px;
+  }
+  @media (max-width:1199px)
+  {
+    font-size: 26px;
+    padding: 7px;
+  }
+  @media (max-width:991px)
+  {
+    padding: 5px;
+    font-size: 24px;
+  }
+  @media (max-width:767px)
+  {
+    font-size: 20px;
+  }
+}
+button:active
+{
+  transform: scale(.97);
+}
+button:focus
+{
+  box-shadow: none !important;
+}
+@import 'home.scss';
+@import 'tournaments.scss';
+@import 'regions.scss';
+@import 'register.scss';
+@import 'sponsers.scss';
+@import 'community.scss';
+@import 'news.scss';
+@import 'about.scss';
+@import 'tour.scss';
+@import 'checkout.scss';
+@import 'login.scss';
+@import 'animations.scss';

@@ -1,0 +1,205 @@
+.banner
+{
+  background:#f8f8f8;
+  position: relative;
+  box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.2);
+  .banner-wrapper
+  {
+    display: flex;
+    .carousel
+    {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      @media (max-width:1199px) {
+        width: 100%;
+      }
+      .carousel-inner
+      {
+        .carousel-item
+        {
+          height: 65vh;
+          @media (max-width:1366px) {
+            height: 56vh;
+          }
+          @media (max-width:1199px) {
+            height: 50vh;
+          }
+          @media (max-width:991px) {
+            height: 45vh;
+          }
+          @media (max-width:767px) {
+            height: 35vh;
+          }
+          @media (max-width:576px) {
+            height: 28vh;
+          }
+          .content
+          {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 0px;
+            width: 50%;
+            padding-right: 30px;
+            @media (max-width:576px) {
+              width: 60%;
+              padding-right: 20px;
+            }
+            h1
+            {
+              font-size:calc(1vw + 1.4em);
+              font-family: popb;
+              @media (max-width:1199px) {
+                font-size:calc(1vw + 1.2em);
+              }
+              @media (max-width:991px) {
+                font-size:calc(1vw + 1.1em);
+              }
+              @media (max-width:767px) {
+                font-size:calc(.8vw + 1em);
+                text-align: center;
+              }
+            }
+            p
+            {
+              font-size: 18px;
+              @media (max-width:1199px) {
+                font-size: 16px;
+              }
+              @media (max-width:991px) {
+                font-size: 14px;
+              }
+              @media (max-width:767px) {
+                font-size: 13px;
+              }
+              @media (max-width:576px) {
+                display: none;
+              }
+            }
+          }
+          .text-light
+          {
+            *
+            {
+              color:#fff;
+            }
+          }
+          .text-dark
+          {
+            *
+            {
+              color:#111;
+            }
+          }
+          img{
+            width: 100% !important;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+          }
+        }
+      }
+      .carousel-control-prev,
+      .carousel-control-next
+      {
+        height: 38px;
+        width: 38px;
+        bottom: auto;
+        top: 50%;
+        transform: translateY(-50%);
+        background: $green;
+        opacity: 1;
+        color:#fff;
+        border-radius: 100%;
+        font-size: 24px;
+        @media (max-width:991px) {
+          display: none;
+        }
+        i
+        {
+          position: relative;
+        }
+        &:hover
+        {
+          background: $dgreen;
+        }
+      }
+      .carousel-control-prev
+      {
+        left: 15px;
+        i
+        {
+          left: -2px;
+        }
+      }
+      .carousel-control-next
+      {
+        right: 15px;
+        i
+        {
+          right: -2px;
+        }
+      }
+      .carousel-indicators
+      {
+        bottom:20px;
+        li
+        {
+          height: 12px;
+          width: 12px;
+          border-radius: 100%;
+          line-height: 0px;
+          border:none;
+          opacity: 1;
+        }
+        .active
+        {
+          background: $green;
+        }
+      }
+    }
+  }
+  .features-list
+  {
+    padding: 40px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (max-width:991px)
+    {
+      flex-wrap: wrap;
+    }
+    li
+    {
+      flex-grow: 1;
+      text-align:center;
+      @media (max-width:991px)
+      {
+        width: calc(100% / 3);
+        margin-bottom: 20px;
+      }
+      @media (max-width:576px)
+      {
+        width: calc(100% / 2);
+      }
+      img
+      {
+        width: 65px;
+        margin-right: 15px;
+        display: block;
+        margin: 0 auto 15px;
+      }
+      p
+      {
+        font-size: 16px;
+        display: inline-block;
+        padding: 0px 30px;
+        margin: 0px;
+        @media (max-width:1199px) {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

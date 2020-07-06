@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Fleet Plans</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="index.html"><img src="images/FleetPlan-Logo.png" alt="logo"></a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <div class="nav-holder">
+                         <ul class="nav navbar-nav">
+                            <li><a href="brands.html">BRANDS</a></li>
+                            <li><a href="machmakers.html">MATCHMAKERS</a></li>
+                            <li><a href="specialoffers.html" class="redit">Current OFFERS</a></li>
+                            <li><a href="truck&equipments.html">TRUCKS & EQUIPMENT</a></li>
+                        </ul>
+                    </div>
+                    <form class="navbar-form">
+                      <div class="input-group">
+                        <span class="input-group-addon"><i class="fas fa-search"></i></span>
+                        <input id="email" type="text" class="form-control" name="email" placeholder="Search your Favourite Car" autocomplete="off">
+                        <a href="#" class="cross hidden-xs"> <i class="fas fa-times"></i></a>
+                      </div>
+                    </form>
+                     <ul class="social_head">
+                        <li class="social pull-right"><a href="#" class="heart"><i class="far fa-heart"></i></a></li>
+                        <li class="social pull-right"><a type="button" data-toggle="modal" data-target="#login-modal"><i class="far fa-user"></i></a></li>
+                        <li class="social pull-right"><a href="#" class="magnifier"><i class="fas fa-search"></i></a></li>
+                    </ul>
+                </div>
+              </div>
+            </nav>
+            <div class="modal login-modal" id="login-modal" role="dialog">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <h1>Sign up now and <br> enjoy these benefits</h1>
+                        <ul>
+                            <li><img src="images/check.png" />Request competitive quotes on the car you want to buy</li>
+                            <li><img src="images/check.png" />Access your favourites on all devices</li>
+                        </ul>
+                        <button class="btn btn-default"><i class="fab fa-facebook-square"></i> Sign up with Facebook</button>
+                        <p>Creating an account means you're OK with Fleet Plans</p>
+                        <a href="javascript:void(0)">Terms of Service and Privacy Policy</a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </header>
+        <main>
+
+            <section class="privacy accordion-sec sec-pad">
+                <div class="container">
+                    <h2>Fleet Plan Privacy Policy</h2>
+                        <p class="update-time">Last updated: 25 September, 2018</p>
+                        <h3>Fleet Plan Privacy Policy</h3>
+                        <p>The FleetPlan Austraila Privacy Policy ("Privacy Policy") sets out:</p>
+                        <ul>
+                            <li>- why we need to collect personal information;</li>
+                            <li>- how we collect it;</li>
+                            <li>- what we do with it;</li>
+                            <li>- how it's stored; and;</li>
+                            <li>- who we might share it with and why.</li>
+                        </ul>
+                        <p>The Privacy Policy also describes:</p>
+                        <ul>
+                            <li>- how you can access or correct information we hold about you;</li>
+                            <li>- how you can ask further questions or make a complaint; and</li>
+                            <li>- information about our websites and online activities.</li>
+                        </ul>
+                        <div class="accordians">
+                              <div class="panel-group" id="accordion">
+                                <div class="panel panel-default">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                                      <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            Personal Information <i class="fas fa-chevron-down"></i>
+                                        </h4>
+                                      </div>
+                                    </a>
+                                  <div id="collapse1" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p>'Personal information' is defined within The Privacy Act (1988) as any "information or an opinion, whether true or not, and whether recorded in a material form or not, about an identified individual, or an individual who is reasonably identifiable."</p>
+                                        </div>
+                                  </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                                      <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            The Privacy Act (1988). <i class="fas fa-chevron-down"></i>
+                                        </h4>
+                                      </div>
+                                    </a>
+                                  <div id="collapse2" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                            <p>Fleet Plan is bound by the Privacy Act (1988).</p>
+                                        </div>
+                                  </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                                      <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            The information we collect and why  <i class="fas fa-chevron-down"></i>
+                                        </h4>
+                                      </div>
+                                    </a>
+                                  <div id="collapse3" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p>In providing you with the FleetPlan Australia Applications and Services ("FleetPlan Australia") we will occasionally receive, store and process 'personal information' about you that you make available to us. <br><br> The 'Personal information' we may collect from you includes (but is not limited to):</p>
+                                            <br>
+                                            <ul>
+                                                <li>Your name;</li>
+                                                <li>Your email address;</li>
+                                                <li>Your phone number;</li>
+                                                <li>Your postcode;</li>
+                                                <li>Your devices IP Adress;</li>
+                                            </ul>
+                                            <br>
+                                            <p>Other information (that is not necessarily 'personal information') we may collect about you during your use of FleetPlan Australia includes (but is not limited to): your car preferences, your car buying budget, your car buying timeframe, information about your car trade in and whether or not you are seeking finance.<br><br>Specific times you will provide personal information to us include (but are not limited to):</p>
+                                            <br>
+                                            <ul>
+                                                <li>When you view drive away pricing, which is based on your location;</li>
+                                                <li>When you create an account with FleetPlan Australia;</li>
+                                                <li>When you request FleetPlan Australia assistance in purchasing a car (also referred to as "getting a quote");</li>
+                                                <li>When you request a test drive of a car;</li>
+                                                <li>When you communicate with FleetPlan Australia in person, phone calls, emails and via social media;</li>
+                                                <li>When you link your account on a third party site (e.g. Facebook) to your FleetPlan Australia account, in which case we will obtain the Personal Information that you have provided to the third party site, to the extent allowed by your settings with the third party site and authorised by you.</li>
+                                            </ul><br>
+                                            <p>Without such information, we may not be able to provide you with an appropriate level of service.</p>
+                                      </div>
+                                  </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+                                      <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            How we store and secure your information <i class="fas fa-chevron-down"></i>
+                                        </h4>
+                                      </div>
+                                    </a>
+                                  <div id="collapse4" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                      <h4>Keeping your information secure</h4>
+                                      <p>We use security procedures and technology to protect the information we hold. Access to and use of personal information within FleetPlan Australia seeks to prevent misuse or unlawful disclosure of the information, this includes internal policies, auditing, training and monitoring of staff.</p><br>
+                                      <p>If other organisations provide support services, we require them to appropriately safeguard the privacy of the information provided to them.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="panel panel-default">
+                                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+                                    <div class="panel-heading">
+                                      <h4 class="panel-title">
+                                          How we use your information <i class="fas fa-chevron-down"></i>
+                                      </h4>
+                                    </div>
+                                  </a>
+                                  <div id="collapse5" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                      <p>We use personal information about you for the purpose for which it was provided to us, including:</p>
+                                      <ul>
+                                        <li>
+                                          To provide you with drive away pricing on the cars you browse;
+                                        </li>
+                                        <li>
+                                          To create a FleetPlan Australia account for you and store your information and preferences;
+                                        </li>
+                                        <li>
+                                          To personalise your experience with FleetPlan Australia based on your information and preferences;
+                                        </li>
+                                        <li>
+                                          To assist you with purchasing a car (also referred to as "getting a quote");
+                                        </li>
+                                        <li>
+                                          To assist you in arranging a test drive of a car;
+                                        </li>
+                                        <li>
+                                          To communicate with you and deal with or investigate any complaints or enquiries.
+                                        </li>
+                                      </ul>
+                                      <p>We may also use information you provide – de-identified wherever possible – to:</p>
+                                      <ul>
+                                        <li>
+                                          administer, manage, improve and optimise FleetPlan Australia (including monitoring, auditing, and evaluating FleetPlan Australia);
+                                        </li>
+                                        <li>
+                                          model and test data (in a controlled environment);
+                                        </li>
+                                        <li>
+                                          develop scores, risk assessments and related analytical tools;
+                                        </li>
+                                        <li>
+                                          conduct market research, new product development and fraud mitigation;
+                                        </li>
+                                        <li>
+                                          undertake related purposes which would reasonably be expected without your express permission. For example, we may from time to time use your personal information to inform you of products and services which we expect may be of interest to you. However, if you do not want to receive such communications you can tell us:
+                                          <ul>
+                                            <li>
+                                                At the time of collection of your personal information;</li>
+                                                <li>
+                                                  By following the instructions to 'unsubscribe' or 'opt-out' which will be included in any such communications sent to you, which may include accessing a web-link or replying to a message;
+
+                                                </li>
+                                                <li>By writing to us at enquiries@fleetplan.com.au requesting that you be unsubscribed from such communications.
+                                            </li>
+                                          </ul>
+                                        </li>
+                                      </ul><br>
+                                      <p>While we may sometimes – where it is lawful and with your permission if necessary – share personal information with companies we do business with (e.g. in product development, joint venture arrangements or distribution arrangements), <strong>we do not sell personal information for marketing purposes to other organisations or allow such companies to do this.</strong></p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="panel panel-default">
+                                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">
+                                    <div class="panel-heading">
+                                      <h4 class="panel-title">
+                                          When your information is disclosed<i class="fas fa-chevron-down"></i>
+                                      </h4>
+                                    </div>
+                                  </a>
+                                  <div id="collapse6" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                      <p>We may share personal information within FleetPlan Australia and, where necessary to provide the requested service to you, may disclose your personal information outside FleetPlan Australia in the following situations:</p>
+                                      <p><strong>Requesting a test drive</strong></p>
+                                      <p>When you request a test drive via FleetPlan Australia, we must necessarily disclose the information you provide to the car dealer who will fulfil your test drive request. Any information expressly provided by you when you request a test drive may be passed on to the car dealer, including your preference as to whether or not you would like to receive promotional communications from the car dealer; by default, you will be opted-out of receiving such communications.</p>
+                                      <p><strong>Requesting assistance buying a car</strong></p>
+                                      <p>When you request assistance purchasing a car (also referred to as "getting a quote") via FleetPlan Australia, we must necessarily disclose the information you provide to the car dealer who you select to purchase the car from. Any information expressly provided by you when you request assistance purchasing a car may be passed on to this car dealer, including your preference as to whether or not you would like to receive promotional communications from the car dealer; by default, you will be opted-out of receiving such communications.</p>
+                                      <p><strong>Other:</strong></p>
+                                      <p>We may also share personal information within FleetPlan Australia, and may disclose personal information outside FleetPlan Australia as required by law or regulations.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="panel panel-default">
+                                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">
+                                    <div class="panel-heading">
+                                      <h4 class="panel-title">
+                                        When you interact with Macquarie finance tools<i class="fas fa-chevron-down"></i>
+                                      </h4>
+                                    </div>
+                                  </a>
+                                  <div id="collapse7" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                      <p>Products and services relating to finance on FleetPlan Australia are provided by Macquarie Leasing Pty Ltd ABN 38 002 674 982, Australian Credit Licence 394925, a subsidiary of Macquarie Group Limited ACN 122 169 279 ("Macquarie Group") and its related bodies corporate.</p>
+                                      <p>Should you interact with FleetPlan products and services, you may, in the course of using those products and services, be required to provide 'personal information' to Macquarie Group. In such instances, your 'personal information' will be handled in accordance with the FleetPlan Australia <a href="">Terms of Use</a> , <a href="">Important Information</a> and <a href="">Privacy Policy</a> , and <a href="">Regulatory Disclosures</a> (collectively the "Policies and Procedures of Macquarie Group").</p>
+                                      <p>If you do not agree to any part of the Policies and Procedures of Macquarie Group, then we cannot provide the Macquarie Group products and services to you, and you should stop accessing Macquarie Group products and services.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="panel panel-default">
+                                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse8">
+                                    <div class="panel-heading">
+                                      <h4 class="panel-title">
+                                        Keeping information accurate and up-to-date<i class="fas fa-chevron-down"></i>
+                                      </h4>
+                                    </div>
+                                  </a>
+                                  <div id="collapse8" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>We take reasonable steps to ensure that all information we hold is as accurate and up-to-date. You are able to contact us at any time and ask for its correction if you feel the information we have about you is inaccurate or incomplete. You can do so by writing to <a href="">enquiries@fleetplan.com.au</a>.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="panel panel-default">
+                                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse9">
+                                    <div class="panel-heading">
+                                      <h4 class="panel-title">
+                                        Keeping your information secure and its deletion when no longer required<i class="fas fa-chevron-down"></i>
+                                      </h4>
+                                    </div>
+                                  </a>
+                                  <div id="collapse9" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                      <p>We use security procedures and technology to protect the information we hold. Access to and use of personal information within FleetPlan Australia seeks to prevent misuse or unlawful disclosure of the information, this includes internal policies, auditing, training and monitoring of staff.</p>
+                                      <p>If other organisations provide support services, we require them to appropriately safeguard the privacy of the information provided to them.</p>
+                                      <p>Where the personal information we collect is no longer required, we delete the information or permanently de-identify it in accordance with relevant laws and our records management policy.</p>
+                                      <p><strong>When you create an account with FleetPlan Australia</strong></p>
+                                      <p>When you create a FleetPlan Australia account, any information you provide will be retained indefinitely so long as your account remains active ('active' in this case means you have not explicitly advised us you wish to delete the account).</p>
+                                      <p>When you delete your FleetPlan Australia account, your account data, including any personal information, will be immediately and permanently deleted. Non-personal information may be retained in a de-identified state.</p>
+                                      <p>We may otherwise retain related information, which may include personal information, in such a state and for a period of time as required by law or regulations. For example, we are required by law to keep records of your transactions with us for a period of at least 7-years.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="panel panel-default">
+                                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse10">
+                                    <div class="panel-heading">
+                                      <h4 class="panel-title">
+                                        How you can access or correct your information<i class="fas fa-chevron-down"></i>
+                                      </h4>
+                                    </div>
+                                  </a>
+                                  <div id="collapse10" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                      <p>You can contact us to request access to or correction of your personal information. In normal circumstances we will give you full access or make the requested corrections to your information. However, there may be some legal or administrative reasons to deny these requests. If your request is denied, we will provide you with the reason why (if we can). Where we decide not to make a requested correction to your personal information and you disagree, you may ask us to make a note of your requested correction with the information.</p>
+                                      <p>To request access or a correction to your personal information, please write to us at <a href="">enquiries@fleetplan.com.au</a>.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="panel panel-default">
+                                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse11">
+                                    <div class="panel-heading">
+                                      <h4 class="panel-title">
+                                          Dealing with FleetPlan Australia online<i class="fas fa-chevron-down"></i>
+                                      </h4>
+                                    </div>
+                                  </a>
+                                  <div id="collapse11" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                      <p>When you visit FleetPlan Australia websites you will browse anonymously unless you have logged into your FleetPlan Australia account or accessed the website from a personalised communication from FleetPlan Australia.</p>
+                                      <p>For all visitors to our web site, we use cookies and/or browser local storage to collect anonymous information such as the server your computer is logged on to, your browser type (for example, Internet Explorer, Chrome or Firefox), and your IP address. (An IP address is a number that is assigned to your computer automatically and required for using the Internet). We may also derive the location associated with an IP address.</p>
+                                      <p>Once you have logged into your FleetPlan Australia account, accessed our website from an e-mail or other personalised communication sent to you, or provided us with personal information by completing a form online, we may be able to identify you and we may combine that with other information in order to provide you with a better online experience. If you would prefer not to be identified you can delete the cookies and/or local storage data and reconfigure the tracking preferences on your internet browser (see the 'Cookies and local storage' section below).</p>
+                                      <p>While you may disable tracking through your browser settings, we do not change our practices in response to a "Do Not Track" signal in the HTTP header from your browser or mobile application. We track your activities if you click on advertisements for FleetPlan Australia services on third party platforms such as search engines and social networks, and may use analytics to track what you do in response to those advertisements.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="panel panel-default">
+                                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse12">
+                                    <div class="panel-heading">
+                                      <h4 class="panel-title">
+                                          Cookies and local storage <i class="fas fa-chevron-down"></i>
+                                      </h4>
+                                    </div>
+                                  </a>
+                                  <div id="collapse12" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                      <p>A 'cookie' is a packet of information placed on a user's computer by a website for record keeping purposes.</p>
+                                      <p>'Local storage' is a standard facility provided by HTML5-compliant browsers used to retain data on your computer across visits to the same website.</p>
+                                      <p>While cookies and local storage are not considered personal information, they are generally used on FleetPlan Australia sites to:</p>
+                                      <br>
+                                      <ul>
+                                        <li>Access online services - if you log into secure areas on our website we will use cookies and/or local storage to authorise your access and save your preferences;</li>
+                                        <li>Manage advertising - when you see one of our ads on a third party website, cookies are sometimes used to collect anonymous information about the page you visit and the type of software you are using;</li>
+                                        <li>Monitor traffic - we use anonymous information to track how people are using the FleetPlan Australia site. This may include time of visit, pages visited and some system information about the type of computer you are using;</li>
+                                        <li>Monitor your use of our website - if we have identified you as a result of you logging into a FleetPlan Australia client portal, accessing our website from a personalised communication or providing us with personal information by completing a form online, we may use cookies and/or local storage to collect personal information about you.</li>
+                                      </ul><br>
+                                      <p>You can configure how your browser stores cookies and local storage data, which may include the ability to accept, reject or notify you about attempts to store this data (Each browser is different, so check the "Help" menu of your browser to learn how to change your cookie and site data preferences).</p>
+                                      <p>If you disable the use of cookies and/or local storage on your web browser or remove or reject specific cookies and/or local storage from FleetPlan Australia or linked sites, then you may not be able to gain access to all of the content and features on those websites.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="panel panel-default">
+                                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse13">
+                                    <div class="panel-heading">
+                                      <h4 class="panel-title">
+                                        Changes to this Policy <i class="fas fa-chevron-down"></i>
+                                      </h4>
+                                    </div>
+                                  </a>
+                                  <div id="collapse13" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                      <p>We may make changes to this Privacy Policy at any time. If we make material changes to the Privacy Policy, we will advise you either by posting the changed Privacy Policy on FleetPlan Australia or by sending you an email.</p>
+                                      <p>If you do not wish to agree to the new Privacy Policy, then we cannot continue to provide FleetPlan Australia to you, and you should stop accessing FleetPlan Australia and, if you have a FleetPlan Australia account, you should delete it.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="panel panel-default">
+                                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse14">
+                                    <div class="panel-heading">
+                                      <h4 class="panel-title">
+                                          Contact us <i class="fas fa-chevron-down"></i>
+                                      </h4>
+                                    </div>
+                                  </a>
+                                  <div id="collapse14" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                      <p>If you have any questions or complaints regarding privacy or information handling, please write to <a href="">enquiries@fleetplan.com.au</a> We will respond to let you know when you can expect a further response.</p>
+                                      <p>If your concerns are not resolved to your satisfaction, you may be able to escalate your complaint to an external dispute resolution scheme or to a regulatory authority. We can provide details of the appropriate scheme/regulator for you, as these may vary by jurisdiction or product.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                                <div class="panel panel-default">
+                                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse15">
+                                    <div class="panel-heading">
+                                      <h4 class="panel-title">
+                                          Other important information <i class="fas fa-chevron-down"></i>
+                                      </h4>
+                                    </div>
+                                  </a>
+                                  <div id="collapse15" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                      <p>These are general and privacy terms that apply to FleetPlan Australia, the trading name and business operated by Macquarie Leasing Pty Limited ABN 38 002 674 982, Australian Credit Licence 394925, a subsidiary of Macquarie Group Limited ACN 122 169 279 ("Macquarie Group") and its related bodies corporate.</p>
+                                      <p>FleetPlan Australia is not a motor vehicle dealer. FleetPlan Australia is a car finance and buying service provider. It has business arrangements with a network of motor vehicle dealers across Australia to whom it may refer customer or from whom it may obtain quotes for customers, and will receive a fee for referrals or completed transactions under those arrangements.</p>
+                                      <p>FleetPlan Australia operates a platform that helps car buyers to find the car that is right for their personal circumstances and then test drive that car at a car dealer or purchase that car for a competitive price, whether through our website or mobile applications ("Platform" or "Services").</p>
+                                      <p>FleetPlan Australia is a business operated by a Macquarie Group company, you should also read and understand the <a href="">Terms of Use</a> , <a href="">Important Information</a> and <a href="">Privacy Policy</a> , and <a href="">Regulatory Disclosures</a> of FleetPlan Australia(collectively the "Policies and Procedures of Macquarie Group"), as these will also apply when you use any Macquarie-branded features or services on FleetPlan Australia.></p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </section>
+                    <style>
+                    .panel-body p
+                    {
+                      margin-bottom: 20px;
+                    }
+                    .panel-body ul li
+                    {
+                      padding-left: 20px;
+                      position: relative;
+                      font-size: 15px;
+                    }
+                    .panel-body ul li::before
+                    {
+                      content:'\27F6' !important;
+                      position:absolute;
+                      left: -8px;
+                      color:black;
+                      font-size: 16px;
+                      top:-1px;
+                      font-weight: bold;
+                    }                    
+                    </style>
+                </main>
+
+                <footer class="col-xs-12">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4 col-xs-12">
+                                <div class="img">
+                                    <img src="images/footerlogo.png" alt="footerlogo">
+                                </div>
+                                <ul class="contact-ul">
+                                    <li><i class="fas fa-phone"></i> 1300 555 555</li>
+                                    <li><i class="fas fa-map-marker-alt"></i> Lvl 1, 10 Main Street Osborne Park WA 6017</li>
+                                    <li><i class="fas fa-envelope"></i> Sales@fleetplans.com.au </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 col-xs-6">
+                                <h4>INFORMATION</h4>
+                                <ul>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Testimonials</a></li>
+                                    <li><a href="#">Finance</a></li>
+                                    <li><a href="#">Leasing</a></li>
+                                    <li><a href="#">Partners</a></li>
+                                    <li><a href="#">Support</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 col-xs-6">
+                                <h4>CONNECT</h4>
+                                <ul>
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i>Twitter</a></li>
+                                    <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin"></i> Linkedin</a></li>
+                                    <li><a href="#"><i class="fab fa-pinterest"></i> Pinterest</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row bg-row">
+                        <div class="container">
+                            <div class="col-md-4 fluid">
+                                <p class="on-p">&copy; FleetPlan 2018. All Right Reserved.</p>
+                            </div>
+                            <div class="col-md-4 fluidi">
+                                <ul class="terms-list">
+                                    <li><a href="#">Terms & Conditions</a></li>
+                                    <li><a href="#">Privacy</a></li>
+                                    <li><a href="#">Disclaimer</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 fluid">
+                                <p class="on-p">Powered by: Viper Online</p>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+    </div>
+
+    <div class="heartslide">
+        <h5 class="fav">FAVOURITES</h5>
+        <h3 class="">Next Step: Compare</h3>
+        <p>It looks like you don't have any favourite cars. Why not search for a car from the <a href="#">homepage</a> or let us <a href="#">Suggest a car</a> based on your lifestyle and needs.</p>
+    </div>
+    <div class="overlay"></div>
+
+
+    <script>
+
+
+        $(document).ready(function(){
+            // Add minus icon for collapse element which is open by default
+            $(".collapse.in").each(function(){
+                $(this).siblings(".panel-heading").find(".fas").addClass("fas fa-chevron-down").removeClass("fas fa-chevron-down");
+            });
+
+            // Toggle plus minus icon on show hide of collapse element
+            $(".collapse").on('show.bs.collapse', function(){
+                $(this).parent().find(".fas").removeClass("fas fa-chevron-down").addClass("fas fa-chevron-up");
+            }).on('hide.bs.collapse', function(){
+                $(this).parent().find(".fas").removeClass("fas fa-chevron-up").addClass("fas fa-chevron-down");
+            });
+        });
+
+        // side bar quries
+
+        $('.heart').on('click', function() {
+          $('.wrapper').toggleClass("moveleft");
+        });
+        $('.heart').on('click', function() {
+          $('.heartslide').toggleClass('showup');
+        });
+        $('.heart').on('click', function() {
+          $('body').toggleClass('seez');
+        });
+
+        $(".overlay").hide();
+
+       $('.heart').on('click', function() {
+          $('.overlay').show();
+        });
+
+        $('.overlay').on('click', function() {
+            $('body').toggleClass('seez');
+          $('.wrapper').toggleClass("moveleft");
+            $('.heartslide').toggleClass('showup');
+            $(".overlay").hide();
+        });
+
+  // side barEnd
+
+//       Search bar Queries
+        $(".navbar-form").hide();
+        $('.cross').on('click', function() {
+          $('.navbar-form').hide();
+        });
+        $('.cross').on('click', function() {
+          $('.magnifier').show();
+        });
+        $('.cross').on('click', function() {
+          $('.nav-holder').show();
+        });
+        $('.cross').on('click', function() {
+          $('.magnifier').show();
+        });
+        $('.magnifier').on('click', function() {
+          $('.navbar-form').show();
+        });
+        $('.magnifier').on('click', function() {
+          $('.magnifier').hide();
+        });
+        $('.magnifier').on('click', function() {
+          $('.nav-holder').hide();
+        });
+//       Search bar Query End
+
+
+
+    </script>
+
+</body>
+</html>

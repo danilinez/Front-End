@@ -1,0 +1,173 @@
+.footer
+{
+  
+  padding: 50px 0px;
+  
+  background-color:#303941;
+
+  .row
+  {
+    > div
+    {
+      @media (max-width:991px) {
+        margin-bottom:30px;
+      }
+    }
+  }
+  h4
+  {
+    color:#fff;
+    font-family: bold;
+    margin: 0px 0px 20px;
+    font-size: 20px;
+  }
+  .contact
+  {
+    ul
+    {
+      li
+      {
+        color:#aaa;
+        font-size: 14px !important;
+        & ~ li
+        {
+          margin-top:15px;
+        }
+        i
+        {
+          margin-right: 5px;
+          color:#fff;
+        }
+        a
+        {
+          color:#aaa;
+          text-decoration: none;
+          font-size: 14px;
+          &:hover
+          {
+            color:$blue;
+          }
+        }
+      }
+    }
+  }
+  .ctg-links
+  {
+    ul
+    {
+      li
+      {
+        color:#aaa;
+        & ~ li
+        {
+          margin-top: 5px;
+          @media (max-width:991px) {
+            margin-top: 2px;
+          }
+        }
+        a
+        {
+          color:#aaa;
+          text-decoration: none;
+          font-size: 14px;
+          &:hover
+          {
+            color:$blue;
+          }
+        }
+      }
+    }
+  }
+  .fgallary
+  {
+    ul
+    {
+      display: flex;
+      flex-wrap: wrap;
+      position: relative;
+      li
+      {
+        width: 31%;
+        margin: 1%;
+        position: relative;
+        .img-holder{          
+          position: relative;
+          padding-top: 100%;
+          width: 100%;
+        }
+        img
+        {
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+    }
+  }
+  .newsletter
+  {
+    p
+    {
+      color:#aaa;
+    }
+    .form-control
+    {
+      width: 100%;
+      line-height: 28px;
+      padding: 0px 15px;
+      height: 45px;
+      color: #111;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 0px;
+      background: #fff;
+      border: 1px solid rgba(255,255,255,0.10);
+      -webkit-transition: all 300ms ease;
+      -ms-transition: all 300ms ease;
+      -o-transition: all 300ms ease;
+      -moz-transition: all 300ms ease;
+      transition: all 300ms ease;
+      &:focus
+      {
+        box-shadow: none;
+      }
+    }
+    .btn-primary
+    {
+      min-width: 00px;
+      font-size: 14px;
+      padding: 10px;
+      width: 100%;
+      margin: 12px 0px 14px;
+      background: $blue;
+      color: #111;
+      &:before
+      {
+        background: $blue;
+        display: none;
+      }
+      &:hover
+      {
+        color: #fff;
+      }
+    }
+  }
+}
+
+.copyright
+{
+  background:#252b31;
+  text-align:center;
+  padding: 10px 0px;
+  p
+  {
+    color:#aaa;
+    margin: 0px;
+    font-size: 14px;
+
+  }
+}

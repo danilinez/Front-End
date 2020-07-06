@@ -1,0 +1,113 @@
+doctype html
+html(lang='en')
+  head
+    title iCarryit
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    include includes/links
+  body.client_body
+    //- navbar
+    include includes/client/navbar
+    //- navbar end
+    
+    //- About Body
+    main.client.contact
+      //- banner 
+      .small_banner
+        .container.banner_content_wrapper
+          ul.breadcrumb
+            span You are here:
+            li
+              a(href='index_client.html') Home
+            li.noafter Contact Us
+          .banner_content
+            h1.banner_title Contact Us
+        img.small_banner_img(src='assets/images/client/about_banner.png', alt='banner')
+      
+      //- Banner End 
+
+      //- Contact Us
+      
+      .contactus
+        .social_icons.text-center
+          ul.list-inline
+            li.list-inline-item
+              a.fb(href='javascript:void(0)')
+                i.fab.fa-facebook-f
+            li.list-inline-item
+              a.twtr(href='javascript:void(0)')
+                i.fab.fa-twitter
+            li.list-inline-item
+              a.msg(href='javascript:void(0)')
+                i.fas.fa-envelope
+            li.list-inline-item
+              a.share(href='javascript:void(0)')
+                i.fas.fa-share-alt
+        .container
+          .row
+            .col-lg-6
+              form.text-left
+                .row
+                  .col-xl-6.col-lg-12.col-md-6
+                    .contact_number
+                      p
+                        span.yellow-bg
+                          i.fas.fa-phone
+                        | +44 (0) 0000 000000 
+                  .col-xl-6.col-lg-12.col-md-6
+                    .email
+                      p
+                        span.yellow-bg
+                          i.fas.fa-envelope
+                        |info@icarryit.com
+                  .form-group.col-sm-6.fluid-r
+                    label First Name*
+                    input#your_name.form-control(type='text')
+                  .form-group.col-sm-6.fluid-l
+                    label Last Name*
+                    input#your_name.form-control(type='text')
+                  .form-group.col-sm-6.fluid-r
+                    label Telephone Number*
+                    input#your_name.form-control(type='text')
+                  .form-group.col-sm-6.fluid-l
+                    label Email Address*
+                    input#your_name.form-control(type='email')
+                  .form-group.col-md-12
+                    label Message*
+                    textarea#comment.form-control(rows='6')
+                  .form-group.col-md-12
+                    p
+                      | I would like to opt in recieve marketing Communications via:
+                      .form-check-inline.checks
+                        input#one.form-check-input(type='checkbox', name='optcheckbox')
+                        label.form-check-label(for='one')
+                          | Email
+                      .form-check-inline.checks
+                        input#two.form-check-input(type='checkbox', name='optcheckbox')
+                        label.form-check-label(for='two')
+                          | Telephone
+                      .form-check-inline.checks
+                        input#three.form-check-input(type='checkbox', name='optcheckbox')
+                        label.form-check-label(for='three')
+                          | Post
+                button.btn.btn-primary.submit.yellow-bg(type='submit') Submit Enquirey
+            .col-lg-6
+              .map
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12653.20185202859!2d-121.94821476934655!3d37.547984248132956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fc12220e68959%3A0x531681636eb1ea7e!2sKimber+-+Gomes%2C+Fremont%2C+CA!5e0!3m2!1sen!2s!4v1542004899042" width="100%" frameborder="0" allowfullscreen></iframe>
+              .location
+                p
+                  span.yellow-bg
+                    i.fas.fa-map-marker-alt
+                  |Building, Street Name, City Name, Country Name, Post Code
+      //- Contact Us End 
+      
+
+      //- Footer
+      include includes/client/footer      
+      //- Footer End
+    
+    
+    //- Hompage Body End
+    
+    //- scripts
+    include includes/scripts

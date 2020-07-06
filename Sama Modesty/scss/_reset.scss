@@ -1,0 +1,164 @@
+
+* {
+  box-sizing: border-box;
+  font-family: "mont", sans-serif;
+}
+ul {
+  margin: 0px ;
+  padding: 0px ;
+  li {
+    list-style-type: none;
+    display: inline-block;
+  }
+}
+a {
+  text-decoration: none !important;
+}
+.link {
+  text-decoration: none !important;
+}
+html {
+  overflow-x: hidden !important;
+}
+
+body {
+  background-color: #fff;
+  margin: 0px;
+  position: relative;
+  padding: 0px;
+  width: 100%;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+  background-color: transparent;
+  position: absolute;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color:#424242;
+}
+body::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.fluid {
+  padding-left: 7px !important;
+  padding-right: 7px !important;
+}
+// Margin Y axis Remover from row
+.mx-none{
+  margin: 0px -15px 0px -15px;
+}
+.hidden {
+  display: none;
+}
+.btn-primary:active {
+  transform: scale(0.97);
+}
+button:focus {
+  box-shadow: none !important;
+}
+*:focus {
+  outline-color: transparent !important;
+}
+
+.btn:focus,
+.form-control:focus {
+  box-shadow:none !important;
+}
+
+.btn-default
+{
+  background: $pink;
+  color:$dark;
+  font-family: robb;
+  text-transform: uppercase;
+  border-radius: 3px;
+  font-size: 15px;
+  padding: 10px 25px;
+  transition: .05s linear;
+  font-family: robm;
+  font-size:18px;
+  @media (max-width:1199px) {
+    font-size:17px;
+    padding: 8px 20px;
+  }
+  @media (max-width:991px) {
+    font-size:16px;
+    padding: 7px 16px;
+  }
+  @media (max-width:767px) {
+    font-size:15px;
+    padding: 6px 15px;
+  }
+  @media (max-width:576px) {
+    font-size:14px;
+    padding: 5px 12px;
+  }
+  &:hover
+  {
+    color:$pink;
+    background: #111;
+  }
+  &:focus
+  {
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2) !important;
+  }
+  &:active
+  {
+    box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.2) !important;
+    transform: scale(.97);
+  }
+}
+.common-title
+{
+  width: 100%;
+  text-align: center;
+  clear: both;
+  margin: 0px 0px 50px;
+  h1
+  {
+    // font-size: 38px;
+    font-size: calc(1vw + 1.2em);
+    text-transform: uppercase;
+    margin: 20px 0px 0px;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    padding-bottom: 16px;
+    font-family: montb;
+    &::after
+    {
+      height: 3px;
+      width: 100px;
+      content:"";
+      position: absolute;
+      bottom:0px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: $pink;
+      border-radius: 100%;
+    }
+  }
+  p
+  {
+    max-width: 700px;
+    display: block;
+    margin: 20px auto 0px;
+    font-family: montl;
+    font-size: 18px;
+    @media (max-width:1199px) {
+      font-size: 17px;
+    }
+    @media (max-width:991px) {
+      font-size: 16px;
+    }
+    @media (max-width:767px) {
+      font-size: 15px;
+    }
+    @media (max-width:576px) {
+      font-size: 14px;
+    }
+  }
+}

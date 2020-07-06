@@ -1,0 +1,394 @@
+.checkout
+{
+  padding-bottom: 60px;
+  .heading
+  {
+    display: block;
+    width:100%;
+    text-align: center;
+    margin-bottom: 40px;
+    h2
+    {
+      margin: 0px;
+      text-align: center;
+      font-size: 32px;
+      font-family: popsb;
+    }
+  }
+  .coupon-code
+  {
+    border-left:6px solid $green;
+    background: $lgreen;
+    p
+    {
+      color:#111;
+      padding: 12px;
+      strong
+      {
+        color:#333;
+        font-family: popsb;
+        cursor: pointer;
+      }
+    }
+  }
+  .code-pane
+  {
+    padding: 10px 0px 20px;
+    p
+    {
+      font-family: pop;
+    }
+    .input-group
+    {
+      .form-control
+      {
+        height: 45px;
+        border-radius: 0px;
+      }
+      .btn-default
+      {
+        font-family: pop;
+        font-size: 16px;
+        padding: 0px 30px;
+      }
+    }
+  }
+  .form
+  {
+    h3
+    {
+      font-family: popm;
+      position: relative;
+      padding-bottom: 15px;
+      margin-bottom: 30px;
+      &::after
+      {
+        content:"";
+        height: 1px;
+        width:100%;
+        background: #ddd;
+        position: absolute;
+        left: 0px;
+        bottom:0px;
+        z-index: 10;
+      }
+      &::before
+      {
+        content:"";
+        height: 2px;
+        width:160px;
+        background: $green;
+        position: absolute;
+        z-index: 15;
+        left: 0px;
+        bottom:0px;
+      }
+    }
+    span
+    {
+      color:red;
+      font-family: popm;
+      font-size: 18px;
+    }
+    .form-group
+    {
+      margin-bottom:20px;
+      label
+      {
+        font-family: popm;
+        font-size: 15px;
+        small
+        {
+          font-family: pop;
+        }
+      }
+      input, select
+      {
+        min-height: 45px;
+      }
+      .form-control
+      {
+        border-radius: 3px;
+        margin: 0px 0px 5px;
+        font-size: 15px;
+        font-family: pop;
+        &::selection
+        {
+          background: rgb(56, 165, 255);
+          color:#fff;
+        }
+        & ~ .form-control
+        {
+          margin-top: 15px;
+        }
+        option
+        {
+          font-size: 16px;
+          padding: 100px;
+        }
+      }
+    }
+  }
+  .checkout-box
+  {
+    border-radius: 5px;
+    border:1px solid #eaeaea;
+    background: #f1f2f3;
+    padding: 20px 15px;
+    @media (min-width:992px) {
+      position: sticky;
+      top: 15px;
+    }
+    @media (max-width:991px) {
+      margin-top: 30px;
+    }
+    h3
+    {
+      font-family: popm;
+      position: relative;
+      padding-bottom: 15px;
+      margin-bottom: 15px;
+      font-size: calc(.5vw + 1em);
+      &::after
+      {
+        content:"";
+        height: 1px;
+        width:100%;
+        background: #ddd;
+        position: absolute;
+        left: 0px;
+        bottom:0px;
+        z-index: 10;
+      }
+      &::before
+      {
+        content:"";
+        height: 2px;
+        width:25%;
+        background: $green;
+        position: absolute;
+        z-index: 15;
+        left: 0px;
+        bottom:0px;
+      }
+    }
+    table
+    {
+      width:100%;
+      border-bottom:2px solid #ddd;
+      tbody, tfoot
+      {
+        tr
+        {
+          td, th
+          {
+            border-top:1px solid #ddd;
+            padding: 12px 5px;
+            font-size: 14px;
+            strong
+            {
+              font-family: popm;
+              font-family: popsb;
+            }
+          }
+        }
+      }
+      thead
+      {
+        tr
+        {
+          th:last-child
+          {
+            text-align: right;
+          }
+          th
+          {
+            padding: 12px 5px;
+            font-size: 14px;
+            font-family: popsb;
+          }
+        }
+      }
+      tbody
+      {
+        tr
+        {
+          td:last-child
+          {
+            text-align: right;
+          }
+          th, strong
+          {
+            font-family: popsb;
+          }
+        }
+      }
+      tfoot
+      {
+        tr
+        {
+          th, strong
+          {
+            font-family: popsb;
+          }
+        }
+        .cart-subtotal
+        {
+          td
+          {
+            text-align: right;
+          }
+        }
+        .order-total
+        {
+          th:last-child
+          {
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+}
+.payment-method 
+{
+  h5
+  {
+    font-family: popsb;
+    margin: 20px 0px 0px;
+  }
+  .row
+  {
+    align-items: flex-end;
+  }
+  .form-group
+  {
+    margin-bottom:20px;
+    label
+    {
+      font-family: popm;
+      font-size: 15px;
+      small
+      {
+        font-family: pop;
+      }
+    }
+    input, select
+    {
+      min-height: 45px;
+    }
+    .form-control
+    {
+      border-radius: 3px;
+      margin: 0px 0px 5px;
+      font-size: 15px;
+      font-family: pop;
+      &::selection
+      {
+        background: rgb(56, 165, 255);
+        color:#fff;
+      }
+      & ~ .form-control
+      {
+        margin-top: 15px;
+      }
+      option
+      {
+        font-size: 16px;
+        padding: 100px;
+      }
+    }
+  }
+  .btn-default
+  {
+    width: 100%;
+    display: block;
+    font-family: popb;
+    font-size: 20px;
+    padding: 12px;
+    font-weight: 800;
+    margin-top: 20px;
+    text-transform: capitalize;
+  }
+  .payment 
+  {
+    margin: 15px 0px 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; 
+    li 
+    {
+      max-width: 32%;
+      position: relative;
+      display: inline-block !important;
+      width: auto;
+      margin-bottom: 10px; cursor: pointer;
+    }
+    .color-checkbox 
+    {
+      display: inline-block; 
+      * 
+      {
+        -webkit-box-shadow: none;
+        box-shadow: none; 
+      }
+      label 
+      {
+        position: relative;
+        background: #fff;
+        border-radius: 0px;
+        border: 1px solid #ddd;
+        margin-bottom: 0px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        font-family: roboto;
+        font-size: 14px;cursor: pointer;
+        img
+        {
+          transition: .15s ease;
+        }        
+        &:hover
+        {
+          img
+          {
+            filter: grayscale(0);
+            opacity: 1; 
+          }
+        }
+        img 
+        {
+          -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+          opacity: 0.5;
+          -webkit-transform: scale(0.75);
+          -ms-transform: scale(0.75);
+          transform: scale(0.75); 
+        }
+      }
+    }
+  }
+}
+    .payment-method .payment .color-checkbox input {
+      display: none; }
+    .payment-method .payment .color-checkbox input:checked ~ label {
+      -webkit-box-shadow: none !important;
+      box-shadow: none !important;
+      background-color: $lgreen;
+      border-color: $green;
+      box-shadow: none !important; }
+      .payment-method .payment .color-checkbox input:checked ~ label img {
+        -webkit-filter: grayscale(0);
+        filter: grayscale(0);
+        opacity: 1; }

@@ -1,0 +1,19 @@
+.about{
+    padding:60px 0px;
+    p
+    {
+        font-size: 16px;
+        font-family: text;
+        color:#7b7b7b;
+        margin:0px 0px 30px;
+        text-align: left;
+        a
+        {
+            font-family: textbold;
+            color:#000;
+            &:hover{
+                color:$pink;
+            }
+        }
+    }
+}

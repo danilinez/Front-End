@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Fleet Plans</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/owl.css">
+  <link rel="stylesheet" href="css/owltheme.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="index.html"><img src="images/FleetPlan-Logo.png" alt="logo"></a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <div class="nav-holder">
+                         <ul class="nav navbar-nav">
+                            <li><a href="brands.html">BRANDS</a></li>
+                            <li><a href="machmakers.html">MATCHMAKERS</a></li>
+                            <li><a href="specialoffers.html" class="redit">Current OFFERS</a></li>
+                            <li><a href="truck&equipments.html">TRUCKS & EQUIPMENT</a></li>
+                        </ul>
+                    </div>
+                    <form class="navbar-form">
+                      <div class="input-group">
+                        <span class="input-group-addon"><i class="fas fa-search"></i></span>
+                        <input id="email" type="text" class="form-control" name="email" placeholder="Search your Favourite Car" autocomplete="off">
+                        <a href="#" class="cross hidden-xs"> <i class="fas fa-times"></i></a>
+                      </div>
+                    </form>
+                    <ul class="social_head">
+                        <li class="social pull-right"><a href="#" class="heart"><i class="far fa-heart"></i></a></li>
+                        <li class="social pull-right"><a type="button" data-toggle="modal" data-target="#login-modal"><i class="far fa-user"></i></a></li>
+                        <li class="social pull-right hidden-xs"><a href="#" class="magnifier"><i class="fas fa-search"></i></a></li>
+                    </ul>
+                </div>
+              </div>
+            </nav>
+            <div class="modal login-modal" id="login-modal" role="dialog">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <h1>Sign up now and <br> enjoy these benefits</h1>
+                        <ul>
+                            <li><img src="images/check.png" />Request competitive quotes on the car you want to buy</li>
+                            <li><img src="images/check.png" />Access your favourites on all devices</li>
+                        </ul>
+                        <button class="btn btn-default"><i class="fab fa-facebook-square"></i> Sign up with Facebook</button>
+                        <p>Creating an account means you're OK with Fleet Plans</p>
+                        <a href="javascript:void(0)">Terms of Service and Privacy Policy</a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </header>
+        <main>
+
+            <section class="test_drive_request sec-pad">
+                <div class="container-fluid fluid">
+                  <h2>Test Drive the</h2>
+                  <p>Review your plan below then <strong> fill in your details </strong> to finalise your booking</p>
+                  <div class="book">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="drive_schedule">
+                            <div class="time_date">
+                              <i class="fas fa-clock"></i>
+                              <h5>
+                                <time>
+                                  <strong>2:00PM</strong>
+                                </time>
+                                Wednesday 23 January
+                              </h5>
+                            </div>
+                            <div class="car_brand">
+                              <h5>
+                                <strong>ABARTH</strong>
+                                595
+                              </h5>
+                              <div class="tags">
+                                <ul>
+                                  <li>
+                                    Hatch
+                                  </li>
+                                  <li>
+                                    Manual
+                                  </li>
+                                  <li>
+                                    Petrol
+                                  </li>
+                                  <li>
+                                    2wd (fwd)
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="booking_form">
+                            <div class="login_box">
+                              <h4>Have a FleetPlan Account ?</h4>
+                              <button type="button" class="btn btn-default btn-block">LOGIN TO BOOK</button>
+                            </div>
+                            <div class="form">
+                              <div class="form-group col-xs-12 fluid">
+                                  <label for="fname">First Name</label>
+                                  <input type="text" class="form-control" id="fname" value="">
+                              </div>
+                              <div class="form-group col-xs-12 fluid">
+                                  <label for="lname">Last Name</label>
+                                  <input type="text" class="form-control" id="lname">
+                              </div>
+                              <div class="form-group col-xs-12 fluid">
+                                <label for="pnum">Phone Number</label>
+                                <input type="text" class="form-control" id="pnum">
+                              </div>
+                              <div class="form-group col-xs-12 fluid">
+                                <label for="emaile">Email</label>
+                                <input type="text" class="form-control" id="emaile">
+                              </div>
+                              <div class="form-group">
+                                <label for="area_search">Where will you be coming from?</label>
+                                <div class="input-group col-xs-12">
+                                  <span class="input-group-addon"><i class="fas fa-search"></i></span>
+                                  <input type="text" class="form-control" name="email" autocomplete="off" id="area_search">
+                                </div>
+                              </div>
+                              <div class="form-group col-xs-12 fluid">
+                                  <label>What are you looking to buy</label>
+                                  <input id="purchase_time1" type="radio" name="buytime">
+                                  <label for="purchase_time1" class="radio-inline ml1 bleft_radius">Now</label>
+                                  <input id="purchase_time2" type="radio" name="buytime">
+                                  <label for="purchase_time2" class="radio-inline" style="border-right:none;border-left:none;">2 Weeks</label>
+                                  <input id="purchase_time3" type="radio" name="buytime">
+                                  <label for="purchase_time3" class="radio-inline bright_radius">2+ weeks</label>
+                              </div>
+                              <div class="col-xs-12">
+                                <div class="row">
+                                  <label for="form-check">WOULD YOU LIKE YOUR TRADE-IN EVALUATED?</label>
+                                </div>
+                                <div class="form-check">
+                                  <input type="radio" class="form-check-input" name="optradio" id="rad_1">
+                                  <label class="form-check-label" for="rad_1">Yes, Please</label>
+                                </div>
+                                <div class="form-check">
+                                  <input type="radio" class="form-check-input" name="optradio" id="rad_2">
+                                  <label class="form-check-label" for="rad_2">No, Thank you </label>
+                                </div>
+                                <div class="form-check">
+                                  <input type="radio" class="form-check-input" name="optradio" id="rad_3">
+                                  <label class="form-check-label" for="rad_3">I dont have a trade-in</label>
+                                </div>
+                              </div>
+                              <div class="col-xs-12">
+                                <div class="row">
+                                  <label for="form-check">WOULD YOU LIKE YOUR TRADE-IN EVALUATED?</label>
+                                </div>
+                                <div class="form-check">
+                                  <input type="radio" class="form-check-input" name="optradio1" id="rad1_1">
+                                  <label class="form-check-label" for="rad1_1">TELL ME ABOUT MY FINANCE OPTIONS</label>
+                                </div>
+                                <div class="form-check">
+                                  <input type="radio" class="form-check-input" name="optradio1" id="rad1_2">
+                                  <label class="form-check-label" for="rad1_2">I WOULD LIKE TO ASK THE DEALER ABOUT FINANCE </label>
+                                </div>
+                                <div class="form-check">
+                                  <input type="radio" class="form-check-input" name="optradio1" id="rad1_3">
+                                  <label class="form-check-label" for="rad1_3">I HAVE ALREADY ARRANGED FINANCE</label>
+                                </div>
+                                <div class="form-check">
+                                  <input type="radio" class="form-check-input" name="optradio1" id="rad1_4">
+                                  <label class="form-check-label" for="rad1_4">I HAVE ALREADY ARRANGED FINANCE</label>
+                                </div>
+                              </div>
+                              <div class="form-group col-xs-12 fluid">
+                                <label for="tea">Would you like a tea or coffee</label>
+                                <input type="text" class="form-control" id="tea" placeholder="E.g. Skinny Latte">
+                              </div>
+                              <div class="col-xs-12">
+                                <div class="form-check check-box">
+                                  <input type="checkbox" class="form-check-input" id="chk_1">
+                                  <label class="form-check-label" for="chk_1">Send me useful, personalised info and tips that will help me with my car purchase</label>
+                                </div>
+                                <div class="form-check check-box">
+                                  <input type="checkbox" class="form-check-input" id="chk_2">
+                                  <label class="form-check-label" for="chk_2">I am happy for the dealer to send me news, special offers, product and service information </label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-xs-12">
+                                  <p class="pp">
+                                    By clicking submit, I agree to the terms of MotoMe's <a href="#">Privacy Policy</a>.
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-xs-12">
+                                  <button type="button" class="btn btn-default btn-block">REQUEST A DRIVE</button>
+                                  <p class="pp">
+                                    MotoMe has business relationships with a network of motor vehicle dealers across Australia and will receive a fee from one of these dealers for this referral.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="col-xs-12">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-xs-12">
+                        <div class="img">
+                            <img src="images/footerlogo.png" alt="footerlogo">
+                        </div>
+                        <ul class="contact-ul">
+                            <li><i class="fas fa-phone"></i> 1300 555 555</li>
+                            <li><i class="fas fa-map-marker-alt"></i> Lvl 1, 10 Main Street Osborne Park WA 6017</li>
+                            <li><i class="fas fa-envelope"></i> Sales@fleetplans.com.au </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 col-xs-6">
+                        <h4>INFORMATION</h4>
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                            <li><a href="#">Finance</a></li>
+                            <li><a href="#">Leasing</a></li>
+                            <li><a href="#">Partners</a></li>
+                            <li><a href="#">Support</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 col-xs-6">
+                        <h4>CONNECT</h4>
+                        <ul>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i>Twitter</a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                            <li><a href="#"><i class="fab fa-linkedin"></i> Linkedin</a></li>
+                            <li><a href="#"><i class="fab fa-pinterest"></i> Pinterest</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row bg-row">
+                <div class="container">
+                    <div class="col-md-4 fluid">
+                        <p class="on-p">&copy; FleetPlan 2018. All Right Reserved.</p>
+                    </div>
+                    <div class="col-md-4 fluidi">
+                        <ul class="terms-list">
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Disclaimer</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 fluid">
+                        <p class="on-p">Powered by: Viper Online</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div class="heartslide">
+        <h5 class="fav">FAVOURITES</h5>
+        <h3 class="">Next Step: Compare</h3>
+        <p>It looks like you don't have any favourite cars. Why not search for a car from the <a href="#">homepage</a> or let us <a href="#">Suggest a car</a> based on your lifestyle and needs.</p>
+    </div>
+    <div class="overlay"></div>
+
+
+    <script src="js/owl.js"></script>
+    <script>
+
+
+        $(document).ready(function(){
+            // Add minus icon for collapse element which is open by default
+            $(".collapse.in").each(function(){
+                $(this).siblings(".panel-heading").find(".fas").addClass("fas fa-chevron-down").removeClass("fas fa-chevron-down");
+            });
+
+            // Toggle plus minus icon on show hide of collapse element
+            $(".collapse").on('show.bs.collapse', function(){
+                $(this).parent().find(".fas").removeClass("fas fa-chevron-down").addClass("fas fa-chevron-up");
+            }).on('hide.bs.collapse', function(){
+                $(this).parent().find(".fas").removeClass("fas fa-chevron-up").addClass("fas fa-chevron-down");
+            });
+        });
+
+        // side bar quries
+
+        $('.heart').on('click', function() {
+          $('.wrapper').toggleClass("moveleft");
+        });
+        $('.heart').on('click', function() {
+          $('.heartslide').toggleClass('showup');
+        });
+        $('.heart').on('click', function() {
+          $('body').toggleClass('seez');
+        });
+
+        $(".overlay").hide();
+
+       $('.heart').on('click', function() {
+          $('.overlay').show();
+        });
+
+
+//       Search bar Queries
+        $(".navbar-form").hide();
+        $('.cross').on('click', function() {
+          $('.navbar-form').hide();
+        });
+        $('.cross').on('click', function() {
+          $('.magnifier').show();
+        });
+        $('.cross').on('click', function() {
+          $('.nav-holder').show();
+        });
+        $('.cross').on('click', function() {
+          $('.magnifier').show();
+        });
+        $('.magnifier').on('click', function() {
+          $('.navbar-form').show();
+        });
+        $('.magnifier').on('click', function() {
+          $('.magnifier').hide();
+        });
+        $('.magnifier').on('click', function() {
+          $('.nav-holder').hide();
+        });
+//       Search bar Query End
+
+
+
+        $('.overlay').on('click', function() {
+            $('body').toggleClass('seez');
+          $('.wrapper').toggleClass("moveleft");
+            $('.heartslide').toggleClass('showup');
+            $(".overlay").hide();
+        });
+
+  // side barEnd
+
+  // Test Drive Date and Time Picker Slider
+        $('.testdrive_datetime').owlCarousel({
+            margin:10,
+            dots:true,
+            nav:true,
+            navText: ["<i class='fas fa-chevron-left'></i>","<i class='fas fa-chevron-right'></i>"],
+            dots:false,
+            responsive:{
+                0:{
+                    items:1
+                },
+                300:{
+                    items:2,
+                    nav:false
+                },
+                460:{
+                    items:3,
+                    nav:false
+                },
+                600:{
+                    items:4,
+                    nav:false
+                },
+                800:{
+                    items:5,
+                    nav:false
+                },
+                1100:{
+                    items:6
+                },
+                1300:{
+                    items:7
+                },
+                1400:{
+                    items:8
+                },
+                1550:{
+                    items:9
+                },
+                1650:{
+                    items:10
+                },
+                1750:{
+                    items:11
+                }
+            }
+        });
+
+
+
+    </script>
+
+</body>
+</html>

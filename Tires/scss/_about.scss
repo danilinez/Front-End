@@ -1,0 +1,66 @@
+.about
+{
+  .about-banner
+  {
+    background-image: url(../images/banner.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding:100px 0px;
+    text-align: center;
+    background-color: #cfcfcf;
+    background-blend-mode: multiply;
+    color:#fff;
+    @media (max-width:991px) {
+      padding:60px 0px;
+    }
+    .about-banner-content
+    {
+      a
+      {
+        font-size:68px;
+        color:#fff;
+      }
+      h1
+      {
+        font-size: 38px;
+        margin: 10px 0px 20px 0px;
+        font-family: semibold;
+      }
+      p
+      {
+        margin: 10px 0px;
+        font-size: 24px;
+      }
+    }
+  }
+  .about-text
+  {
+    padding: 50px 0px;
+    .text-box
+    {
+      text-align: center;
+      margin-bottom:30px;
+      h2
+      {
+        font-size: 28px;
+        color:$text;
+        margin: 0px 0px 15px;
+        font-family: semibold;
+      }
+      h4
+      {
+        font-size: 20px;
+        color:$text;
+        margin: 0px 0px 30px;
+        font-family: medium;
+      }
+      p
+      {
+        margin: 0px;
+        font-size: 16 px;
+        font-family: light;
+      }
+    }
+  }
+}

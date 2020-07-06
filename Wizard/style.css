@@ -1,0 +1,587 @@
+.wizardbox .wizard-form .fm-view {
+  background-color: #f6f7fc;
+}
+
+.wizardbox .wizard-form .fm-view .fm-view-slide {
+  background-color: #fff;
+  border          : 1px solid #88a9c2;
+  display         : flex;
+  align-items     : center;
+  justify-content : space-between;
+  margin-bottom   : 20px;
+  padding         : 30px 20px;
+}
+
+.wizardbox .wizard-form .fm-view .fm-view-slide .left-text h5 {
+  margin: 0px 0px 10px;
+}
+
+.wizardbox .wizard-form .fm-view .fm-view-slide .left-text h5 a {
+  color    : #5c8eb7;
+  font-size: 20px;
+}
+
+.wizardbox .wizard-form .fm-view .fm-view-slide .left-text h5 a:hover {
+  color: #59caaa
+}
+
+.wizardbox .wizard-form .fm-view .fm-view-slide .left-text .frow {
+  display    : inline-flex;
+  align-items: center;
+  flex-wrap  : wrap;
+}
+
+.wizardbox .wizard-form .fm-view .fm-view-slide .left-text .frow .tag {
+  color           : #42494f;
+  border-radius   : 20px;
+  padding         : 1px 8px;
+  font-size       : 12px;
+  background-color: #e7e8ee;
+  display         : inline-block;
+  margin-right    : 10px;
+  font-weight     : 600;
+  text-transform  : uppercase
+}
+
+.wizardbox .wizard-form .fm-view .fm-view-slide .left-text .frow .tag i {
+  margin-right: 10px;
+}
+
+.wizardbox .wizard-form .fm-view .fm-view-slide .left-text .frow .tag-green {
+  color           : #fff !important;
+  background-color: #59caaa !important;
+  font-weight     : 500;
+}
+
+.wizardbox .wizard-form .fm-view .fm-view-slide .left-text .frow .date {
+  font-size  : 12px;
+  margin     : 0px;
+  color      : #42494f;
+  font-weight: 500;
+}
+
+.wizardbox .wizard-form .fm-view .fm-view-slide .left-text .frow .date span {
+  padding: 0px 10px;
+}
+
+
+.wizardbox .wizard-form .fm-view .fm-view-slide .right-actions {
+  display    : inline-flex;
+  align-items: center;
+}
+
+.wizardbox .wizard-form .fm-view .fm-view-slide .right-actions a {
+  display      : inline-block;
+  border       : 1px solid #9a9a9a;
+  margin-right : 1vw;
+  border-radius: 50%;
+  color        : #9a9a9a;
+  width        : 35px;
+  height       : 35px;
+  font-size    : 18px;
+  text-align   : center;
+  padding      : 4px 0px;
+}
+
+.wizardbox .wizard-form .fm-view .fm-view-slide .right-actions a:hover {
+  color           : #fff;
+  border-color    : #59caaa;
+  background-color: #59caaa;
+}
+
+@media(max-width:1199px) {
+  .wizardbox .wizard-form .fm-view .fm-view-slide {
+    flex-direction: column;
+    align-items   : flex-start;
+    padding       : 20px 20px;
+  }
+
+  .wizardbox .wizard-form .fm-view .fm-view-slide .right-actions {
+    margin-top: 20px;
+  }
+
+  .wizardbox .wizard-form .fm-view .fm-view-slide .left-text p {
+    flex-grow : 1;
+    margin-top: 10px !important;
+    width     : 100%;
+  }
+}
+
+.wizardbox .wizard-form .fm-add {
+  background-color: #fff;
+}
+
+.wizardbox .wizard-form .fm-add .button-assets {
+  border-right: 2px solid #ddd;
+  position    : sticky;
+  top         : 10px;
+}
+
+.wizardbox .wizard-form .fm-add .button-assets textarea {
+  margin-bottom: 20px !important;
+}
+
+.wizardbox .wizard-form .fm-add .buttons {
+  padding-right: 5px;
+}
+
+.wizardbox .wizard-form .fm-add .button-assets .form-control {
+  width        : calc(100% - 20px) !important;
+  border-radius: 0px;
+  text-align   : center;
+  min-height   : 40px;
+  margin-bottom: 30px;
+  font-size    : 15px;
+  border       : 1px solid #ccc;
+  box-shadow   : none !important;
+  font-weight  : 500;
+}
+
+.wizardbox .wizard-form .fm-add .button-assets .btn {
+  display      : inline-block;
+  width        : calc(50% - 15px);
+  border       : 1px solid #ccc;
+  background   : transparent;
+  color        : #111;
+  font-size    : 15px;
+  padding      : 10px 10px;
+  border-radius: 0px;
+  box-shadow   : none;
+  outline      : none;
+  font-weight  : 500;
+  margin-bottom: 10px;
+  margin-right : 10px;
+}
+
+.wizardbox .wizard-form .fm-add .button-assets .btn:hover {
+  background-color: #59caaa;
+  border-color    : #59caaa;
+  color           : #fff;
+}
+
+.wizardbox .wizard-form .fm-add .button-assets h4 {
+  color      : #59caaa;
+  margin     : 10px 0px;
+  font-size  : 20px;
+  font-weight: 500;
+}
+
+.wizardbox .wizard-form .fm-add .form-display {
+  min-height  : 600px;
+  padding-left: 15px;
+}
+
+.wizardbox .wizard-form .fm-add .form-display h2 {
+  font-size   : 26px;
+  font-weight : 600;
+  margin      : 0px 0px;
+  padding-left: 3px;
+}
+
+.wizardbox .wizard-form .fm-add .form-display>p {
+  color       : #7b7b7b;
+  font-size   : 14px;
+  font-weight : 500;
+  margin      : 0px 0px 30px;
+  padding-left: 3px;
+}
+
+.wizardbox .wizard-form .fm-add .form-display .no-gutters {
+  margin: 0px !important;
+}
+
+.wizardbox .wizard-form .fm-add .form-display .no-gutters>div {
+  padding: 0px !important;
+}
+
+.wizardbox .wizard-form .fm-add .form-display .form-control {
+  border-radius: 0px !important;
+  width        : calc(100% - 20px);
+  box-shadow   : none !important;
+  font-size    : 14px;
+}
+
+.wizardbox .wizard-form .fm-add .form-display .form-group {
+  margin-bottom: 10px !important;
+  padding      : 5px 5px 10px !important;
+  border       : 1px dashed #fff;
+  cursor       : grab;
+  position     : relative;
+}
+
+.wizardbox .wizard-form .fm-add .form-display .form-group:active {
+  cursor: grabbing;
+}
+
+.wizardbox .wizard-form .fm-add .form-display .form-group:hover {
+  background-color: #f8f8f8;
+  border          : 1px dashed #ddd;
+}
+
+.wizardbox .wizard-form .fm-add .form-display .form-group .actions {
+  position: absolute;
+  right   : 3px;
+  bottom  : 3px;
+  z-index : 5;
+  display : none;
+  opacity : 0;
+}
+
+.wizardbox .wizard-form .fm-add .form-display .form-group .actions a {
+  display         : inline-block;
+  border-radius   : 3px;
+  border          : 1px solid #ddd;
+  color           : #333;
+  width           : 21px;
+  text-align      : center;
+  background-color: #fff;
+}
+
+.wizardbox .wizard-form .fm-add .form-display .form-group .actions a:hover {
+  background-color: #59caaa;
+  color           : #fff;
+  border-color    : #59caaa;
+}
+
+.wizardbox .wizard-form .fm-add .form-display .form-group:hover .actions {
+  display: block;
+  opacity: 1;
+}
+
+.wizardbox .wizard-form .fm-add .form-display .form-group label {
+  font-size  : 14px;
+  font-weight: 600;
+  color      : #111;
+}
+
+.wizardbox .wizard-form .fm-add .form-display .form-group span {
+  font-size  : 12px;
+  font-weight: 500;
+  color      : #7b7b7b;
+}
+
+.wizardbox .wizard-form .fm-add .button-flex {
+  display        : flex;
+  align-items    : center;
+  justify-content: flex-end;
+  padding-left   : 20px;
+}
+
+.wizardbox .wizard-form .fm-add .button-flex .btn {
+  display      : inline-block;
+  width        : 120px;
+  border       : 1px solid #ddd;
+  color        : #111;
+  font-size    : 15px;
+  padding      : 10px 10px;
+  border-radius: 3px;
+  box-shadow   : none;
+  outline      : none;
+  font-weight  : 500;
+  margin-right : 10px;
+}
+
+.wizardbox .wizard-form .fm-add .button-flex .btn-share {
+  background-color: #59caaa;
+  border-color    : #59caaa;
+  color           : #fff;
+}
+
+.wizardbox .wizard-form .fm-add .button-flex .btn:hover {
+  background-color: #59caaa;
+  border-color    : #59caaa;
+  color           : #fff;
+}
+
+.edit-form table {
+  margin-bottom: 5px;
+  border       : none !important;
+}
+
+.edit-form table tr td,
+.edit-form table tr th {
+  border        : none !important;
+  padding       : 10px 10px;
+  vertical-align: top;
+}
+
+.edit-form table tr td {
+  padding: 4px 10px 16px;
+}
+
+.edit-form table tr td a {
+  min-width    : 28px;
+  border       : 1px solid #fff;
+  color        : #fff;
+  border-radius: 50%;
+  margin       : 0px 1px;
+  text-align   : center;
+  display      : inline-block;
+}
+
+.edit-form table tr td input[type='checkbox'] {
+  margin: 10px 0px;
+}
+
+.edit-form table tr td:last-child {
+  text-align: center
+}
+
+.edit-form table tr td .add-field {
+  background-color: #5cb85c;
+  padding         : 4px 0px 3px;
+}
+
+.edit-form table tr td .remove-field {
+  background-color: #d2322d;
+  padding         : 4px 0px 4px;
+}
+
+.edit-form table tr td input.form-control {
+  border-radius: 0px !important;
+  box-shadow   : none !important;
+  font-size    : 14px;
+}
+
+.edit-form .modal-footer .btn-success {
+  background-color: #59caaa;
+  border-color    : #59caaa;
+  border-radius   : 3px;
+}
+
+@media(max-width:767px) {
+  .wizardbox .wizard-form .fm-add .form-display {
+    padding-left: 0px;
+  }
+
+  .wizardbox .wizard-form .fm-add .button-assets {
+    border-right: none !important;
+  }
+}
+
+.form-check label {
+  font-weight: 400 !important;
+}
+
+div[data-required="Y"] label:after {
+  content    : '*';
+  color      : red;
+  margin-left: 5px;
+}
+
+/* DRAG DROP FORM STYLES END */
+
+.wizardbox {
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wiz-controls {
+  background-color: #dcdcdc;
+}
+
+.btn-white {
+  display         : inline-block;
+  padding         : 5px 14px;
+  background-color: #fff;
+  border          : 1px solid #ddd;
+  border-radius   : 15px;
+  font-size       : 14px;
+  box-shadow      : none !important;
+}
+
+.btn-save {
+  box-shadow      : none !important;
+  display         : inline-block;
+  padding         : 5px 14px;
+  background-color: #0070ba;
+  border          : 1px solid #ddd;
+  color           : #fff;
+  border-radius   : 15px;
+  font-size       : 14px;
+}
+
+.btn-save:hover {
+  background-color: #0064a7;
+  color           : #fff;
+}
+
+.btn-white:hover {
+  background-color: #f1f1f1;
+}
+
+.steps {
+  position     : relative;
+  padding      : 60px 100px 40px;
+  margin-bottom: 30px;
+  display      : inline-block;
+  width        : 100%;
+}
+
+.steps .frow {
+  display        : flex;
+  align-items    : center;
+  justify-content: space-between;
+}
+
+.step-bolt {
+  height          : 30px;
+  width           : 30px;
+  background-color: #eee;
+  border-radius   : 100%;
+  z-index         : 10;
+  position        : relative;
+}
+
+.step-bolt span {
+  position   : absolute;
+  font-size  : 14px;
+  color      : #333;
+  left       : 50%;
+  transform  : translateX(-50%);
+  white-space: nowrap;
+}
+
+.step-bolt .sb-number {
+  top: -30px;
+}
+
+.step-bolt .sb-name {
+  bottom   : -25px;
+  color    : #999;
+  font-size: 12px;
+}
+
+.step-bolt.active,
+.step-bolt.completed {
+  background-color: #fbe8aa;
+}
+
+.step-bolt.active::after,
+.step-bolt.completed::after {
+  content      : ' ';
+  width        : 14px;
+  height       : 14px;
+  background   : #fbbd19;
+  border-radius: 50px;
+  position     : absolute;
+  top          : 8px;
+  left         : 8px;
+  z-index      : 20;
+}
+
+.progressBar {
+  position        : relative;
+  height          : 8px;
+  width           : 100%;
+  background-color: #eee;
+  z-index         : 5;
+  margin-top      : -19px;
+  border-radius   : 10px;
+  overflow        : hidden;
+  padding         : 0px 2px;
+}
+
+.progressBar::after {
+  content         : "";
+  position        : absolute;
+  background-color: #fbe8aa;
+  left            : 0px;
+  width           : 0%;
+  height          : 100%;
+  transition      : .25s linear;
+}
+
+.progressBar.atsecond::after {
+  width: 0%;
+}
+
+.progressBar.atsecond::after {
+  width: 33.3334%;
+}
+
+.progressBar.atthird::after {
+  width: 66.66667%;
+}
+
+.progressBar.atfourth::after {
+  width: 100%;
+}
+
+.active-wizard {
+  overflow: hidden;
+}
+
+.active-wizard .flex-box {
+  display   : flex;
+  align-self: flex-start;
+  flex-wrap : nowrap;
+  position  : relative;
+  left      : 0%;
+  transition: .25s linear;
+}
+
+.active-wizard .wizard-form {
+  padding  : 30px;
+  min-width: 100%;
+  position : relative;
+}
+
+.active-wizard .wizard-form .control-label {
+  font-weight: bold;
+  font-size  : 14px;
+}
+
+.active-wizard .wizard-form .btn-group {
+  margin-bottom: 30px;
+}
+
+.active-wizard .wizard-form .btn-group .btn {
+  background-color: transparent !important;
+  color           : #333 !important;
+  border-color    : #aaa !important;
+  font-size       : 14px;
+}
+
+.active-wizard .wizard-form .btn-group .btn:hover {
+  background-color: #f5f5f5 !important;
+}
+
+.sign-display {
+  padding         : 15px;
+  font-size       : calc(1vw + 1em);
+  background-color: #eee;
+  text-align      : center;
+  color           : #aeaeae;
+}
+
+.card-header .fa-trash {
+  color: rgb(167, 0, 0);
+}
+
+@media(max-width:767px) {
+  .active-wizard .wizard-form
+  {
+    padding:30px 15px !important;
+  }
+  .wizardbox .wizard-form .form-check-label
+  {
+    padding-left:20px !important;
+  }
+  .wizardbox .btn-save,
+  .wizardbox .btn-white
+  {
+    font-size:11px !important;
+    font-weight: bold;
+  }
+  .steps
+  {
+    padding:40px 35px 40px;
+  }
+  .step-bolt .sb-name {
+    font-size  : 11px;
+    width      : 92px;
+    white-space: pre-wrap;
+    text-align : center;
+    height     : 20px;
+  }
+}

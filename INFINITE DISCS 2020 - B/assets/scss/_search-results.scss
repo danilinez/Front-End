@@ -1,0 +1,128 @@
+.search-results
+{
+    padding:60px 0px;
+}
+.slot
+{
+    display: flex;
+    background-color: #fff;
+    position: relative;
+    margin-bottom: 20px;
+    @media (max-width:767px) {
+        flex-direction: column;
+        align-content: center;
+    }
+    .img-holder
+    {
+        position: relative;
+        min-width: 200px;
+        max-width: 200px;
+        padding:10px;
+        margin:0 auto;
+        a
+        {
+            padding-top:100%;
+            display: block;
+            width:100%;
+            position: relative;
+            border:1px solid #eee;
+        }
+        img
+        {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+            object-position: center;
+        }
+    }
+    .text
+    {
+        flex-grow: 1;
+        padding:10px;
+        @media (max-width:767px) {
+            padding:0px 15px 15px;
+            text-align: center;
+        }
+        .badge-list
+        {
+            margin:5px 0px;
+            .badge
+            {
+                background: #47a0e0;
+                color:#fff;
+                font-size: 12px;
+                font-family: text;
+                padding:5px 8px;
+                display: inline-block;
+                font-weight: 300;
+                @media (max-width:991px) {
+                    font-size: 11px;
+                    padding:3px 5px 5px;
+                    line-height: 11px;
+                }
+            }
+        }
+        h4
+        {
+            font-size:14px !important;
+            font-family: textbold !important;
+            margin:0px 0px 0px !important;
+            color:#111 !important;
+            background: transparent !important;
+            background-color: #f5f5f5 !important;
+            padding:0px !important;
+            overflow: hidden;
+            text-align: center;
+            a
+            {
+                font-size:14px;
+                font-family: textbold;
+                margin:0px 0px 0px;
+                color:#111;
+                text-align: center;
+                display: block;
+                padding:10px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+        button
+        {
+            border:1px solid #ddd;
+            color:#666;
+            font-family: textsb;
+            font-size: 12px;
+            padding:5px 20px;
+            border-radius: 50px;
+            text-transform: uppercase;
+            @media(max-width:420px)
+            {
+                font-family: textbold;
+                font-size: 11px;
+                padding:5px 12px;
+            }
+            i
+            {
+                margin-right: 3px;
+            }
+            &:hover
+            {
+                background-color: #333;
+                color:#fff;
+                border-color:#333;
+            }
+        }
+        p
+        {
+            color:#7b7b7b;
+            font-size: 14px;
+            margin:10px 0px;
+            max-height: 64px;
+            overflow-y: hidden;
+        }
+    }
+}

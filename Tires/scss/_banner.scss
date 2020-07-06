@@ -1,0 +1,55 @@
+.banner
+{
+  background-image: url(../images/banner.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding:40px 0px 100px;
+  .bwrap
+  {
+    background-color: rgba(83,83,88,.7);
+    padding: 30px 40px;
+    max-width: 450px;
+    border-radius: 5px;
+    @media (max-width:575px) {
+      max-width: 100%;
+    }
+    h3
+    {
+      color:#fff;
+      font-family: medium;
+      font-size: 32px;
+      font-size: calc(1vw + 1em);
+      margin: 0px 0px 20px;
+    }
+    ul
+    {
+      li
+      {
+        color:#fff;
+        display: flex;
+        align-items: flex-start;
+        & ~ li
+        {
+          margin-top: 10px;
+        }
+        .sp
+        {
+          display: inline-block;
+          margin-right: 15px;
+          background: #fff;
+          color:$text;
+          min-width:27px;
+          max-width:27px;
+          border-radius: 100%;
+          text-align: center;
+          padding: 2px 0px 1px;
+          font-family: semibold;
+          font-size: 16px;
+        }
+        font-size: 18px;
+        padding-bottom: 5px;
+      }
+    }
+  }
+}

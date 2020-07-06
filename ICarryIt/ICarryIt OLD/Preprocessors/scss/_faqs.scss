@@ -1,0 +1,111 @@
+.client-gradient
+{
+  background-image: linear-gradient(to right, #ffc633 , #ffda49);
+  box-shadow: inset -10px 0px 200px 0px #ffcc39;
+}
+.carrier-gradient
+{
+  background-image: linear-gradient(to right, $blue , #c4e8eb);
+  box-shadow: inset -10px 0px 200px 0px $blue;
+}
+.faqs
+{
+  position: relative;
+  .acordians
+  {
+    position: relative;
+    margin:20px 0px 100px;
+    .panel-default
+    {
+      a
+      {
+        text-decoration: none;
+      }
+      .panel-heading
+      {
+        .panel-title
+        {
+          padding: 15px 0px;
+          margin-bottom: 15px;
+          font-size: 18px;
+          font-weight: 700;
+          border-bottom: 1px solid #ccc;
+          i
+          {
+            transition: transform .3s ease;
+            float: right;
+          }
+        }
+      }
+      .panel-body
+      {
+        padding: 5px 0px 10px;
+        p
+        {
+          margin: 0px;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+.download
+{
+  overflow: hidden;
+  position: relative;
+  border-radius: 15px;
+  margin-bottom: 100px;
+  .context
+  {
+    position: relative;
+    padding: 60px 0px 20px 50px;
+    h2
+    {
+      font-size: 43px;
+      font-weight: 700;
+      margin: 0px 0px 30px;
+    }
+    p
+    {
+      font-size: 18px;
+      margin: 0px 0px 30px;
+    }
+    .app-btns
+    {
+      padding-bottom: 30px;
+      li
+      {
+        a
+        {
+          img
+          {
+            height: 40px;
+            transition: .1s ease;
+          }
+          &:hover
+          {
+            img
+            {
+              transform: scale(1.05);
+            }
+          }
+        }
+      }
+    }
+  }
+  .flip
+  {
+    position: relative;
+    img
+    {
+      position: absolute;
+      width: 93%;
+      top: -50px;
+      left: -20px;
+      animation-name: flyy;
+      animation-duration: 1.5s;
+      animation-timing-function: ease;
+      animation-iteration-count: infinite;
+    }
+  }
+}

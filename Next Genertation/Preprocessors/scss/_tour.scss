@@ -1,0 +1,178 @@
+.tour2k18
+{
+  padding: 30px 10px;
+  .tour_banner
+  {
+    margin-bottom: 25px;
+  }
+  .btn-default
+  {
+    background-color:$red;
+    color:#fff;
+    font-family: osbold !important;
+    font-size: 20px;
+    padding: 18px 25px;
+    border-radius: 6px;
+    display: block;
+    margin: 0 auto 15px;
+    text-transform: uppercase;
+    i
+    {
+      margin-right: 15px;
+    }
+    &:hover
+    {
+      background:$black;
+    }
+  }
+  h3.common_h
+  {
+    font-size: 26px;
+  }
+  .text-img-holder
+  {
+    height: 175px;
+    display: block;
+    position: relative;
+    z-index: 5; 
+    width: 110px;
+    margin: 20px auto 30px;   
+    img
+    {
+      height: 100%;
+      position: absolute;
+      z-index: 10;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .text-mask
+    {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: auto;
+      z-index: 20;
+      .light *
+      {
+        color:#fff !important;
+        text-shadow: 0px 1px 2px #111;
+      }
+      .dark *
+      {
+        color:#111 !important;
+        text-shadow: 0px 1px 2px #fff;
+      }
+      .text-holder
+      {
+        text-align: center;
+        padding: 70px 6px 0px;
+        h2
+        {
+          font-size: 20px;
+          font-family: obold;
+          margin: 0px;
+          line-height: 20px;
+        }
+        h1
+        {
+          margin: 5px 0px;
+          font-size: 26px;
+          font-family:obold;
+          line-height: 26px;
+        }
+        p
+        {
+          font-family: osbold !important;
+          font-size: 18px;
+          margin: 0px;
+          text-transform: uppercase;
+          line-height: 20px;
+          small
+          {
+            font-family: osbold !important;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  .gener
+  {
+    max-height: 175px;
+    display: block;
+    margin: 20px auto 30px;
+  }
+  p
+  {
+    img
+    {
+      float: left;
+      max-width: 50px;
+      margin: 10px 15px 0px 0px;
+    }
+  }
+}
+
+.tour17
+{
+  >.common_title
+  { 
+    margin: 20px 0px;
+  }
+  .records
+  {
+    padding: 100px 0px;
+    background-image: url('images/tour_bg.jpg');
+    background-attachment:fixed;
+    background-position:center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    min-height:400px;
+    @media(max-width:1199px)
+    {
+      padding: 80px 0px;
+    }
+    @media(max-width:991px)
+    {
+      padding: 70px 0px;
+    }
+    @media(max-width:767px)
+    {
+      padding: 50px 0px;
+    }
+    @media(max-width:576px)
+    {
+      padding: 30px 0px;
+    }
+    img
+    {
+      display: block;
+      margin: 0px auto 20px;
+      max-width: 80%;
+    }
+    .iframe
+    {
+      position: relative;
+      margin: 0px 15px;
+      padding-top: 52%;
+      margin-bottom: 20px;
+      iframe
+      {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
+.description_tour17
+{
+  padding: 20px 0px 20px 10px;
+  strong
+  {
+    font-family: sbold;
+  }
+}

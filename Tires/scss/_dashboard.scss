@@ -1,0 +1,155 @@
+.dashboard
+{
+  padding: 60px 0px;
+  .sidebar
+  {
+    padding: 15px;
+    background:#f2f2f2;
+    border-radius: 5px;
+    h5
+    {
+      color:$red;
+      font-size: 16px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 10px;
+      margin-bottom: 15px;
+    }
+    ul
+    {
+      li
+      {
+        display: block;
+        font-size: 14px;
+        margin-bottom:10px;
+      }
+    }
+  }
+  .content
+  {
+    h2
+    {
+      font-size: 28px;
+      font-family: semibold;
+      margin:0px 0px 40px;
+    }
+    h6
+    {
+      color:$red;
+      margin: 20px 0px 10px;
+    }
+    .name-detail
+    {
+      margin-bottom: 30px;
+      h6
+      {
+        color:$red;
+      }
+      p
+      {
+        font-size: 14px;
+        color:#555;
+        margin: 0px;
+      }
+    }
+    .table
+    {
+      text-align: center;
+      margin-bottom: 20px;
+      th
+      {
+        font-weight: 500;
+        font-size: 14px;
+        font-family: medium;
+      }
+      th, td
+      {
+        vertical-align: middle;
+      }
+      td
+      {
+        font-weight: 500;
+        font-size: 13px;
+      }
+    }
+    .content-block
+    {
+      border:1px solid #eee;
+      padding: 15px;
+      margin-bottom: 20px;
+      .title-bar
+      {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 0px 5px;
+        border-bottom:1px solid #eee;
+        h5
+        {
+          margin: 0px;
+          font-size: 14px;
+          display: inline-block;
+        }
+        a
+        {
+          color:#111;
+          font-size: 14px;
+          &:hover
+          {
+            color:$red;
+          }
+        }
+      }
+      .text
+      {
+        padding: 15px 0px 0px;
+        a
+        {
+          font-size: 14px;
+        }
+      }
+    }
+    p
+    {
+      font-size: 14px;
+      margin: 0px 0px 5px;
+    }
+  }
+  .fields
+  {
+    background: #eee;
+    padding: 20px;
+    .form-control
+    {
+      min-height: 46px;
+      background: #f9f9f9;
+      border:1px solid #ddd;
+      &::placeholder
+      {
+        color:#aaa;
+        font-family:light;
+      }
+    }
+    .btn-primary
+    {
+      color:$red;
+      margin: 10px 0px 0px;
+      background: none;
+      border:none;
+      padding: 0px;
+      &:focus
+      {
+        background: none;
+        border:none;
+        color:$red;
+      }
+    }
+  }
+  .frow
+  {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    margin: 20px 0px;
+  }
+}
